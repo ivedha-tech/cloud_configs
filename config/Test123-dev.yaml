@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: Test123
-  description: sample Description
+  description: sample 123456
   labels: {}
   annotations:
     backstage.io/source-location: url:http://35.202.96.217/platformnex/cloud_configs_test
@@ -10,5 +10,5 @@ metadata:
     gitlab.com/instance: http://35.202.96.217
 spec:
   type: service
-  lifecycle: production
+  lifecycle: experimental
   owner: group:DEFAULT
