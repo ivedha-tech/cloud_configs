@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: TestCatalog
+  description: Test
+  labels: {}
+  annotations:
+    backstage.io/source-location: url:http://35.202.96.217/platformnex/cloud_configs_test
+    bitbucket.org/project-slug: platformnex/platformnex
+    bitbucket.org/repo-url: https://bitbucket.org/platformnex/platformnex/src/master/
+spec:
+  type: service
+  lifecycle: experimental
+  owner: group:DEFAULT
