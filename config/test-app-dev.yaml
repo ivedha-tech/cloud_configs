@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-app
+  description: some description about the app
+  labels: {}
+  annotations:
+    backstage.io/source-location: url:https//github.com/ivedha-tech/complaince-portal
+spec:
+  type: service
+  lifecycle: experimental
+  owner: muralish
