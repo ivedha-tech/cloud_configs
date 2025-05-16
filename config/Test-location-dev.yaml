@@ -4,5 +4,5 @@ metadata:
   name: Test-location
   description: location
 spec:
-  type: url
-  target: https://github.com/QAIvedha/Testing
+  type: file
+  target: /Users/sandunugunawardhana/Downloads
