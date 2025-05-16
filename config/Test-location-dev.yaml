@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: Test-location
+  description: location
+spec:
+  type: url
+  target: https://github.com/QAIvedha/Testing
