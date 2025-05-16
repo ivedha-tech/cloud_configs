@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: testing-003
+  description: sdf
+  annotations:
+    backstage.io/source-location: url:https://bitbucket.org/platformnex/test-qa-task-april-10-be/src/master/
+spec:
+  type: website
+  lifecycle: experimental
+  owner: Sanduni
+  system: test-system
+  subcomponentOf: test3
+  dependsOn:
+    - catalog1
+  dependencyOf:
+    - catalog3
