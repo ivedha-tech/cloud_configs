@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: testing
+  description: test
+  annotations:
+    backstage.io/source-location: url:https://github.com/QAIvedha/Testing
+spec:
+  type: library
+  lifecycle: experimental
+  owner: sandu
