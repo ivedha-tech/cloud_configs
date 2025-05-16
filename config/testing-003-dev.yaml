@@ -11,7 +11,5 @@ spec:
   owner: Sanduni
   system: test-system
   subcomponentOf: test3
-  dependsOn:
-    - catalog1
-  dependencyOf:
-    - catalog3
+  dependsOn: []
+  dependencyOf: []
