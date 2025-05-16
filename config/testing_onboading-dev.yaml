@@ -11,13 +11,7 @@ spec:
   owner: Sanduni
   system: test
   subcomponentOf: test
-  providesApis:
-    - api1
-    - api2
-    - api3
-  consumesApis:
-    - api2
-  dependsOn:
-    - catalog3
-  dependencyOf:
-    - catalog1
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
