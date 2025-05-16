@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: testing_onboading
+  description: testing
+  annotations:
+    backstage.io/source-location: url:https://github.com/QAIvedha/Testing
+spec:
+  type: service
+  lifecycle: experimental
+  owner: Sanduni
+  system: test
+  subcomponentOf: test
+  providesApis:
+    - api1
+    - api2
+    - api3
+  consumesApis:
+    - api2
+  dependsOn:
+    - catalog3
+  dependencyOf:
+    - catalog1
