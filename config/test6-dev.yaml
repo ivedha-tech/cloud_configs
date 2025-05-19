@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test6
+  description: test6
+  annotations:
+    backstage.io/source-location: url:https://gitlab.com/qateam5182505/QA
+spec:
+  type: service
+  lifecycle: experimental
+  owner: sanduni
