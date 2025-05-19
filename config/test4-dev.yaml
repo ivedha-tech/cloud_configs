@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test4
+  description: test4
+  annotations:
+    backstage.io/source-location: url:https://gitlab.com/qateam5182505/QA/-/tree/7e14d7545918b9167dd65bea8da454d2e389df5b/
+    gitlab.com/project-slug: QA
+    gitlab.com/instance: https://gitlab.com/qateam5182505/QA/-/tree/7e14d7545918b9167dd65bea8da454d2e389df5b/
+spec:
+  type: service
+  lifecycle: experimental
+  owner: sanduni
