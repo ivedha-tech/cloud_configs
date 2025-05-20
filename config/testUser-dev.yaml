@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: testUser
+  description: sample
+spec:
+  profile:
+    displayName: Somesh123
+    email: somesh.chandimal@ivedha.com
+  memberOf: []
