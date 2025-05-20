@@ -1,14 +1,9 @@
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: Group
 metadata:
   name: test123
-  description: hi
-  labels: {}
-  annotations:
-    backstage.io/source-location: url:https://bitbucket.org/platformnex/plaformnex-v2/src/master/
-    bitbucket.org/project-slug: https://bitbucket.org/platformnex/plaformnex-v2/src/master/
-    bitbucket.org/repo-url: https://bitbucket.org/platformnex/plaformnex-v2/src/master/
+  description: sample
 spec:
-  type: service
-  lifecycle: experimental
-  owner: muralish
+  type: managed
+  children: []
+  members: []
