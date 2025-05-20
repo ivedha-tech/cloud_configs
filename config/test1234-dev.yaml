@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: test1234
+  description: sample
+spec:
+  type: managed
+  children: []
+  members: []
