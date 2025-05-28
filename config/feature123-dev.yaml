@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: feature123
+  description: ""
+spec:
+  type: managed
+  parent: group:default/CREATOR
+  children:
+    - group:default/editor
+  members:
+    - user:default/ankur
+    - user:default/chamath
