@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: platformnex-ai
+  description: "platfromnex ai "
+  annotations:
+    backstage.io/source-location: url:https://bitbucket.org/platformnex/cloud_configs/src/catalogfiles/platformnex-ai/catalog-info-dev.yaml
+spec:
+  type: website
+  lifecycle: production
+  owner: group:default/PLATFORMNEX
+  system: system:default/PlatformNex
