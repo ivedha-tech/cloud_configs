@@ -1,31 +1,8 @@
-TypeForm:
-  kind: System
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
   name: Marketplaces
   description: this marketplace application
-  labels: []
-ConnectForm:
-  ownedBy: ""
-  providesAPI: ""
-  consumesAPI: ""
-  dependsOn: ""
-  partOf: ""
-  memberOf: ""
-  parentOf: ""
-SourceControlForm:
-  provider: ""
-  repoLink: ""
-PluginAnnotation:
-  bitbucket:
-    enabled: false
-    project-slug: ""
-    repo-url: ""
-  gitlab:
-    enabled: false
-    project-slug: ""
-    instance: ""
-  sonarqube:
-    enabled: false
-    project-key: ""
-Specs:
+spec:
   owner: group:default/guests
   type: managed
