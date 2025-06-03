@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: Marketplace-v2
+  description: this is descripton of the application
+spec:
+  owner: group:default/guests
+  type: managed
