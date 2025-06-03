@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Sample-Frontend
+  description: sample description
+  annotations:
+    backstage.io/source-location: url:http://35.202.96.217/platformnex/cloud_configs_test
+    gitlab.com/project-slug: platformnex
+    gitlab.com/instance: http://35.202.96.217
+spec:
+  type: website
+  lifecycle: staging
+  owner: user:default/guest
+  system: system:default/Marketplaces-2
+  dependsOn:
+    - resource:default/platformnex-dev-DB
