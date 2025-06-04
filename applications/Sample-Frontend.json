@@ -2,9 +2,13 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: Sample-Frontend
-  description: this is sample frontend descriptino
+  description: this is sample decription
+  annotations:
+    backstage.io/source-location: url:http://35.202.96.217/platformnex/cloud_configs_test
+    bitbucket.org/project-slug: platformnex/cloud_configs_test
+    bitbucket.org/repo-url: https://github.com/MettaByte/project-latte
 spec:
-  type: website
+  type: service
   lifecycle: development
   owner: group:default/guests
-  system: system:default/Marketplace-v2
+  system: system:default/Marketplace
