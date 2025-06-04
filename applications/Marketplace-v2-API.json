@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: Marketplace-v2-API
+  description: ""
+  annotations:
+    backstage.io/source-location: url:https://bitbucket.org/repo
+spec:
+  type: asyncapi
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/Marketplace
+  definition: this openapi backend
