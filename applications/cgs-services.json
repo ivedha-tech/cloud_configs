@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: cgs-services
+  description: ""
+spec:
+  owner: group:default/guests
+  type: services
