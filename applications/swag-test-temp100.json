@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: swag-test-temp100
+  description: swag-test-temp100 for apigee
+  annotations:
+    backstage.io/source-location: url:https://github.com/kushanD95/swag-test-temp100
+    backstage.io/source-vcs: Github
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/apigee_service
