@@ -4,4 +4,4 @@ metadata:
   name: apigee-service
   description: ""
 spec:
-  owner: user:default/guest
+  owner: group:default/guests
