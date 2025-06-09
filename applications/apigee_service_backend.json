@@ -6,6 +6,8 @@ metadata:
   annotations:
     backstage.io/source-location: url:https://github.com/kushanD95/swag-test-temp114
     backstage.io/source-vcs: Github
+    github.com/project-slug: kushanD95/swag-test-temp114
+    github.com/repo-url: https://github.com/kushanD95/swag-test-temp114
 spec:
   type: service
   lifecycle: development
