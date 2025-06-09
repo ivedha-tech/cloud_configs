@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: apigee_service_backend_iv
+  description: ""
+  annotations:
+    backstage.io/source-location: url:https://github.com/ivedha-tech/release-manager
+    backstage.io/source-vcs: Github
+    github.com/project-slug: ivedha-tech/release-manager
+    github.com/repo-url: https://github.com/ivedha-tech/release-manager
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/apigee_service
