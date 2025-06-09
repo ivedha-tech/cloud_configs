@@ -5,4 +5,4 @@ metadata:
   description: ""
 spec:
   owner: group:default/guests
-  type: digital
+  type: service
