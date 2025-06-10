@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Frontend
+  description: frontend frontend Test-App-01
+  annotations:
+    backstage.io/source-location: url:https://bitbucket.org/platformnex/2025-3-26-demo-fe
+    backstage.io/source-vcs: Bitbucket
+    bitbucket.org/project-slug: 2025-3-26-demo-fe
+    bitbucket.org/repo-url: https://bitbucket.org/platformnex/2025-3-26-demo-fe
+    pulumi.com/project-slug: sasiru-demo-test-01
+    pulumi.com/orga-slug: platformnex-orchestrator
+spec:
+  type: website
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/Test-App-01
