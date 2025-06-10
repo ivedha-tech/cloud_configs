@@ -1,15 +1,7 @@
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: System
 metadata:
   name: Marketplace
-  description: ""
-  annotations:
-    backstage.io/source-location: url:http://35.202.96.217/platformnex/cloud_configs_test
-    backstage.io/source-vcs: Gitlab
-    gitlab.com/project-slug: platformnex/cloud_configs_test
-    gitlab.com/instance: http://35.202.96.217
+  description: this is sample description
 spec:
-  type: website
-  lifecycle: development
-  owner: group:default/guests
-  system: system:default/platformnex
+  owner: user:default/guest
