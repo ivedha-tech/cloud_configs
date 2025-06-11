@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: MyAppResource
+  description: sample description for a resource
+spec:
+  type: database
+  owner: group:default/guests
+  system: system:default/myapp
+  dependsOn:
+    - component:default/MyAppComponent
+    - component:default/platformnex-frontend
+    - resource:default/platformnex-dev-DB
+  dependencyOf:
+    - component:default/MyAppComponent
+    - component:default/platformnex-frontend
+    - resource:default/platformnex-dev-DB
