@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: MyAppAPI
+  description: sample description for an API
+  annotations:
+    backstage.io/source-location: url:https://github.com/vimukthidulnath/MPtest
+    backstage.io/source-vcs: Github
+spec:
+  type: openapi
+  lifecycle: production
+  owner: group:default/guests
+  system: system:default/myapp
+  definition: the definition of the api, based on the type
