@@ -1,14 +1,17 @@
 apiVersion: backstage.io/v1alpha1
-kind: API
+kind: Component
 metadata:
   name: platformnex-devops-gateway
-  description: platformnex-devops-gateway api dev env
+  description: platformnex-devops-gateway dev env test
   annotations:
     backstage.io/source-location: url:https://github.com/ivedha-tech/platformnex-devops-gateway
     backstage.io/source-vcs: Github
+    github.com/project-slug: ivedha-tech
+    github.com/repo-url: https://github.com/ivedha-tech/platformnex-devops-gateway
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
 spec:
-  type: asyncapi
+  type: service
   lifecycle: development
   owner: group:default/guests
-  system: system:default/platformnex
-  definition: basic api
+  system: system:default/SRE_Test
