@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: PlatformNEX_Plugins
+  description: PlatformNEX Plugins Collection
+spec:
+  owner: user:default/guest
+  type: Service
