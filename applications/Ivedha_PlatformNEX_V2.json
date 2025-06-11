@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: Ivedha_PlatformNEX_V2
+  description: PlatformNEX V2 Ivedha Tech Hub
+spec:
+  owner: group:default/guests
+  type: Application
