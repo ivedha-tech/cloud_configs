@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: platformnex-devops-gateway
-  description: platformnex-devops-gateway dev env test
+  description: platformnex-devops-gateway api ted for dev
   annotations:
     backstage.io/source-location: url:https://github.com/ivedha-tech/platformnex-devops-gateway
     backstage.io/source-vcs: Github
