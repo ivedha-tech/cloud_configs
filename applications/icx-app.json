@@ -1,0 +1,7 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: icx-app
+  description: cweiufw weouciw ueoigcuwye yuwgocywe wybegoc
+spec:
+  owner: group:default/guests
