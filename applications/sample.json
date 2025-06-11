@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: sample
+  description: sample component onboard
+  annotations:
+    backstage.io/source-location: url:https://github.com/ivedha-tech/platformnex-frontent
+    backstage.io/source-vcs: Github
+    github.com/project-slug: ivedha-tech/platformnex-frontent
+    github.com/repo-url: https://github.com/ivedha-tech/platformnex-frontent
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/test
