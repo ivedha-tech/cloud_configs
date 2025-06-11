@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: test
+  description: lldacvvvvvvvvvvvvvvvvvvvvvvvv
+spec:
+  owner: user:default/guest
+  type: Template
