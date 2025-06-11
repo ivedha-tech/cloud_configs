@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: apigee
+  description: sample apigee resource onboard
+spec:
+  type: apigee db
+  owner: group:default/guests
+  system: system:default/apigee_service
+  dependencyOf:
+    - component:default/apigee_service_100
+    - component:default/apigee_service_100_dev
+    - component:default/apigee_service_backend
