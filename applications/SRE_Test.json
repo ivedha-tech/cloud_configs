@@ -1,0 +1,7 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: SRE_Test
+  description: test the sre service related components
+spec:
+  owner: group:default/guests
