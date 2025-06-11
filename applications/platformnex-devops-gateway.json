@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: platformnex-devops-gateway
+  description: platformnex-devops-gateway api dev env
+  annotations:
+    backstage.io/source-location: url:https://github.com/ivedha-tech/platformnex-devops-gateway
+    backstage.io/source-vcs: Github
+spec:
+  type: asyncapi
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/platformnex
+  definition: basic api
