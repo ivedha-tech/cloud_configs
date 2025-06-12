@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: apigee_service_backend_v1_dev
+  description: apigee service v1 dev
+  annotations:
+    backstage.io/source-location: url:https://github.com/kushanD95/swag-test-temp113
+    backstage.io/source-vcs: Github
+    github.com/project-slug: kushanD95/swag-test-temp113
+    github.com/repo-url: https://github.com/kushanD95/swag-test-temp113
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/apigee_service
