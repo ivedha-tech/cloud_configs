@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: platformnex_storage_dev
+  description: platformnex storage development
+spec:
+  type: storage
+  owner: group:default/guests
+  system: system:default/platformnex
