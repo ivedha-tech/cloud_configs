@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: PlatformNexV2
+  description: "PlatformNEX is a comprehensive platform engineering solution
+    designed to streamline the software development lifecycle by centralizing
+    critical tools, workflows, and environments into a unified interface. "
+spec:
+  owner: group:default/guests
