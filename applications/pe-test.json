@@ -1,0 +1,24 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: pe-test
+  description: testing pe github authentication
+  annotations:
+    backstage.io/source-location: url:https://github.com/ivedha-tech/platformnex-frontend
+    backstage.io/source-vcs: Github
+    sonarqube.org/project-key: platformnex
+    github.com/project-slug: ivedha-tech/platformnex-frontend
+    github.com/repo-url: https://github.com/ivedha-tech/platformnex-frontend
+    pulumi.com/project-slug: mcmuralishclint/pulumi-cicd/dev
+    pulumi.com/orga-slug: mcmuralishclint
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
+    google.com/cloudrun-project-slug: prj-dev-platform-next
+    google.com/cloudrun-location: us-central1
+    google.com/cloudrun-service-name: platformnex-devops-gateway or platformnex-frontend
+    jira.com/project-key: PEJ
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/cgs
