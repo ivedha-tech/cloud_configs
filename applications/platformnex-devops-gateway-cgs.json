@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: platformnex-devops-gateway-cgs
+  description: platformnex-devops-gateway platformnex-devops-gateway
+  annotations:
+    backstage.io/source-location: url:https://github.com/ivedha-tech/platformnex-devops-gateway
+    backstage.io/source-vcs: Github
+    github.com/project-slug: ivedha-tech/platformnex-devops-gateway
+    github.com/repo-url: https://github.com/ivedha-tech/platformnex-devops-gateway
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: global
+    google.com/cloudrun-project-slug: prj-dev-platform-next
+    google.com/cloudrun-location: us-central1
+    google.com/cloudrun-service-name: platformnex-devops-gateway
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/cgs
