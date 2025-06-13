@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
   name: apigee_service
-  description: apigee_serviceapigee_service
+  description: Apigee service Application
 spec:
   owner: group:default/guests
   type: digital
