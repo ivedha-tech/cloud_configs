@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
   name: myapp
-  description: |
-    sample description for my app
+  description: sample description for my app
 spec:
   owner: group:default/guests
+  type: type1
