@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: cgs
-  description: "Test         component "
+  description: "this is for test     "
   annotations:
     backstage.io/source-location: url:https://github.com/chamath-ivedha/cgs-test
     backstage.io/source-vcs: Github
