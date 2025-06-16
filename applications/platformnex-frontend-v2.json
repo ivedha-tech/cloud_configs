@@ -2,15 +2,15 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: platformnex-frontend-v2
-  description: platformnex-frontend-v2
+  description: Platformnex Frontend-v2 Application
   annotations:
     backstage.io/source-location: url:https://github.com/ivedha-tech/platformnex-frontend
     backstage.io/source-vcs: Github
-    sonarqube.org/project-key: platformnex2
     github.com/project-slug: ivedha-tech/platformnex-frontend
     github.com/repo-url: https://github.com/ivedha-tech/platformnex-frontend
+    jira.com/project-key: PEJ
 spec:
   type: service
   lifecycle: development
   owner: group:default/guests
-  system: system:default/platformnex-service
+  system: system:default/platformnex
