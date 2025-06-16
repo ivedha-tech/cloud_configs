@@ -2,11 +2,12 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: Sample-Frontend
-  description: this is sample decription
+  description: this is sample frontend
   annotations:
     backstage.io/source-location: url:http://35.202.96.217/platformnex/cloud_configs_test
-    bitbucket.org/project-slug: platformnex/cloud_configs_test
-    bitbucket.org/repo-url: https://github.com/MettaByte/project-latte
+    backstage.io/source-vcs: Gitlab
+    gitlab.com/project-slug: platformnex/cloud_configs_test
+    gitlab.com/instance: http://35.202.96.217
 spec:
   type: service
   lifecycle: development
