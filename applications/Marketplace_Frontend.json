@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Marketplace_Frontend
+  description: Marketplace React Frontend Library
+  annotations:
+    backstage.io/source-location: url:https://github.com/marketplace
+    backstage.io/source-vcs: Github
+    github.com/project-slug: marletplace
+    github.com/repo-url: https://github.com/marketplace
+spec:
+  type: library
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/cgs
