@@ -1,8 +1,15 @@
 apiVersion: backstage.io/v1alpha1
-kind: System
+kind: Component
 metadata:
   name: PlatformNEX_Plugins
-  description: PlatformNEX Plugins Collection
+  description: PlatformNEX Plugins Package Library
+  annotations:
+    backstage.io/source-location: url:https://github.com/platformnex/plugins
+    backstage.io/source-vcs: Github
+    github.com/project-slug: plugins
+    github.com/repo-url: https://github.com/platformnex/plugins
 spec:
-  owner: user:default/guest
-  type: Service
+  type: library
+  lifecycle: production
+  owner: group:default/guests
+  system: system:default/cgs
