@@ -2,6 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
   name: Marketplace
-  description: this is sample description
+  description: This is the markerplace application
 spec:
-  owner: user:default/guest
+  owner: group:default/guests
+  type: managed
