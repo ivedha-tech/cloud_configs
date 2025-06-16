@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: platformnex-frontend
+  description: "platformnex-frontend components "
+  annotations:
+    backstage.io/source-location: url:https://github.com/ivedha-tech/platformnex-frontend
+    backstage.io/source-vcs: Github
+    github.com/project-slug: ivedha-tech/platformnex-frontend
+    github.com/repo-url: https://github.com/ivedha-tech/platformnex-frontend
+    jira.com/project-key: PEJ
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/cgs
