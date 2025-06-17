@@ -1,0 +1,7 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: platformnex-2
+  description: platformnex-2 description
+spec:
+  owner: group:default/guests
