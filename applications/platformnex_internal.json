@@ -1,8 +1,15 @@
 apiVersion: backstage.io/v1alpha1
-kind: System
+kind: Component
 metadata:
   name: platformnex_internal
-  description: This Project is created for internal Testing purposes only
+  description: sample description to this resource
+  annotations:
+    backstage.io/source-location: url:https://github.com/ivedha-tech/platformnex-devops-gateway
+    backstage.io/source-vcs: Github
+    github.com/project-slug: ivedha-tech/platformnex-devops-gateway
+    github.com/repo-url: https://github.com/ivedha-tech/platformnex-devops-gateway
 spec:
+  type: service
+  lifecycle: staging
   owner: group:default/guests
-  type: Service
+  system: system:default/platformnex
