@@ -1,0 +1,7 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: "1"
+  description: oio;pk'pl;okjhukjgfrstrdt
+spec:
+  owner: user:default/guest
