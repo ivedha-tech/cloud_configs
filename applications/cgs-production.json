@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: cgs-production
+  description: test cgs-productioncgs-productioncgs-production
+  annotations:
+    backstage.io/source-location: url:https://github.com/chamath-ivedha/cgs-test
+    backstage.io/source-vcs: Github
+    github.com/project-slug: chamath-ivedha/cgs-test
+    github.com/repo-url: https://github.com/chamath-ivedha/cgs-test
+    jira.com/project-key: PEJ
+spec:
+  type: service
+  lifecycle: production
+  owner: group:default/guests
+  system: system:default/cgs
