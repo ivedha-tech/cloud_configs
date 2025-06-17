@@ -1,0 +1,24 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test_component
+  description: testing component onboarding for qa ssg
+  annotations:
+    backstage.io/source-location: url:https://github.com/ivedha-tech/platformnex-frontend
+    backstage.io/source-vcs: Github
+    github.com/project-slug: ivedha/platformnex-frontend
+    github.com/repo-url: https://github.com/ivedha-tech/platformnex-frontend
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/test_system
+  subcomponentOf: component:default/platformnex-frontend
+  providesApis:
+    - api:default/platformnex-backend
+  consumesApis:
+    - api:default/platformnex-backend
+  dependsOn:
+    - component:default/platformnex-frontend
+  dependencyOf:
+    - resource:default/platformnex-dev-DB
