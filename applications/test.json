@@ -1,8 +1,21 @@
 apiVersion: backstage.io/v1alpha1
-kind: System
+kind: Component
 metadata:
   name: test
-  description: lldacvvvvvvvvvvvvvvvvvvvvvvvv
+  description: testinggggggggggggggggggg
+  annotations:
+    backstage.io/source-location: url:https://github.com/ivedha-tech/test_repo
+    backstage.io/source-vcs: Github
+    github.com/project-slug: ivedha-tech/test_repo
+    github.com/repo-url: https://github.com/ivedha-tech/test_repo
 spec:
-  owner: user:default/guest
-  type: Template
+  type: website
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/platformnex
+  providesApis:
+    - api:default/platformnex-backend
+  consumesApis:
+    - api:default/platformnex-backend
+  dependsOn:
+    - component:default/test3tierdebugfe
