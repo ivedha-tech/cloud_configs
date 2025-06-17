@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: platformnex-3
+  description: some info about platformnex 3
+  annotations:
+    backstage.io/source-location: url:https://github.com/ivedha-tech/platformnex-frontend
+    backstage.io/source-vcs: Github
+    github.com/project-slug: platfromnex-frontend
+    github.com/repo-url: https://github.com/ivedha-tech/platfromnex-frontend
+    google.com/cloudbuild/cloudbuild-trigger-name: platformnex-frontend
+    google.com/cloudbuild/cloudbuild-project-slug: prj-dev-next
+    google.com/cloudbuild/cloudbuild-location: us-central1
+spec:
+  type: website
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/platformnex
