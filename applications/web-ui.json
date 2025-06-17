@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: web-ui
+  description: This component is UI component
+  annotations:
+    backstage.io/source-location: url:https://github.com/ivedha-tech/testops-web
+    backstage.io/source-vcs: Github
+    github.com/project-slug: testops-web
+    github.com/repo-url: https://github.com/ivedha-tech/testops-web
+spec:
+  type: website
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/Testops-Web
