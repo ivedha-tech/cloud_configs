@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: Testops-Web
+  description: Test ops automation and management
+spec:
+  owner: group:default/guests
+  type: service
