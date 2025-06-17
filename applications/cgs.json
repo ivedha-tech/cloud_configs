@@ -1,16 +1,7 @@
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: System
 metadata:
   name: cgs
-  description: vderrrrrrrvvvvvvvvvvvvvvvvvvvvvvv
-  annotations:
-    backstage.io/source-location: url:https://github.com/chamath-ivedha/cgs-test
-    backstage.io/source-vcs: Github
-    github.com/project-slug: chamath-ivedha/cgs-test
-    github.com/repo-url: https://github.com/chamath-ivedha/cgs-test
-    jira.com/project-key: PEJ
+  description: " test Service test Servicetest Servicetest Service"
 spec:
-  type: service
-  lifecycle: development
   owner: group:default/guests
-  system: system:default/cgs
