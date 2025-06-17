@@ -13,4 +13,4 @@ spec:
   type: service
   lifecycle: staging
   owner: group:default/guests
-  system: system:default/cgs
+  system: system:default/platformnex
