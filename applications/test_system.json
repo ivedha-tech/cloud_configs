@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: test_system
+  description: system testing for qa ssg
+spec:
+  owner: user:default/guest
+  type: product
