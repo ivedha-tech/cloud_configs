@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: cgs-frontend-dev
+  description: cgs-frontend-dev component
+  annotations:
+    backstage.io/source-location: url:https://github.com/cgs-tech/test-repo
+    backstage.io/source-vcs: Github
+    sonarqube.org/project-key: platformnex
+    github.com/project-slug: cgs-tech/test-repo
+    github.com/repo-url: https://github.com/cgs-tech/test-repo
+spec:
+  type: service
+  lifecycle: development
+  owner: user:default/guest
+  system: system:default/Test-Application
