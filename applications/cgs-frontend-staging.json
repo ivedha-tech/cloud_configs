@@ -1,0 +1,25 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: cgs-frontend-staging
+  description: cgs-frontend-staging component
+  annotations:
+    backstage.io/source-location: url:https://github.com/cgs-tech/test-repo
+    backstage.io/source-vcs: Github
+    sonarqube.org/project-key: platformnex
+    github.com/project-slug: cgs-tech/test-repo
+    github.com/repo-url: https://github.com/cgs-tech/test-repo
+    pulumi.com/project-slug: mcmuralishclint/pulumi-cicd/dev
+    pulumi.com/orga-slug: mcmuralishclint
+    google.com/cloudrun-project-slug: prj-dev-platform-next
+    google.com/cloudrun-location: us-central1
+    google.com/cloudrun-service-name: platformnex-frontend
+    google.com/cloudbuild/cloudbuild-trigger-name: platformnex-frontend
+    google.com/cloudbuild/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild/cloudbuild-location: us-central1
+    jira.com/project-key: PEJ
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/Test-Application
