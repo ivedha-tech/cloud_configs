@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: guest
+  description: test group description for onboarding
+spec:
+  type: guest
+  children: []
+  members:
+    - user:default/guest
