@@ -5,4 +5,3 @@ metadata:
   description: sample description for my app
 spec:
   owner: group:default/guests
-  type: type1
