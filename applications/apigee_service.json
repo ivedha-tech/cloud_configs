@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: apigee_service
-  description: Apigee service for testing
+  description: test  apigee  component
   annotations:
     backstage.io/source-location: url:https://github.com/kushanD95/swag-test-temp100
     backstage.io/source-vcs: Github
