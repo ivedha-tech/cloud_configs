@@ -1,8 +1,14 @@
 apiVersion: backstage.io/v1alpha1
-kind: System
+kind: API
 metadata:
   name: test-app
-  description: Test app for redirections
+  description: qwertyuiokjhgfdsxcvbnbfddfgh
+  annotations:
+    backstage.io/source-location: url:https://github.com/kushanD95/swag-test-temp100
+    backstage.io/source-vcs: Github
 spec:
+  type: openapi
+  lifecycle: development
   owner: group:default/guests
-  type: digital
+  system: system:default/test-app
+  definition: apigee_service
