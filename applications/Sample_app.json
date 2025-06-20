@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Sample_app
+  description: Management Portal details
+  annotations:
+    backstage.io/source-location: url:https://github.com/ivedha-tech/testops-web
+    backstage.io/source-vcs: Github
+    github.com/project-slug: ivedha-tech/testops-web
+    github.com/repo-url: https://github.com/ivedha-tech/testops-web
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/platformnex
