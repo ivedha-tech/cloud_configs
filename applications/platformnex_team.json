@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: platformnex_team
+  description: This is to onboard PlatformNEX Team
+spec:
+  type: Project
+  children: []
+  members:
+    - user:default/guest
