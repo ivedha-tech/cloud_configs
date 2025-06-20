@@ -1,21 +1,9 @@
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: Resource
 metadata:
   name: test
-  description: testinggggggggggggggggggg
-  annotations:
-    backstage.io/source-location: url:https://github.com/ivedha-tech/test_repo
-    backstage.io/source-vcs: Github
-    github.com/project-slug: ivedha-tech/test_repo
-    github.com/repo-url: https://github.com/ivedha-tech/test_repo
+  description: testinggggggggggggggg
 spec:
-  type: website
-  lifecycle: development
+  type: database
   owner: group:default/guests
   system: system:default/platformnex
-  providesApis:
-    - api:default/platformnex-backend
-  consumesApis:
-    - api:default/platformnex-backend
-  dependsOn:
-    - component:default/test3tierdebugfe
