@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: test-app
+  description: Test app for redirections
+spec:
+  owner: group:default/guests
+  type: digital
