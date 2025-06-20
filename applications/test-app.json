@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
   name: test-app
-  description: qwertyuiokjhgfdsxcvbnbfddfgh
+  description: wertyuiosdfghjertyucvbnghjkkk
   annotations:
     backstage.io/source-location: url:https://github.com/kushanD95/swag-test-temp100
     backstage.io/source-vcs: Github
