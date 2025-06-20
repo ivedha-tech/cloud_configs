@@ -2,25 +2,14 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: MyAppComponent
-  description: a sample description for a component
+  description: this is a sample description for my component
   annotations:
     backstage.io/source-location: url:https://github.com/vimukthidulnath/MPtest
     backstage.io/source-vcs: Github
-    github.com/project-slug: https://github.com/vimukthidulnath/MPtest
+    github.com/project-slug: vimukthidulnath/MPtest
     github.com/repo-url: https://github.com/vimukthidulnath/MPtest
 spec:
   type: service
-  lifecycle: production
+  lifecycle: development
   owner: group:default/guests
-  system: system:default/myapp
-  subcomponentOf: component:default/platformnex-frontend
-  providesApis:
-    - api:default/platformnex-backend
-  consumesApis:
-    - api:default/platformnex-backend
-  dependsOn:
-    - component:default/platformnex-frontend
-    - resource:default/platformnex-dev-DB
-  dependencyOf:
-    - component:default/platformnex-frontend
-    - resource:default/platformnex-dev-DB
+  system: system:default/platformnex
