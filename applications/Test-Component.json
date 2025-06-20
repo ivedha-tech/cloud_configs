@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Test-Component
+  description: Test-Component description
+  annotations:
+    backstage.io/source-location: url:https://github.com/cgs-tech/test-repo
+    backstage.io/source-vcs: Github
+    sonarqube.org/project-key: platformnex
+    github.com/project-slug: cgs-tech/test-repo
+    github.com/repo-url: https://github.com/cgs-tech/test-repo
+    jira.com/project-key: PEJ
+spec:
+  type: service
+  lifecycle: development
+  owner: user:default/guest
+  system: system:default/Test-Application
