@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: Platformnex_new
+  description: This is a test component
+spec:
+  type: database
+  owner: group:default/guests
+  system: system:default/platformnex
