@@ -1,14 +1,8 @@
 apiVersion: backstage.io/v1alpha1
-kind: API
+kind: System
 metadata:
   name: platformnex
-  description: platformnex foe the test
-  annotations:
-    backstage.io/source-location: url:https://github.com/ivedha-tech/platformnex-devops-gateway
-    backstage.io/source-vcs: Github
+  description: Basic information about the platformnex application.
 spec:
-  type: asyncapi
-  lifecycle: development
   owner: group:default/guests
-  system: system:default/test
-  definition: basic api
+  type: digital
