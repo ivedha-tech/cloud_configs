@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: testwest
+  description: adding to test application
+  annotations:
+    backstage.io/source-location: url:https://github.com/ivedha-tech/apigee-dev-portal
+    backstage.io/source-vcs: Github
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/Test4-Application
