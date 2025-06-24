@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: Group1
+  description: descripton of the group 1
+spec:
+  type: main
+  parent: group:default/guests
+  children: []
+  members:
+    - user:default/guest
