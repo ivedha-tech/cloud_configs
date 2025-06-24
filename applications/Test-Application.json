@@ -4,5 +4,4 @@ metadata:
   name: Test-Application
   description: Test-Application description
 spec:
-  owner: user:default/guest
-  type: ""
+  owner: group:default/guests
