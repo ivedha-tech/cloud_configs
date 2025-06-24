@@ -13,5 +13,5 @@ metadata:
 spec:
   type: service
   lifecycle: development
-  owner: user:default/guest
-  system: system:default/Test-Application
+  owner: group:default/guests
+  system: system:default/test
