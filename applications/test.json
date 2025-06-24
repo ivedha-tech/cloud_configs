@@ -1,9 +1,8 @@
 apiVersion: backstage.io/v1alpha1
-kind: Resource
+kind: System
 metadata:
   name: test
-  description: testinggggggggggggggg
+  description: fghhgfghjhgfghjhgfghjh
 spec:
-  type: database
   owner: group:default/guests
-  system: system:default/platformnex
+  type: digital
