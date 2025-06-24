@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: Group5
+  description: Group 5 works on frontend part of every app
+spec:
+  type: main
+  children: []
+  members:
+    - user:default/guest
