@@ -2,6 +2,6 @@ apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
   name: Test-Application
-  description: test applicationsssss
+  description: Test-Application description
 spec:
-  owner: group:default/Group2
+  owner: group:default/guests
