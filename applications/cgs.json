@@ -1,7 +1,13 @@
 apiVersion: backstage.io/v1alpha1
-kind: System
+kind: Component
 metadata:
   name: cgs
-  description: This is a sample application
+  description: Test cpmponent Test cpmponent Test cpmponent
+  annotations:
+    backstage.io/source-location: url:https://github.com/chamath-ivedha/cgs-test
+    backstage.io/source-vcs: Github
 spec:
+  type: service
+  lifecycle: development
   owner: group:default/guests
+  system: system:default/QA-test
