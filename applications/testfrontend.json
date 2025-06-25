@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: testfrontend
+  description: descsdjskdjkjkjkjkjkj
+  annotations:
+    backstage.io/source-location: url:https://github.com/ivedha-tech/platformnex-frontend
+    backstage.io/source-vcs: Github
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/QA-test
