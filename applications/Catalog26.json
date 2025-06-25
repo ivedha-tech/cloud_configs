@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Catalog26
+  description: dfsafffffffffffffffffffffffffffffff
+  annotations:
+    backstage.io/source-location: url:https://github.com/ivedha-tech/platformnex-frontend
+    backstage.io/source-vcs: Github
+    sonarqube.org/project-key: platformnex
+    jira.com/project-key: PEJ
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/QA-test
