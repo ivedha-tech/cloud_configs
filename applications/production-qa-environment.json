@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: production-qa-environment
+  description: production-qa-environment description
+  annotations:
+    backstage.io/source-location: url:https://github.com/cgs-tech/test-repo
+    backstage.io/source-vcs: Github
+    sonarqube.org/project-key: platformnex
+    jira.com/project-key: PEJ
+spec:
+  type: service
+  lifecycle: production
+  owner: group:default/guests
+  system: system:default/Test-Application
