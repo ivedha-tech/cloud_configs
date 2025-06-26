@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: test_api_env
+  description: enviroment tab testing
+  annotations:
+    backstage.io/source-location: url:https://github.com/ivedha-tech/platformnex-frontend
+    backstage.io/source-vcs: Github
+spec:
+  type: openapi
+  lifecycle: development
+  owner: group:default/Test
+  system: system:default/platformnex
+  definition: testing
