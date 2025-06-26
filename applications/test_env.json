@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test_env
+  description: test environment for enviroment tab in table
+  annotations:
+    backstage.io/source-location: url:https://github.com/ivedha-tech/platformnex-frontend
+    backstage.io/source-vcs: Github
+spec:
+  type: website
+  lifecycle: production
+  owner: group:default/guests
+  system: system:default/platformnex
