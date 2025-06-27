@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: platformnex-frontend-new
-  description: "New platformnex frontend app "
+  description: "someinfo aout the app "
   annotations:
     backstage.io/source-location: url:https://github.com/ivedha-tech/platformnex-frontend
     backstage.io/source-vcs: Github
@@ -10,7 +10,7 @@ metadata:
     google.com/cloudbuild/cloudbuild-project-slug: prj-dev-platform-next
     google.com/cloudbuild/cloudbuild-location: us-central1
 spec:
-  type: service
+  type: website
   lifecycle: staging
   owner: group:default/guests
   system: system:default/platformnex
