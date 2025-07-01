@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: sample-cpmponent
+  description: "this is sample component "
+  annotations:
+    backstage.io/source-location: url:http://35.202.96.217/platformnex/cloud_configs_test
+    backstage.io/source-vcs: Github
+    jira.com/project-key: PEJ
+spec:
+  type: website
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/Marketplace
