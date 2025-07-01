@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: sample-cpmponent
-  description: "this is sample component "
+  description: this is sample component aaaaaaa
   annotations:
     backstage.io/source-location: url:https://github.com/platformnex/cloud_configs/edit/feature-yaml/applications/sample-cpmponent.yaml
     backstage.io/source-vcs: Github
@@ -14,6 +14,7 @@ spec:
   owner: group:default/guests
   system: system:default/Marketplace
   providesApis: []
-  consumesApis: []
+  consumesApis:
+    - api:default/platformnex-backend
   dependsOn: []
   dependencyOf: []
