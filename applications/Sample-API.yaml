@@ -2,9 +2,9 @@ apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
   name: Sample-API
-  description: sample deacirprgfdsfknm
+  description: sample deaaaaaaaaaaaaaaaaaaaaaa
   annotations:
-    backstage.io/source-location: url:http://35.202.96.217/platformnex/cloud_configs_test
+    backstage.io/source-location: url:https://github.com/platformnex/cloud_configs/edit/feature-yaml/applications/Sample-API.yaml
     backstage.io/source-vcs: Github
 spec:
   type: asyncapi
