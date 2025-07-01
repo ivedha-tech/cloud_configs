@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: Sample-API
+  description: sample deacirprgfdsfknm
+  annotations:
+    backstage.io/source-location: url:http://35.202.96.217/platformnex/cloud_configs_test
+    backstage.io/source-vcs: Github
+spec:
+  type: asyncapi
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/Marketplace
+  definition: this openapi backend
