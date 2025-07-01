@@ -4,11 +4,16 @@ metadata:
   name: sample-cpmponent
   description: "this is sample component "
   annotations:
-    backstage.io/source-location: url:http://35.202.96.217/platformnex/cloud_configs_test
+    backstage.io/source-location: url:https://github.com/platformnex/cloud_configs/edit/feature-yaml/applications/sample-cpmponent.yaml
     backstage.io/source-vcs: Github
+    sonarqube.org/project-key: https://zod.dev
     jira.com/project-key: PEJ
 spec:
   type: website
   lifecycle: development
   owner: group:default/guests
   system: system:default/Marketplace
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
