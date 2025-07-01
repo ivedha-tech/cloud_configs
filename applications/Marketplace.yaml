@@ -2,6 +2,6 @@ apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
   name: Marketplace
-  description: sample description for marketplace
+  description: sample desfsddfsfdsfdfsfsfdsfsf
 spec:
   owner: group:default/guests
