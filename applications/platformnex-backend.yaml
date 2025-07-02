@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: platformnex-backend
+  description: platformnex-backend component
+  annotations:
+    backstage.io/source-location: url:https://github.com/ivedha-tech/platformnex-backend
+    backstage.io/source-vcs: Github
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/platformnex
