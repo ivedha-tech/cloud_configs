@@ -2,9 +2,9 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: Test-Component
-  description: Test-Component description
+  description: Test-Component description 123
   annotations:
-    backstage.io/source-location: url:https://github.com/cgs-tech/test-repo
+    backstage.io/source-location: url:https://github.com/platformnex/cloud_configs/edit/feature-yaml/applications/Test-Component.yaml
     backstage.io/source-vcs: Github
     sonarqube.org/project-key: platformnex
     google.com/cloudrun-project-slug: prj-dev-platform-next
@@ -19,3 +19,7 @@ spec:
   lifecycle: development
   owner: group:default/guests
   system: system:default/Test-Application
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
