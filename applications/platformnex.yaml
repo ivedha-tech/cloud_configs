@@ -2,6 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
   name: platformnex
-  description: PlatformNex Internal System with all the services.
+  description: PlatformNex Internal System with all the services and resources
 spec:
-  owner: group:default/guests
+  owner: group:default/Test-Application
+  type: digital
