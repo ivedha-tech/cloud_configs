@@ -1,13 +1,15 @@
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: API
 metadata:
   name: platformnex-backend
-  description: platformnex-backend component
+  description: PlatformNex Backend Service
   annotations:
     backstage.io/source-location: url:https://github.com/ivedha-tech/platformnex-backend
     backstage.io/source-vcs: Github
 spec:
-  type: service
+  type: grpc
   lifecycle: development
-  owner: group:default/guests
+  owner: group:default/Test-Application
   system: system:default/platformnex
+  definition: syntax = "proto3";service Exampler {  rpc Example (ExampleMessage)
+    returns (ExampleMessage) {};}message ExampleMessage {  string example = 1;};
