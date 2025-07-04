@@ -4,7 +4,7 @@ metadata:
   name: Stage-Component
   description: Stage-Component descriptionsssssss
   annotations:
-    backstage.io/source-location: url:https://github.com/platformnex/cloud_configs/edit/feature-yaml/applications/Stage-Component.yaml
+    backstage.io/source-location: url:https://github.com/cgs-tech/test-repo
     backstage.io/source-vcs: Github
     sonarqube.org/project-key: platformnex
     google.com/cloudrun-project-slug: prj-dev-platform-next
