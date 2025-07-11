@@ -1,0 +1,7 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: sakun
+  description: test test test test test
+spec:
+  owner: group:default/guests
