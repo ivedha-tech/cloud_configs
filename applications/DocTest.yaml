@@ -1,0 +1,7 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: DocTest
+  description: DocTest DocTest DocTest DocTest DocTest
+spec:
+  owner: group:default/guests
