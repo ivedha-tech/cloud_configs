@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: cloud_configs
+  description: cloud_configs cloud_configs cloud_configs
+  annotations:
+    backstage.io/source-location: url:https://github.com/ivedha-tech/cloud_configs
+    backstage.io/source-vcs: Github
+spec:
+  type: service
+  lifecycle: staging
+  owner: group:default/guests
+  system: system:default/platformnex
