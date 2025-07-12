@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Order-management-system
+  description: Order-management-systemOrder-management-systemOrder-management-systemOrder-management-system
+  annotations:
+    backstage.io/source-location: url:https://github.com/ivedha-tech/compliance-portal
+    backstage.io/source-vcs: Github
+spec:
+  type: service
+  lifecycle: staging
+  owner: group:default/guests
+  system: system:default/Ecommerce
