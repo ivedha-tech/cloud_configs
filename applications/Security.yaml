@@ -1,0 +1,7 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: Security
+  description: this is an application in the security team.
+spec:
+  owner: group:default/guests
