@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: ServiceNEX_Marketplace
+  description: ServiceNEX Marketplace offers a centralized Platform for cloud services
+spec:
+  owner: group:default/guests
+  type: platform
