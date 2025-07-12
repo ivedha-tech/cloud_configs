@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: test_onboard
+  description: testing onboarding flow in dev env
+spec:
+  owner: group:default/guests
+  type: test
