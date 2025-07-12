@@ -1,0 +1,7 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: Ecommerce
+  description: This is an ecommerce app.This is an ecommerce app.This is an ecommerce app
+spec:
+  owner: group:default/guests
