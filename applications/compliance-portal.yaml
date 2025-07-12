@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: compliance-portal
+  description: This is a compliance portal undeer the security team
+  annotations:
+    backstage.io/source-location: url:https://github.com/ivedha-tech/compliance-portal
+    backstage.io/source-vcs: Github
+spec:
+  type: service
+  lifecycle: staging
+  owner: group:default/guests
+  system: system:default/Security
