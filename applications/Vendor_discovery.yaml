@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Vendor_discovery
+  description: Vendor discovery supports the vendor information retrieval
+  annotations:
+    backstage.io/source-location: url:https://github.com/ivedha-tech/servicenex
+    backstage.io/source-vcs: Github
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/ServiceNEX_Marketplace
