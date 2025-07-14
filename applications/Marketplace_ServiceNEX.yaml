@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: Marketplace_ServiceNEX
+  description: This application handles SonarQube provides the capability to not
+    only show health of an application but also to highlight issues newly
+    introduced. With a Quality Gate in place, you can fix the leak and therefore
+    improve code quality mechanically.
+spec:
+  owner: group:default/guests
+  type: SaaS Application
