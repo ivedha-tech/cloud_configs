@@ -2,7 +2,38 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: platformnex-backend-dev
-  description: platformnex-backend-dev service
+  description: platformnex-backend-dev serviceplatformnex-backend-dev
+    serviceplatformnex-backend-dev serviceplatformnex-backend-dev
+    serviceplatformnex-backend-dev serviceplatformnex-backend-dev
+    serviceplatformnex-backend-dev serviceplatformnex-backend-dev
+    serviceplatformnex-backend-dev serviceplatformnex-backend-dev
+    serviceplatformnex-backend-dev serviceplatformnex-backend-dev
+    serviceplatformnex-backend-dev serviceplatformnex-backend-dev
+    serviceplatformnex-backend-dev serviceplatformnex-backend-dev
+    serviceplatformnex-backend-dev serviceplatformnex-backend-dev
+    serviceplatformnex-backend-dev serviceplatformnex-backend-dev
+    serviceplatformnex-backend-dev serviceplatformnex-backend-dev
+    serviceplatformnex-backend-dev serviceplatformnex-backend-dev
+    serviceplatformnex-backend-dev serviceplatformnex-backend-dev
+    serviceplatformnex-backend-dev serviceplatformnex-backend-dev
+    serviceplatformnex-backend-dev serviceplatformnex-backend-dev
+    serviceplatformnex-backend-dev serviceplatformnex-backend-dev
+    serviceplatformnex-backend-dev serviceplatformnex-backend-dev
+    serviceplatformnex-backend-dev serviceplatformnex-backend-dev
+    serviceplatformnex-backend-dev serviceplatformnex-backend-dev
+    serviceplatformnex-backend-dev serviceplatformnex-backend-dev
+    serviceplatformnex-backend-dev serviceplatformnex-backend-dev
+    serviceplatformnex-backend-dev serviceplatformnex-backend-dev
+    serviceplatformnex-backend-dev serviceplatformnex-backend-dev
+    serviceplatformnex-backend-dev serviceplatformnex-backend-dev
+    serviceplatformnex-backend-dev serviceplatformnex-backend-dev
+    serviceplatformnex-backend-dev serviceplatformnex-backend-dev
+    serviceplatformnex-backend-dev serviceplatformnex-backend-dev
+    serviceplatformnex-backend-dev serviceplatformnex-backend-dev
+    serviceplatformnex-backend-dev serviceplatformnex-backend-dev
+    serviceplatformnex-backend-dev serviceplatformnex-backend-dev
+    serviceplatformnex-backend-dev serviceplatformnex-backend-dev
+    serviceplatformnex-backend-dev service
   annotations:
     backstage.io/source-location: url:https://github.com/ivedha-tech/platformnex-backend
     backstage.io/source-vcs: Github
