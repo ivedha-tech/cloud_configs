@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: testapi
+  description: ccccccccccccccccccccccccccc
+  annotations:
+    backstage.io/source-location: url:https://github.com/ivedha-tech/platformnex-devops-gateway
+    backstage.io/source-vcs: Github
+spec:
+  type: openapi
+  lifecycle: staging
+  owner: group:default/guests
+  system: system:default/test001
+  definition: "hgvhgvbv jhgcjhgfkuy4568 ##$$%"
