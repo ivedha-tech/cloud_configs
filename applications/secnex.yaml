@@ -2,6 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
   name: secnex
-  description: sdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsd
+  description: SecNex is a platform for security and automation and provides SaaS
+    solutions for cyber security and identity management.
 spec:
   owner: group:default/guests
