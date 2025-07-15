@@ -2,6 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
   name: workbeam_test
-  description: sample description for workebam
+  description: Workbeam is Canadas most trusted online business services and
+    freelance marketplace.
 spec:
   owner: group:default/guests
