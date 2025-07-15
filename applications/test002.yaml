@@ -5,3 +5,4 @@ metadata:
   description: testing the application onboard
 spec:
   owner: group:default/guests
+  type: product
