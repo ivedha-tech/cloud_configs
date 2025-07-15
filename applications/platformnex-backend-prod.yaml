@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: platformnex-backend-prod
+  description: platformnex-backend-prod service.
+  annotations:
+    backstage.io/source-location: url:https://github.com/ivedha-tech/platformnex-backend
+    backstage.io/source-vcs: Github
+    sonarqube.org/project-key: platformnex
+    pulumi.com/project-slug: mcmuralishclint/pulumi-cicd/dev
+    pulumi.com/orga-slug: mcmuralishclint
+    jira.com/project-key: PEJ
+spec:
+  type: service
+  lifecycle: production
+  owner: group:default/guests
+  system: system:default/Platformnex
