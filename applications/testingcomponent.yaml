@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: testingcomponent
+  description: cccccccccccccccccccccc
+  annotations:
+    backstage.io/source-location: url:https://github.com/ivedha-tech/platformnex-devops-gateway
+    backstage.io/source-vcs: Github
+    jira.com/project-key: ""
+spec:
+  type: website
+  lifecycle: staging
+  owner: group:default/guests
+  system: system:default/test002
