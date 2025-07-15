@@ -4,15 +4,15 @@ metadata:
   name: platformnex-frontend-staging
   description: platformnex-frontend; staging environment service.
   annotations:
-    backstage.io/source-location: url:https://github.com/ivedha-tech/platformnex-frontend
+    backstage.io/source-location: url:https://github.com/ivedha-tech/cloud_configs/edit/feature-yaml-dit2/applications/platformnex-frontend-staging.yaml
     backstage.io/source-vcs: Github
     sonarqube.org/project-key: platformnex
     pulumi.com/project-slug: mcmuralishclint/pulumi-cicd/dev
     pulumi.com/orga-slug: mcmuralishclint
     google.com/cloudrun-project-slug: prj-dev-platform-next
     google.com/cloudrun-location: us-central1
-    google.com/cloudrun-service-name: platformnex-frontend
-    google.com/cloudbuild-trigger-name: platformnex-frontend
+    google.com/cloudrun-service-name: platformnex-v2-frontend-qa1
+    google.com/cloudbuild-trigger-name: platformnex-V2-frontend-QA
     google.com/cloudbuild-project-slug: prj-dev-platform-next
     google.com/cloudbuild-location: us-central1
     jira.com/project-key: PEJ
@@ -21,3 +21,7 @@ spec:
   lifecycle: staging
   owner: group:default/guests
   system: system:default/Platformnex
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
