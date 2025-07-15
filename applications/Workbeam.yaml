@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: Workbeam
+  description: Workbeam is an AI-powered professional work platform that connects
+    organizations with vetted freelance talent and intelligent agents to form
+    agile, execution ready teams.
+spec:
+  owner: group:default/guests
