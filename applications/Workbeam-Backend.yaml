@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Workbeam-Backend
+  description: The backend server for workbeam
+  annotations:
+    backstage.io/source-location: url:https://github.com/ivedha-tech/workbeam
+    backstage.io/source-vcs: Github
+    jira.com/project-key: ""
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/Workbeam
