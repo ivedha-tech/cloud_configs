@@ -1,0 +1,7 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: workbeam_test
+  description: sample description for workebam
+spec:
+  owner: group:default/guests
