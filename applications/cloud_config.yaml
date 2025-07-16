@@ -1,0 +1,7 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: cloud_config
+  description: "some info about cloud config "
+spec:
+  owner: group:default/guests
