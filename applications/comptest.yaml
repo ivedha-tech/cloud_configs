@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: comptest
+  description: bbnmmnnbbbnnnnnccccvvnn
+  annotations:
+    backstage.io/source-location: url:https://github.com/ivedha-tech/apigee-service
+    backstage.io/source-vcs: Bitbucket
+spec:
+  type: library
+  lifecycle: staging
+  owner: group:default/guests
+  system: system:default/test001
