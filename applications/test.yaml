@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: test
+  description: test test test test test test test test test test test test
+spec:
+  owner: group:default/guests
+  type: digital
