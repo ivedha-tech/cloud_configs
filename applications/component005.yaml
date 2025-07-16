@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: component005
+  description: ncncbdhdvx. bvjdksnsbh
+  annotations:
+    backstage.io/source-location: url:https://github.com/ivedha-tech/apigee-service
+    backstage.io/source-vcs: Github
+spec:
+  type: service
+  lifecycle: staging
+  owner: group:default/guests
+  system: system:default/test001
