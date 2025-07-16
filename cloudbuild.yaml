@@ -1,0 +1,66 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    id: 'Build'
+    args:
+      - '-c'
+      - |
+        echo "Building Docker image with the following environment variables:"
+
+        docker build -t cloud_config \
+
+        -t cloud_config .
+
+    entrypoint: bash
+    secretEnv:
+
+
+  # Tag the image for Artifact Registry
+  - name: 'gcr.io/cloud-builders/docker'
+    id: 'Tag'
+    args: [
+      'tag',
+      'cloud_config',
+      'us-central1-docker.pkg.dev/${PROJECT_ID}/prj-dev-platform-next/cloud_config:latest'
+    ]
+
+  # Push the image to Artifact Registry
+  - name: 'gcr.io/cloud-builders/docker'
+    id: 'Push'
+    args: [
+      'push',
+      'us-central1-docker.pkg.dev/${PROJECT_ID}/prj-dev-platform-next/cloud_config:latest'
+    ]
+
+  # Deploy to Cloud Run
+  - name: 'gcr.io/cloud-builders/gcloud'
+    entrypoint: gcloud
+    id: 'Deploy'
+    args:
+      - 'run'
+      - 'deploy'
+      - 'cloud_config'
+      - '--image=us-central1-docker.pkg.dev/${PROJECT_ID}/prj-dev-platform-next/cloud_config:latest'
+      - '--region=us-central1'
+      - '--platform=managed'
+      - '--allow-unauthenticated'
+      - '--port=80'
+      - '--memory=512Mi'
+      - '--cpu=1'
+      - '--min-instances=0'
+      - '--max-instances=10'
+    secretEnv: []
+
+# Store images in Artifact Registry
+images:
+  - 'us-central1-docker.pkg.dev/${PROJECT_ID}/prj-dev-platform-next/cloud_config:latest'
+
+# Set timeout for the build
+timeout: '1800s'
+
+# Set the default build environment
+options:
+  logging: CLOUD_LOGGING_ONLY
+
+# Available secrets from Secret Manager
+availableSecrets:
+  secretManager:
