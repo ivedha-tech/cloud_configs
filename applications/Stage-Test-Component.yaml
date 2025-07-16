@@ -4,7 +4,7 @@ metadata:
   name: Stage-Test-Component
   description: Stage-Test-Component description
   annotations:
-    backstage.io/source-location: url:https://github.com/cgs-tech/test-repo
+    backstage.io/source-location: url:https://github.com/chamath-ivedha/cgs-test
     backstage.io/source-vcs: Github
     sonarqube.org/project-key: platformnex
     google.com/cloudrun-project-slug: prj-dev-platform-next
