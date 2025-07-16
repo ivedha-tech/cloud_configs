@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: hello_world
+  description: "some info about hello word app "
+  annotations:
+    backstage.io/source-location: url:https://github.com/ivedha-tech/nodejs_app
+    backstage.io/source-vcs: Github
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/HelloWorld
