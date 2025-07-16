@@ -4,10 +4,14 @@ metadata:
   name: component005
   description: ncncbdhdvx. bvjdksnsbh
   annotations:
-    backstage.io/source-location: url:https://github.com/ivedha-tech/apigee-service
+    backstage.io/source-location: url:https://github.com/ivedha-tech/cloud_configs/edit/feature-yaml-qa1/applications/component005.yaml
     backstage.io/source-vcs: Github
 spec:
   type: service
   lifecycle: staging
   owner: group:default/guests
   system: system:default/test001
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
