@@ -18,8 +18,4 @@ spec:
   type: service
   lifecycle: staging
   owner: group:default/guests
-  system: system:default/Test-Application
-  providesApis: []
-  consumesApis: []
-  dependsOn: []
-  dependencyOf: []
+  system: system:default/QA-Test
