@@ -4,7 +4,7 @@ metadata:
   name: Production-Test-Component
   description: Production-Test-Component
   annotations:
-    backstage.io/source-location: url:https://github.com/cgs-tech/test-repo
+    backstage.io/source-location: url:https://github.com/cgs-tech/test-repo-2
     backstage.io/source-vcs: Github
     sonarqube.org/project-key: platformnex
     google.com/cloudrun-project-slug: prj-dev-platform-next
@@ -18,4 +18,4 @@ spec:
   type: service
   lifecycle: production
   owner: group:default/guests
-  system: system:default/Test-Application
+  system: system:default/QA-Test
