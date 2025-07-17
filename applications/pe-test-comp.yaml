@@ -4,10 +4,14 @@ metadata:
   name: pe-test-comp
   description: pe-test-comp description
   annotations:
-    backstage.io/source-location: url:https://github.com/ivedha-tech/platformnex-frontend
+    backstage.io/source-location: url:url:https://github.com/ivedha-tech/platformnex-frontend
     backstage.io/source-vcs: Github
 spec:
   type: service
   lifecycle: development
   owner: group:default/guests
   system: system:default/Test-Applications
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
