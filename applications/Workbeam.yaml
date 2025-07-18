@@ -1,13 +1,10 @@
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: System
 metadata:
   name: Workbeam
-  description: Workbeam application
-  annotations:
-    backstage.io/source-location: url:https://github.com/ivedha-tech/workbeam
-    backstage.io/source-vcs: Github
+  description: Workbeam is a modern platform that orchestrates intelligent work
+    across talent, partners, and AI agents. It helps companies build flexible,
+    high-performance teams by integrating freelance experts, strategic partners,
+    and task-specific AI into a unified workflow.
 spec:
-  type: service
-  lifecycle: development
   owner: group:default/guests
-  system: system:default/Workbeam
