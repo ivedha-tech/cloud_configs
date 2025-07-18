@@ -1,0 +1,7 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: nexaapplication
+  description: nexaapplication nexaapplication nexaapplication
+spec:
+  owner: group:default/guests
