@@ -1,0 +1,47 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: qwqwsqw
+  description: gegtrgrtgrtgrtgrtgrtgvrtgtrgtrgftr
+spec:
+  type: storage
+  owner: group:default/guests
+  system: system:default/Workbeam
+  dependsOn:
+    - component:default/cloud_config_main
+    - component:default/cloudops-gateway-dev
+    - component:default/cloudops-gateway-prod
+    - component:default/cloudops-gateway-staging
+    - component:default/devops-gateway-dev
+    - component:default/devops-gateway-prod
+    - component:default/devops-gateway-staging
+    - component:default/Dev-Test-Component
+    - component:default/finops-gateway-dev
+    - component:default/finops-gateway-prod
+    - component:default/finops-gateway-staging
+    - component:default/helloWorlApp
+    - component:default/hello_world
+    - component:default/hello-world-3
+    - component:default/platformnex-backend-dev
+    - component:default/platformnex-backend-prod
+    - component:default/platformnex-backend-staging
+    - component:default/platformnex-frontend-dev
+    - component:default/platformnex-frontend-prod
+    - component:default/platformnex-frontend-staging
+    - component:default/Production-Test-Component
+    - component:default/ptnexl-be
+    - component:default/ptnexl-fe
+    - component:default/ptnexm-be
+    - component:default/ptnexm-fe
+    - component:default/ptnexn-be
+    - component:default/ptnexn-fe
+    - component:default/Stage-Test-Component
+    - component:default/test-comp
+    - component:default/testrepob
+    - component:default/testrepof
+    - component:default/Workbeam-Backend
+    - component:default/Workbeam-Frontend
+  dependencyOf:
+    - component:default/devops-gateway-staging
+  region: us-central1
+  project: test
