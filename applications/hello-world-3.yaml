@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: hello-world-3
+  description: "some info about component "
+  annotations:
+    backstage.io/source-location: url:https://github.com/ivedha-tech/hello-world
+    backstage.io/source-vcs: Github
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/HelloWorld
