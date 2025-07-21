@@ -4,7 +4,7 @@ metadata:
   name: platformnex-frontend-dev
   description: PlatformNEX-frontend service; development environment.
   annotations:
-    backstage.io/source-location: url:url:url:https://github.com/ivedha-tech/platformnex-frontend
+    backstage.io/source-location: url:url:url:url:https://github.com/ivedha-tech/platformnex-frontend
     backstage.io/source-vcs: Github
     sonarqube.org/project-key: platformnex
     pulumi.com/project-slug: mcmuralishclint/pulumi-cicd/dev
