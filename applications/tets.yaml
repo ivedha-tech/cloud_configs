@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: tets
+  description: freferffffffffffffffffffffffffffffffffff
+spec:
+  type: kubernetes_provision
+  owner: group:default/guests
+  region: us-central1grte
+  project: rtgg
