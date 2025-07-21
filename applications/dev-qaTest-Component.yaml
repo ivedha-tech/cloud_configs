@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: dev-qaTest-Component
+  description: dev-qaTest-Component description
+  annotations:
+    backstage.io/source-location: url:https://github.com/cgs-tech/test-repo-2
+    backstage.io/source-vcs: Github
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/HelloWorld
