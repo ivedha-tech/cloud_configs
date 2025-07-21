@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: platformnexdb
+  description: platform nex main data base for comm
+spec:
+  type: cloud_sql
+  owner: group:default/guests
+  region: us-central1
+  project: platfrmnex
