@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: finops-gateway-staging
+  description: This is finops-gateway-staging.
+  annotations:
+    backstage.io/source-location: url:https://github.com/ivedha-tech/platformnex-finops-gateway
+    backstage.io/source-vcs: Github
+    sonarqube.org/project-key: platformnex
+    jira.com/project-key: PEJ
+spec:
+  type: service
+  lifecycle: staging
+  owner: group:default/guests
+  system: system:default/Platformnex
