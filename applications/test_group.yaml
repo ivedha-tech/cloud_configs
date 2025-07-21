@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: test_group
+  description: fdvsdfvkjndfkbasdhjfvabshdefv
+spec:
+  type: testgroup
+  children: []
+  members: []
