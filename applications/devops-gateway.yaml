@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: devops-gateway
+  description: This is the devops-gateway API
+  annotations:
+    backstage.io/source-location: url:https://github.com/ivedha-tech/platformnex-devops-gateway
+    backstage.io/source-vcs: Github
+    sonarqube.org/project-key: platformnex
+    jira.com/project-key: PEJ
+spec:
+  type: openapi
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/Platformnex
+  definition: https://platformnex-devops-gateway-174196373199.us-central1.run.app/api-docs/openapi.json
