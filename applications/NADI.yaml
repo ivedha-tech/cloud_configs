@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: NADI
+  description: W3FDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+spec:
+  type: storage
+  owner: group:default/guests
+  system: system:default/QA-Test-Application
+  region: us-central1
+  project: test
