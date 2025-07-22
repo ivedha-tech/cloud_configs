@@ -4,11 +4,11 @@ metadata:
   name: platformnex-backend
   description: PlatformNex Backend Service
   annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-backend
+    backstage.io/source-location: url:https://github.com/ivedha-tech/platformnex-backend
     backstage.io/source-vcs: Github
     sonarqube.org/project-key: platformnex
-    github.com/project-slug: ivedha-tech/platformnex-backend
-    github.com/repo-url: https://github.com/ivedha-tech/platformnex-backend
+    github.com/project-slug: https:/
+    github.com/repo-url: url:https://github.com/ivedha-tech/platformnex-backend
     pulumi.com/project-slug: mcmuralishclint/pulumi-cicd/dev
     pulumi.com/orga-slug: mcmuralishclint
     google.com/cloudrun-project-slug: prj-dev-platform-next
