@@ -4,7 +4,7 @@ metadata:
   name: platformnex-frontend-dev
   description: platformnex-frontend-dev service.
   annotations:
-    backstage.io/source-location: url:https://github.com/ivedha-tech/platformnex-frontend
+    backstage.io/source-location: url:url:https://github.com/ivedha-tech/platformnex-frontend
     backstage.io/source-vcs: Github
     sonarqube.org/project-key: platformnex
     pulumi.com/project-slug: mcmuralishclint/pulumi-cicd/dev
@@ -12,7 +12,7 @@ metadata:
     google.com/cloudrun-project-slug: prj-dev-platform-next
     google.com/cloudrun-location: us-central1
     google.com/cloudrun-service-name: platformnex-v2-frontend-dit2
-    google.com/cloudbuild-trigger-name: platformnex-V2-backend-DIT
+    google.com/cloudbuild-trigger-name: platformnex-V2-frontend-DIT
     google.com/cloudbuild-project-slug: prj-dev-platform-next
     google.com/cloudbuild-location: us-central1
     jira.com/project-key: PEJ
