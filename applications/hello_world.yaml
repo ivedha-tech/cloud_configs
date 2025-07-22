@@ -25,10 +25,3 @@ spec:
   consumesApis: []
   dependsOn: []
   dependencyOf: []
-relations:
-  - type: dependencyOf
-    targetRef: resource:default/qwqwsqw
-  - type: ownedBy
-    targetRef: group:default/guests
-  - type: partOf
-    targetRef: system:default/helloworld
