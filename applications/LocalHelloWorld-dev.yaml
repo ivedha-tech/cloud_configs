@@ -1,11 +1,21 @@
-apiVersion: backstage.io/v1alpha1
-kind: Component
 metadata:
-  name: LocalHelloWorld-dev
-  description: "some info about local hello world dev "
+  namespace: default
   annotations:
+    backstage.io/managed-by-location: url:https://github.com/ivedha-tech/cloud_configs/tree/feature-yaml-local/applications/LocalHelloWorld-dev.yaml
+    backstage.io/managed-by-origin-location: url:https://github.com/ivedha-tech/cloud_configs/blob/feature-yaml-local/applications/LocalHelloWorld-dev.yaml
+    backstage.io/view-url: https://github.com/ivedha-tech/cloud_configs/tree/feature-yaml-local/applications/LocalHelloWorld-dev.yaml
+    backstage.io/edit-url: https://github.com/ivedha-tech/cloud_configs/edit/feature-yaml-local/applications/LocalHelloWorld-dev.yaml
     backstage.io/source-location: url:https://github.com/ivedha-tech/hello-world
     backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: hello-world-trigger-77735a53-66dc-4141-b6b6-c25eb3b7ad43-trigger
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
+  name: LocalHelloWorld-dev
+  description: "some info about local hello world dev "
+  uid: b95c9dd5-c1be-45bd-8004-ec450cf0599c
+  etag: 6ba56662b0ffaaba9542cc5acf8dc347dec69c7a
+apiVersion: backstage.io/v1alpha1
+kind: Component
 spec:
   type: service
   lifecycle: development
