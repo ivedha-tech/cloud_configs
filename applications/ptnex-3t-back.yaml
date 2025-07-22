@@ -1,0 +1,29 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ptnex-3t-back
+  description: backend component dev
+  annotations:
+    backstage.io/source-location: url:https://github.com/ivedha-tech/ptnex-3t-back/edit/main/catalog-info.yaml
+    backstage.io/source-vcs: Github
+    github.com/project-slug: ivedha-tech/ptnex-3t-back
+    github.com/repo-url: https://github.com/ivedha-tech/ptnex-3t-back/edit/main/catalog-info.yaml
+    artifact-registry/repository: projects/prj-dev-platform-next/locations/us-central1/repositories/platformnex
+    pulumi.com/project-slug: platformnex/ptnex-3t-a/dev
+    pulumi.com/orga-slug: platformnex
+    google.com/cloudrun-project-slug: prj-dev-platform-next
+    google.com/cloudrun-location: us-central1
+    google.com/cloudrun-service-name: ptnex-3t-back-s
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
+    google.com/gcp-projectid: prj-dev-platform-next
+    google.com/cloudbuild-trigger-name: ptnex-3t-back-s-trigger
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/guests
+  system: platformnex
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
