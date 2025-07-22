@@ -1,0 +1,34 @@
+metadata:
+  namespace: default
+  annotations:
+    backstage.io/managed-by-location: url:https://github.com/ivedha-tech/cloud_configs/tree/feature-yaml-dit2/applications/hello_world.yaml
+    backstage.io/managed-by-origin-location: url:https://github.com/ivedha-tech/cloud_configs/blob/feature-yaml-dit2/applications/hello_world.yaml
+    backstage.io/view-url: https://github.com/ivedha-tech/cloud_configs/tree/feature-yaml-dit2/applications/hello_world.yaml
+    backstage.io/edit-url: https://github.com/ivedha-tech/cloud_configs/edit/feature-yaml-dit2/applications/hello_world.yaml
+    backstage.io/source-location: url:https://github.com/ivedha-tech/cloud_configs/edit/feature-yaml-dit2/applications/hello_world.yaml
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: hello-world-trigger-77735a53-66dc-4141-b6b6-c25eb3b7ad43-trigger
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
+  name: hello_world
+  description: some info about hello word app (tested)
+  uid: c3ce5459-4045-406c-9938-81e05fd27adb
+  etag: 427b3b560f039914c1eadbdb9b8cbed6d72e0135
+apiVersion: backstage.io/v1alpha1
+kind: Component
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/HelloWorld
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
+relations:
+  - type: dependencyOf
+    targetRef: resource:default/qwqwsqw
+  - type: ownedBy
+    targetRef: group:default/guests
+  - type: partOf
+    targetRef: system:default/helloworld
