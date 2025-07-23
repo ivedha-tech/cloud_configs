@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: marketplace-frontend
+  description: The marketplace is an online platform that connects buyers and vendors.
+  annotations:
+    backstage.io/source-location: url:https://github.com/platformnex/plugins
+    backstage.io/source-vcs: Github
+    jira.com/project-key: PEJ
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/sevicenexxmarketplace
