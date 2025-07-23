@@ -1,0 +1,7 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: sevicenexxmarketplace
+  description: The marketplace is an online platform that connects buyers and vendors.
+spec:
+  owner: group:default/guests
