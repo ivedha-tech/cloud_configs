@@ -1,11 +1,21 @@
-apiVersion: backstage.io/v1alpha1
-kind: Component
 metadata:
-  name: trigger-test
-  description: "some info about trigger test "
+  namespace: default
   annotations:
+    backstage.io/managed-by-location: url:https://github.com/ivedha-tech/cloud_configs/tree/feature-yaml-local/applications/trigger-test.yaml
+    backstage.io/managed-by-origin-location: url:https://github.com/ivedha-tech/cloud_configs/blob/feature-yaml-local/applications/trigger-test.yaml
+    backstage.io/view-url: https://github.com/ivedha-tech/cloud_configs/tree/feature-yaml-local/applications/trigger-test.yaml
+    backstage.io/edit-url: https://github.com/ivedha-tech/cloud_configs/edit/feature-yaml-local/applications/trigger-test.yaml
     backstage.io/source-location: url:https://github.com/ivedha-tech/hello-world
     backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: hello-world-trigger-fa78bd2d-01c9-4cea-91c1-9f49333157c6
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
+  name: trigger-test
+  description: "some info about trigger test "
+  uid: 596df560-4194-4552-8e84-3121fc04f562
+  etag: ca89dea60b04b5b1b1b3c95e1d5713aa30069ac3
+apiVersion: backstage.io/v1alpha1
+kind: Component
 spec:
   type: website
   lifecycle: development
