@@ -2,6 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
   name: QA-Test
-  description: QA-Test description test
+  description: QA-Test description test edited
 spec:
   owner: group:default/guests
+  type: product
