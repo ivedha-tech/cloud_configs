@@ -4,8 +4,8 @@ metadata:
   name: ssgtestcop
   description: tyuiopwmdifovjvvehmvcjahedgvkwueyrfg
   annotations:
-    backstage.io/source-location: url:https://bitbucket.org/platformnex/platformnex/src/master/
-    backstage.io/source-vcs: Github
+    backstage.io/source-location: url:url:https://bitbucket.org/platformnex/platformnex/src/master/
+    backstage.io/source-vcs: Bitbucket
     sonarqube.org/project-key: platformnex
     pulumi.com/project-slug: mcmuralishclint/pulumi-cicd/dev
     pulumi.com/orga-slug: mcmuralishclint
