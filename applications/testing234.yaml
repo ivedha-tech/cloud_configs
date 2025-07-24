@@ -19,3 +19,7 @@ spec:
   lifecycle: staging
   owner: group:default/test_group
   system: system:default/QA-Test
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
