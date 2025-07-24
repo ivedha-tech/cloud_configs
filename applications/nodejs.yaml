@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: nodejs
+  description: node js app for testig only
+  annotations:
+    backstage.io/source-location: url:https://github.com/ivedha-tech/hello-world
+    backstage.io/source-vcs: Github
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/NodeJS
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
