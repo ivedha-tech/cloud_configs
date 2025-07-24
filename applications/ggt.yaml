@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Resource
 metadata:
   name: ggt
-  description: testesttestesttestesttestest
+  description: testestestestestestest
 spec:
   type: storage
   owner: group:default/guests
