@@ -4,15 +4,17 @@ metadata:
   name: testcomponent123
   description: dmfbvjhgbjrhbfjfsdnbcnzdbvcjhsdvkjhsfv
   annotations:
-    backstage.io/source-location: url:https://github.com/example/dummy-repo.git
+    backstage.io/source-location: url:url:https://github.com/example/dummy-repo.git
     backstage.io/source-vcs: Github
     sonarqube.org/project-key: ""
     datadoghq.com/site: ""
     datadoghq.com/dashboard-url: ""
     datadoghq.com/graph-token: ""
-    google.com/cloudrun-project-slug: ""
-    google.com/cloudrun-location: ""
-    google.com/cloudrun-service-name: ""
+    pulumi.com/project-slug: ""
+    pulumi.com/orga-slug: ""
+    google.com/cloudrun-project-slug: dummy-cloudrun-project
+    google.com/cloudrun-location: us-central1
+    google.com/cloudrun-service-name: dummy-cloudrun-service
     google.com/cloudbuild-trigger-name: ""
     google.com/cloudbuild-project-slug: ""
     google.com/cloudbuild-location: ""
@@ -22,3 +24,7 @@ spec:
   lifecycle: staging
   owner: group:default/guests
   system: system:default/QA-Test
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
