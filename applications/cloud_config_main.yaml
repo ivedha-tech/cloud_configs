@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: cloud_config_main
+  description: some info about application
+  annotations:
+    backstage.io/source-location: url:url:https://github.com/ivedha-tech/cloud_configs
+    backstage.io/source-vcs: Github
+    sonarqube.org/project-key: platformnex
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/cloud_config
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
