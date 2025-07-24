@@ -2,9 +2,10 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: testcomponent123
-  description: dmfbvjhgbjrhbfjfsdnbcnzdbvcjhsdvkjhsfv
+  description: |
+    edited jgvjgvjhgkgjhg
   annotations:
-    backstage.io/source-location: url:url:https://github.com/example/dummy-repo.git
+    backstage.io/source-location: url:url:url:https://github.com/example/dummy-repo.git
     backstage.io/source-vcs: Github
     sonarqube.org/project-key: ""
     datadoghq.com/site: ""
@@ -21,7 +22,7 @@ metadata:
     jira.com/project-key: prj-dev-platform-next
 spec:
   type: website
-  lifecycle: staging
+  lifecycle: development
   owner: group:default/guests
   system: system:default/QA-Test
   providesApis: []
