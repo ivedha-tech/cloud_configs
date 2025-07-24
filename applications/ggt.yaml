@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: ggt
+  description: testesttestesttestesttestest
+spec:
+  type: storage
+  owner: group:default/guests
+  region: us-central1
+  project: prj-dev-platform-next
