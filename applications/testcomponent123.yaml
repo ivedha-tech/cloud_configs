@@ -1,0 +1,24 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: testcomponent123
+  description: dmfbvjhgbjrhbfjfsdnbcnzdbvcjhsdvkjhsfv
+  annotations:
+    backstage.io/source-location: url:https://github.com/example/dummy-repo.git
+    backstage.io/source-vcs: Github
+    sonarqube.org/project-key: ""
+    datadoghq.com/site: ""
+    datadoghq.com/dashboard-url: ""
+    datadoghq.com/graph-token: ""
+    google.com/cloudrun-project-slug: ""
+    google.com/cloudrun-location: ""
+    google.com/cloudrun-service-name: ""
+    google.com/cloudbuild-trigger-name: ""
+    google.com/cloudbuild-project-slug: ""
+    google.com/cloudbuild-location: ""
+    jira.com/project-key: prj-dev-platform-next
+spec:
+  type: website
+  lifecycle: staging
+  owner: group:default/guests
+  system: system:default/QA-Test
