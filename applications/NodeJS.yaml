@@ -1,0 +1,7 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: NodeJS
+  description: "NodeJS app for testing only "
+spec:
+  owner: group:default/guests
