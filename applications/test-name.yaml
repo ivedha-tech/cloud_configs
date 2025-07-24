@@ -6,20 +6,6 @@ metadata:
   annotations:
     backstage.io/source-location: url:https://github.com/kushanD95/swag-test-temp100
     backstage.io/source-vcs: Github
-    sonarqube.org/project-key: platformnex
-    datadoghq.com/site: swag-test-temp100
-    datadoghq.com/dashboard-url: swag-test-temp100.com
-    datadoghq.com/graph-token: swag-test-temp100
-    artifact-registry/repository: swag-test-temp100
-    pulumi.com/project-slug: swag-test-temp100
-    pulumi.com/orga-slug: swag-test-temp100
-    google.com/cloudrun-project-slug: prj-dev-platform-next
-    google.com/cloudrun-location: us-central1
-    google.com/cloudrun-service-name: platformnex-frontend-qa
-    google.com/cloudbuild-trigger-name: platformnex-frontend-qa
-    google.com/cloudbuild-project-slug: prj-dev-platform-next
-    google.com/cloudbuild-location: us-central1
-    jira.com/project-key: PEJ
 spec:
   type: service
   lifecycle: development
