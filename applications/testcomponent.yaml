@@ -2,12 +2,34 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: testcomponent
-  description: ytdhmghvcnbvccytrduytkuyljhvmnbcbvcxhdstrs
+  description: wefdbjhguyfgjhgvjhgvkujygwaeiugr
   annotations:
-    backstage.io/source-location: url:https://github.com/ivedha-tech/platformnex-frontend
+    backstage.io/source-location: url:https://bitbucket.org/platformnex/platformnex/src/master/
     backstage.io/source-vcs: Github
+    sonarqube.org/project-key: platformnex
+    datadoghq.com/site: ""
+    datadoghq.com/dashboard-url: ""
+    datadoghq.com/graph-token: ""
+    pulumi.com/project-slug: mcmuralishclint/pulumi-cicd/dev
+    pulumi.com/orga-slug: mcmuralishclint
+    google.com/cloudrun-project-slug: prj-dev-platform-next
+    google.com/cloudrun-location: platformnex-v2-frontend-dit2
+    google.com/cloudrun-service-name: us-central1
+    google.com/cloudbuild-trigger-name: platformnex-V2-backend-DIT
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
+    jira.com/project-key: PEJ
 spec:
-  type: service
-  lifecycle: development
+  type: website
+  lifecycle: staging
   owner: group:default/guests
-  system: system:default/test001
+  system: system:default/QA-Test
+  subcomponentOf: component:default/component_test
+  providesApis:
+    - api:default/testapi
+  consumesApis:
+    - api:default/testapi
+  dependsOn:
+    - component:default/platformNex
+  dependencyOf:
+    - component:default/platformnex-backend-dev
