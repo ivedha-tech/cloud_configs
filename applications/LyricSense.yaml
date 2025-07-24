@@ -4,7 +4,7 @@ metadata:
   name: LyricSense
   description: https://github.com/Nithursika/LyricSense
   annotations:
-    backstage.io/source-location: url:url:url:https://github.com/Nithursika/LyricSense
+    backstage.io/source-location: url:url:url:url:https://github.com/Nithursika/LyricSense
     backstage.io/source-vcs: Github
     google.com/cloudrun-project-slug: ""
     google.com/cloudrun-location: ""
