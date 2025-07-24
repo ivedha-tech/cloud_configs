@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: sst
+  description: testtesttesttesttesttesttesttest
+spec:
+  type: storage
+  owner: group:default/guests
+  system: system:default/platformnex
+  region: us-central1
+  project: prj-dev-platform-next
+  lifecycle: development
