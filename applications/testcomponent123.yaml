@@ -5,7 +5,7 @@ metadata:
   description: |
     edited jgvjgvjhgkgjhg
   annotations:
-    backstage.io/source-location: url:url:url:https://github.com/example/dummy-repo.git
+    backstage.io/source-location: url:url:url:url:https://github.com/example/dummy-repo.git
     backstage.io/source-vcs: Github
     sonarqube.org/project-key: ""
     datadoghq.com/site: ""
