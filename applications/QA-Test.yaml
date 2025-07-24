@@ -4,5 +4,5 @@ metadata:
   name: QA-Test
   description: QA-Test description test edited
 spec:
-  owner: group:default/guests
-  type: product
+  owner: group:default/test_group
+  type: product hhhhhhh
