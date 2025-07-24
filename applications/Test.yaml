@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Test
+  description: testtesttesttesttesttesttest
+  annotations:
+    backstage.io/source-location: url:https://testrepo.com
+    backstage.io/source-vcs: Github
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/Platformnex
