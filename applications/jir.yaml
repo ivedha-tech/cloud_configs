@@ -4,10 +4,14 @@ metadata:
   name: jir
   description: jirjirjirjirjirjirjirjirjirjirjirjirjirjirjirjirjirjirjirjirjirjirjirjirjirjirjirjirjirjir
   annotations:
-    backstage.io/source-location: url:https://github.com/cgs-tech/test-repo-2
+    backstage.io/source-location: url:url:https://github.com/cgs-tech/test-repo-2
     backstage.io/source-vcs: Github
 spec:
   type: service
-  lifecycle: development
+  lifecycle: production
   owner: group:default/guests
   system: system:default/Test-Application
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
