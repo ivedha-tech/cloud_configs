@@ -1,5 +1,4 @@
 metadata:
-  namespace: default
   annotations:
     backstage.io/managed-by-location: url:https://github.com/ivedha-tech/cloud_configs/tree/feature-yaml-local/applications/nodejs.yaml
     backstage.io/managed-by-origin-location: url:https://github.com/ivedha-tech/cloud_configs/blob/feature-yaml-local/applications/nodejs.yaml
@@ -9,6 +8,7 @@ metadata:
     backstage.io/source-vcs: Github
     google.com/cloudbuild-project-slug: prj-dev-platform-next
     google.com/cloudbuild-location: us-central1
+  namespace: default
   name: nodejs
   description: node js app for testig only
   uid: 0f1bf610-25c8-458a-9376-3d92b7c24000
