@@ -1,11 +1,20 @@
-apiVersion: backstage.io/v1alpha1
-kind: Component
 metadata:
-  name: nodejs
-  description: node js app for testig only
+  namespace: default
   annotations:
+    backstage.io/managed-by-location: url:https://github.com/ivedha-tech/cloud_configs/tree/feature-yaml-local/applications/nodejs.yaml
+    backstage.io/managed-by-origin-location: url:https://github.com/ivedha-tech/cloud_configs/blob/feature-yaml-local/applications/nodejs.yaml
+    backstage.io/view-url: https://github.com/ivedha-tech/cloud_configs/tree/feature-yaml-local/applications/nodejs.yaml
+    backstage.io/edit-url: https://github.com/ivedha-tech/cloud_configs/edit/feature-yaml-local/applications/nodejs.yaml
     backstage.io/source-location: url:https://github.com/ivedha-tech/hello-world
     backstage.io/source-vcs: Github
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
+  name: nodejs
+  description: node js app for testig only
+  uid: 0f1bf610-25c8-458a-9376-3d92b7c24000
+  etag: 9a883335641ad4f84c7f1b19c8c9bffa1577f2a4
+apiVersion: backstage.io/v1alpha1
+kind: Component
 spec:
   type: service
   lifecycle: development
