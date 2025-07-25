@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: TestApplication
+  description: |
+    TestApplication for test release
+spec:
+  owner: group:default/guests
