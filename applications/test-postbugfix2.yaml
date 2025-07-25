@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: test-postbugfix2
+  description: test description post bug test
+spec:
+  type: storage
+  owner: group:default/guests
+  system: system:default/platformnex
+  region: us-central1
+  project: prj-platform-next
+  lifecycle: development
