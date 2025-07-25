@@ -6,7 +6,7 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/Nithursika/LyricSense
     backstage.io/source-vcs: Github
-    sonarqube.org/project-key: pej
+    sonarqube.org/project-key: platformnex
     google.com/cloudrun-project-slug: ""
     google.com/cloudrun-location: ""
     google.com/cloudrun-service-name: ""
