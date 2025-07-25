@@ -6,9 +6,12 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/Nithursika/LyricSense
     backstage.io/source-vcs: Github
-    jira.com/project-key: PEJ
 spec:
   type: website
   lifecycle: production
   owner: group:default/guests
   system: system:default/Test-App
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
