@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: testdit1-postbugfix
+  description: testing the resource onboarding in dit1 post bug fix
+spec:
+  type: storage
+  owner: group:default/guests
+  system: system:default/platformnex
+  region: us-central1
+  project: prj-platform-next
+  lifecycle: development
