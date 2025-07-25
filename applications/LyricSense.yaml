@@ -16,8 +16,8 @@ spec:
   type: website
   lifecycle: development
   owner: group:default/guests
+  dependsOn: []
+  dependencyOf: []
   system: system:default/Test-App
   providesApis: []
   consumesApis: []
-  dependsOn: []
-  dependencyOf: []
