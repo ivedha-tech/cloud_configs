@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Resource
 metadata:
   name: awk
-  description: test onboaridngtest onboaridngtest onboaridng
+  description: tedytedytedytedytedytedytedy
 spec:
   type: storage
   owner: group:default/guests
