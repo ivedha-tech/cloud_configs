@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: cgsTest
+  description: cgsTest component cgsTest component cgsTest component
+  annotations:
+    backstage.io/source-location: url:https://github.com/cgs-tech/test-repo
+    backstage.io/source-vcs: Github
+spec:
+  type: website
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/TestApplication
