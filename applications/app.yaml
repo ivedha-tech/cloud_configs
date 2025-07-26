@@ -3,3 +3,7 @@ kind: ""
 metadata:
   name: ""
   description: ""
+  annotations:
+    google.com/cloudbuild-trigger-name: tt
+    google.com/cloudbuild-project-slug: tt
+    google.com/cloudbuild-location: tt
