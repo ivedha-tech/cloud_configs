@@ -6,6 +6,10 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/Nithursika/LyricSense
     backstage.io/source-vcs: Github
+    sonarqube.org/project-key: ttt
+    google.com/cloudrun-project-slug: ""
+    google.com/cloudrun-location: ""
+    google.com/cloudrun-service-name: ""
     google.com/cloudbuild-trigger-name: efrff
     google.com/cloudbuild-project-slug: tt
     google.com/cloudbuild-location: vvv
@@ -13,8 +17,8 @@ spec:
   type: website
   lifecycle: production
   owner: group:default/guests
+  dependsOn: []
+  dependencyOf: []
   system: system:default/Test-App
   providesApis: []
   consumesApis: []
-  dependsOn: []
-  dependencyOf: []
