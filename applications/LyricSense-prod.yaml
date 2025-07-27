@@ -6,6 +6,9 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/Nithursika/LyricSense
     backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: efrff
+    google.com/cloudbuild-project-slug: tt
+    google.com/cloudbuild-location: vvv
 spec:
   type: website
   lifecycle: production
