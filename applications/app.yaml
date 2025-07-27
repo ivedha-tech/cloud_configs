@@ -5,6 +5,6 @@ metadata:
   description: Application component
   annotations:
     sonarqube.org/project-key: ""
-    google.com/cloudbuild-trigger-name: ""
-    google.com/cloudbuild-location: ""
-    google.com/cloudbuild-project-slug: ""
+    google.com/cloudbuild-trigger-name: hello-world-trigger-69b040cf-49ce-448a-a784-c7536adc4b29
+    google.com/cloudbuild-location: us-central1
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
