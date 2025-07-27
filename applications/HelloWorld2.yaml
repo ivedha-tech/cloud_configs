@@ -1,7 +1,13 @@
 apiVersion: backstage.io/v1alpha1
-kind: System
+kind: Component
 metadata:
   name: HelloWorld2
-  description: hello world 2 application
+  description: hllo World 2 repo information about the app
+  annotations:
+    backstage.io/source-location: url:https://github.com/ivedha-tech/hello-world-2
+    backstage.io/source-vcs: Github
 spec:
+  type: service
+  lifecycle: development
   owner: group:default/guests
+  system: system:default/HelloWorld2
