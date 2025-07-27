@@ -7,12 +7,15 @@ metadata:
     backstage.io/source-location: https://github.com/Nithursika/LyricSense
     backstage.io/source-vcs: Github
     sonarqube.org/project-key: pp
+    google.com/cloudbuild-trigger-name: tt
+    google.com/cloudbuild-project-slug: default-project
+    google.com/cloudbuild-location: us-central1
 spec:
   type: website
   lifecycle: production
   owner: group:default/guests
+  dependsOn: []
+  dependencyOf: []
   system: system:default/Test-App
   providesApis: []
   consumesApis: []
-  dependsOn: []
-  dependencyOf: []
