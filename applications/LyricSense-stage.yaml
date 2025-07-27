@@ -2,12 +2,13 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: LyricSense-stage
-  description: https://github.com/Nithursika/LyricSense
+  description: |2
+            const repourl = `${repoUrl}/blob/main/catalog-info.yaml`;
   annotations:
     backstage.io/source-location: https://github.com/Nithursika/LyricSense
-    backstage.io/source-vcs: Github
+    backstage.io/source-vcs: Gitlab
 spec:
   type: website
   lifecycle: staging
   owner: group:default/guests
-  system: system:default/Test-App
+  system: system:default/test
