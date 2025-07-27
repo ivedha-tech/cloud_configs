@@ -7,6 +7,9 @@ metadata:
     backstage.io/source-location: url:https://github.com/kushanD95/swag-test-temp100
     backstage.io/source-vcs: Github
     sonarqube.org/project-key: platformnex
+    google.com/cloudbuild-trigger-name: hello-world-trigger-69b040cf-49ce-448a-a784-c7536adc4b29
+    google.com/cloudbuild-project-slug: default-project
+    google.com/cloudbuild-location: us-central1
     jira.com/project-key: AM
 spec:
   type: service
