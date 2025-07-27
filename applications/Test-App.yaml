@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: System
 metadata:
   name: Test-App
-  description: Application component
-  annotations:
-    sonarqube.org/project-key: ""
+  description: https://github.com/Nithursika/LyricSense
+spec:
+  owner: group:default/guests
