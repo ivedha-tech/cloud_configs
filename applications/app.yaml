@@ -1,9 +1,9 @@
 apiVersion: backstage.io/v1alpha1
-kind: ""
+kind: Component
 metadata:
-  name: ""
-  description: ""
+  name: app
+  description: Application component
   annotations:
-    google.com/cloudbuild-trigger-name: tt
-    google.com/cloudbuild-project-slug: tt
-    google.com/cloudbuild-location: tt
+    google.com/cloudbuild-trigger-name: ""
+    google.com/cloudbuild-location: ""
+    google.com/cloudbuild-project-slug: ""
