@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: hello-world-2
+  description: "hello-world2 repo in github "
+  annotations:
+    backstage.io/source-location: url:https://github.com/ivedha-tech/hello-world
+    backstage.io/source-vcs: Github
+spec:
+  type: website
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/TriggerTest
