@@ -2,12 +2,12 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: sanuka-dit-020-be
-  description: backend component ho
+  description: backend component go
   annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/sanuka-dit-020-be.git
+    backstage.io/source-location: url:https://github.com/ivedha-tech/sanuka-dit-020-be.git
     backstage.io/source-vcs: Github
-    github.com/project-slug: ivedha-tech/sanuka-dit-020-be
-    github.com/repo-url: https://github.com/ivedha-tech/sanuka-dit-020-be.git
+    github.com/project-slug: https:/
+    github.com/repo-url: url:https://github.com/ivedha-tech/sanuka-dit-020-be.git
     artifact-registry/repository: projects/prj-dev-platform-next/locations/us-central1/repositories/platformnex
     pulumi.com/project-slug: platformnex/sanuka-dit-020-te/dev
     pulumi.com/orga-slug: platformnex
