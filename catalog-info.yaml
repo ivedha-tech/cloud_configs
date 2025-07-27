@@ -1,0 +1,29 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: sanuka-dit-020-be
+  description: backend component go
+  annotations:
+    backstage.io/source-location: url:https://github.com/ivedha-tech/sanuka-dit-020-be.git
+    backstage.io/source-vcs: Github
+    github.com/project-slug: https:/
+    github.com/repo-url: url:https://github.com/ivedha-tech/sanuka-dit-020-be.git
+    artifact-registry/repository: projects/prj-dev-platform-next/locations/us-central1/repositories/platformnex
+    pulumi.com/project-slug: platformnex/sanuka-dit-020-te/dev
+    pulumi.com/orga-slug: platformnex
+    google.com/cloudrun-project-slug: prj-dev-platform-next
+    google.com/cloudrun-location: us-central1
+    google.com/cloudrun-service-name: sanuka-dit-020-be
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
+    google.com/gcp-projectid: prj-dev-platform-next
+    google.com/cloudbuild-trigger-name: sanuka-dit-020-be-trigger
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/guests
+  system: platformnex
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
