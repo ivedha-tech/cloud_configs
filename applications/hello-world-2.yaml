@@ -1,11 +1,21 @@
-apiVersion: backstage.io/v1alpha1
-kind: Component
 metadata:
-  name: hello-world-2
-  description: "hello-world2 repo in github "
+  namespace: default
   annotations:
+    backstage.io/managed-by-location: url:https://github.com/ivedha-tech/cloud_configs/tree/feature-yaml-local/applications/hello-world-2.yaml
+    backstage.io/managed-by-origin-location: url:https://github.com/ivedha-tech/cloud_configs/blob/feature-yaml-local/applications/hello-world-2.yaml
+    backstage.io/view-url: https://github.com/ivedha-tech/cloud_configs/tree/feature-yaml-local/applications/hello-world-2.yaml
+    backstage.io/edit-url: https://github.com/ivedha-tech/cloud_configs/edit/feature-yaml-local/applications/hello-world-2.yaml
     backstage.io/source-location: url:https://github.com/ivedha-tech/hello-world
     backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: hello-world-trigger-6ea7f13e
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
+  name: hello-world-2
+  description: "hello-world2 repo in github "
+  uid: 8d678877-109e-4e8b-bc11-e3c225fade67
+  etag: 91c1811127fb9cfa1ff2cbd72377be93ca0bf8d4
+apiVersion: backstage.io/v1alpha1
+kind: Component
 spec:
   type: website
   lifecycle: development
