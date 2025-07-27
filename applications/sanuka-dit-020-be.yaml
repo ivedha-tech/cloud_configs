@@ -6,6 +6,7 @@ metadata:
   annotations:
     backstage.io/source-location: url:https://github.com/ivedha-tech/sanuka-dit-020-be.git
     backstage.io/source-vcs: Github
+    sonarqube.org/project-key: platformnex
     github.com/project-slug: https:/
     github.com/repo-url: url:https://github.com/ivedha-tech/sanuka-dit-020-be.git
     artifact-registry/repository: projects/prj-dev-platform-next/locations/us-central1/repositories/platformnex
@@ -18,6 +19,7 @@ metadata:
     google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: prj-dev-platform-next
     google.com/cloudbuild-trigger-name: sanuka-dit-020-be-trigger
+    jira.com/project-key: PEJ
 spec:
   type: service
   lifecycle: development
