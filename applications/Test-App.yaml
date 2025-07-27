@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
-kind: System
+kind: Component
 metadata:
   name: Test-App
-  description: for development purp
-spec:
-  owner: group:default/guests
+  description: Application component
+  annotations:
+    sonarqube.org/project-key: ""
