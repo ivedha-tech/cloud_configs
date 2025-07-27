@@ -6,9 +6,14 @@ metadata:
   annotations:
     backstage.io/source-location: url:https://github.com/kushanD95/swag-test-temp100
     backstage.io/source-vcs: Github
+    sonarqube.org/project-key: platformnex
     jira.com/project-key: AM
 spec:
   type: service
   lifecycle: development
   owner: group:default/guests
+  dependsOn: []
+  dependencyOf: []
   system: system:default/Test-Applications
+  providesApis: []
+  consumesApis: []
