@@ -6,6 +6,7 @@ metadata:
   annotations:
     backstage.io/source-location: url:https://github.com/ivedha-tech/platformnex-backend
     backstage.io/source-vcs: Github
+    sonarqube.org/project-key: platformnex
     pulumi.com/project-slug: mcmuralishclint/pulumi-cicd/dev
     pulumi.com/orga-slug: mcmuralishclint
     google.com/cloudrun-project-slug: prj-dev-platform-next
@@ -19,8 +20,8 @@ spec:
   type: service
   lifecycle: development
   owner: group:default/guests
+  dependsOn: []
+  dependencyOf: []
   system: system:default/Platformnex
   providesApis: []
   consumesApis: []
-  dependsOn: []
-  dependencyOf: []
