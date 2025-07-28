@@ -6,7 +6,7 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/Nithursika/LyricSense
     backstage.io/source-vcs: Github
-    sonarqube.org/project-key: ppp
+    sonarqube.org/project-key: platfor
 spec:
   type: website
   lifecycle: development
