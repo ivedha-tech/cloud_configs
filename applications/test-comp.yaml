@@ -1,11 +1,21 @@
-apiVersion: backstage.io/v1alpha1
-kind: Component
 metadata:
-  name: test-comp
-  description: test-comp service description
+  namespace: default
   annotations:
+    backstage.io/managed-by-location: url:https://github.com/ivedha-tech/cloud_configs/tree/feature-yaml-dit2/applications/test-comp.yaml
+    backstage.io/managed-by-origin-location: url:https://github.com/ivedha-tech/cloud_configs/blob/feature-yaml-dit2/applications/test-comp.yaml
+    backstage.io/view-url: https://github.com/ivedha-tech/cloud_configs/tree/feature-yaml-dit2/applications/test-comp.yaml
+    backstage.io/edit-url: https://github.com/ivedha-tech/cloud_configs/edit/feature-yaml-dit2/applications/test-comp.yaml
     backstage.io/source-location: url:https://github.com/cgs-tech/test-repo
     backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: platformnex-V2-backend-DIT
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
+  name: test-comp
+  description: test-comp service description edited
+  uid: 04288ec1-9043-4619-93d7-692949229b8a
+  etag: b20a7e7d80c26613c6af609bf0143551bba5c2b5
+apiVersion: backstage.io/v1alpha1
+kind: Component
 spec:
   type: service
   lifecycle: development
