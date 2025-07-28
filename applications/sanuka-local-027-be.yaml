@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: sanuka-local-027-be
+  description: "backend component go "
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/sanuka-local-027-be
+    backstage.io/source-vcs: Github
+    sonarqube.org/project-key: platformnex
+    github.com/project-slug: ivedha-tech/sanuka-local-027-be
+    github.com/repo-url: https://github.com/ivedha-tech/sanuka-local-027-be/src/main/
+    artifact-registry/repository: projects/prj-dev-platform-next/locations/us-central1/repositories/platformnex
+    pulumi.com/project-slug: platformnex/sanuka-local-027/dev
+    pulumi.com/orga-slug: platformnex
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/guests
+  system: platformnex
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
