@@ -6,8 +6,15 @@ metadata:
   annotations:
     backstage.io/source-location: url:https://github.com/ivedha-tech/cloud_configs
     backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: weqwe
+    google.com/cloudbuild-project-slug: default-project
+    google.com/cloudbuild-location: us-central1
 spec:
   type: service
   lifecycle: development
   owner: group:default/guests
+  dependsOn: []
+  dependencyOf: []
   system: system:default/cloud_config
+  providesApis: []
+  consumesApis: []
