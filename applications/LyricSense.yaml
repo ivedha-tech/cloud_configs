@@ -1,12 +1,22 @@
-apiVersion: backstage.io/v1alpha1
-kind: Component
 metadata:
-  name: LyricSense
-  description: https://github.com/Nithursika/LyricSense
+  namespace: default
   annotations:
+    backstage.io/managed-by-location: url:https://github.com/ivedha-tech/cloud_configs/tree/feature-yaml-local/applications/LyricSense.yaml
+    backstage.io/managed-by-origin-location: url:https://github.com/ivedha-tech/cloud_configs/blob/feature-yaml-local/applications/LyricSense.yaml
+    backstage.io/view-url: https://github.com/ivedha-tech/cloud_configs/tree/feature-yaml-local/applications/LyricSense.yaml
+    backstage.io/edit-url: https://github.com/ivedha-tech/cloud_configs/edit/feature-yaml-local/applications/LyricSense.yaml
     backstage.io/source-location: https://github.com/Nithursika/LyricSense
     backstage.io/source-vcs: Github
     sonarqube.org/project-key: pp
+    google.com/cloudbuild-trigger-name: hello-world-trigger-69b040cf-49ce-448a-a784-c7536adc4b29
+    google.com/cloudbuild-project-slug: example
+    google.com/cloudbuild-location: us-central1
+  name: LyricSense
+  description: https://github.com/Nithursika/LyricSense
+  uid: ff94efc8-08b7-44fd-97ca-7157167b1337
+  etag: 6859044ac5ecac533ed4e1f6f7f179b9ad9681f1
+apiVersion: backstage.io/v1alpha1
+kind: Component
 spec:
   type: website
   lifecycle: development
