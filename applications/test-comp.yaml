@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: test-comp
-  description: test-comp service description
+  description: test-comp service description edited
   annotations:
     backstage.io/source-location: url:https://github.com/cgs-tech/test-repo
     backstage.io/source-vcs: Github
@@ -11,3 +11,7 @@ spec:
   lifecycle: development
   owner: group:default/guests
   system: system:default/Test-Applications
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
