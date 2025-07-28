@@ -1,0 +1,29 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: sanuka-local-027-fe
+  description: frontend component go
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/sanuka-local-027-fe
+    backstage.io/source-vcs: Github
+    github.com/project-slug: ivedha-tech/sanuka-local-027-fe
+    github.com/repo-url: https://github.com/ivedha-tech/sanuka-local-027-fe
+    artifact-registry/repository: projects/prj-dev-platform-next/locations/us-central1/repositories/platformnex
+    pulumi.com/project-slug: platformnex/sanuka-local-027/dev
+    pulumi.com/orga-slug: platformnex
+    google.com/cloudrun-project-slug: prj-dev-platform-next
+    google.com/cloudrun-location: us-central1
+    google.com/cloudrun-service-name: sanuka-local-027-fe
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
+    google.com/gcp-projectid: prj-dev-platform-next
+    google.com/cloudbuild-trigger-name: sanuka-local-027-fe-trigger
+spec:
+  type: service
+  lifecycle: staging
+  owner: group:default/guests
+  system: platformnex
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
