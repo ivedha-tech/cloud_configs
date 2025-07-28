@@ -6,7 +6,6 @@ metadata:
   annotations:
     backstage.io/source-location: url:https://github.com/ivedha-tech/platformnex-backend
     backstage.io/source-vcs: Github
-    sonarqube.org/project-key: platformnex
     pulumi.com/project-slug: mcmuralishclint/pulumi-cicd/dev
     pulumi.com/orga-slug: mcmuralishclint
     google.com/cloudrun-project-slug: prj-dev-platform-next
@@ -16,12 +15,12 @@ metadata:
     google.com/cloudbuild-project-slug: prj-dev-platform-next
     google.com/cloudbuild-location: us-central1
     jira.com/project-key: PEJ
-    mycompany.com/gcp-dataset-id: ds_billing
-    mycompany.com/gcp-provider: gcp
-    mycompany.com/gcp-table-id: gcp_billing_export_resource_v1_01E9B5_60A8A4_E1FE52
-
 spec:
   type: service
   lifecycle: development
   owner: group:default/guests
   system: system:default/Platformnex
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
