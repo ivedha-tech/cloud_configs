@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: LocalHelloWorld-dev
+  description: "some info about local hello world dev "
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/hello-world
+    backstage.io/source-vcs: Github
+    google.com/cloudrun-project-slug: ""
+    google.com/cloudrun-location: ""
+    google.com/cloudrun-service-name: ""
+    google.com/cloudbuild-trigger-name: hello-world-trigger-77735a53-66dc-4141-b6b6-c25eb3b7ad43-trigger
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/LocalHelloWorld
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
