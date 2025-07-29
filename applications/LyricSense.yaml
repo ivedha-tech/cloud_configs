@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: LyricSense
+  description: https://github.com/Nithursika/LyricSense
+  annotations:
+    backstage.io/source-location: https://github.com/Nithursika/LyricSense
+    backstage.io/source-vcs: Github
+    sonarqube.org/project-key: pp
+spec:
+  type: website
+  lifecycle: development
+  owner: group:default/guests
+  dependsOn: []
+  dependencyOf: []
+  system: system:default/Test-App
+  providesApis: []
+  consumesApis: []
