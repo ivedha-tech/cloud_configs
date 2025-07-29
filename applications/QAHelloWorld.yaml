@@ -7,7 +7,7 @@ metadata:
     backstage.io/edit-url: https://github.com/ivedha-tech/cloud_configs/edit/feature-yaml-dit2/applications/QAHelloWorld.yaml
     backstage.io/source-location: https://github.com/ivedha-tech/hello-world-2
     backstage.io/source-vcs: Github
-    google.com/cloudbuild-trigger-name: hello-world-2-trigger-a45f0c70c3394f1e910d5835718cd030
+    google.com/cloudbuild-trigger-name: hello-world-2-trigger-18a10ff68ea6471ab996e21920d1d063
     google.com/cloudbuild-project-slug: prj-dev-platform-next
     google.com/cloudbuild-location: us-central1
   name: QAHelloWorld
