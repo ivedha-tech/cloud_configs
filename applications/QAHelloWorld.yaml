@@ -6,8 +6,15 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/hello-world-2
     backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: hello-world-2-trigger-7de3382da2864a229daaf287965384aa
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
 spec:
   type: website
   lifecycle: development
   owner: group:default/guests
+  dependsOn: []
+  dependencyOf: []
   system: system:default/QAHellowWorld
+  providesApis: []
+  consumesApis: []
