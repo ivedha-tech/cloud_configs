@@ -2,16 +2,17 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: hello-world-3
-  description: "some info about the app. "
+  description: 'some info about the app. '
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/hello-world-2
     backstage.io/source-vcs: Github
-    google.com/cloudrun-project-slug: ""
-    google.com/cloudrun-location: ""
-    google.com/cloudrun-service-name: ""
+    google.com/cloudrun-project-slug: ''
+    google.com/cloudrun-location: ''
+    google.com/cloudrun-service-name: ''
     google.com/cloudbuild-trigger-name: hello-world-2-trigger-1f76876dc3fe448394a83ed8e64f6afb
     google.com/cloudbuild-project-slug: prj-dev-platform-next
     google.com/cloudbuild-location: us-central1
+    sonarqube.org/project-key: hello-world-2
 spec:
   type: service
   lifecycle: development
