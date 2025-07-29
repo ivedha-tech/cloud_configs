@@ -7,8 +7,15 @@ metadata:
     backstage.io/source-location: url:https://github.com/ivedha-tech/hello-world
     backstage.io/source-vcs: Github
     sonarqube.org/project-key: hello-world
+    google.com/cloudbuild-trigger-name: hello-world-trigger-e14ed6981ca9409f91a54a2031ae9fc6
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
 spec:
   type: service
   lifecycle: development
   owner: group:default/guests
+  dependsOn: []
+  dependencyOf: []
   system: system:default/helloworld
+  providesApis: []
+  consumesApis: []
