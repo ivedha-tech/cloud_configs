@@ -4,7 +4,7 @@ metadata:
   name: testapi
   description: zdfgzdfhsthsrthsrtgbhsfghstgh
   annotations:
-    backstage.io/source-location: url:url:url:https://github.com/example/dummy-repo.git
+    backstage.io/source-location: https://github.com/example/dummy-repo.git
     backstage.io/source-vcs: Github
     google.com/cloudrun-project-slug: prj-dev-platform-next
     google.com/cloudrun-location: us-central1
@@ -16,6 +16,6 @@ metadata:
 spec:
   type: openapi
   lifecycle: development
-  owner: group:default/guests
+  owner: group:default/test_group
   system: system:default/QA-Test
   definition: dfgdzfgzdfgrsdfgdfgxdfgsdrgsergdfgxfg
