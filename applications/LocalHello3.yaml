@@ -7,7 +7,7 @@ metadata:
     backstage.io/edit-url: https://github.com/ivedha-tech/cloud_configs/edit/feature-yaml-dit2/applications/LocalHello3.yaml
     backstage.io/source-location: https://github.com/ivedha-tech/hello-world
     backstage.io/source-vcs: Github
-    google.com/cloudbuild-trigger-name: hello-world-trigger-43b0ed9f-4c44-4594-a913-a6af9165fd31
+    google.com/cloudbuild-trigger-name: hello-world-trigger-37bf765255d24ca483b56753469761e8
     google.com/cloudbuild-project-slug: prj-dev-platform-next
     google.com/cloudbuild-location: us-central1
   name: LocalHello3
