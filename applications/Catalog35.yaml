@@ -4,10 +4,14 @@ metadata:
   name: Catalog35
   description: Catalog35Catalog35Catalog35Catalog35
   annotations:
-    backstage.io/source-location: https://github.com/cgs-tech/test-repo2
+    backstage.io/source-location: https://github.com/cgs-tech/test-repo-2
     backstage.io/source-vcs: Github
 spec:
   type: service
   lifecycle: development
   owner: group:default/guests
   system: system:default/QA-Test-Application
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
