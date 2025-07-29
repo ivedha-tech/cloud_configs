@@ -6,6 +6,7 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/cgs-tech/test-repo-2
     backstage.io/source-vcs: Github
+    sonarqube.org/project-key: platformnex
 spec:
   type: service
   lifecycle: development
