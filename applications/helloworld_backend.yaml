@@ -6,13 +6,12 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/hello-world
     backstage.io/source-vcs: Github
-    google.com/cloudrun-project-slug: ''
-    google.com/cloudrun-location: ''
-    google.com/cloudrun-service-name: ''
+    google.com/cloudrun-project-slug: ""
+    google.com/cloudrun-location: ""
+    google.com/cloudrun-service-name: ""
     google.com/cloudbuild-trigger-name: hello-world-trigger-e14ed6981ca9409f91a54a2031ae9fc6
     google.com/cloudbuild-project-slug: prj-dev-platform-next
     google.com/cloudbuild-location: us-central1
-    sonarqube.org/project-key: hello-world
 spec:
   type: service
   lifecycle: development
