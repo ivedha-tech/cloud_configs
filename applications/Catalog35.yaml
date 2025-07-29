@@ -7,15 +7,12 @@ metadata:
     backstage.io/source-location: https://github.com/cgs-tech/test-repo-2
     backstage.io/source-vcs: Github
     sonarqube.org/project-key: platformnex
-    google.com/cloudbuild-trigger-name: platformnex-V2-backend-DIT
-    google.com/cloudbuild-project-slug: prj-dev-platform-next
-    google.com/cloudbuild-location: us-central1
 spec:
   type: service
   lifecycle: development
   owner: group:default/guests
-  dependsOn: []
-  dependencyOf: []
   system: system:default/QA-Test-Application
   providesApis: []
   consumesApis: []
+  dependsOn: []
+  dependencyOf: []
