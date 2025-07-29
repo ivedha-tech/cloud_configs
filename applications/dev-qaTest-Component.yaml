@@ -6,8 +6,13 @@ metadata:
   annotations:
     backstage.io/source-location: url:https://github.com/cgs-tech/test-repo-2
     backstage.io/source-vcs: Github
+    sonarqube.org/project-key: platformnex
 spec:
   type: service
   lifecycle: development
   owner: group:default/guests
+  dependsOn: []
+  dependencyOf: []
   system: system:default/HelloWorld
+  providesApis: []
+  consumesApis: []
