@@ -1,0 +1,23 @@
+metadata:
+  namespace: default
+  annotations:
+    backstage.io/managed-by-location: url:https://github.com/ivedha-tech/cloud_configs/tree/feature-yaml-dit2/applications/LocalHello3.yaml
+    backstage.io/managed-by-origin-location: url:https://github.com/ivedha-tech/cloud_configs/blob/feature-yaml-dit2/applications/LocalHello3.yaml
+    backstage.io/view-url: https://github.com/ivedha-tech/cloud_configs/tree/feature-yaml-dit2/applications/LocalHello3.yaml
+    backstage.io/edit-url: https://github.com/ivedha-tech/cloud_configs/edit/feature-yaml-dit2/applications/LocalHello3.yaml
+    backstage.io/source-location: https://github.com/ivedha-tech/hello-world
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: hello-world-trigger-43b0ed9f-4c44-4594-a913-a6af9165fd31
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
+  name: LocalHello3
+  description: LocalHello3 about the application section
+  uid: b2b136b4-525b-46dd-bef9-5278b420af15
+  etag: 137bf6bd9e86a60aea4391bd5f9da6497a14a09e
+apiVersion: backstage.io/v1alpha1
+kind: Component
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/LocalHelloWorld
