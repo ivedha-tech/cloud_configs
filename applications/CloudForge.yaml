@@ -2,6 +2,8 @@ apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
   name: CloudForge
-  description: CloudForge description
+  description: A unified platform that streamlines cloud-native application
+    development, deployment, and operations with integrated DevOps workflows and
+    automation.
 spec:
   owner: group:default/guests
