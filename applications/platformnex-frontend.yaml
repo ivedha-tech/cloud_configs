@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: platformnex-frontend
+  description: Frontend for the platformnex application
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-frontend
+    backstage.io/source-vcs: Github
+    sonarqube.org/project-key: platformnex
+    pulumi.com/project-slug: mcmuralishclint/pulumi-cicd/dev
+    pulumi.com/orga-slug: mcmuralishclint
+    google.com/cloudrun-project-slug: prj-dev-platform-next
+    google.com/cloudrun-location: us-central1
+    google.com/cloudrun-service-name: platformnex-v2-frontend-dit1
+    jira.com/project-key: PEJ
+spec:
+  type: website
+  lifecycle: staging
+  owner: group:default/guests
+  system: system:default/PE
