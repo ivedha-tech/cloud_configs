@@ -5,6 +5,9 @@ metadata:
   description: test4-storage
   annotations:
     backstage.io/source-location: url:https://github.com/ivedha-tech/prj-dev-platform-next
+    mycompany.com/gcp-dataset-id: ds_billing
+    mycompany.com/gcp-provider: gcp
+    mycompany.com/gcp-table-id: gcp_billing_export_resource_v1_01E9B5_60A8A4_E1FE52
 spec:
   type: storage
   region: us-central1
