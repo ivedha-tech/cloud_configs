@@ -1,8 +1,17 @@
 apiVersion: backstage.io/v1alpha1
-kind: System
+kind: Component
 metadata:
-  name: Platformnex
-  description: PlatformNex Internal System with all the services and resources
+  name: platformNex
+  description: just for testing url
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/tatab
+    backstage.io/source-vcs: Bitbucket
 spec:
+  type: website
+  lifecycle: development
   owner: group:default/guests
-  type: digital
+  system: system:default/test002
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
