@@ -6,6 +6,7 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/tatab
     backstage.io/source-vcs: Github
+    sonarqube.org/project-key: tatab
 spec:
   type: service
   lifecycle: development
