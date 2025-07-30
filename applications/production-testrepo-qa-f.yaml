@@ -4,7 +4,7 @@ metadata:
   name: production-testrepo-qa-f
   description: production-testrepo-qa-f description
   annotations:
-    backstage.io/source-location: https://github.com/cgs-tech/test-repo
+    backstage.io/source-location: https://github.com/ivedha-tech/testrepo-qa-f
     backstage.io/source-vcs: Github
     sonarqube.org/project-key: platformnex
     google.com/cloudrun-project-slug: prj-dev-platform-next
@@ -19,3 +19,7 @@ spec:
   lifecycle: production
   owner: group:default/guests
   system: system:default/Platformnex
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
