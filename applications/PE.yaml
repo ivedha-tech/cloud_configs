@@ -1,0 +1,7 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: PE
+  description: This is the official PlatformNEX Application
+spec:
+  owner: group:default/guests
