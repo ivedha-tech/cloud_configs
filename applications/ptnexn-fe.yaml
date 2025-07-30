@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ptnexn-fe
+  description: https://github.com/ivedha-tech/ptnexn-fe
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/ptnexn-fe
+    backstage.io/source-vcs: Github
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/Test-Application
