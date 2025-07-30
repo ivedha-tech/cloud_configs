@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: provision
+  description: feggggggggggggggggggggggggggggggg
+spec:
+  type: kubernetes_provision
+  owner: group:default/guests
+  system: system:default/Platformnex
+  region: us-central1
+  project: esf
+  lifecycle: development
