@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: nretgh
+  description: nretgh
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/prj-dev-platform-next
+spec:
+  type: storage
+  region: us-central1
+  project: prj-dev-platform-next
+  owner: group:default/guests
+  system: system:default/Platformnex
+  lifecycle: development
