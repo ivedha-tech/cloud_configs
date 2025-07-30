@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: tatabs-staging
+  description: https://github.com/ivedha-tech/tatab
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/tatab
+    backstage.io/source-vcs: Github
+    jira.com/project-key: PEJ
+spec:
+  type: service
+  lifecycle: staging
+  owner: group:default/guests
+  system: system:default/Test-Application
