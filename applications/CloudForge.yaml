@@ -1,0 +1,7 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: CloudForge
+  description: CloudForge description
+spec:
+  owner: group:default/guests
