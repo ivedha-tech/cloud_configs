@@ -9,8 +9,8 @@ metadata:
     sonarqube.org/project-key: platformnex
     google.com/cloudrun-project-slug: prj-dev-platform-next
     google.com/cloudrun-location: us-central1
-    google.com/cloudrun-service-name: platformnex-frontend
-    google.com/cloudbuild-trigger-name: platformnex-frontend
+    google.com/cloudrun-service-name: frontend-service
+    google.com/cloudbuild-trigger-name: frontend-service-trigger
     google.com/cloudbuild-project-slug: prj-dev-platform-next
     google.com/cloudbuild-location: us-central1
     jira.com/project-key: PEJ
@@ -19,3 +19,7 @@ spec:
   lifecycle: staging
   owner: group:default/guests
   system: system:default/Platformnex
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
