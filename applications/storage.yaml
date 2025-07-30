@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: storage
+  description: qwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
+spec:
+  type: storage
+  owner: group:default/guests
+  system: system:default/Platformnex
+  region: us-central1
+  project: qw
+  lifecycle: development
