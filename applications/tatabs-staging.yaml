@@ -7,6 +7,7 @@ metadata:
     backstage.io/source-location: https://github.com/ivedha-tech/tatab
     backstage.io/source-vcs: Github
     jira.com/project-key: PEJ
+    sonarqube.org/project-key: tatab
 spec:
   type: service
   lifecycle: staging
