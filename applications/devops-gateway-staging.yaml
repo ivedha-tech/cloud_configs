@@ -8,6 +8,9 @@ metadata:
     backstage.io/source-vcs: Github
     sonarqube.org/project-key: platformnex
     jira.com/project-key: PEJ
+    mycompany.com/gcp-dataset-id: ds_billing
+    mycompany.com/gcp-provider: gcp
+    mycompany.com/gcp-table-id: gcp_billing_export_resource_v1_01E9B5_60A8A4_E1FE52
 spec:
   type: service
   lifecycle: staging
