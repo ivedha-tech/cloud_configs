@@ -1,0 +1,7 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: QAHelloWorld
+  description: "Qa Hello World application info "
+spec:
+  owner: group:default/guests
