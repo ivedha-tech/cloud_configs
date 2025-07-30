@@ -6,7 +6,10 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/hello-world-2
     backstage.io/source-vcs: Github
-    google.com/cloudbuild-trigger-name: hello-world-2-trigger-355fc7d7659e490f9ee82c5101769d33
+    google.com/cloudrun-project-slug: ""
+    google.com/cloudrun-location: ""
+    google.com/cloudrun-service-name: ""
+    google.com/cloudbuild-trigger-name: hello-world-2-trigger-6e14bb2b11b047d2bdc84aa07856e590
     google.com/cloudbuild-project-slug: prj-dev-platform-next
     google.com/cloudbuild-location: us-central1
 spec:
