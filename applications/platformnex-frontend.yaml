@@ -15,6 +15,10 @@ metadata:
     jira.com/project-key: PEJ
 spec:
   type: website
-  lifecycle: staging
+  lifecycle: development
   owner: group:default/guests
   system: system:default/PE
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
