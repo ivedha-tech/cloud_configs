@@ -1,13 +1,8 @@
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: System
 metadata:
-  name: platformNex
-  description: just for testing url
-  annotations:
-    backstage.io/source-location: url:https://github.com/ivedha-tech/platformnex-backend
-    backstage.io/source-vcs: Bitbucket
+  name: Platformnex
+  description: PlatformNex Internal System with all the services and resources
 spec:
-  type: website
-  lifecycle: development
   owner: group:default/guests
-  system: system:default/test002
+  type: digital
