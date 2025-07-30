@@ -2,11 +2,11 @@ apiVersion: backstage.io/v1alpha1
 kind: Resource
 metadata:
   name: db
-  description: ececedcccccccccccccccccccccccccccccccccccccc
+  description: dddddffffffffffffffffffffffffffffffffffff
 spec:
   type: storage
   owner: group:default/guests
   system: system:default/Platformnex
   region: us-central1
-  project: dd
+  project: qw
   lifecycle: development
