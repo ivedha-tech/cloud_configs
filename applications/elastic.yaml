@@ -1,0 +1,7 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: elastic
+  description: this is the application for workbem
+spec:
+  owner: group:default/guests
