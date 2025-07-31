@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: cloudforge-be-prod
+  description: cloudforge-be-prod component
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/cloudforge-be
+    backstage.io/source-vcs: Github
+spec:
+  type: service
+  lifecycle: production
+  owner: group:default/guests
+  system: system:default/CloudForge
