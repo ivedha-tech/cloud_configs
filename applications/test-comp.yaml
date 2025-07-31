@@ -6,6 +6,7 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/sanuka-local-40-be
     backstage.io/source-vcs: Github
+    sonarqube.org/project-key: sanuka-local-40-be
 spec:
   type: service
   lifecycle: development
