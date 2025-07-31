@@ -6,8 +6,15 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/dit-trigger-test
     backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: dit-trigger-test-trigger-3b37c8293d374912bb4e077e7
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
 spec:
   type: service
   lifecycle: development
   owner: group:default/guests
+  dependsOn: []
+  dependencyOf: []
   system: system:default/DitTriggerTest
+  providesApis: []
+  consumesApis: []
