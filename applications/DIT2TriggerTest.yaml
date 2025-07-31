@@ -1,7 +1,13 @@
 apiVersion: backstage.io/v1alpha1
-kind: System
+kind: Component
 metadata:
   name: DIT2TriggerTest
-  description: "DIT2TriggerTest application info "
+  description: DIT2TriggerTest application info
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/dit2-trigger-test
+    backstage.io/source-vcs: Github
 spec:
+  type: service
+  lifecycle: development
   owner: group:default/guests
+  system: system:default/DIT2TriggerTest
