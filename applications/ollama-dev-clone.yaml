@@ -6,6 +6,7 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/ollama-for-elastic
     backstage.io/source-vcs: Github
+    sonarqube.org/project-key: ollama-for-elastic
 spec:
   type: service
   lifecycle: development
