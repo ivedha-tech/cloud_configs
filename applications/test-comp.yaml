@@ -7,8 +7,15 @@ metadata:
     backstage.io/source-location: https://github.com/ivedha-tech/sanuka-local-40-be
     backstage.io/source-vcs: Github
     sonarqube.org/project-key: sanuka-local-40-be
+    google.com/cloudbuild-trigger-name: sanuka-local-40-be-trigger-806743743dc04caeb8b4cdf-trigger
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
 spec:
   type: service
   lifecycle: development
   owner: group:default/guests
+  dependsOn: []
+  dependencyOf: []
   system: system:default/Platformnex
+  providesApis: []
+  consumesApis: []
