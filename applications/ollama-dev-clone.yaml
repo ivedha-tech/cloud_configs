@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ollama-dev-clone
+  description: this is the dev env setup for ollama
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/ollama-for-elastic
+    backstage.io/source-vcs: Github
+    sonarqube.org/project-key: ollama-for-elastic
+    google.com/cloudbuild-trigger-name: ollama-for-elastic-trigger-c8b9420580e74630a861d00-trigger
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
+spec:
+  type: service
+  lifecycle: staging
+  owner: group:default/guests
+  system: system:default/ollama
