@@ -7,8 +7,15 @@ metadata:
     backstage.io/source-location: https://github.com/ivedha-tech/ollama-for-elastic
     backstage.io/source-vcs: Github
     sonarqube.org/project-key: ollama-for-elastic
+    google.com/cloudbuild-trigger-name: ollama-for-elastic-trigger-2867f4202aa94629b858f54-trigger
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
 spec:
   type: service
   lifecycle: development
   owner: group:default/guests
+  dependsOn: []
+  dependencyOf: []
   system: system:default/elastic
+  providesApis: []
+  consumesApis: []
