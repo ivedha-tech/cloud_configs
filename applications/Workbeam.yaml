@@ -1,5 +1,5 @@
 apiVersion: backstage.io/v1alpha1
-kind: System
+kind: Component
 metadata:
   name: Workbeam
   description: >
@@ -7,5 +7,11 @@ metadata:
     talent, partners, and AI agents. It helps companies build flexible,
     high-performance teams by integrating freelance experts, strategic partners,
     and task-specific AI into a unified workflow.
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/workbeam
+    backstage.io/source-vcs: Github
 spec:
+  type: service
+  lifecycle: development
   owner: group:default/guests
+  system: system:default/Workbeam
