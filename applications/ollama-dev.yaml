@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ollama-dev
+  description: this is the dev env setup for ollama
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/ollama-for-elastic
+    backstage.io/source-vcs: Github
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/ollama
