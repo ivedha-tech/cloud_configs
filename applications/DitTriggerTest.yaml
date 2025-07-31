@@ -1,0 +1,7 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: DitTriggerTest
+  description: some info about dit trigger test
+spec:
+  owner: group:default/guests
