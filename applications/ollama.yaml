@@ -1,0 +1,7 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: ollama
+  description: this is a test app for deploying an ollama service
+spec:
+  owner: group:default/guests
