@@ -1,10 +1,16 @@
 apiVersion: backstage.io/v1alpha1
-kind: System
+kind: Component
 metadata:
   name: ServiceNEX-CLI
   description: ServiceNEX CLI is a command-line tool for migrating data from
     platforms like ServiceNow and sDesk into ServiceNEX, the intelligent service
     management platform. Use this tool to quickly extract, transform, and load
     customer data, making it easy to onboard organizations to ServiceNEX.
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/servicenex-cli
+    backstage.io/source-vcs: Github
 spec:
+  type: service
+  lifecycle: development
   owner: group:default/guests
+  system: system:default/ServiceNEX-CLI
