@@ -1,0 +1,7 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: DIT2TriggerTest
+  description: "DIT2TriggerTest application info "
+spec:
+  owner: group:default/guests
