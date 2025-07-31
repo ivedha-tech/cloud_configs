@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: cforge-gke-clu
+  description: cforge-gke-clu
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/prj-dev-platform-next
+spec:
+  type: k8s-provision
+  region: us-central1
+  project: prj-dev-platform-next
+  owner: group:default/guests
+  system: system:default/CloudForge
+  lifecycle: development
