@@ -1,0 +1,7 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: DITTest999
+  description: "DITTest999 som application info "
+spec:
+  owner: group:default/guests
