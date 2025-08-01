@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: gbd
+  description: dfgdfgdgdfgdffdfsfdsfdfsd
+  annotations:
+    backstage.io/source-location: https://github.com/kushanD95/swag-test-temp100
+    backstage.io/source-vcs: Github
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/DitTriggerTest
