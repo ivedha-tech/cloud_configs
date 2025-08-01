@@ -9,6 +9,7 @@ metadata:
     google.com/cloudbuild-trigger-name: dit2-trigger-test-trigger-43a894025487416796f482b3-trigger
     google.com/cloudbuild-project-slug: prj-dev-platform-next
     google.com/cloudbuild-location: us-central1
+    sonarqube.org/project-key: dit2-trigger-test
 spec:
   type: service
   lifecycle: development
