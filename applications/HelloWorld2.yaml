@@ -1,21 +1,7 @@
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: System
 metadata:
   name: HelloWorld2
-  description: hllo World 2 repo information about the app
-  annotations:
-    backstage.io/source-location: url:https://github.com/ivedha-tech/hello-world-2
-    backstage.io/source-vcs: Github
-    sonarqube.org/project-key: platformnex
-    mycompany.com/gcp-dataset-id: ds_billing
-    mycompany.com/gcp-provider: gcp
-    mycompany.com/gcp-table-id: gcp_billing_export_resource_v1_01E9B5_60A8A4_E1FE52
+  description: hello world 2 applicationd
 spec:
-  type: service
-  lifecycle: development
   owner: group:default/guests
-  dependsOn: []
-  dependencyOf: []
-  system: system:default/HelloWorld2
-  providesApis: []
-  consumesApis: []
