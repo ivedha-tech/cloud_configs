@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: ffgdfghdf
-  description: hdfhhfghhfffffffffffffffffffffffffffffffffffffffffffg
+  description: hdfhhfghhfffffffffffffffds,k
   annotations:
     backstage.io/source-location: https://github.com/kushanD95/swag-test-temp100
     backstage.io/source-vcs: Github
@@ -11,3 +11,7 @@ spec:
   lifecycle: development
   owner: group:default/guests
   system: system:default/DitTriggerTest
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
