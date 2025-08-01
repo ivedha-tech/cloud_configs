@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: dev-test-component
+  description: dev-test-component description
+  annotations:
+    backstage.io/source-location: https://github.com/cgs-tech/repo0
+    backstage.io/source-vcs: Github
+    sonarqube.org/project-key: platformnex
+    google.com/cloudbuild-trigger-name: ""
+    google.com/cloudbuild-project-slug: ""
+    google.com/cloudbuild-location: ""
+    jira.com/project-key: PEJ
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/Test-Application
