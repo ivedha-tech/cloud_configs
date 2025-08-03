@@ -2,11 +2,14 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: dev-test-component
-  description: dev-test-component description
+  description: dev-test-component descriptionssss
   annotations:
     backstage.io/source-location: https://github.com/cgs-tech/repo0
     backstage.io/source-vcs: Github
     sonarqube.org/project-key: platformnex
+    google.com/cloudrun-project-slug: ""
+    google.com/cloudrun-location: ""
+    google.com/cloudrun-service-name: ""
     google.com/cloudbuild-trigger-name: ""
     google.com/cloudbuild-project-slug: ""
     google.com/cloudbuild-location: ""
@@ -16,3 +19,7 @@ spec:
   lifecycle: development
   owner: group:default/guests
   system: system:default/Test-Application
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
