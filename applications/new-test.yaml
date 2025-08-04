@@ -1,0 +1,7 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: new-test
+  description: new-testnew-testnew-test
+spec:
+  owner: group:default/guests
