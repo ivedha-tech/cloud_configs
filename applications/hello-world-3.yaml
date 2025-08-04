@@ -10,8 +10,8 @@ spec:
   type: service
   lifecycle: development
   owner: group:default/guests
+  dependsOn: []
+  dependencyOf: []
   system: system:default/HelloWorld
   providesApis: []
   consumesApis: []
-  dependsOn: []
-  dependencyOf: []
