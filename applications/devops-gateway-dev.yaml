@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: devops-gateway-dev
+  description: this is the devops gateway
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-devops-gateway
+    backstage.io/source-vcs: Github
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/platformnex
