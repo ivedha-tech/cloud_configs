@@ -1,0 +1,7 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: Dev-Test
+  description: Testing for error handling in platnex
+spec:
+  owner: group:default/guests
