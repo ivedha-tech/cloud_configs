@@ -11,4 +11,4 @@ spec:
   project: prj-dev-platform-next
   owner: group:default/guests
   system: system:default/Platformnex
-  lifecycle: production
+  lifecycle: development
