@@ -1,0 +1,7 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: testing-app-onboarding
+  description: ""
+spec:
+  owner: group:default/guests
