@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: ivedhatestrepoqab
-  description: backend component
+  description: backend componentssssssssssssss
   annotations:
     backstage.io/source-location: url:https://github.com/ivedha-tech/ivedhatestrepoqab
     backstage.io/source-vcs: Github
@@ -19,15 +19,12 @@ metadata:
     google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: prj-dev-platform-next
     google.com/cloudbuild-trigger-name: ivedhafrontendservicenameqa-trigger
-    mycompany.com/gcp-dataset-id: ds_billing
-    mycompany.com/gcp-provider: gcp
-    mycompany.com/gcp-table-id: gcp_billing_export_resource_v1_01E9B5_60A8A4_E1FE52
 spec:
   type: service
   lifecycle: development
   owner: group:default/guests
-  dependsOn: []
-  dependencyOf: []
   system: Platformnex
   providesApis: []
   consumesApis: []
+  dependsOn: []
+  dependencyOf: []
