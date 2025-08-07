@@ -1,0 +1,7 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: test-onboarding
+  description: this application is created to check application onboarding
+spec:
+  owner: group:default/guests
