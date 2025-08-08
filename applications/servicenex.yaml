@@ -1,0 +1,7 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: servicenex
+  description: this is the servicenex application
+spec:
+  owner: group:default/platformnex-admin
