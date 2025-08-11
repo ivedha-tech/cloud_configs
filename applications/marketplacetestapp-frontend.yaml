@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: marketplacetestapp-frontend
+  description: ""
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-devops-xyz
+    backstage.io/source-vcs: Github
+spec:
+  type: service
+  lifecycle: devlopment
+  owner: group:default/platfor-admin
+  system: system:default/fxg
+  dependsOn: []
+  dependencyOf: []
