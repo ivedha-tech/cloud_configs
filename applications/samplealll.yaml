@@ -1,15 +1,7 @@
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: System
 metadata:
   name: samplealll
   description: ""
-  annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-fronteee
-    backstage.io/source-vcs: Github
 spec:
-  type: service
-  lifecycle: development
-  owner: group:default/platfor-admin
-  system: system:default/fxg
-  dependsOn: []
-  dependencyOf: []
+  owner: group:default/guests
