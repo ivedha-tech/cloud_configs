@@ -7,12 +7,15 @@ metadata:
     backstage.io/source-location: https://github.com/ivedha-tech/dit2-trigger-test
     backstage.io/source-vcs: Github
     sonarqube.org/project-key: dit2-trigger-test
+    google.com/cloudbuild-trigger-name: hello-world-2-a14e5-trigger
+    google.com/cloudbuild-project-slug: triggertes-dev
+    google.com/cloudbuild-location: us-central1
 spec:
   type: service
   lifecycle: development
   owner: group:default/guests
+  dependsOn: []
+  dependencyOf: []
   system: system:default/DIT2TriggerTest
   providesApis: []
   consumesApis: []
-  dependsOn: []
-  dependencyOf: []
