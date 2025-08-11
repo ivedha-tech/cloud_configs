@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: devops-gateway-clone
+  name: devops-gateway-prod
   description: devops gateway instance
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/platformnex-devops-gateway
