@@ -8,8 +8,10 @@ metadata:
     backstage.io/source-vcs: Github
 spec:
   type: service
-  lifecycle: devlopment
+  lifecycle: development
   owner: group:default/guests
   system: system:default/QA-Test-Application
+  providesApis: []
+  consumesApis: []
   dependsOn: []
   dependencyOf: []
