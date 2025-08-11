@@ -1,0 +1,7 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: new-app
+  description: new-app desssss
+spec:
+  owner: group:default/platfor-admin
