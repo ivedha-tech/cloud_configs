@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: platformnex-backend-dev
+  description: this is the backend instance for dev environment
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-backend
+    backstage.io/source-vcs: Github
+    sonarqube.org/project-key: platformnex2
+    jira.com/project-key: PEJ
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/platformnex-admin
+  system: system:default/platformnex
