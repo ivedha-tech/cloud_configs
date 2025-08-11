@@ -6,11 +6,11 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/platformnex-backend
     backstage.io/source-vcs: Github
-    google.com/cloudrun-project-slug: prj-dev-platform-next
+    google.com/cloudrun-project-slug: prj-platformnex-prod
     google.com/cloudrun-location: us-central1
-    google.com/cloudrun-service-name: int-prom-prod-backend-6
-    google.com/cloudbuild-trigger-name: platformnex-backend-prod
-    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudrun-service-name: platformnex-v2-backend-prod
+    google.com/cloudbuild-trigger-name: int-prom-prod-backend-6
+    google.com/cloudbuild-project-slug: prj-platformnex-prod
     google.com/cloudbuild-location: us-central1
     jira.com/project-key: PEJ
 spec:
@@ -18,3 +18,7 @@ spec:
   lifecycle: production
   owner: group:default/platformnex-admin
   system: system:default/platformnex
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
