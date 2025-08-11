@@ -6,19 +6,13 @@ metadata:
   annotations:
     backstage.io/source-location: url:https://github.com/ivedha-tech/cloud_configs
     backstage.io/source-vcs: Github
-    google.com/cloudbuild-trigger-name: weqwe
-    google.com/cloudbuild-project-slug: default-project
-    google.com/cloudbuild-location: us-central1
-    mycompany.com/gcp-dataset-id: ds_billing
-    mycompany.com/gcp-provider: gcp
-    mycompany.com/gcp-table-id: gcp_billing_export_resource_v1_01E9B5_60A8A4_E1FE52
     sonarqube.org/project-key: cloud_configs
 spec:
   type: service
   lifecycle: development
   owner: group:default/guests
-  dependsOn: []
-  dependencyOf: []
   system: system:default/cloud_config
   providesApis: []
   consumesApis: []
+  dependsOn: []
+  dependencyOf: []
