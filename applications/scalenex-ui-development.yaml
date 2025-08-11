@@ -9,6 +9,7 @@ metadata:
     google.com/cloudrun-project-slug: prj-scalenex-nonprod
     google.com/cloudrun-location: us-central1
     google.com/cloudrun-service-name: scalenex-app-dit1
+    sonarqube.org/project-key: scalenex-ui
 spec:
   type: website
   lifecycle: development
