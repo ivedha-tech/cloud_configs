@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: NATS-prod
+  description: event broker for orchestrator and backend
+spec:
+  type: cloud_run
+  owner: group:default/platformnex-admin
+  system: system:default/platformnex
+  region: us-central1
+  project: prj-platformnex-prod
+  lifecycle: production
