@@ -6,6 +6,7 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/servicenex
     backstage.io/source-vcs: Github
+    sonarqube.org/project-key: servicenex
     google.com/cloudrun-project-slug: prj-dev-platform-next
     google.com/cloudrun-location: us-central1
     google.com/cloudrun-service-name: servicenex-uat
@@ -13,9 +14,12 @@ metadata:
     google.com/cloudbuild-project-slug: prj-dev-platform-next
     google.com/cloudbuild-location: us-central1
     jira.com/project-key: cws
-    sonarqube.org/project-key: servicenex
 spec:
   type: website
   lifecycle: development
   owner: group:default/platformnex-admin
   system: system:default/servicenex
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
