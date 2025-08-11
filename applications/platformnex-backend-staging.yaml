@@ -16,6 +16,10 @@ metadata:
     jira.com/project-key: PEJ
 spec:
   type: service
-  lifecycle: development
+  lifecycle: staging
   owner: group:default/platformnex-admin
   system: system:default/platformnex
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
