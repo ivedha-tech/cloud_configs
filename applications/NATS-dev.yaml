@@ -13,5 +13,5 @@ spec:
   dependsOn: []
   dependencyOf: []
   region: us-central1
-  project: prj-platformnex-prod
+  project: prj-dev-platform-next
   lifecycle: development
