@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: service-application-prod
+  description: this is the production app
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/servicenex
+    backstage.io/source-vcs: Github
+    sonarqube.org/project-key: servicenex
+    google.com/cloudrun-project-slug: prj-servicenex-prod
+    google.com/cloudrun-location: us-central1
+    google.com/cloudrun-service-name: servicenex-prod
+    google.com/cloudbuild-trigger-name: SERVICENEX-DIT-QA
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
+    jira.com/project-key: cws
+spec:
+  type: website
+  lifecycle: production
+  owner: group:default/platformnex-admin
+  system: system:default/servicenex
