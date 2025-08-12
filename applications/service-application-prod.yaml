@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: service-application-prod
-  description: This is the production app
+  description: This is the servicenex production app
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/servicenex
     backstage.io/source-vcs: Github
