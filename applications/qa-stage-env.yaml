@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: qa-stage-env
+  description: qa-stage-env description
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/testrepo-f-qa-aug-12
+    backstage.io/source-vcs: Github
+spec:
+  type: service
+  lifecycle: staging
+  owner: group:default/guests
+  system: system:default/Platformnex
+  dependsOn: []
+  dependencyOf: []
