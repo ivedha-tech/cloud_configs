@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: sanitytesting
+  description: bascjhbviKSUAYDGCDFIUhbkjhvbjkhvjhgv
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-frontend
+    backstage.io/source-vcs: Github
+spec:
+  type: website
+  lifecycle: production
+  owner: group:default/guests
+  system: system:default/Test-Application
+  dependsOn: []
+  dependencyOf: []
