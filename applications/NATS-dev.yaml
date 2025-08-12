@@ -10,6 +10,8 @@ spec:
   type: cloud_run
   owner: group:default/platformnex-admin
   system: system:default/platformnex
+  dependsOn: []
+  dependencyOf: []
   region: us-central1
   project: prj-platformnex-prod
-  lifecycle: staging
+  lifecycle: development
