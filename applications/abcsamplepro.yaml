@@ -4,12 +4,15 @@ metadata:
   name: abcsamplepro
   description: ""
   annotations:
-    backstage.io/source-location: http://github.com/abc
+    backstage.io/source-location: https://github.com/ivedha-tech/cicd-sasiru-3.git
     backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
 spec:
   type: service
   lifecycle: development
   owner: group:default/guests
   system: system:default/application999
+  providesApis: []
+  consumesApis: []
   dependsOn: []
   dependencyOf: []
