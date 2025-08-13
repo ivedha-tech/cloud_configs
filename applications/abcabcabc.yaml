@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: abcabcabc
+  description: ""
+  annotations:
+    backstage.io/source-location: https://github.com/ivedhaabc
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: prj-dev-platform-next
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/cloud_config
+  dependsOn: []
+  dependencyOf: []
