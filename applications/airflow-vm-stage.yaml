@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: airflow-vm-stage
+  description: ""
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/airflow-dev-environment
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: Platformnex-Airflow-Deploy
+    google.com/cloudbuild-project-slug: prj-prd-cnb-workload
+    google.com/cloudbuild-location: us-central1
+    google.com/gcp-projectid: prj-prd-cnb-workload
+spec:
+  type: service
+  lifecycle: staging
+  owner: group:default/platfor-admin
+  system: system:default/Airflow-PlatformNEX
