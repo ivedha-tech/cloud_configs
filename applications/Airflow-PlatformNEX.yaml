@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: Airflow-PlatformNEX
+  description: This is the airflow cluster for platformnex
+  annotations:
+    google.com/gcp-projectid: ""
+spec:
+  owner: group:default/platfor-admin
