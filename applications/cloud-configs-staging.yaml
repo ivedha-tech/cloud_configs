@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: cloud-configs-staging
+  description: this repository contains the onboarded yaml entities such as
+    components, apis and resources
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/cloud_configs
+    backstage.io/source-vcs: Github
+spec:
+  type: service
+  lifecycle: staging
+  owner: group:default/platformnex-admin
+  system: system:default/platformnex
