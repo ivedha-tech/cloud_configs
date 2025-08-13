@@ -2,11 +2,15 @@ apiVersion: backstage.io/v1alpha1
 kind: Resource
 metadata:
   name: NATS-prod
-  description: event broker for orchestrator and backend
+  description: event broker for orchestrator and backend prod env
+  annotations:
+    backstage.io/source-location: url:https://github.com/ivedha-tech/cloud_configs/tree/feature-yaml-prod/applications/
 spec:
   type: cloud_run
   owner: group:default/platformnex-admin
   system: system:default/platformnex
+  dependsOn: []
+  dependencyOf: []
   region: us-central1
   project: prj-platformnex-prod
   lifecycle: production
