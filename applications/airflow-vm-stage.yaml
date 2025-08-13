@@ -2,15 +2,15 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: airflow-vm-stage
-  description: ''
+  description: http://34.121.64.165:8080/
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/airflow-dev-environment
     backstage.io/source-vcs: Github
+    sonarqube.org/project-key: airflow-dev-environment
     google.com/cloudbuild-trigger-name: Platformnex-Airflow-Deploy-Stage
     google.com/cloudbuild-project-slug: prj-dev-platform-next
     google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: prj-dev-platform-next
-    sonarqube.org/project-key: airflow-dev-environment
 spec:
   type: service
   lifecycle: staging
