@@ -1,20 +1,14 @@
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: Resource
 metadata:
   name: test
-  description: regression test description
+  description: test
   annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/regressionrepo-qa-f-12
-    backstage.io/source-vcs: Github
-    google.com/cloudbuild-trigger-name: regressionrepo-qa-f-12-cacd6-trigger
-    google.com/cloudbuild-project-slug: prj-dev-platform-next
-    google.com/cloudbuild-location: us-central1
+    backstage.io/source-location: https://github.com/ivedha-tech/prj-dev-platform-next
 spec:
-  type: service
-  lifecycle: development
+  type: storage
+  region: us-central1
+  project: prj-dev-platform-next
   owner: group:default/guests
-  dependsOn: []
-  dependencyOf: []
-  system: system:default/Platformnex
-  providesApis: []
-  consumesApis: []
+  system: system:default/CloudForge
+  lifecycle: development
