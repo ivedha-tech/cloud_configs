@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: pn_dit2_catalog
+  description: platformnex dev env catalog database
+spec:
+  type: storage
+  owner: group:default/platformnex-admin
+  system: system:default/platformnex
+  region: us-central1
+  project: prj-dev-platform-next
+  lifecycle: development
