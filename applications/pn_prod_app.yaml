@@ -10,6 +10,8 @@ spec:
   type: storage
   owner: group:default/platformnex-admin
   system: system:default/platformnex
+  dependsOn: []
+  dependencyOf: []
   region: us-central1
-  project: prj-dev-platform-next
+  project: prj-platformnex-prod
   lifecycle: production
