@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: executable_template
+  description: ""
+  annotations:
+    google.com/gcp-projectid: ""
+spec:
+  type: cloud_run
+  owner: group:default/platfor-admin
+  system: system:default/Airflow-PlatformNEX
+  region: us-central1
+  project: prj-prd-cnb-workload
+  lifecycle: development
