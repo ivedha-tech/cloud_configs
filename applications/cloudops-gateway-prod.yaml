@@ -7,7 +7,7 @@ metadata:
     backstage.io/source-location: url:https://github.com/ivedha-tech/cloudops-gateway
     backstage.io/source-vcs: Github
     sonarqube.org/project-key: platformnex
-    google.com/gcp-projectid: jjjjj
+    google.com/gcp-projectid: prj-prod-platformnex
     jira.com/project-key: PEJ
 spec:
   type: service
