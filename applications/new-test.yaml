@@ -2,8 +2,8 @@ apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
   name: new-test
-  description: new-test description
+  description: new test app
   annotations:
     google.com/gcp-projectid: ""
 spec:
-  owner: group:default/platfor-admin
+  owner: group:default/guests
