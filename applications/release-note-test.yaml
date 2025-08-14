@@ -15,10 +15,10 @@ metadata:
     google.com/cloudbuild-location: us-central-1
 spec:
   type: service
-  lifecycle: production
+  lifecycle: staging
   owner: group:default/guests
-  dependsOn: []
-  dependencyOf: []
   system: system:default/onboard-test-app
   providesApis: []
   consumesApis: []
+  dependsOn: []
+  dependencyOf: []
