@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: backend-dev
+  description: ""
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/cloudforge-be
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/platfor-admin
+  system: system:default/demo-application-01
+  dependsOn: []
+  dependencyOf: []
