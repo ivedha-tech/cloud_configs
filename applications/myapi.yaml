@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: myapi
+  description: api description
+  annotations:
+    backstage.io/source-location: http://www.github.com/un/repo
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: gcpid
+spec:
+  type: asyncapi
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/testApplication1101
+  definition: definition
+  annotations:
+    backstage.io/source-location: http://www.github.com/un/repo
+    backstage.io/source-vcs: github
