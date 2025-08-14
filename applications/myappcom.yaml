@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: myappcom
+  description: component description
+  annotations:
+    backstage.io/source-location: https://www.github.com/aaa/bbb
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: gcpid
+    jira.com/project-key: jiraid
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/testApplication1101
+  dependsOn:
+    - component:default/dev
+  dependencyOf:
+    - component:default/dev
+  annotations:
+    backstage.io/source-location: https://www.github.com/aaa/bbb
+    backstage.io/source-vcs: github
