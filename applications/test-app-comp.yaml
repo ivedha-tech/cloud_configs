@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: test-app-comp
+  description: test-app-comp desc
+  annotations:
+    google.com/gcp-projectid: ""
+spec:
+  owner: group:default/guests
