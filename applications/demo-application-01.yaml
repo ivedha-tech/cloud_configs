@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: demo-application-01
+  description: this is a demo application
+  annotations:
+    google.com/gcp-projectid: ""
+spec:
+  owner: group:default/platfor-admin
