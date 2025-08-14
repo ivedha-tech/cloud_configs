@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: myresource
+  description: resource description
+  annotations:
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  type: storage
+  owner: group:default/guests
+  system: system:default/testApplication1101
+  region: us-central1
+  project: gcpid
+  lifecycle: development
