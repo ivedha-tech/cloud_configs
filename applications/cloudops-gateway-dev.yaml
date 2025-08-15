@@ -13,7 +13,7 @@ metadata:
     google.com/cloudbuild-trigger-name: platformnex-V2-cloudops-gateway-DIT
     google.com/cloudbuild-project-slug: prj-dev-platform-next
     google.com/cloudbuild-location: us-central1
-    google.com/gcp-projectid: prj-dev-platform-next
+    google.com/gcp-projectid: prj-prod-platformnex
     jira.com/project-key: PEJ
 spec:
   type: service
