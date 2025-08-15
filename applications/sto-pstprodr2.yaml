@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: sto-pstprodr2
+  description: sto-pstprodr2
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/prj-prod-platformnex
+spec:
+  type: storage
+  region: us-central1
+  project: prj-prod-platformnex
+  owner: group:default/guests
+  system: system:default/platformnex
+  lifecycle: development
