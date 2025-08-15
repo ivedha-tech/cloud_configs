@@ -13,6 +13,7 @@ metadata:
     google.com/cloudbuild-trigger-name: SERVICENEX-PROD
     google.com/cloudbuild-project-slug: prj-servicenex-prod
     google.com/cloudbuild-location: us-central1
+    google.com/gcp-projectid: prj-servicenex-prod
     jira.com/project-key: cws
 spec:
   type: website
