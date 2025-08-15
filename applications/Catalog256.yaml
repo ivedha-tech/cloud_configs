@@ -6,8 +6,16 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/kushanD95/swag-test-temp100
     backstage.io/source-vcs: Github
+    google.com/gcp-projectid: prj-dev-platform-next
 spec:
   type: service
   lifecycle: development
   owner: group:default/guests
   system: system:default/test
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/kushanD95/swag-test-temp100
+    backstage.io/source-vcs: github
