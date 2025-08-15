@@ -17,7 +17,7 @@ metadata:
     jira.com/project-key: cws
 spec:
   type: website
-  lifecycle: qa
+  lifecycle: staging
   owner: group:default/platformnex-admin
   system: system:default/servicenex
   providesApis: []
