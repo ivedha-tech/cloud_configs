@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-release-notes
+  description: testing
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/testrepo-qa-f-aug1
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: prj-dev-platform-next
+spec:
+  type: service
+  lifecycle: staging
+  owner: group:default/guests
+  system: system:default/application999
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/testrepo-qa-f-aug1
+    backstage.io/source-vcs: github
