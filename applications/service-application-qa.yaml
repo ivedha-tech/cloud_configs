@@ -13,11 +13,11 @@ metadata:
     google.com/cloudbuild-trigger-name: SERVICENEX-DIT-QA
     google.com/cloudbuild-project-slug: prj-dev-service-nex
     google.com/cloudbuild-location: us-central1
-    google.com/gcp-projectid: prj-dev-service-nex
+    google.com/gcp-projectid: ""
     jira.com/project-key: cws
 spec:
   type: website
-  lifecycle: staging
+  lifecycle: qa
   owner: group:default/platformnex-admin
   system: system:default/servicenex
   providesApis: []
