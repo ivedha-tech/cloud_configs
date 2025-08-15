@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-cicd-d2-prefix
+  description: test-cicd-d2-prefix
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/testrepo-qa-f-aug1
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: prj-dev-platform-next
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/Platformnex
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/testrepo-qa-f-aug1
+    backstage.io/source-vcs: github
