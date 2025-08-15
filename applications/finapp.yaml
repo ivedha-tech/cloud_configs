@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: finapp
+  description: finapp
+  annotations:
+    google.com/gcp-projectid: ""
+spec:
+  owner: group:default/guests
