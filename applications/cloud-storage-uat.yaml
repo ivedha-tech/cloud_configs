@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: cloud-storage-uat
+  description: to store the files/blob in uat
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/cloud_configs
+    backstage.io/source-vcs: github
+spec:
+  type: storage
+  owner: group:default/platformnex-admin
+  system: system:default/servicenex
+  region: us-central1
+  project: prj-dev-platform-next
+  lifecycle: staging
