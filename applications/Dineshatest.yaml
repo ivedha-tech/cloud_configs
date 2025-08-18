@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: Dineshatest
+  description: sd
+  annotations:
+    google.com/gcp-projectid: ""
+spec:
+  type: storage
+  owner: group:default/guests
+  system: system:default/Test-Application
+  region: us-central1
+  project: "prj-dev-platform-next  "
+  lifecycle: development
