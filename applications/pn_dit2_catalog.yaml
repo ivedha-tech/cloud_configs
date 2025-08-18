@@ -3,10 +3,15 @@ kind: Resource
 metadata:
   name: pn_dit2_catalog
   description: platformnex dev env catalog database
+  annotations:
+    backstage.io/source-location: url:https://github.com/ivedha-tech/cloud_configs/tree/feature-yaml-prod/applications/
+    google.com/gcp-projectid: ""
 spec:
-  type: storage
+  type: cloud_sql
   owner: group:default/platformnex-admin
   system: system:default/platformnex
+  dependsOn: []
+  dependencyOf: []
   region: us-central1
   project: prj-dev-platform-next
   lifecycle: development
