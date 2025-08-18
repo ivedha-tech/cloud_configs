@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: cnb-airflow-artifact-events
+  description: cnb-airflow-artifact-events
+  annotations:
+    google.com/gcp-projectid: ""
+spec:
+  type: storage
+  owner: group:default/platformnex-admin
+  system: system:default/servicenex
+  region: us-central1
+  project: prj-prd-cnb-workload
+  lifecycle: production
