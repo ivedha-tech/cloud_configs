@@ -6,8 +6,9 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/cloud_configs
     backstage.io/source-vcs: github
+    google.com/gcp-projectid: ""
 spec:
-  type: storage
+  type: cloud_sql
   owner: group:default/platformnex-admin
   system: system:default/platformnex
   dependsOn: []
