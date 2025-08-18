@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-18
+  description: test-18
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/fillfront
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/Platformnex
+  dependsOn: []
+  dependencyOf: []
