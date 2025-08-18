@@ -13,7 +13,7 @@ metadata:
     google.com/cloudbuild-trigger-name: ""
     google.com/cloudbuild-project-slug: ""
     google.com/cloudbuild-location: ""
-    google.com/gcp-projectId: s
+    google.com/gcp-projectId: gc
     google.com/gcp-projectid: ""
 spec:
   type: service
