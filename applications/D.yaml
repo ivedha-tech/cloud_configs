@@ -2,13 +2,19 @@ apiVersion: backstage.io/v1alpha1
 kind: Resource
 metadata:
   name: D
-  description: D
+  description: Edited resouce
   annotations:
+    backstage.io/source-location: url:https://github.com/ivedha-tech/cloud_configs/tree/feature-yaml-qa1/applications/
+    google.com/cloudrun-project-slug: ""
+    google.com/cloudrun-location: ""
+    google.com/cloudrun-service-name: ""
     google.com/gcp-projectid: ""
 spec:
   type: storage
   owner: group:default/guests
   system: system:default/Test-Application
+  dependsOn: []
+  dependencyOf: []
   region: us-central1
   project: "prj-dev-platform-next  "
   lifecycle: development
