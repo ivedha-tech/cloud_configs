@@ -4,19 +4,26 @@ metadata:
   name: devops-gateway-dev
   description: This is the DevOps Gateway for dev environment.
   annotations:
-    backstage.io/source-location: url:https://github.com/ivedha-tech/platformnex-devops-gateway
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-devops-gateway
     backstage.io/source-vcs: Github
     sonarqube.org/project-key: platformnex
+    google.com/cloudrun-project-slug: ""
+    google.com/cloudrun-location: ""
+    google.com/cloudrun-service-name: ""
     google.com/cloudbuild-trigger-name: platformnex-V2-devops-gateway-DIT
     google.com/cloudbuild-project-slug: prj-dev-platform-next
     google.com/cloudbuild-location: us-central1
+    google.com/gcp-projectid: prj-dev-platform-next
     jira.com/project-key: PEJ
 spec:
   type: service
   lifecycle: development
   owner: group:default/guests
-  dependsOn: []
-  dependencyOf: []
   system: system:default/Platformnex
   providesApis: []
   consumesApis: []
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-devops-gateway
+    backstage.io/source-vcs: github
