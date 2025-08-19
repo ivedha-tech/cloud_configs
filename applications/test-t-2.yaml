@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-t-2
+  description: test-t-2
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/regressionrepo-qa-f-12
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/Test-Application
+  dependsOn: []
+  dependencyOf: []
