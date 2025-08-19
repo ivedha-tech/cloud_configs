@@ -1,10 +1,19 @@
 apiVersion: backstage.io/v1alpha1
-kind: System
+kind: Component
 metadata:
   name: ApplicationABC
   description: ""
   annotations:
+    backstage.io/source-location: https://github.com/ivedha/abc
     backstage.io/source-vcs: Github
-    google.com/gcp-projectid: ""
+    google.com/gcp-projectid: project-mex
 spec:
+  type: service
+  lifecycle: development
   owner: group:default/guests
+  system: system:default/TestApp
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha/abc
+    backstage.io/source-vcs: github
