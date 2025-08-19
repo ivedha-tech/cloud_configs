@@ -2,30 +2,18 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: platformnex-frontend-dev
-  description: PlatformNEX-frontend service; development environment.
+  description: fdsfffffffffffffffffffffffffffffffffffffffffffffff
   annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-frontend
+    backstage.io/source-location: https://github.com/ivedha-tech/testrepo-qa-f-aug1
     backstage.io/source-vcs: Github
-    sonarqube.org/project-key: platformnex
-    pulumi.com/project-slug: mcmuralishclint/pulumi-cicd/dev
-    pulumi.com/orga-slug: mcmuralishclint
-    google.com/cloudrun-project-slug: prj-dev-platform-next
-    google.com/cloudrun-location: us-central1
-    google.com/cloudrun-service-name: platformnex-v2-frontend-dit2
-    google.com/cloudbuild-trigger-name: platformnex-V2-frontend-DIT
-    google.com/cloudbuild-project-slug: prj-dev-platform-next
-    google.com/cloudbuild-location: us-central1
-    jira.com/project-key: PEJ
-    google.com/gcp-projectid: prj-dev-platform-next
-    mycompany.com/gcp-dataset-id: ds_billing
-    mycompany.com/gcp-provider: gcp
-    mycompany.com/gcp-table-id: gcp_billing_export_resource_v1_01E9B5_60A8A4_E1FE52
+    google.com/gcp-projectid: web_asset platformnex-frontend-dev
 spec:
   type: service
   lifecycle: development
   owner: group:default/guests
-  system: system:default/Platformnex
-  providesApis: []
-  consumesApis: []
+  system: system:default/TestA
   dependsOn: []
   dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/testrepo-qa-f-aug1
+    backstage.io/source-vcs: github
