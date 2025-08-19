@@ -10,12 +10,15 @@ metadata:
     google.com/cloudrun-location: ""
     google.com/cloudrun-service-name: ""
     google.com/gcp-projectid: ""
+    google.com/cloudbuild-trigger-name: platformnex-V2-frontend-DIT
+    google.com/cloudbuild-project-slug: prj-platformnex-prod
+    google.com/cloudbuild-location: us-central1
 spec:
   type: service
   lifecycle: production
   owner: group:default/platformnex-admin
+  dependsOn: []
+  dependencyOf: []
   system: system:default/Test
   providesApis: []
   consumesApis: []
-  dependsOn: []
-  dependencyOf: []
