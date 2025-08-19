@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: sanity-stage-env-qa
+  description: sanity-stage-env-qa
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/regressionrepo-qa-f-12
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  type: service
+  lifecycle: staging
+  owner: group:default/platformnex-admin
+  system: system:default/Test
+  dependsOn: []
+  dependencyOf: []
