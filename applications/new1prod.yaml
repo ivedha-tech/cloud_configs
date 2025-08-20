@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: new1prod
+  description: new1prodnew1prodnew1prod
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/testrepo-qa-f-aug1
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  type: service
+  lifecycle: production
+  owner: group:default/guests
+  system: system:default/finapp
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/testrepo-qa-f-aug1
+    backstage.io/source-vcs: github
