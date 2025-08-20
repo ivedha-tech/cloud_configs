@@ -6,15 +6,20 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/regtestrepo-f-aug-20
     backstage.io/source-vcs: Github
-    google.com/gcp-projectid: prj-dev-platform-next
     sonarqube.org/project-key: regtestrepo-f-aug-20
+    google.com/cloudrun-project-slug: ""
+    google.com/cloudrun-location: ""
+    google.com/cloudrun-service-name: ""
+    google.com/gcp-projectid: ""
+    google.com/cloudbuild-trigger-name: testrepo-qa-f-aug1-15c3f-trigger
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
 spec:
   type: service
   lifecycle: development
   owner: group:default/guests
-  system: system:default/Test-Application
   dependsOn: []
   dependencyOf: []
-  annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/regtestrepo-f-aug-20
-    backstage.io/source-vcs: github
+  system: system:default/Test-Application
+  providesApis: []
+  consumesApis: []
