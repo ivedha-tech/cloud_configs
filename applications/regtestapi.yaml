@@ -4,7 +4,7 @@ metadata:
   name: regtestapi
   description: ""
   annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-frontend
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-backend
     backstage.io/source-vcs: Github
     google.com/gcp-projectid: prj-dev-platform-next
 spec:
@@ -12,7 +12,7 @@ spec:
   lifecycle: development
   owner: group:default/guests
   system: system:default/regtest2Aug20
-  definition: ""
+  definition: test api
   annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-frontend
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-backend
     backstage.io/source-vcs: github
