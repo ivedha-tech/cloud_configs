@@ -2,16 +2,21 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: regtestcomp1
-  description: ""
+  description: edited
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/platformnex-frontend
     backstage.io/source-vcs: Github
-    google.com/gcp-projectid: prj-dev-platform-next
+    google.com/cloudrun-project-slug: ""
+    google.com/cloudrun-location: ""
+    google.com/cloudrun-service-name: ""
+    google.com/gcp-projectid: wrongid
 spec:
   type: website
   lifecycle: development
   owner: group:default/guests
   system: system:default/regtest2Aug20
+  providesApis: []
+  consumesApis: []
   dependsOn: []
   dependencyOf: []
   annotations:
