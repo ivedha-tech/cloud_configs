@@ -4,16 +4,16 @@ metadata:
   name: D
   description: d
   annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/regressionrepo-qa-f-12
+    backstage.io/source-location: https://github.com/ivedha-tech/biofront
     backstage.io/source-vcs: Github
     google.com/gcp-projectid: prj-dev-platform-next
 spec:
   type: service
   lifecycle: development
   owner: group:default/guests
-  system: system:default/new-test
+  system: system:default/Platformnex
   dependsOn: []
   dependencyOf: []
   annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/regressionrepo-qa-f-12
+    backstage.io/source-location: https://github.com/ivedha-tech/biofront
     backstage.io/source-vcs: github
