@@ -1,20 +1,19 @@
 apiVersion: backstage.io/v1alpha1
-kind: Resource
+kind: Component
 metadata:
   name: D
-  description: Edited resouce
+  description: d
   annotations:
-    backstage.io/source-location: url:https://github.com/ivedha-tech/cloud_configs/tree/feature-yaml-qa1/applications/
-    google.com/cloudrun-project-slug: ""
-    google.com/cloudrun-location: ""
-    google.com/cloudrun-service-name: ""
-    google.com/gcp-projectid: ""
+    backstage.io/source-location: https://github.com/ivedha-tech/regressionrepo-qa-f-12
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: prj-dev-platform-next
 spec:
-  type: storage
+  type: service
+  lifecycle: development
   owner: group:default/guests
-  system: system:default/Test-Application
+  system: system:default/new-test
   dependsOn: []
   dependencyOf: []
-  region: us-central1
-  project: "prj-dev-platform-next  "
-  lifecycle: development
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/regressionrepo-qa-f-12
+    backstage.io/source-vcs: github
