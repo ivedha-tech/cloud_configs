@@ -7,6 +7,7 @@ metadata:
     backstage.io/source-location: https://github.com/ivedha-tech/regtestrepo-f-aug-20
     backstage.io/source-vcs: Github
     google.com/gcp-projectid: prj-dev-platform-next
+    sonarqube.org/project-key: regtestrepo-f-aug-20
 spec:
   type: service
   lifecycle: development
