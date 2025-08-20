@@ -6,12 +6,18 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha/abc
     backstage.io/source-vcs: Github
-    google.com/gcp-projectid: project-mex
+    google.com/cloudrun-project-slug: ""
+    google.com/cloudrun-location: ""
+    google.com/cloudrun-service-name: ""
+    google.com/gcp-projectid: ""
+    jira.com/project-key: PEJ
 spec:
   type: service
   lifecycle: development
   owner: group:default/guests
   system: system:default/TestApp
+  providesApis: []
+  consumesApis: []
   dependsOn: []
   dependencyOf: []
   annotations:
