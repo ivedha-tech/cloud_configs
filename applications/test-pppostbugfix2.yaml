@@ -2,11 +2,14 @@ apiVersion: backstage.io/v1alpha1
 kind: Resource
 metadata:
   name: test-pppostbugfix2
-  description: Test description goes here to test dit2
+  description: description goes here
+  annotations:
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
 spec:
   type: storage
   owner: group:default/guests
   system: system:default/Platformnex
   region: us-central1
-  project: prj-platform-next
-  lifecycle: devlopment
+  project: prj-dev-platform-next
+  lifecycle: development
