@@ -2,7 +2,9 @@ apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
   name: TestApp
-  description: Sample App
+  description: sample app
   annotations:
     backstage.io/source-vcs: Github
     google.com/gcp-projectid: ""
+spec:
+  owner: group:default/guests
