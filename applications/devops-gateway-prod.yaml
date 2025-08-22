@@ -16,7 +16,6 @@ metadata:
     google.com/gcp-projectid: prj-platformnex-prod
     jira.com/project-key: PEJ
     mycompany.com/gcp-provider: gcp
-    google.com/gcp-projectid: prj-platformnex-prod
     mycompany.com/gcp-dataset-id: ds_billing
     mycompany.com/gcp-table-id: gcp_billing_export_resource_v1_01E9B5_60A8A4_E1FE52
 spec:
