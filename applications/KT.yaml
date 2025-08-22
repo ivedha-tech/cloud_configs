@@ -6,13 +6,14 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/qa-test-f-22
     backstage.io/source-vcs: Github
-    google.com/gcp-projectid: prj-dev-platform-next
-    sonarqube.org/project-key: qa-test-f-22
+    google.com/gcp-projectid: ""
 spec:
   type: service
   lifecycle: development
   owner: group:default/guests
   system: system:default/Test-Application
+  providesApis: []
+  consumesApis: []
   dependsOn: []
   dependencyOf: []
   annotations:
