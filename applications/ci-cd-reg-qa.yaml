@@ -6,6 +6,7 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/quickfront
     backstage.io/source-vcs: Github
+    artifact-registry/repository: projects/us-central1-docker.pkg.dev/prj-dev-platform-next/platformnex/platformnex-frontend
     google.com/cloudrun-project-slug: ""
     google.com/cloudrun-location: ""
     google.com/cloudrun-service-name: ""
@@ -17,8 +18,11 @@ spec:
   type: service
   lifecycle: development
   owner: group:default/guests
-  dependsOn: []
-  dependencyOf: []
   system: system:default/Test-Application
   providesApis: []
   consumesApis: []
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/quickfront
+    backstage.io/source-vcs: github
