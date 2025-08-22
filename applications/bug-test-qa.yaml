@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: bug-test-qa
+  description: test
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/qa-test-f-22
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/platformnex-admin
+  system: system:default/Test
+  dependsOn: []
+  dependencyOf: []
