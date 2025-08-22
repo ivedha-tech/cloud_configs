@@ -4,16 +4,21 @@ metadata:
   name: models-frontend
   description: ""
   annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/models-
+    backstage.io/source-location: https://github.com/ivedha-tech/models-frontend
     backstage.io/source-vcs: Github
+    google.com/cloudrun-project-slug: ""
+    google.com/cloudrun-location: ""
+    google.com/cloudrun-service-name: ""
     google.com/gcp-projectid: prj-dev-platform-next
 spec:
   type: service
   lifecycle: development
   owner: group:default/guests
   system: system:default/platformnex
+  providesApis: []
+  consumesApis: []
   dependsOn: []
   dependencyOf: []
   annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/models-
+    backstage.io/source-location: https://github.com/ivedha-tech/models-frontend
     backstage.io/source-vcs: github
