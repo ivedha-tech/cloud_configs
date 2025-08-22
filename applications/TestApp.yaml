@@ -6,3 +6,5 @@ metadata:
   annotations:
     backstage.io/source-vcs: Github
     google.com/gcp-projectid: ""
+spec:
+  owner: group:default/guests
