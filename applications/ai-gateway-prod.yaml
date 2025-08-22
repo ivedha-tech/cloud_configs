@@ -6,10 +6,7 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/ai-gateway
     backstage.io/source-vcs: Github
-    google.com/gcp-projectid: prj-dev-platform-next
-    mycompany.com/gcp-dataset-id: ds_billing
-    mycompany.com/gcp-provider: gcp
-    mycompany.com/gcp-table-id: gcp_billing_export_resource_v1_01E9B5_60A8A4_E1FE52
+    google.com/gcp-projectid: prj-platformnex-prod
 spec:
   type: service
   lifecycle: production
