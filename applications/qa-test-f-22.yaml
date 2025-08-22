@@ -2,11 +2,12 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: qa-test-f-22
-  description: ""
+  description: ''
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/qa-test-f-22
     backstage.io/source-vcs: Github
     google.com/gcp-projectid: prj-dev-platform-next
+    sonarqube.org/project-key: qa-test-f-22
 spec:
   type: service
   lifecycle: development
