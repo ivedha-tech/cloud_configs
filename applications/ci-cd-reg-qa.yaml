@@ -6,7 +6,7 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/quickfront
     backstage.io/source-vcs: Github
-    artifact-registry/repository: projects/us-central1-docker.pkg.dev/prj-dev-platform-next/platformnex/platformnex-frontend
+    artifact-registry/repository: projects/prj-dev-platform-next/location/us-central1/repositories/platformnex
     google.com/cloudrun-project-slug: ""
     google.com/cloudrun-location: ""
     google.com/cloudrun-service-name: ""
