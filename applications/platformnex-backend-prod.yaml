@@ -9,17 +9,20 @@ metadata:
     sonarqube.org/project-key: platformnex
     pulumi.com/project-slug: mcmuralishclint/pulumi-cicd/dev
     pulumi.com/orga-slug: mcmuralishclint
-    google.com/gcp-projectid: prj-platformnex-prod
+    google.com/cloudrun-project-slug: ""
+    google.com/cloudrun-location: ""
+    google.com/cloudrun-service-name: ""
+    google.com/gcp-projectid: ""
+    google.com/cloudbuild-trigger-name: int-prom-prod-backend-6
+    google.com/cloudbuild-project-slug: prj-platformnex-prod
+    google.com/cloudbuild-location: us-central1
     jira.com/project-key: PEJ
 spec:
   type: service
   lifecycle: production
   owner: group:default/guests
+  dependsOn: []
+  dependencyOf: []
   system: system:default/Platformnex
   providesApis: []
   consumesApis: []
-  dependsOn: []
-  dependencyOf: []
-  annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-backend
-    backstage.io/source-vcs: github
