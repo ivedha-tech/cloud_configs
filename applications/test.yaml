@@ -1,13 +1,14 @@
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: Resource
 metadata:
   name: test
-  description: This is a test component
+  description: test
   annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/testrepo-qa-f-aug1
-    backstage.io/source-vcs: Github
+    backstage.io/source-location: https://github.com/ivedha-tech/prj-platformnex-prod
 spec:
-  type: service
-  lifecycle: development
-  owner: group:default/platformnex-admin
+  type: storage
+  region: us-central1
+  project: prj-platformnex-prod
+  owner: group:default/guests
   system: system:default/platformnex
+  lifecycle: development
