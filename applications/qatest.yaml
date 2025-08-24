@@ -2,12 +2,18 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: qatest
-  description: test-qa-06 test description
+  description: hgchg
   annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/testrepo-qa-f-aug1
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-frontend
     backstage.io/source-vcs: Github
+    google.com/gcp-projectid: jhvjhv
 spec:
-  type: service
-  lifecycle: development
+  type: library
+  lifecycle: production
   owner: group:default/guests
-  system: system:default/Platformnex
+  system: system:default/TestApp1
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-frontend
+    backstage.io/source-vcs: github
