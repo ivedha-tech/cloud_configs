@@ -10,6 +10,7 @@ metadata:
     mycompany.com/gcp-dataset-id: ds_billing
     mycompany.com/gcp-provider: gcp
     mycompany.com/gcp-table-id: gcp_billing_export_resource_v1_01E9B5_60A8A4_E1FE52
+    sonarqube.org/project-key: testrepo-qa-f-aug1
 spec:
   type: service
   lifecycle: development
