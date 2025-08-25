@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: cloudopstest
+  description: ""
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-cloudbuild-test
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: prj-platform-next
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/HelloWorld2
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-cloudbuild-test
+    backstage.io/source-vcs: github
