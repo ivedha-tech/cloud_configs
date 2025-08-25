@@ -14,11 +14,19 @@ metadata:
     google.com/cloudrun-project-slug: prj-dev-platform-next
     google.com/cloudrun-location: us-central1
     google.com/cloudrun-service-name: platformnex-v2-frontend-dit1
-    google.com/cloudbuild-trigger-name: platformnex-V2-frontend-DIT
+    google.com/cloudbuild-trigger-name: platformnex-V2-frontend-DIT-1
     google.com/cloudbuild-project-slug: prj-dev-platform-next
     google.com/cloudbuild-location: us-central1
+    google.com/gcp-projectid: ""
 spec:
   type: website
   lifecycle: staging
   owner: group:default/guests
   system: platformnex
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-frontend
+    backstage.io/source-vcs: github
