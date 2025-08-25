@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: jhgvjhg
+  description: hgchgcjghf
+  annotations:
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  type: storage
+  owner: group:default/guests
+  system: system:default/Test-Application
+  region: us-central1
+  project: hjgvjhg
+  lifecycle: development
