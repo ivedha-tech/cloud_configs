@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: khgvjhg
+  description: jghvhjgvjhg
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-frontend
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: sghfdhgfcdjtgf
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/Test-Application
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-frontend
+    backstage.io/source-vcs: github
