@@ -2,14 +2,15 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: test-gcp-id
-  description: ""
+  description: ''
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/cicd-test-ba
     backstage.io/source-vcs: Github
-    google.com/cloudrun-project-slug: ""
-    google.com/cloudrun-location: ""
-    google.com/cloudrun-service-name: ""
+    google.com/cloudrun-project-slug: ''
+    google.com/cloudrun-location: ''
+    google.com/cloudrun-service-name: ''
     google.com/gcp-projectid: prj-dev-platform-next
+    sonarqube.org/project-key: cicd-test-ba
 spec:
   type: service
   lifecycle: development
