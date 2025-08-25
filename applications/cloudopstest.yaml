@@ -2,17 +2,18 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: cloudopstest
-  description: ""
+  description: ''
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/platformnex-cloudbuild-test
     backstage.io/source-vcs: Github
-    google.com/cloudrun-project-slug: ""
-    google.com/cloudrun-location: ""
-    google.com/cloudrun-service-name: ""
-    google.com/gcp-projectid: ""
+    google.com/cloudrun-project-slug: ''
+    google.com/cloudrun-location: ''
+    google.com/cloudrun-service-name: ''
+    google.com/gcp-projectid: ''
     google.com/cloudbuild-trigger-name: cicd-sasiru-12-development-trigger
     google.com/cloudbuild-project-slug: prj-platform-next
     google.com/cloudbuild-location: us-central1
+    sonarqube.org/project-key: platformnex-cloudbuild-test
 spec:
   type: service
   lifecycle: development
