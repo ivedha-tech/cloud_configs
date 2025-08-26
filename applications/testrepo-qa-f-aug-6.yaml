@@ -2,18 +2,22 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: testrepo-qa-f-aug-6
-  description: ''
+  description: ""
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/testrepo-qa-f-aug-6
     backstage.io/source-vcs: Github
+    google.com/cloudrun-project-slug: ""
+    google.com/cloudrun-location: ""
+    google.com/cloudrun-service-name: ""
     google.com/gcp-projectid: prj-dev-platform-next
     jira.com/project-key: PEJ
-    sonarqube.org/project-key: testrepo-qa-f-aug-6
 spec:
   type: service
   lifecycle: development
   owner: group:default/guests
   system: system:default/Platformnex
+  providesApis: []
+  consumesApis: []
   dependsOn: []
   dependencyOf: []
   annotations:
