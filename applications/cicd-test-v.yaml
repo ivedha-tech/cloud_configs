@@ -2,24 +2,29 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: cicd-test-v
-  description: ''
+  description: ""
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/cicd-test-ba
     backstage.io/source-vcs: Github
     sonarqube.org/project-key: cicd-test-ba
-    google.com/cloudrun-project-slug: ''
-    google.com/cloudrun-location: ''
-    google.com/cloudrun-service-name: ''
-    google.com/gcp-projectid: prj-dev-platform-next
+    google.com/cloudrun-project-slug: ""
+    google.com/cloudrun-location: ""
+    google.com/cloudrun-service-name: ""
+    google.com/gcp-projectid: ""
     google.com/cloudbuild-trigger-name: sasiru-test-13-development-trigger
     google.com/cloudbuild-project-slug: prj-dev-platform-next
     google.com/cloudbuild-location: us-central1
+    mycompany.com/gcp-dataset-id: gcp_billing_export_resource_v1_01E9B5_60A8A4_E1FE52
+    mycompany.com/gcp-table-id: ds_billing
 spec:
   type: service
   lifecycle: development
   owner: group:default/guests
-  dependsOn: []
-  dependencyOf: []
   system: system:default/Platformnex
   providesApis: []
   consumesApis: []
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/cicd-test-ba
+    backstage.io/source-vcs: github
