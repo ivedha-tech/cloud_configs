@@ -2,10 +2,11 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: hello-world-3
-  description: "some info about the app. "
+  description: 'some info about the app. '
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/hello-world-2
     backstage.io/source-vcs: Github
+    sonarqube.org/project-key: hello-world-2
 spec:
   type: service
   lifecycle: development
