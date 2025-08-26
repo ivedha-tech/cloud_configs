@@ -6,14 +6,19 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/regtestrepo-f-aug-20
     backstage.io/source-vcs: Github
+    google.com/cloudrun-project-slug: ""
+    google.com/cloudrun-location: ""
+    google.com/cloudrun-service-name: ""
     google.com/gcp-projectid: ""
+    google.com/cloudbuild-trigger-name: pdfds
+    google.com/cloudbuild-project-slug: fdsfsdffsd
+    google.com/cloudbuild-location: fdsfdsf
 spec:
   type: service
   lifecycle: development
   owner: group:default/guests
-  system: system:default/finapp
   dependsOn: []
   dependencyOf: []
-  annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/regtestrepo-f-aug-20
-    backstage.io/source-vcs: github
+  system: system:default/finapp
+  providesApis: []
+  consumesApis: []
