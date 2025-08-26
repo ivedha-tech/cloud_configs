@@ -2,11 +2,12 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: sonartest
-  description: ""
+  description: ''
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/cicdtestingrepo
     backstage.io/source-vcs: Github
     google.com/gcp-projectid: prj-dev-platform-next
+    sonarqube.org/project-key: cicdtestingrepo
 spec:
   type: service
   lifecycle: development
