@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: k8
+  description: k8
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/prj-dev-platform-next
+spec:
+  type: k8s-provision
+  region: us-central1
+  project: prj-dev-platform-next
+  owner: group:default/guests
+  system: system:default/Platformnex
+  lifecycle: development
