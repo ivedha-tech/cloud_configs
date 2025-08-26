@@ -9,7 +9,7 @@ metadata:
     google.com/gcp-projectid: ""
 spec:
   type: website
-  lifecycle: development
+  lifecycle: production
   owner: group:default/guests
   system: system:default/Test-App
   dependsOn: []
