@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: PlatformNEX-templates
-  description: ""
+  description: ''
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/platformnex-templates
     backstage.io/source-vcs: Github
@@ -11,6 +11,7 @@ metadata:
     mycompany.com/gcp-provider: gcp
     mycompany.com/gcp-dataset-id: ds_billing
     mycompany.com/gcp-table-id: gcp_billing_export_resource_v1_01E9B5_60A8A4_E1FE52
+    sonarqube.org/project-key: platformnex-templates
 spec:
   type: service
   lifecycle: development
