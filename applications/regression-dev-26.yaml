@@ -10,15 +10,15 @@ metadata:
     google.com/cloudrun-location: ""
     google.com/cloudrun-service-name: ""
     google.com/gcp-projectid: ""
+    google.com/cloudbuild-trigger-name: regression-dev-26-development-trigger
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
 spec:
   type: service
   lifecycle: development
   owner: group:default/guests
+  dependsOn: []
+  dependencyOf: []
   system: system:default/Test-Application
   providesApis: []
   consumesApis: []
-  dependsOn: []
-  dependencyOf: []
-  annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/qatest-fe-26
-    backstage.io/source-vcs: github
