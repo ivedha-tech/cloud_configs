@@ -2,23 +2,17 @@ apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
   name: testapi
-  description: zdfgzdfhsthsrthsrtgbhsfghstgh
+  description: testing api
   annotations:
-    backstage.io/source-location: https://github.com/example/dummy-repo.git
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-frontend
     backstage.io/source-vcs: Github
-    google.com/cloudrun-project-slug: prj-dev-platform-next
-    google.com/cloudrun-location: us-central1
-    google.com/cloudrun-service-name: platformnex-V2-frontend-dit2
-    google.com/cloudbuild-trigger-name: platformnex-V2-backend-DIT
-    google.com/cloudbuild-project-slug: prj-dev-platform-next
-    google.com/cloudbuild-location: us-central1
-    jira.com/project-key: PEJ
-    mycompany.com/gcp-dataset-id: ds_billing
-    mycompany.com/gcp-provider: gcp
-    mycompany.com/gcp-table-id: gcp_billing_export_resource_v1_01E9B5_60A8A4_E1FE52
+    google.com/gcp-projectid: prj-dev-platform-next
 spec:
   type: openapi
-  lifecycle: development
-  owner: group:default/test_group
-  system: system:default/QA-Test
-  definition: dfgdzfgzdfgrsdfgdfgxdfgsdrgsergdfgxfg
+  lifecycle: production
+  owner: group:default/guests
+  system: system:default/reg-test-26-aug
+  definition: definition
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-frontend
+    backstage.io/source-vcs: github
