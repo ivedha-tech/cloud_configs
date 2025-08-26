@@ -10,12 +10,18 @@ metadata:
     google.com/cloudrun-location: ""
     google.com/cloudrun-service-name: ""
     google.com/gcp-projectid: prj-dev-platform-next
+    mycompany.com/gcp-provider: gcp
+    mycompany.com/gcp-dataset-id: ds_billing
+    mycompany.com/gcp-table-id: gcp_billing_export_resource_v1_01E9B5_60A8A4_E1FE52
 spec:
   type: service
   lifecycle: development
   owner: group:default/platfor-admin
-  dependsOn: []
-  dependencyOf: []
   system: system:default/new-app-fin
   providesApis: []
   consumesApis: []
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/testrepo-qa-f-aug1
+    backstage.io/source-vcs: github
