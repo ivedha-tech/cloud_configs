@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: platformnex
+  description: PlatformNex Internal System with all the services and resources
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/count2-frontend
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  owner: guests
+  type: tt
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/count2-frontend
+    backstage.io/source-vcs: github
