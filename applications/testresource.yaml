@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: testresource
+  description: testing
+  annotations:
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  type: storage
+  owner: group:default/guests
+  system: system:default/reg-test-26-aug
+  region: us-central1
+  project: prj-dev-platform-next
+  lifecycle: development
