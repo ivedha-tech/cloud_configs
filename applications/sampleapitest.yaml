@@ -4,7 +4,7 @@ metadata:
   name: sampleapitest
   description: ""
   annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-frontendx
+    backstage.io/source-location: https://github.com/ivedha-tech/testrepo-qa-f-aug1
     backstage.io/source-vcs: Github
     google.com/gcp-projectid: prj-dev-platform-next
 spec:
@@ -14,5 +14,5 @@ spec:
   system: system:default/Platformnex
   definition: ""
   annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-frontendx
+    backstage.io/source-location: https://github.com/ivedha-tech/testrepo-qa-f-aug1
     backstage.io/source-vcs: github
