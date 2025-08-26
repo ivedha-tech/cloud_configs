@@ -2,14 +2,17 @@ apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
   name: testapi
-  description: testing api
+  description: testing api edited
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/platformnex-frontend
     backstage.io/source-vcs: Github
+    google.com/cloudrun-project-slug: ""
+    google.com/cloudrun-location: ""
+    google.com/cloudrun-service-name: ""
     google.com/gcp-projectid: prj-dev-platform-next
 spec:
-  type: openapi
-  lifecycle: production
+  type: asyncapi
+  lifecycle: staging
   owner: group:default/guests
   system: system:default/reg-test-26-aug
   definition: definition
