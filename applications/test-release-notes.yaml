@@ -6,13 +6,14 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/testrepo-qa-f-aug1
     backstage.io/source-vcs: Github
-    google.com/cloudrun-project-slug: ""
-    google.com/cloudrun-location: ""
-    google.com/cloudrun-service-name: ""
-    google.com/gcp-projectid: ""
+    google.com/cloudrun-project-slug: ''
+    google.com/cloudrun-location: ''
+    google.com/cloudrun-service-name: ''
+    google.com/gcp-projectid: ''
     google.com/cloudbuild-trigger-name: sample-trigger
     google.com/cloudbuild-project-slug: default
     google.com/cloudbuild-location: us-central-1
+    sonarqube.org/project-key: testrepo-qa-f-aug1
 spec:
   type: service
   lifecycle: staging
