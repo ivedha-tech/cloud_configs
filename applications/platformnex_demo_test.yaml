@@ -2,18 +2,21 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: platformnex_demo_test
-  description: ''
+  description: ""
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/platformnex-demo-test
     backstage.io/source-vcs: Github
     sonarqube.org/project-key: platformnex-demo-test
+    google.com/cloudrun-project-slug: ""
+    google.com/cloudrun-location: ""
+    google.com/cloudrun-service-name: ""
+    google.com/gcp-projectid: prj-dev-platform-next
 spec:
   type: service
   lifecycle: development
   owner: group:default/guests
-  system: system:default/Platformnex
   dependsOn: []
   dependencyOf: []
-  annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-demo-test
-    backstage.io/source-vcs: github
+  system: system:default/Platformnex
+  providesApis: []
+  consumesApis: []
