@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: test-so-nn12localtest-prod
-  description: https://github.com/ivedha-tech/test-so-nn12localtest
+  description: '  <RefreshCw size={16} className="text-gray-700" />'
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/test-so-nn12localtest
     backstage.io/source-vcs: Github
@@ -11,7 +11,7 @@ spec:
   type: website
   lifecycle: production
   owner: group:default/guests
-  system: system:default/Platformnex
+  system: system:default/testapp
   dependsOn: []
   dependencyOf: []
   annotations:
