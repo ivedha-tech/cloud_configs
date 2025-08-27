@@ -2,10 +2,11 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: platformnex_demo_test
-  description: ""
+  description: ''
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/platformnex-demo-test
     backstage.io/source-vcs: Github
+    sonarqube.org/project-key: platformnex-demo-test
 spec:
   type: service
   lifecycle: development
