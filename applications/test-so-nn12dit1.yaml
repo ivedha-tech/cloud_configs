@@ -6,7 +6,8 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/test-so-nn12dit1
     backstage.io/source-vcs: Github
-    google.com/gcp-projectid: ""
+    google.com/gcp-projectid: ''
+    sonarqube.org/project-key: test-so-nn12dit1
 spec:
   type: website
   lifecycle: development
