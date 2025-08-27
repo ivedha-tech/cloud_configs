@@ -6,13 +6,12 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/test-so-nn12localtest
     backstage.io/source-vcs: Github
-    google.com/gcp-projectid: ''
-    sonarqube.org/project-key: test-so-nn12localtest
+    google.com/gcp-projectid: ""
 spec:
   type: website
   lifecycle: production
   owner: group:default/guests
-  system: system:default/Test-App
+  system: system:default/Testappforfinops
   dependsOn: []
   dependencyOf: []
   annotations:
