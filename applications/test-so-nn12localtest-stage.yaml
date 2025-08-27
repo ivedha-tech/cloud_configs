@@ -2,17 +2,17 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: test-so-nn12localtest-stage
-  description: ''
+  description: |2
+                    SonarQube Setup Complete!
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/test-so-nn12localtest
     backstage.io/source-vcs: Github
-    google.com/gcp-projectid: ''
-    sonarqube.org/project-key: test-so-nn12localtest
+    google.com/gcp-projectid: ""
 spec:
   type: website
   lifecycle: staging
   owner: group:default/guests
-  system: system:default/Test-App
+  system: system:default/DitTriggerTest
   dependsOn: []
   dependencyOf: []
   annotations:
