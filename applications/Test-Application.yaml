@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: Test-Application
+  description: Test-Application
+  annotations:
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  owner: group:default/platformnex-admin
