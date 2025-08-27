@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: sample_comp_for_developer_test
+  description: sample_comp_for_developer_test
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/testrepo-qa-f-aug1
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: prj-dev-platform-next
+    mycompany.com/gcp-projectid: prj-dev-platform-next
+    mycompany.com/gcp-provider: gcp
+    mycompany.com/gcp-dataset-id: ds_billing
+    mycompany.com/gcp-table-id: gcp_billing_export_resource_v1_01E9B5_60A8A4_E1FE52
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/sample_app_for_developer_test
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/testrepo-qa-f-aug1
+    backstage.io/source-vcs: github
