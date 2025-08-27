@@ -6,14 +6,17 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/test-f-27-tc
     backstage.io/source-vcs: Github
+    sonarqube.org/project-key: platformnex
+    google.com/cloudrun-project-slug: ""
+    google.com/cloudrun-location: ""
+    google.com/cloudrun-service-name: ""
     google.com/gcp-projectid: ""
 spec:
   type: service
   lifecycle: development
   owner: group:default/platformnex-admin
-  system: system:default/Test-Application
   dependsOn: []
   dependencyOf: []
-  annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/test-f-27-tc
-    backstage.io/source-vcs: github
+  system: system:default/Test-Application
+  providesApis: []
+  consumesApis: []
