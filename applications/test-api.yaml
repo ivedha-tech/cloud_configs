@@ -2,10 +2,13 @@ apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
   name: test-api
-  description: test-apitest-apitest-api
+  description: test-apitest-apitest-apisssss
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/testrepo-qa-f-aug1
     backstage.io/source-vcs: Github
+    google.com/cloudrun-project-slug: ""
+    google.com/cloudrun-location: ""
+    google.com/cloudrun-service-name: ""
     google.com/gcp-projectid: ""
 spec:
   type: openapi
