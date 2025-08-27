@@ -6,19 +6,16 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/test-f-27-tc
     backstage.io/source-vcs: Github
-    google.com/cloudrun-project-slug: ""
-    google.com/cloudrun-location: ""
-    google.com/cloudrun-service-name: ""
     google.com/gcp-projectid: ""
-    google.com/cloudbuild-trigger-name: platformnex-V2-frontend-QA
-    google.com/cloudbuild-project-slug: prj-dev-platform-next
-    google.com/cloudbuild-location: us-central1
 spec:
   type: service
   lifecycle: staging
   owner: group:default/platformnex-admin
-  dependsOn: []
-  dependencyOf: []
   system: system:default/Test-Application
   providesApis: []
   consumesApis: []
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/test-f-27-tc
+    backstage.io/source-vcs: github
