@@ -10,7 +10,7 @@ metadata:
     google.com/cloudrun-project-slug: ""
     google.com/cloudrun-location: ""
     google.com/cloudrun-service-name: ""
-    google.com/gcp-projectid: ""
+    google.com/gcp-projectid: prj-dev-platform-next
 spec:
   type: service
   lifecycle: development
