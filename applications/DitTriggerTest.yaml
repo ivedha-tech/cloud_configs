@@ -23,3 +23,6 @@ spec:
   consumesApis: []
   dependsOn: []
   dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/dit-trigger-test
+    backstage.io/source-vcs: github
