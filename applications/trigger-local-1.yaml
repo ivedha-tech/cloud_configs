@@ -13,6 +13,9 @@ metadata:
     google.com/cloudbuild-trigger-name: trigger-local-1-development-trigger
     google.com/cloudbuild-project-slug: prj-dev-platform-next
     google.com/cloudbuild-location: us-central1
+    google.com/google.com/cloudrun-project-slug: prj-dev-platform-next
+    google.com/google.com/cloudrun-location: us-central1
+    google.com/google.com/cloudrun-service-nam: cicd-issue2-development
 spec:
   type: service
   lifecycle: development
