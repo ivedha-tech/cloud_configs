@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: marketplace-db
+  description: marketplace-db for dev env
+  annotations:
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  type: cloud_sql
+  owner: group:default/platformnex-admin
+  system: system:default/Marketplace
+  region: us-central1
+  project: prj-dev-platform-next
+  lifecycle: development
