@@ -12,6 +12,8 @@ spec:
   lifecycle: production
   owner: group:default/platformnex-admin
   system: system:default/Test
+  providesApis: []
+  consumesApis: []
   dependsOn: []
   dependencyOf: []
   annotations:
