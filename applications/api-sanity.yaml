@@ -6,13 +6,13 @@ metadata:
   annotations:
     backstage.io/source-location: https://bitbucket.org/platformnex/platformnex/src/master/
     backstage.io/source-vcs: Bitbucket
-    google.com/gcp-projectid: ""
+    google.com/gcp-projectid: xxx
 spec:
   type: graphql
   lifecycle: staging
   owner: group:default/platformnex-admin
   system: system:default/Test
-  definition: ""
+  definition: def
   annotations:
     backstage.io/source-location: https://bitbucket.org/platformnex/platformnex/src/master/
     backstage.io/source-vcs: bitbucket
