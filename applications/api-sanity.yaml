@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: api-sanity
+  description: hgfuytrf
+  annotations:
+    backstage.io/source-location: https://bitbucket.org/platformnex/platformnex/src/master/
+    backstage.io/source-vcs: Bitbucket
+    google.com/gcp-projectid: ""
+spec:
+  type: graphql
+  lifecycle: staging
+  owner: group:default/platformnex-admin
+  system: system:default/Test
+  definition: ""
+  annotations:
+    backstage.io/source-location: https://bitbucket.org/platformnex/platformnex/src/master/
+    backstage.io/source-vcs: bitbucket
