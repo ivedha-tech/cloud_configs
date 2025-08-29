@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: prod-test-29-qa
+  description: test
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/demo-test-004-fe
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  type: service
+  lifecycle: production
+  owner: group:default/platformnex-admin
+  system: system:default/Test
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/demo-test-004-fe
+    backstage.io/source-vcs: github
