@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: cloud-storage-development
+  description: ""
+  annotations:
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  type: cloud_sql
+  owner: group:default/platformnex-admin
+  system: system:default/ServiceNEX
+  region: us-central1
+  project: prj-dev-service-nex
+  lifecycle: development
