@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: tt-ci-cd
+  description: test
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/qa-sanity-f-29
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  type: service
+  lifecycle: staging
+  owner: group:default/platformnex-admin
+  system: system:default/Test
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/qa-sanity-f-29
+    backstage.io/source-vcs: github
