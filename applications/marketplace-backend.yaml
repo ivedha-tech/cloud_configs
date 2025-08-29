@@ -1,0 +1,29 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: marketplace-backend
+  description: This is the frontend service for marketplace backend  dev env.
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-backend
+    backstage.io/source-vcs: Github
+    sonarqube.org/project-key: platformnex2
+    google.com/cloudrun-project-slug: prj-dev-platform-next
+    google.com/cloudrun-location: us-central1
+    google.com/cloudrun-service-name: platformnex-v2-backend-dit2
+    google.com/cloudbuild-trigger-name: platformnex-V2-backend-DIT-2
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
+    google.com/gcp-projectid: prj-dev-platform-next
+    jira.com/project-key: PEJ
+    mycompany.com/gcp-projectid: prj-dev-platform-next
+    mycompany.com/gcp-provider: gcp
+    mycompany.com/gcp-dataset-id: ds_billing
+    mycompany.com/gcp-table-id: gcp_billing_export_resource_v1_01E9B5_60A8A4_E1FE52
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/platformnex-admin
+  system: system:default/Marketplace
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-backend
+    backstage.io/source-vcs: github
