@@ -6,10 +6,13 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/cloud_configs
     backstage.io/source-vcs: github
+    google.com/gcp-projectid: ""
 spec:
-  type: cloud_sql
+  type: storage
   owner: group:default/platformnex-admin
   system: system:default/ServiceNEX
+  dependsOn: []
+  dependencyOf: []
   region: us-central1
   project: prj-dev-service-nex
   lifecycle: development
