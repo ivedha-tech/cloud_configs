@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: TestPromote
+  description: test
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/remo-uatf
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  type: service
+  lifecycle: staging
+  owner: group:default/platformnex-admin
+  system: system:default/Test
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/remo-uatf
+    backstage.io/source-vcs: github
