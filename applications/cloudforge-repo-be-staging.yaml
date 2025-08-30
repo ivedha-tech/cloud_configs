@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: cloudforge-repo-be-staging
+  description: backend component
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/cloudforge-repo-be
+    backstage.io/source-vcs: Github
+    github.com/project-slug: ivedha-tech/cloudforge-repo-be
+    github.com/repo-url: https://github.com/ivedha-tech/cloudforge-repo-be
+    pulumi.com/project-slug: platformnex/cloudforge-repo/dev
+    pulumi.com/orga-slug: platformnex
+    google.com/gcp-projectid: prj-dev-platform-next
+    jira.com/project-key: PEJ
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/platformnex-admin
+  system: CloudForge
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/cloudforge-repo-be
+    backstage.io/source-vcs: github
