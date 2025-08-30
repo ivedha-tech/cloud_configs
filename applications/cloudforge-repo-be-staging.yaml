@@ -10,13 +10,20 @@ metadata:
     github.com/repo-url: https://github.com/ivedha-tech/cloudforge-repo-be
     pulumi.com/project-slug: platformnex/cloudforge-repo/dev
     pulumi.com/orga-slug: platformnex
-    google.com/gcp-projectid: prj-dev-platform-next
+    google.com/cloudrun-project-slug: ""
+    google.com/cloudrun-location: ""
+    google.com/cloudrun-service-name: ""
+    google.com/gcp-projectid: ""
     jira.com/project-key: PEJ
 spec:
   type: service
-  lifecycle: development
+  lifecycle: staging
   owner: group:default/platformnex-admin
   system: CloudForge
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/cloudforge-repo-be
     backstage.io/source-vcs: github
