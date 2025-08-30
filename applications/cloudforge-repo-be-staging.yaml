@@ -10,14 +10,15 @@ metadata:
     github.com/repo-url: https://github.com/ivedha-tech/cloudforge-repo-be
     pulumi.com/project-slug: platformnex/cloudforge-repo/dev
     pulumi.com/orga-slug: platformnex
-    google.com/cloudrun-project-slug: ""
-    google.com/cloudrun-location: ""
-    google.com/cloudrun-service-name: ""
-    google.com/gcp-projectid: ""
+    google.com/cloudrun-project-slug: ''
+    google.com/cloudrun-location: ''
+    google.com/cloudrun-service-name: ''
+    google.com/gcp-projectid: ''
     google.com/cloudbuild-trigger-name: cloudforge-repo-be-staging-staging-trigger
     google.com/cloudbuild-project-slug: prj-dev-platform-next
     google.com/cloudbuild-location: us-central1
     jira.com/project-key: PEJ
+    sonarqube.org/project-key: cloudforge-repo-be
 spec:
   type: service
   lifecycle: staging
