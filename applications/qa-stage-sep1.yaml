@@ -6,16 +6,19 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/test-repo-sep1-f
     backstage.io/source-vcs: Github
+    google.com/cloudrun-project-slug: ""
+    google.com/cloudrun-location: ""
+    google.com/cloudrun-service-name: ""
     google.com/gcp-projectid: ""
+    google.com/cloudbuild-trigger-name: qa-stage-sep1-staging-trigger
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
 spec:
   type: service
   lifecycle: staging
   owner: group:default/guests
+  dependsOn: []
+  dependencyOf: []
   system: system:default/Test-App
   providesApis: []
   consumesApis: []
-  dependsOn: []
-  dependencyOf: []
-  annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/test-repo-sep1-f
-    backstage.io/source-vcs: github
