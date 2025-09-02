@@ -1,14 +1,19 @@
 apiVersion: backstage.io/v1alpha1
-kind: Resource
+kind: Component
 metadata:
   name: qa-test-2
-  description: qa-test-2
+  description: test
   annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/prj-dev-platform-next
+    backstage.io/source-location: https://github.com/ivedha-tech/test-repo-sep1-f
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
 spec:
-  type: storage
-  region: us-central1
-  project: prj-dev-platform-next
-  owner: group:default/guests
-  system: system:default/Platformnex
+  type: service
   lifecycle: staging
+  owner: group:default/guests
+  system: system:default/Test-App
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/test-repo-sep1-f
+    backstage.io/source-vcs: github
