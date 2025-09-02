@@ -12,6 +12,8 @@ spec:
   lifecycle: development
   owner: group:default/guests
   system: system:default/Test-App
+  providesApis: []
+  consumesApis: []
   dependsOn: []
   dependencyOf: []
   annotations:
