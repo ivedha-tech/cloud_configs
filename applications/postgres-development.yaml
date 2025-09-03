@@ -3,10 +3,15 @@ kind: Resource
 metadata:
   name: postgres-development
   description: database to store the servicenex info
+  annotations:
+    backstage.io/source-location: url:https://github.com/ivedha-tech/cloud_configs/tree/feature-yaml-prod/applications/
+    google.com/gcp-projectid: ""
 spec:
   type: cloud_sql
   owner: group:default/platformnex-admin
   system: system:default/servicenex
+  dependsOn: []
+  dependencyOf: []
   region: us-central1
   project: prj-dev-platform-next
-  lifecycle: development
+  lifecycle: servicenex-DIT
