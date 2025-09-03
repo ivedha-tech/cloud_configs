@@ -4,11 +4,17 @@ metadata:
   name: gcs-airflow-release-notes-events
   description: gcs-airflow-release-notes-events
   annotations:
+    backstage.io/source-location: url:https://github.com/ivedha-tech/cloud_configs/tree/feature-yaml-prod/applications/
+    google.com/cloudrun-project-slug: ""
+    google.com/cloudrun-location: ""
+    google.com/cloudrun-service-name: ""
     google.com/gcp-projectid: ""
 spec:
   type: storage
   owner: group:default/platformnex-admin
   system: system:default/servicenex
+  dependsOn: []
+  dependencyOf: []
   region: us-central1
   project: prj-prd-cnb-workload
-  lifecycle: production
+  lifecycle: servicenex-Prod
