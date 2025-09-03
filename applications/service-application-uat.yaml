@@ -13,13 +13,16 @@ metadata:
     google.com/cloudbuild-trigger-name: servicenex-uat
     google.com/cloudbuild-project-slug: prj-dev-service-nex
     google.com/cloudbuild-location: us-central1
-    google.com/gcp-projectid: prj-dev-service-nex
+    google.com/gcp-projectid: prj-platformnex-prod
 spec:
   type: website
-  lifecycle: uat
+  lifecycle: servicenex-UAT
   owner: group:default/platformnex-admin
   system: system:default/servicenex
   providesApis: []
   consumesApis: []
   dependsOn: []
   dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/servicenex
+    backstage.io/source-vcs: github
