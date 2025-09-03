@@ -2,9 +2,9 @@ apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
   name: TestApp1
-  description: sdfsd
+  description: Sample App
   annotations:
     backstage.io/source-vcs: Github
     google.com/gcp-projectid: ""
 spec:
-  owner: group:default/platfor-admin
+  owner: group:default/guests
