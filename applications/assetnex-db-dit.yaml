@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: assetnex-db-dit
+  description: ""
+  annotations:
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  type: cloud_sql
+  owner: group:default/assetnex-admin
+  system: system:default/assetnex
+  region: us-central1
+  project: prj-dev-service-nex 
+  lifecycle: assetnex-dit
