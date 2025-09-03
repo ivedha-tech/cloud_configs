@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-releasemanager-ttt
+  description: ""
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/testnnfront
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  type: website
+  lifecycle: dit1
+  owner: group:default/guests
+  system: system:default/Test-App
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/testnnfront
+    backstage.io/source-vcs: github
