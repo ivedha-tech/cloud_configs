@@ -1,10 +1,19 @@
 apiVersion: backstage.io/v1alpha1
-kind: System
+kind: Component
 metadata:
   name: test
-  description: jhg
+  description: test
   annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/test-repo-sep1-f
     backstage.io/source-vcs: Github
     google.com/gcp-projectid: ""
 spec:
-  owner: group:default/platfor-admin
+  type: service
+  lifecycle: staging
+  owner: group:default/guests
+  system: system:default/Test-App
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/test-repo-sep1-f
+    backstage.io/source-vcs: github
