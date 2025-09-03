@@ -2,14 +2,17 @@ apiVersion: backstage.io/v1alpha1
 kind: Resource
 metadata:
   name: assetnex-db-prod
-  description: ""
+  description: assetnex-db-prod resource
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/cloud_configs
     backstage.io/source-vcs: github
+    google.com/gcp-projectid: ""
 spec:
   type: cloud_sql
   owner: group:default/assetnex-admin
   system: system:default/assetnex
+  dependsOn: []
+  dependencyOf: []
   region: us-central1
   project: prj-servicenex-prod
   lifecycle: assetnex-prod
