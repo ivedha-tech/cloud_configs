@@ -6,14 +6,20 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/remo-uatf
     backstage.io/source-vcs: Github
-    google.com/gcp-projectid: ""
+    google.com/cloudrun-project-slug: ""
+    google.com/cloudrun-location: ""
+    google.com/cloudrun-service-name: ""
+    google.com/gcp-projectid: "1"
+    mycompany.com/gcp-projectid: "1"
+    mycompany.com/gcp-provider: gcp
+    mycompany.com/gcp-dataset-id: "1"
+    mycompany.com/gcp-table-id: "1"
 spec:
   type: service
   lifecycle: development
   owner: group:default/guests
-  system: system:default/Test-App
   dependsOn: []
   dependencyOf: []
-  annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/remo-uatf
-    backstage.io/source-vcs: github
+  system: system:default/Test-App
+  providesApis: []
+  consumesApis: []
