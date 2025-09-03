@@ -10,7 +10,7 @@ metadata:
     google.com/cloudrun-location: ""
     google.com/cloudrun-service-name: ""
     google.com/gcp-projectid: ""
-    google.com/cloudbuild-trigger-name: dit-trigger-test-trigger-a69c3439c6fb4ee7abfc77ee6
+    google.com/cloudbuild-trigger-name: hello-world-trigger-69b040cf-49ce-448a-a784-c7536adc4b29
     google.com/cloudbuild-project-slug: prj-dev-platform-next
     google.com/cloudbuild-location: us-central1
 spec:
