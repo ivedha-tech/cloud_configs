@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-sep-3-prod
+  description: test
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/qa-repo-sep-3-f
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  type: service
+  lifecycle: production
+  owner: group:default/guests
+  system: system:default/Test-App
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/qa-repo-sep-3-f
+    backstage.io/source-vcs: github
