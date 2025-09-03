@@ -3,10 +3,15 @@ kind: Resource
 metadata:
   name: cloud-storage-development
   description: to store the files/blob
+  annotations:
+    backstage.io/source-location: url:https://github.com/ivedha-tech/cloud_configs/tree/feature-yaml-prod/applications/
+    google.com/gcp-projectid: ""
 spec:
   type: storage
   owner: group:default/platformnex-admin
   system: system:default/servicenex
+  dependsOn: []
+  dependencyOf: []
   region: us-central1
   project: prj-dev-platform-next
-  lifecycle: development
+  lifecycle: servicenex-DIT
