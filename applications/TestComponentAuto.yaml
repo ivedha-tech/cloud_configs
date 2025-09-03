@@ -11,7 +11,7 @@ spec:
   type: website
   lifecycle: development
   owner: group:default/guests
-  system: system:default/TestApp1
+  system: system:default/TestApp
   dependsOn: []
   dependencyOf: []
   annotations:
