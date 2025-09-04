@@ -1,21 +1,14 @@
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: Resource
 metadata:
   name: test
   description: test
   annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/test-repo-sep1-f
-    backstage.io/source-vcs: Github
-    google.com/gcp-projectid: ""
+    backstage.io/source-location: https://github.com/ivedha-tech/prj-dev-platform-next
 spec:
-  type: service
-  lifecycle: staging
+  type: database
+  region: us-central1
+  project: prj-dev-platform-next
   owner: group:default/guests
-  system: system:default/Test-App
-  providesApis: []
-  consumesApis: []
-  dependsOn: []
-  dependencyOf: []
-  annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/test-repo-sep1-f
-    backstage.io/source-vcs: github
+  system: system:default/Platformnex
+  lifecycle: development
