@@ -16,7 +16,7 @@ metadata:
     google.com/gcp-projectid: prj-dev-platform-next
 spec:
   type: service
-  lifecycle: development
+  lifecycle: uat
   owner: group:default/guests
   system: system:default/Platformnex
   annotations:
