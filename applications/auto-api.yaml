@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: auto-api
+  description: asd
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex_qa_automation
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: prj-id
+spec:
+  type: asyncapi
+  lifecycle: production
+  owner: group:default/guests
+  system: system:default/app-test-auto-01
+  definition: def
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex_qa_automation
+    backstage.io/source-vcs: github
