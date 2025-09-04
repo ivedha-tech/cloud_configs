@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: auto-test-comp
+  description: qsfqewrfqsdcf
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex_qa_automation
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  type: website
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/automation-test-app
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex_qa_automation
+    backstage.io/source-vcs: github
