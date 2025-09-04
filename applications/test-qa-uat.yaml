@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-qa-uat
+  description: test
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/test-qa-4-b
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  type: service
+  lifecycle: uat
+  owner: group:default/guests
+  system: system:default/Test-App
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/test-qa-4-b
+    backstage.io/source-vcs: github
