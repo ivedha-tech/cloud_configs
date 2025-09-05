@@ -6,7 +6,7 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/prj-dev-platform-next
 spec:
-  type: database
+  type: storage
   region: us-central1
   project: prj-dev-platform-next
   owner: group:default/guests
