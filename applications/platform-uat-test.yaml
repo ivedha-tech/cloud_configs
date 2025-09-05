@@ -15,10 +15,13 @@ metadata:
     google.com/cloudbuild-location: us-central1
 spec:
   type: service
-  lifecycle: production
+  lifecycle: staging
   owner: group:default/platformnex-admin
-  dependsOn: []
-  dependencyOf: []
   system: system:default/Platform-Engineering
   providesApis: []
   consumesApis: []
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/uat-test
+    backstage.io/source-vcs: github
