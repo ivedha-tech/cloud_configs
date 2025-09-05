@@ -12,7 +12,7 @@ metadata:
     google.com/gcp-projectid: ""
 spec:
   type: service
-  lifecycle: dit1
+  lifecycle: development
   owner: group:default/scalenex-admin
   system: system:default/scalenex
   providesApis: []
