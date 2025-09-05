@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: prod-test
+  description: test
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/regression-repo-5-f
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  type: service
+  lifecycle: production
+  owner: group:default/guests
+  system: system:default/Regression-test
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/regression-repo-5-f
+    backstage.io/source-vcs: github
