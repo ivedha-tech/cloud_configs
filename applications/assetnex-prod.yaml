@@ -6,18 +6,22 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/asset-nex
     backstage.io/source-vcs: Github
-    google.com/cloudrun-project-slug: prj-dev-service-nex
+    google.com/cloudrun-project-slug: prj-servicenex-prod
     google.com/cloudrun-location: us-central1
     google.com/cloudrun-service-name: assetnex-prod
-    google.com/cloudbuild-trigger-name: ASSETNEX-DIT-QA-UAT
-    google.com/cloudbuild-project-slug: prj-dev-service-nex
+    google.com/cloudbuild-trigger-name: ASSETNEX-PROD
+    google.com/cloudbuild-project-slug: prj-servicenex-prod
     google.com/cloudbuild-location: us-central1
-    google.com/gcp-projectid: prj-platformnex-prod
+    google.com/gcp-projectid: ""
 spec:
   type: service
   lifecycle: assetnex-qa
   owner: group:default/assetnex-admin
   system: system:default/assetnex
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/asset-nex
     backstage.io/source-vcs: github
