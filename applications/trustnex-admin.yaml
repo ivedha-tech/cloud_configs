@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: trustnex-admin
+  description: ""
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/TrustNex
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  type: Team
+  children: []
+  members: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/TrustNex
+    backstage.io/source-vcs: github
