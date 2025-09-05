@@ -1,0 +1,25 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: scalenex-ui-dit2
+  description: ui for the scalenex application dit2 env
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/scalenex-ui
+    backstage.io/source-vcs: Github
+    sonarqube.org/project-key: scalenex-ui
+    google.com/cloudrun-project-slug: prj-scalenex-nonprod
+    google.com/cloudrun-location: us-central1
+    google.com/cloudrun-service-name: scalenex-app-dit2
+    google.com/cloudbuild-trigger-name: scalenex-app-build-deploy-dit-1
+    google.com/cloudbuild-project-slug: prj-scalenex-nonprod
+    google.com/cloudbuild-location: us-central1
+    google.com/gcp-projectid: prj-platformnex-prod
+    jira.com/project-key: scal
+spec:
+  type: website
+  lifecycle: dit2
+  owner: group:default/scalenex-admin
+  system: system:default/scalenex
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/scalenex-ui
+    backstage.io/source-vcs: github
