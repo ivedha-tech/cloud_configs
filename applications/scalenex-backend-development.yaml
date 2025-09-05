@@ -9,8 +9,16 @@ metadata:
     google.com/cloudrun-project-slug: prj-scalenex-nonprod
     google.com/cloudrun-location: us-central1
     google.com/cloudrun-service-name: scalenex-service-dit1
+    google.com/gcp-projectid: ""
 spec:
   type: service
-  lifecycle: development
+  lifecycle: dit1
   owner: group:default/scalenex-admin
   system: system:default/scalenex
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/scalenex-service
+    backstage.io/source-vcs: github
