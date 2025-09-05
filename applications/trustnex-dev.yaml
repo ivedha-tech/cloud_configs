@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: trustnex-dev
+  description: trustnex-dev-service
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/TrustNex
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: prj-platformnex-prod
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/trustnex-admin
+  system: system:default/trustnex
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/TrustNex
+    backstage.io/source-vcs: github
