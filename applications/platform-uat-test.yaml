@@ -2,27 +2,23 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: platform-uat-test
-  description: ''
+  description: ""
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/uat-test
     backstage.io/source-vcs: Github
-    google.com/cloudrun-project-slug: ''
-    google.com/cloudrun-location: ''
-    google.com/cloudrun-service-name: ''
-    google.com/gcp-projectid: ''
+    google.com/cloudrun-project-slug: ""
+    google.com/cloudrun-location: ""
+    google.com/cloudrun-service-name: ""
+    google.com/gcp-projectid: prj-dev-platform-next
     google.com/cloudbuild-trigger-name: platform-uat-test-production-trigger
     google.com/cloudbuild-project-slug: prj-dev-platform-next
     google.com/cloudbuild-location: us-central1
-    sonarqube.org/project-key: uat-test
 spec:
   type: service
   lifecycle: staging
   owner: group:default/platformnex-admin
+  dependsOn: []
+  dependencyOf: []
   system: system:default/Platform-Engineering
   providesApis: []
   consumesApis: []
-  dependsOn: []
-  dependencyOf: []
-  annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/uat-test
-    backstage.io/source-vcs: github
