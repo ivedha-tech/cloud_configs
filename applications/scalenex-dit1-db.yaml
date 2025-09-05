@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: scalenex-dit1-db
+  description: scalenex-dit1-db
+  annotations:
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  type: cloud_sql
+  owner: group:default/scalenex-admin
+  system: system:default/scalenex
+  region: us-central1
+  project: prj-scalenex-nonprod
+  lifecycle: dit1
