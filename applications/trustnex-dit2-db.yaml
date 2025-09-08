@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: trustnex-dit2-db
+  description: trustnex-dit2-db
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/TrustNex
+    backstage.io/source-vcs: github
+    google.com/cloudrun-project-slug: prj-trustnex-nonprod
+    google.com/cloudrun-location: us-central1
+    google.com/cloudrun-service-name: trustnex-dit2
+    google.com/cloudbuild-trigger-name: Trustnex-build-deploy-dit-2
+    google.com/cloudbuild-project-slug: prj-trustnex-nonprod
+    google.com/cloudbuild-location: us-central1
+    google.com/gcp-projectid: prj-platformnex-prod
+spec:
+  type: cloud_sql
+  owner: group:default/trustnex-admin
+  system: system:default/trustnex
+  region: us-central1
+  project: prj-trustnex-nonprod
+  lifecycle: dit2
