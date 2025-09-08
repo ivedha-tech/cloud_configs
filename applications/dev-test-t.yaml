@@ -10,7 +10,10 @@ metadata:
     google.com/cloudrun-project-slug: ""
     google.com/cloudrun-location: ""
     google.com/cloudrun-service-name: ""
-    google.com/gcp-projectid: prj-platformnex-prod
+    google.com/gcp-projectid: ""
+    google.com/cloudbuild-trigger-name: dev-test-t-development-trigger
+    google.com/cloudbuild-project-slug: prj-platformnex-prod
+    google.com/cloudbuild-location: us-central1
 spec:
   type: service
   lifecycle: development
