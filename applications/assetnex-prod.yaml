@@ -12,10 +12,10 @@ metadata:
     google.com/cloudbuild-trigger-name: ASSETNEX-PROD
     google.com/cloudbuild-project-slug: prj-servicenex-prod
     google.com/cloudbuild-location: us-central1
-    google.com/gcp-projectid: ""
+    google.com/gcp-projectid: prj-platformnex-prod
 spec:
   type: service
-  lifecycle: assetnex-qa
+  lifecycle: assetnex-prod
   owner: group:default/assetnex-admin
   system: system:default/assetnex
   providesApis: []
