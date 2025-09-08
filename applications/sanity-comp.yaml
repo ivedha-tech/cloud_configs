@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: sanity-comp
-  description: testing
+  description: testing edit
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/platformnex-frontend
     backstage.io/source-vcs: Github
@@ -12,6 +12,8 @@ spec:
   lifecycle: development
   owner: group:default/platformnex-admin
   system: system:default/test-sanity-8-sep
+  providesApis: []
+  consumesApis: []
   dependsOn: []
   dependencyOf: []
   annotations:
