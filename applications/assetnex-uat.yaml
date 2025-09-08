@@ -15,9 +15,13 @@ metadata:
     google.com/gcp-projectid: prj-platformnex-prod
 spec:
   type: service
-  lifecycle: assetnex-qa
+  lifecycle: assetnex-uat
   owner: group:default/assetnex-admin
   system: system:default/assetnex
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/asset-nex
     backstage.io/source-vcs: github
