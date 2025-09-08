@@ -2,14 +2,20 @@ apiVersion: backstage.io/v1alpha1
 kind: Resource
 metadata:
   name: sanity-rec
-  description: sample
+  description: sample edit
   annotations:
+    backstage.io/source-location: url:https://github.com/ivedha-tech/cloud_configs/tree/feature-yaml-prod/applications/
     backstage.io/source-vcs: Github
+    google.com/cloudrun-project-slug: ""
+    google.com/cloudrun-location: ""
+    google.com/cloudrun-service-name: ""
     google.com/gcp-projectid: ""
 spec:
-  type: storage
+  type: cloud_sql
   owner: group:default/platformnex-admin
   system: system:default/test-sanity-8-sep
+  dependsOn: []
+  dependencyOf: []
   region: us-central1
   project: prj-dev-platform-next
-  lifecycle: development
+  lifecycle: production
