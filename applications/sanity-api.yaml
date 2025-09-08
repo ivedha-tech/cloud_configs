@@ -12,7 +12,7 @@ spec:
   lifecycle: production
   owner: group:default/platformnex-admin
   system: system:default/test-sanity-8-sep
-  definition: ""
+  definition: def
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/platformnex-frontend
     backstage.io/source-vcs: github
