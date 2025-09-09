@@ -2,16 +2,14 @@ apiVersion: backstage.io/v1alpha1
 kind: Resource
 metadata:
   name: pn_prod_auth
-  description: platformnex auth database for prod
+  description: This the pn_prod_auth DB
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/cloud_configs
     backstage.io/source-vcs: github
 spec:
-  type: storage
+  type: cloud_sql
   owner: group:default/platformnex-admin
   system: system:default/platformnex
-  dependsOn: []
-  dependencyOf: []
   region: us-central1
   project: prj-platformnex-prod
   lifecycle: production
