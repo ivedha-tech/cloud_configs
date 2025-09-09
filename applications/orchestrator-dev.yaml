@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: orchestrator-dev
+  description: This the orchestrator dev DB
+  annotations:
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  type: cloud_sql
+  owner: group:default/platformnex-admin
+  system: system:default/platformnex
+  region: us-central1
+  project: prj-dev-platform-next
+  lifecycle: development
