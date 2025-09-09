@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: pn_staging_kubernetes
+  description: This the pn_staging_kubernetes DB
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/cloud_configs
+    backstage.io/source-vcs: github
+spec:
+  type: cloud_sql
+  owner: group:default/platformnex-admin
+  system: system:default/platformnex
+  region: us-central1
+  project: prj-dev-platform-next
+  lifecycle: staging
