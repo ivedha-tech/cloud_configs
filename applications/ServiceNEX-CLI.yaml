@@ -10,7 +10,7 @@ metadata:
     backstage.io/source-location: https://github.com/ivedha-tech/servicenex-cli
     backstage.io/source-vcs: Github
     sonarqube.org/project-key: servicenex-cli
-    google.com/cloudbuild-trigger-name: SERVICENEX_CNB_DEMO
+    google.com/cloudbuild-trigger-name: servicenex-cnb-demo
     google.com/cloudbuild-project-slug: prj-dev-platform-next
     google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: ""
