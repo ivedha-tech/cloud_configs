@@ -6,6 +6,11 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/regression-repo-5-f
     backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: platformnex-V2-frontend-DIT-2
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
+    google.com/gcp-projectid: ""
+    jira.com/project-key: PEJ
 spec:
   type: service
   lifecycle: development
