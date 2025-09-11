@@ -3,7 +3,7 @@
   # Company ID: tech-corp-123
   # Created: 2025-09-11T16:16:10.011Z
   
-  apiVersion: backstage.io/v1alpha1
+apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
   name: test-team
