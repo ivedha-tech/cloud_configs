@@ -13,11 +13,11 @@ metadata:
     google.com/cloudbuild-trigger-name: SERVICENEX-PROD
     google.com/cloudbuild-project-slug: prj-servicenex-prod
     google.com/cloudbuild-location: us-central1
-    google.com/gcp-projectid: prj-platformnex-prod
+    google.com/gcp-projectid: ""
     jira.com/project-key: cws
 spec:
   type: website
-  lifecycle: servicenex-Prod
+  lifecycle: production
   owner: group:default/platformnex-admin
   system: system:default/servicenex
   providesApis: []
