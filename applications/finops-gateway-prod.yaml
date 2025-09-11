@@ -12,13 +12,17 @@ metadata:
     google.com/cloudbuild-trigger-name: int-prom-prod-finops-4
     google.com/cloudbuild-project-slug: prj-platformnex-prod
     google.com/cloudbuild-location: us-central1
-    jira.com/project-key: PEJ
-    mycompany.com/gcp-dataset-id: ds_billing
-    mycompany.com/gcp-provider: gcp
-    mycompany.com/gcp-table-id: gcp_billing_export_resource_v1_01E9B5_60A8A4_E1FE52
-    google.com/gcp-projectid: prj-dev-platform-next
+    google.com/gcp-projectid: ""
+    jira.com/project-key: CWS
 spec:
   type: service
   lifecycle: production
   owner: group:default/platformnex-admin
   system: system:default/platformnex
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-finops-gateway
+    backstage.io/source-vcs: github
