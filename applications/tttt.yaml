@@ -2,24 +2,18 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: tttt
-  description: tt
+  description: asfdv
   annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/remo-uatf
+    backstage.io/source-location: https://github.com/QAIvedha/Testing
     backstage.io/source-vcs: Github
-    google.com/cloudrun-project-slug: ""
-    google.com/cloudrun-location: ""
-    google.com/cloudrun-service-name: ""
-    google.com/gcp-projectid: prj-dev-platform-next
-    mycompany.com/gcp-projectid: prj-dev-platform-next
-    mycompany.com/gcp-provider: gcp
-    mycompany.com/gcp-dataset-id: ds_billing
-    mycompany.com/gcp-table-id: gcp_billing_export_resource_v1_01E9B5_60A8A4_E1FE52
+    google.com/gcp-projectid: ""
 spec:
-  type: service
-  lifecycle: development
+  type: library
+  lifecycle: staging
   owner: group:default/guests
+  system: system:default/Test-App-Automation-1757505095527
   dependsOn: []
   dependencyOf: []
-  system: system:default/Platformnex
-  providesApis: []
-  consumesApis: []
+  annotations:
+    backstage.io/source-location: https://github.com/QAIvedha/Testing
+    backstage.io/source-vcs: github
