@@ -15,7 +15,7 @@ metadata:
     google.com/cloudbuild-location: us-central1
 spec:
   type: service
-  lifecycle: staging
+  lifecycle: production
   owner: group:default/guests
   system: system:default/dgvds
   providesApis: []
