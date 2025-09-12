@@ -2,11 +2,14 @@ apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
   name: testapi0912
-  description: hgcgfc
+  description: hgcgfc edit
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/platformnex_qa_automation
     backstage.io/source-vcs: Github
-    google.com/gcp-projectid: prj-id
+    google.com/cloudrun-project-slug: ""
+    google.com/cloudrun-location: ""
+    google.com/cloudrun-service-name: ""
+    google.com/gcp-projectid: ""
 spec:
   type: openapi
   lifecycle: development
