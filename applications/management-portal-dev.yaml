@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: management-portal-dev
+  description: Management Portal service
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-management
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: platformnex-management-QA
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
+    google.com/gcp-projectid: ""
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/platformnex-admin
+  system: system:default/platformnex
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-management
+    backstage.io/source-vcs: github
