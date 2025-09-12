@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: restest0912
+  description: sdfbv
+  annotations:
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  type: storage
+  owner: group:default/platfor-admin
+  system: system:default/Reg-Test-0912
+  region: us-central1
+  project: prjt-id
+  lifecycle: development
