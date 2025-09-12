@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-comp-2
+  description: ""
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/test-qa-4-f-repo
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: prj-dev-platform-next
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/Test-T
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/test-qa-4-f-repo
+    backstage.io/source-vcs: github
