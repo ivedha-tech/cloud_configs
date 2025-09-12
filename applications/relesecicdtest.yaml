@@ -15,10 +15,13 @@ metadata:
     google.com/cloudbuild-location: us-central1
 spec:
   type: service
-  lifecycle: development
+  lifecycle: staging
   owner: group:default/guests
-  dependsOn: []
-  dependencyOf: []
   system: system:default/dgvds
   providesApis: []
   consumesApis: []
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/releasecicdtest
+    backstage.io/source-vcs: github
