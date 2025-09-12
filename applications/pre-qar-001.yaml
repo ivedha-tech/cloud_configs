@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: pre-qar-001
+  description: pre-qar-001
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/prj-platformnex-prod
+spec:
+  type: storage
+  region: us-central1
+  project: prj-platformnex-prod
+  owner: group:default/guests
+  system: system:default/HelloWorld2
+  lifecycle: development
