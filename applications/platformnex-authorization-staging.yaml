@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: platformnex-authorization-staging
+  description: Authorization Server staging env
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-authorization
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: platformnex-authorization-QA
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/platformnex-admin
+  system: system:default/platformnex
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-authorization
+    backstage.io/source-vcs: github
