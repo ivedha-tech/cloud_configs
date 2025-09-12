@@ -2,16 +2,21 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: testcompo0912
-  description: kjnkjbjnb
+  description: kjnkjbjnb edit
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/platformnex_qa_automation
     backstage.io/source-vcs: Github
+    google.com/cloudrun-project-slug: ""
+    google.com/cloudrun-location: ""
+    google.com/cloudrun-service-name: ""
     google.com/gcp-projectid: ""
 spec:
   type: website
-  lifecycle: development
+  lifecycle: production
   owner: group:default/platfor-admin
   system: system:default/Reg-Test-0912
+  providesApis: []
+  consumesApis: []
   dependsOn: []
   dependencyOf: []
   annotations:
