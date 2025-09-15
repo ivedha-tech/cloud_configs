@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: ssgtest26
-  description: jhv
+  description: jhvjhb
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/test-qa-f-15
     backstage.io/source-vcs: Github
@@ -10,16 +10,15 @@ metadata:
     google.com/cloudrun-location: ""
     google.com/cloudrun-service-name: ""
     google.com/gcp-projectid: prj-dev-platform-next
-    mycompany.com/gcp-projectid: prj-dev-platform-next
-    mycompany.com/gcp-provider: gcp
-    mycompany.com/gcp-dataset-id: ds_billing
-    mycompany.com/gcp-table-id: gcp_billing_export_resource_v1_01E9B5_60A8A4_E1FE52
 spec:
   type: website
   lifecycle: development
   owner: group:default/guests
-  dependsOn: []
-  dependencyOf: []
   system: system:default/Regression-test
   providesApis: []
   consumesApis: []
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/test-qa-f-15
+    backstage.io/source-vcs: github
