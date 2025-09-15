@@ -7,6 +7,7 @@ metadata:
     backstage.io/source-location: https://github.com/ivedha-tech/remo-uatf
     backstage.io/source-vcs: Github
     google.com/gcp-projectid: prj-dev-platform-next
+    sonarqube.org/project-key: remo-uatf
 spec:
   type: openapi
   lifecycle: development
