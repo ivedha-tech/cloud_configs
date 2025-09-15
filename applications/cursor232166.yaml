@@ -2,24 +2,18 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: cursor232166
-  description: Sample Component
+  description: test
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/regression-repo-f-9
     backstage.io/source-vcs: Github
-    google.com/cloudrun-project-slug: ""
-    google.com/cloudrun-location: ""
-    google.com/cloudrun-service-name: ""
-    google.com/gcp-projectid: prj-dev-platform-next
-    mycompany.com/gcp-projectid: prj-dev-platform-next
-    mycompany.com/gcp-provider: gcp
-    mycompany.com/gcp-dataset-id: ds_billing
-    mycompany.com/gcp-table-id: gcp_billing_export_resource_v1_01E9B5_60A8A4_E1FE52
+    google.com/gcp-projectid: ""
 spec:
-  type: service
+  type: website
   lifecycle: development
   owner: group:default/guests
+  system: system:default/Regression-test
   dependsOn: []
   dependencyOf: []
-  system: system:default/Regression-test
-  providesApis: []
-  consumesApis: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/regression-repo-f-9
+    backstage.io/source-vcs: github
