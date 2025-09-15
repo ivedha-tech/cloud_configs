@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: nn09
+  description: nn09
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/sdfdg
+spec:
+  type: storage
+  region: us-central1
+  project: sdfdg
+  owner: group:default/guests
+  system: system:default/Platformnex
+  lifecycle: development
