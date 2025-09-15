@@ -2,13 +2,13 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: cursor232166
-  description: test
+  description: Sample Component
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/regression-repo-f-9
     backstage.io/source-vcs: Github
     google.com/gcp-projectid: ""
 spec:
-  type: website
+  type: service
   lifecycle: development
   owner: group:default/guests
   system: system:default/Regression-test
