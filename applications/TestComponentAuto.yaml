@@ -6,14 +6,19 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/inforntf
     backstage.io/source-vcs: Github
+    google.com/cloudrun-project-slug: ""
+    google.com/cloudrun-location: ""
+    google.com/cloudrun-service-name: ""
     google.com/gcp-projectid: ""
+    google.com/cloudbuild-trigger-name: TestComponentAuto-development-trigger
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
 spec:
   type: service
   lifecycle: development
   owner: group:default/guests
-  system: system:default/Regression-test
   dependsOn: []
   dependencyOf: []
-  annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/inforntf
-    backstage.io/source-vcs: github
+  system: system:default/Regression-test
+  providesApis: []
+  consumesApis: []
