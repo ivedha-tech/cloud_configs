@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: ssgtest26
-  description: zdfgzdfgh
+  description: adfg
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/test-qa-f-15
     backstage.io/source-vcs: Github
@@ -11,7 +11,7 @@ spec:
   type: website
   lifecycle: development
   owner: group:default/guests
-  system: system:default/Regression-test
+  system: system:default/Test-App-Automation-1757951610106
   dependsOn: []
   dependencyOf: []
   annotations:
