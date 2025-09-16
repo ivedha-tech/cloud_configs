@@ -6,14 +6,16 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/test-qa-4-f-repo
     backstage.io/source-vcs: Github
-    google.com/gcp-projectid: ""
+    google.com/cloudrun-project-slug: ""
+    google.com/cloudrun-location: ""
+    google.com/cloudrun-service-name: ""
+    google.com/gcp-projectid: prj-platformnex-prod
 spec:
   type: service
   lifecycle: development
   owner: group:default/platformnex-admin
-  system: system:default/Regression-Test
   dependsOn: []
   dependencyOf: []
-  annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/test-qa-4-f-repo
-    backstage.io/source-vcs: github
+  system: system:default/Regression-Test
+  providesApis: []
+  consumesApis: []
