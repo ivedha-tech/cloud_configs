@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: testdwdff
+  description: testdwdff
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/prj-platformnex-prod
+spec:
+  type: storage
+  region: us-central1
+  project: prj-platformnex-prod
+  owner: group:default/guests
+  system: system:default/Regression-Test
+  lifecycle: development
