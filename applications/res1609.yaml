@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: res1609
+  description: hgvjhgcjhg
+  annotations:
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  type: storage
+  owner: group:default/platformnex-admin
+  system: system:default/sanity1609
+  region: us-central1
+  project: prj-platformnex-prod
+  lifecycle: development
