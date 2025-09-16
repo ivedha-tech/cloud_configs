@@ -7,6 +7,7 @@ metadata:
     backstage.io/source-location: https://github.com/ivedha-tech/test-qa-f-15
     backstage.io/source-vcs: Github
     google.com/gcp-projectid: prj-platformnex-prod
+    sonarqube.org/project-key: test-qa-f-15
 spec:
   type: service
   lifecycle: staging
