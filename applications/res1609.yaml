@@ -2,14 +2,20 @@ apiVersion: backstage.io/v1alpha1
 kind: Resource
 metadata:
   name: res1609
-  description: hgvjhgcjhg
+  description: hgvjhgcjhg edit
   annotations:
+    backstage.io/source-location: url:https://github.com/ivedha-tech/cloud_configs/tree/feature-yaml-prod/applications/
     backstage.io/source-vcs: Github
+    google.com/cloudrun-project-slug: ""
+    google.com/cloudrun-location: ""
+    google.com/cloudrun-service-name: ""
     google.com/gcp-projectid: ""
 spec:
   type: storage
   owner: group:default/platformnex-admin
   system: system:default/sanity1609
+  dependsOn: []
+  dependencyOf: []
   region: us-central1
   project: prj-platformnex-prod
   lifecycle: development
