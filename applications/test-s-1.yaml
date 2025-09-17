@@ -11,7 +11,7 @@ spec:
   type: service
   lifecycle: development
   owner: group:default/guests
-  system: system:default/Platformnex
+  system: system:default/platformnex
   dependsOn: []
   dependencyOf: []
   annotations:
