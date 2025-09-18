@@ -1,10 +1,19 @@
 apiVersion: backstage.io/v1alpha1
-kind: System
+kind: Component
 metadata:
   name: POSTest
-  description: some info about POS Test
+  description: som info about POS Test
   annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/pos-test
     backstage.io/source-vcs: Github
     google.com/gcp-projectid: ""
 spec:
+  type: service
+  lifecycle: development
   owner: group:default/platformnex-admin
+  system: system:default/POSTest
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/pos-test
+    backstage.io/source-vcs: github
