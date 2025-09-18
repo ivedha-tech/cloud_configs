@@ -2,16 +2,21 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: new-test-dev-18
-  description: test
+  description: test-456
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/test-qa-f-15
     backstage.io/source-vcs: Github
+    google.com/cloudrun-project-slug: ""
+    google.com/cloudrun-location: ""
+    google.com/cloudrun-service-name: ""
     google.com/gcp-projectid: ""
 spec:
   type: service
   lifecycle: development
   owner: group:default/guests
   system: system:default/Regression-test
+  providesApis: []
+  consumesApis: []
   dependsOn: []
   dependencyOf: []
   annotations:
