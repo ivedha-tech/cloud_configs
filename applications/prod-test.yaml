@@ -4,16 +4,16 @@ metadata:
   name: prod-test
   description: test
   annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/sanity-repo-f
+    backstage.io/source-location: https://github.com/ivedha-tech/test-qa-f-15
     backstage.io/source-vcs: Github
     google.com/gcp-projectid: prj-dev-platform-next
 spec:
   type: service
   lifecycle: production
   owner: group:default/guests
-  system: system:default/Sanity-T
+  system: system:default/Regression-test
   dependsOn: []
   dependencyOf: []
   annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/sanity-repo-f
+    backstage.io/source-location: https://github.com/ivedha-tech/test-qa-f-15
     backstage.io/source-vcs: github
