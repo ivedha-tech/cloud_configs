@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
   name: Regression-test
-  description: ""
+  description: test
   annotations:
     backstage.io/source-vcs: Github
     google.com/gcp-projectid: ""
