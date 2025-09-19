@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: devops-auto-test-component-1758308366726
+  description: DevOps QA component
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/test-qa-f-15
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  type: website
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/Regression-test
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/test-qa-f-15
+    backstage.io/source-vcs: github
