@@ -6,13 +6,14 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/regression-repo-f-9
     backstage.io/source-vcs: Github
-    google.com/cloudrun-project-slug: ""
-    google.com/cloudrun-location: ""
-    google.com/cloudrun-service-name: ""
-    google.com/gcp-projectid: ""
+    google.com/cloudrun-project-slug: ''
+    google.com/cloudrun-location: ''
+    google.com/cloudrun-service-name: ''
+    google.com/gcp-projectid: ''
     google.com/cloudbuild-trigger-name: cicdtest-development-trigger
     google.com/cloudbuild-project-slug: prj-dev-platform-next
     google.com/cloudbuild-location: us-central1
+    sonarqube.org/project-key: regression-repo-f-9
 spec:
   type: website
   lifecycle: development
