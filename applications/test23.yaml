@@ -1,14 +1,19 @@
 apiVersion: backstage.io/v1alpha1
-kind: Resource
+kind: Component
 metadata:
   name: test23
-  description: test23
+  description: test
   annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/prj-dev-platform-next
+    backstage.io/source-location: https://github.com/ivedha-tech/regression-repo-f-9
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
 spec:
-  type: storage
-  region: us-central1
-  project: prj-dev-platform-next
-  owner: group:default/guests
-  system: system:default/Platformnex
+  type: website
   lifecycle: development
+  owner: group:default/guests
+  system: system:default/Regression-test
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/regression-repo-f-9
+    backstage.io/source-vcs: github
