@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: TestComponentAuto-1758284741494
+  description: Sample Component
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/inforntf
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  type: website
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/Test-App-Automation-1758284730214
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/inforntf
+    backstage.io/source-vcs: github
