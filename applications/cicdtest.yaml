@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: cicdtest
+  description: asdfg
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/regression-repo-f-9
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: tesssss-development-trigger
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
+spec:
+  type: website
+  lifecycle: development
+  owner: group:default/platfor-admin
+  system: system:default/testappss
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/regression-repo-f-9
+    backstage.io/source-vcs: github
