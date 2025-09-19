@@ -13,6 +13,7 @@ metadata:
     google.com/cloudbuild-project-slug: prj-dev-service-nex
     google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: prj-platformnex-prod
+    sonarqube.org/project-key: asset-nex
 spec:
   type: service
   lifecycle: assetnex-dit
