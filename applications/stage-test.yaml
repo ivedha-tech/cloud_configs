@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: stage-test
-  description: test
+  description: test-tt1
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/test-qa-f-15
     backstage.io/source-vcs: Github
@@ -17,8 +17,11 @@ spec:
   type: service
   lifecycle: staging
   owner: group:default/guests
-  dependsOn: []
-  dependencyOf: []
   system: system:default/Regression-test
   providesApis: []
   consumesApis: []
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/test-qa-f-15
+    backstage.io/source-vcs: github
