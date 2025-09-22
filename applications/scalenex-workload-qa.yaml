@@ -1,0 +1,26 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: scalenex-workload-qa
+  description: Microservice within the ScaleNEX platform that manages resource
+    data and workload information across heterogeneous GPU/CPU environments in
+    qa env
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/scalenex-ui
+    backstage.io/source-vcs: Github
+    sonarqube.org/project-key: scalenex-ui
+    google.com/cloudrun-project-slug: prj-scalenex-nonprod
+    google.com/cloudrun-location: us-central1
+    google.com/cloudrun-service-name: scalenex-workload-qa
+    google.com/cloudbuild-trigger-name: scalenex-workload-build-deploy-qa
+    google.com/cloudbuild-project-slug: prj-scalenex-nonprod
+    google.com/cloudbuild-location: us-central1
+    google.com/gcp-projectid: prj-platformnex-prod
+spec:
+  type: website
+  lifecycle: qa
+  owner: group:default/scalenex-admin
+  system: system:default/scalenex
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/scalenex-ui
+    backstage.io/source-vcs: github
