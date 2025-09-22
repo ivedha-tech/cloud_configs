@@ -18,4 +18,4 @@ spec:
   dependencyOf: []
   region: us-central1
   project: prj-dev-service-nex 
-  lifecycle: assetnex-dit
+  lifecycle: dit1
