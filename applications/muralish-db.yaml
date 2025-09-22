@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: muralish-db
+  description: ""
+  annotations:
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  type: cloud_sql
+  owner: group:default/guests
+  system: system:default/platformnex
+  region: us-central1
+  project: prj-dev-platform-next
+  lifecycle: development
