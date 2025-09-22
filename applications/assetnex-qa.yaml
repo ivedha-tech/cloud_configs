@@ -15,7 +15,7 @@ metadata:
     google.com/gcp-projectid: ""
 spec:
   type: service
-  lifecycle: qa
+  lifecycle: staging
   owner: group:default/assetnex-admin
   system: system:default/assetnex
   providesApis: []
