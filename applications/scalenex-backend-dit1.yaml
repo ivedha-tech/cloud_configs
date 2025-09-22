@@ -12,8 +12,8 @@ metadata:
     google.com/cloudbuild-trigger-name: scalenex-service-build-deploy-dit-1
     google.com/cloudbuild-project-slug: prj-scalenex-nonprod
     google.com/cloudbuild-location: us-central1
-    google.com/gcp-projectid: prj-platformnex-prod
-    jira.com/project-key: scale
+    google.com/gcp-projectid: ""
+    jira.com/project-key: SCAL
 spec:
   type: service
   lifecycle: dit1
