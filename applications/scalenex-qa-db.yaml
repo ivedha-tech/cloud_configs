@@ -6,10 +6,13 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/cloud_configs
     backstage.io/source-vcs: github
+    google.com/gcp-projectid: ""
 spec:
   type: cloud_sql
   owner: group:default/scalenex-admin
   system: system:default/scalenex
+  dependsOn: []
+  dependencyOf: []
   region: us-central1
   project: prj-scalenex-nonprod
-  lifecycle: qa
+  lifecycle: staging
