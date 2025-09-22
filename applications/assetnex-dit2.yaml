@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: assetnex-dit2
+  description: assetnex-dit2 service
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/asset-nex
+    backstage.io/source-vcs: Github
+    sonarqube.org/project-key: asset-nex
+    google.com/cloudrun-project-slug: prj-dev-service-nex
+    google.com/cloudrun-location: us-central1
+    google.com/cloudrun-service-name: assetnex-dit2
+    google.com/cloudbuild-trigger-name: ASSETNEX-DIT-2
+    google.com/cloudbuild-project-slug: prj-dev-service-nex
+    google.com/cloudbuild-location: us-central1
+spec:
+  type: service
+  lifecycle: dit2
+  owner: group:default/assetnex-admin
+  system: system:default/assetnex
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/asset-nex
+    backstage.io/source-vcs: github
