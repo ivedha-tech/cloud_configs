@@ -14,7 +14,7 @@ metadata:
     google.com/cloudbuild-project-slug: prj-scalenex-nonprod
     google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: ""
-    jira.com/project-key: scal
+    jira.com/project-key: SCAL
 spec:
   type: website
   lifecycle: dit1
