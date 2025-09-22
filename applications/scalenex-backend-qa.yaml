@@ -16,7 +16,7 @@ metadata:
     jira.com/project-key: SCAL
 spec:
   type: service
-  lifecycle: qa
+  lifecycle: staging
   owner: group:default/scalenex-admin
   system: system:default/scalenex
   providesApis: []
