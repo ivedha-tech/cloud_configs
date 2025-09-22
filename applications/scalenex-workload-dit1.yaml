@@ -6,7 +6,7 @@ metadata:
     data and workload information across heterogeneous GPU/CPU environments in
     dit1 env
   annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/scalenex-ui
+    backstage.io/source-location: https://github.com/ivedha-tech/scalenex-workload
     backstage.io/source-vcs: Github
     sonarqube.org/project-key: scalenex-ui
     google.com/cloudrun-project-slug: prj-scalenex-nonprod
@@ -15,13 +15,17 @@ metadata:
     google.com/cloudbuild-trigger-name: scalenex-workload-build-deploy-dit-1
     google.com/cloudbuild-project-slug: prj-scalenex-nonprod
     google.com/cloudbuild-location: us-central1
-    google.com/gcp-projectid: prj-platformnex-prod
+    google.com/gcp-projectid: ""
     jira.com/project-key: scale
 spec:
   type: website
   lifecycle: dit1
   owner: group:default/scalenex-admin
   system: system:default/scalenex
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
   annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/scalenex-ui
+    backstage.io/source-location: https://github.com/ivedha-tech/scalenex-workload
     backstage.io/source-vcs: github
