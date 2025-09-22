@@ -15,12 +15,16 @@ metadata:
     google.com/cloudbuild-trigger-name: scalenex-workload-build-deploy-qa
     google.com/cloudbuild-project-slug: prj-scalenex-nonprod
     google.com/cloudbuild-location: us-central1
-    google.com/gcp-projectid: prj-platformnex-prod
+    google.com/gcp-projectid: ""
 spec:
   type: website
-  lifecycle: qa
+  lifecycle: staging
   owner: group:default/scalenex-admin
   system: system:default/scalenex
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/scalenex-ui
     backstage.io/source-vcs: github
