@@ -13,6 +13,7 @@ metadata:
     google.com/cloudbuild-project-slug: prj-servicenex-prod
     google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: ""
+    jira.com/project-key: ASSETNEX
 spec:
   type: service
   lifecycle: production
