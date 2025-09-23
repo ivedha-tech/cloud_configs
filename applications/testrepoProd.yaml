@@ -10,7 +10,7 @@ metadata:
     google.com/cloudrun-location: ""
     google.com/cloudrun-service-name: ""
     google.com/gcp-projectid: ""
-    google.com/cloudbuild-trigger-name: prj-platform-nex-uat
+    google.com/cloudbuild-trigger-name: prj-platform-nex-prod
     google.com/cloudbuild-project-slug: default
     google.com/cloudbuild-location: us-central-1
 spec:
