@@ -6,13 +6,14 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/test-qa-f-15
     backstage.io/source-vcs: Github
-    google.com/cloudrun-project-slug: ""
-    google.com/cloudrun-location: ""
-    google.com/cloudrun-service-name: ""
-    google.com/gcp-projectid: ""
+    google.com/cloudrun-project-slug: ''
+    google.com/cloudrun-location: ''
+    google.com/cloudrun-service-name: ''
+    google.com/gcp-projectid: ''
     google.com/cloudbuild-trigger-name: stage-test-24-staging-trigger
     google.com/cloudbuild-project-slug: prj-platformnex-prod
     google.com/cloudbuild-location: us-central1
+    sonarqube.org/project-key: test-qa-f-15
 spec:
   type: service
   lifecycle: staging
