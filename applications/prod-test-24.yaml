@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: prod-test-24
+  description: test
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/test-qa-f-15
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: prj-platformnex-prod
+spec:
+  type: service
+  lifecycle: production
+  owner: group:default/platformnex-admin
+  system: system:default/Regression-platformnex
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/test-qa-f-15
+    backstage.io/source-vcs: github
