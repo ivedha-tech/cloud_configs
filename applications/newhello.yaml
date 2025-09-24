@@ -9,13 +9,17 @@ metadata:
     google.com/cloudrun-project-slug: ""
     google.com/cloudrun-location: ""
     google.com/cloudrun-service-name: ""
-    google.com/gcp-projectid: prj-dev-platform-next
+    google.com/gcp-projectid: ""
+    jira.com/project-key: PEJ
 spec:
   type: service
-  lifecycle: staging
+  lifecycle: production
   owner: group:default/guests
-  dependsOn: []
-  dependencyOf: []
   system: system:default/HelloWorld2
   providesApis: []
   consumesApis: []
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/testrepo-qa-f-aug1
+    backstage.io/source-vcs: github
