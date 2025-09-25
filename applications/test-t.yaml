@@ -9,7 +9,7 @@ metadata:
     google.com/gcp-projectid: ""
 spec:
   type: service
-  lifecycle: staging
+  lifecycle: development
   owner: group:default/guests
   system: system:default/Testappforfinops
   dependsOn: []
