@@ -2,14 +2,19 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: DitTriggerTest2
-  description: 'DitTriggerTest2 application info '
+  description: "DitTriggerTest2 application info "
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/dit-trigger-test
     backstage.io/source-vcs: Github
+    sonarqube.org/project-key: dit-trigger-test
+    google.com/cloudrun-project-slug: ""
+    google.com/cloudrun-location: ""
+    google.com/cloudrun-service-name: ""
     google.com/cloudbuild-trigger-name: dit-trigger-test-trigger-a69c3439c6fb4ee7abfc77ee6
     google.com/cloudbuild-project-slug: prj-dev-platform-next
     google.com/cloudbuild-location: us-central1
-    sonarqube.org/project-key: dit-trigger-test
+    google.com/gcp-projectid: ""
+    jira.com/project-key: PEJ
 spec:
   type: service
   lifecycle: development
