@@ -6,11 +6,16 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/ga-test-004-fe
     backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
 spec:
   type: service
-  lifecycle: staging
+  lifecycle: uat
   owner: group:default/guests
   system: system:default/UAT-test
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/ga-test-004-fe
     backstage.io/source-vcs: github
