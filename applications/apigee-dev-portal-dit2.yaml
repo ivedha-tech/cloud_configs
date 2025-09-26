@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: apigee-dev-portal-dit2
+  description: ""
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/apigee-dev-portal
+    backstage.io/source-vcs: Github
+    google.com/cloudrun-project-slug: prj-dev-platform-next
+    google.com/cloudrun-location: us-central1
+    google.com/cloudrun-service-name: apigee-portal-dit2
+    google.com/cloudbuild-trigger-name: apigee-dev-portal-DIT-2
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
+    jira.com/project-key: APIGEE
+spec:
+  type: service
+  lifecycle: dit1
+  owner: group:default/apigee-team
+  system: system:default/apigee-dev-portal
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/apigee-dev-portal
+    backstage.io/source-vcs: github
