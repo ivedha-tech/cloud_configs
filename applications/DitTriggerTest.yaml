@@ -14,13 +14,15 @@ metadata:
     google.com/cloudbuild-trigger-name: platformnex-authorization-DIT-1
     google.com/cloudbuild-project-slug: prj-dev-platform-next
     google.com/cloudbuild-location: us-central1
-    jira.com/project-key: AM
 spec:
   type: website
   lifecycle: production
   owner: group:default/guests
-  dependsOn: []
-  dependencyOf: []
   system: system:default/DitTriggerTest
   providesApis: []
   consumesApis: []
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/dit-trigger-test
+    backstage.io/source-vcs: github
