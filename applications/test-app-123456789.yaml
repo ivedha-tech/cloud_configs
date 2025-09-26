@@ -2,19 +2,21 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: test-app-123456789
-  description: ''
+  description: ""
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/ga-test-004-fe
     backstage.io/source-vcs: Github
-    google.com/gcp-projectid: ''
-    sonarqube.org/project-key: ga-test-004-fe
+    google.com/cloudrun-project-slug: ""
+    google.com/cloudrun-location: ""
+    google.com/cloudrun-service-name: ""
+    google.com/gcp-projectid: ""
+    jira.com/project-key: PEJ
 spec:
   type: service
   lifecycle: development
   owner: group:default/local-test-004
-  system: system:default/ga-test
   dependsOn: []
   dependencyOf: []
-  annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/ga-test-004-fe
-    backstage.io/source-vcs: github
+  system: system:default/ga-test
+  providesApis: []
+  consumesApis: []
