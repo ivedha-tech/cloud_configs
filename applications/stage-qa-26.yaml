@@ -6,14 +6,17 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/private23f
     backstage.io/source-vcs: Github
-    google.com/gcp-projectid: prj-dev-platform-next
+    sonarqube.org/project-key: platformnex
+    google.com/cloudrun-project-slug: ""
+    google.com/cloudrun-location: ""
+    google.com/cloudrun-service-name: ""
+    google.com/gcp-projectid: ""
 spec:
   type: service
   lifecycle: staging
   owner: group:default/guests
-  system: system:default/Regression-test
   dependsOn: []
   dependencyOf: []
-  annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/private23f
-    backstage.io/source-vcs: github
+  system: system:default/Regression-test
+  providesApis: []
+  consumesApis: []
