@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: apigee-service-dit1
-  description: ""
+  description: backend dit1 service
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/apigee-service
     backstage.io/source-vcs: Github
@@ -12,12 +12,17 @@ metadata:
     google.com/cloudbuild-trigger-name: apigee-service-DIT-1
     google.com/cloudbuild-project-slug: prj-dev-platform-next
     google.com/cloudbuild-location: us-central1
+    google.com/gcp-projectid: ""
     jira.com/project-key: APIGEE
 spec:
   type: service
   lifecycle: dit1
   owner: group:default/apigee-team
   system: system:default/apigee-dev-portal
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/apigee-service
     backstage.io/source-vcs: github
