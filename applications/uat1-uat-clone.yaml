@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: uat1-uat-clone
+  description: ""
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/ga-test-004-fe
+    backstage.io/source-vcs: Github
+spec:
+  type: service
+  lifecycle: production
+  owner: group:default/guests
+  system: system:default/UAT-test
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/ga-test-004-fe
+    backstage.io/source-vcs: github
