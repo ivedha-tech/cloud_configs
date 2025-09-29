@@ -8,6 +8,7 @@ metadata:
     backstage.io/source-vcs: Github
     google.com/gcp-projectid: prj-dev-platform-next
     jira.com/project-key: PEJ
+    sonarqube.org/project-key: qa-repo-sep-29-f
 spec:
   type: service
   lifecycle: staging
