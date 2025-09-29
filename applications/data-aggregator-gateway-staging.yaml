@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: data-aggregator-gateway-staging
+  description: ""
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-data-aggregator-gateway
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+    jira.com/project-key: PEJ
+spec:
+  type: service
+  lifecycle: staging
+  owner: group:default/platformnex-admin
+  system: system:default/platformnex
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-data-aggregator-gateway
+    backstage.io/source-vcs: github
