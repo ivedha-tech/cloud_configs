@@ -16,10 +16,13 @@ metadata:
     google.com/cloudbuild-location: us-central1
 spec:
   type: service
-  lifecycle: tlproduction
+  lifecycle: development
   owner: group:default/platformnex-admin
-  dependsOn: []
-  dependencyOf: []
   system: system:default/platformnex
   providesApis: []
   consumesApis: []
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/cloud_configs
+    backstage.io/source-vcs: github
