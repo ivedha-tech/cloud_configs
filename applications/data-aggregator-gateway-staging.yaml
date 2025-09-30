@@ -2,15 +2,18 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: data-aggregator-gateway-staging
-  description: ""
+  description: Platformnex Data Aggregator Gateway
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/platformnex-data-aggregator-gateway
     backstage.io/source-vcs: Github
+    google.com/cloudrun-project-slug: prj-dev-platform-next
+    google.com/cloudrun-location: us-central1
+    google.com/cloudrun-service-name: platformnex-data-aggregator-gateway-qa1
     google.com/cloudbuild-trigger-name: platformnex-data-aggregator-gateway-QA
     google.com/cloudbuild-project-slug: prj-dev-platform-next
     google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: ""
-    jira.com/project-key: PEJ
+    jira.com/project-key: PLATNEX
 spec:
   type: service
   lifecycle: staging
