@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: newhello-uat
+  description: ""
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/testrepo-qa-f-aug1
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+    jira.com/project-key: AM
+spec:
+  type: service
+  lifecycle: uat
+  owner: group:default/guests
+  system: system:default/HelloWorld2
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/testrepo-qa-f-aug1
+    backstage.io/source-vcs: github
