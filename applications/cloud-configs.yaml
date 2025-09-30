@@ -16,7 +16,7 @@ metadata:
     google.com/cloudbuild-location: us-central1
 spec:
   type: service
-  lifecycle: development
+  lifecycle: tlproduction
   owner: group:default/platformnex-admin
   system: system:default/platformnex
   providesApis: []
