@@ -12,11 +12,16 @@ metadata:
     google.com/cloudbuild-trigger-name: TALENTNEX-FRONTEND-DIT-2
     google.com/cloudbuild-project-slug: prj-dev-talent-nex
     google.com/cloudbuild-location: us-central1
+    google.com/gcp-projectid: ""
 spec:
   type: service
-  lifecycle: dit1
+  lifecycle: dit2
   owner: group:default/talentnex-team
   system: system:default/talentnex
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/cauldron-frontend
     backstage.io/source-vcs: github
