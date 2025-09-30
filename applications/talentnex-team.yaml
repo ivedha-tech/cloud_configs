@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: talentnex-team
+  description: ""
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/cauldron-frontend
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  type: managed
+  children: []
+  members: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/cauldron-frontend
+    backstage.io/source-vcs: github
