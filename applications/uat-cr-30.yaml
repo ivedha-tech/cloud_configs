@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: uat-cr-30
+  description: test
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/test-repo-cr-30-f
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: prj-dev-platform-next
+spec:
+  type: service
+  lifecycle: uat
+  owner: group:default/guests
+  system: system:default/Regression-test
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/test-repo-cr-30-f
+    backstage.io/source-vcs: github
