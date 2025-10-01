@@ -1,0 +1,24 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: servicenex-uat
+  description: This is the servicenex uat env service
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/servicenex
+    backstage.io/source-vcs: Github
+    sonarqube.org/project-key: servicenex
+    google.com/cloudrun-project-slug: prj-dev-service-nex
+    google.com/cloudrun-location: us-central1
+    google.com/cloudrun-service-name: servicenex-uat
+    google.com/cloudbuild-trigger-name: SERVICENEX-UAT-1
+    google.com/cloudbuild-project-slug: prj-dev-service-nex
+    google.com/cloudbuild-location: us-central1
+    jira.com/project-key: CWS
+spec:
+  type: website
+  lifecycle: uat
+  owner: group:default/platformnex-admin
+  system: system:default/servicenex
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/servicenex
+    backstage.io/source-vcs: github
