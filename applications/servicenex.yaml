@@ -3,5 +3,8 @@ kind: System
 metadata:
   name: servicenex
   description: this is the servicenex application
+  annotations:
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
 spec:
-  owner: group:default/platformnex-admin
+  owner: group:default/servicenex-admin
