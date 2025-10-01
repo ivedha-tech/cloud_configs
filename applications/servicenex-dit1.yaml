@@ -13,13 +13,17 @@ metadata:
     google.com/cloudbuild-trigger-name: SERVICENEX-DIT-1
     google.com/cloudbuild-project-slug: prj-dev-service-nex
     google.com/cloudbuild-location: us-central1
-    google.com/gcp-projectid: prj-platformnex-prod
+    google.com/gcp-projectid: ""
     jira.com/project-key: cws
 spec:
   type: website
-  lifecycle: servicenex-DIT
+  lifecycle: dit1
   owner: group:default/platformnex-admin
   system: system:default/servicenex
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/servicenex
     backstage.io/source-vcs: github
