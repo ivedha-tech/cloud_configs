@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: POC
+  description: fds
+  annotations:
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  owner: group:default/platformnex-admin
