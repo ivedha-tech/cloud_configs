@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: poc-stage
+  description: ""
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/test-ga-three-t-001-fe
+    backstage.io/source-vcs: Github
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/platformnex-admin
+  system: system:default/POC
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/test-ga-three-t-001-fe
+    backstage.io/source-vcs: github
