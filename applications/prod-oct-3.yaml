@@ -6,6 +6,7 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/test-repo-cr-30-f
     backstage.io/source-vcs: Github
+    sonarqube.org/project-key: platformnex
     google.com/cloudrun-project-slug: ""
     google.com/cloudrun-location: ""
     google.com/cloudrun-service-name: ""
@@ -18,11 +19,8 @@ spec:
   type: service
   lifecycle: production
   owner: group:default/guests
+  dependsOn: []
+  dependencyOf: []
   system: system:default/Regression-test
   providesApis: []
   consumesApis: []
-  dependsOn: []
-  dependencyOf: []
-  annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/test-repo-cr-30-f
-    backstage.io/source-vcs: github
