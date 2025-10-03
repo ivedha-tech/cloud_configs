@@ -10,15 +10,15 @@ metadata:
     google.com/cloudrun-location: ""
     google.com/cloudrun-service-name: ""
     google.com/gcp-projectid: ""
+    google.com/cloudbuild-trigger-name: qa-lb-check-staging-trigger
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
 spec:
   type: service
   lifecycle: staging
   owner: group:default/guests
+  dependsOn: []
+  dependencyOf: []
   system: system:default/Regression-test
   providesApis: []
   consumesApis: []
-  dependsOn: []
-  dependencyOf: []
-  annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/test-qa-f-15
-    backstage.io/source-vcs: github
