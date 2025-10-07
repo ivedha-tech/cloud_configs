@@ -2,16 +2,21 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: newcomponenttest
-  description: ""
+  description: "some info "
   annotations:
     backstage.io/source-location: https://github.com/Samadhi-Ivedha/Feature-testing
     backstage.io/source-vcs: Github
+    google.com/cloudrun-project-slug: ""
+    google.com/cloudrun-location: ""
+    google.com/cloudrun-service-name: ""
     google.com/gcp-projectid: ""
 spec:
   type: service
-  lifecycle: development
+  lifecycle: dit1
   owner: group:default/guests
   system: system:default/HelloWorld2
+  providesApis: []
+  consumesApis: []
   dependsOn: []
   dependencyOf: []
   annotations:
