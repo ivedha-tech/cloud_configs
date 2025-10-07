@@ -4,16 +4,16 @@ metadata:
   name: stage-test
   description: test
   annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/test-qa-f-15
+    backstage.io/source-location: https://github.com/ivedha-tech/test-repo-cr-30-f
     backstage.io/source-vcs: Github
-    google.com/gcp-projectid: prj-platformnex-prod
+    google.com/gcp-projectid: prj-dev-platform-next
 spec:
   type: service
   lifecycle: staging
   owner: group:default/platformnex-admin
-  system: system:default/Regression-test
+  system: system:default/Platformnex-Regression
   dependsOn: []
   dependencyOf: []
   annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/test-qa-f-15
+    backstage.io/source-location: https://github.com/ivedha-tech/test-repo-cr-30-f
     backstage.io/source-vcs: github
