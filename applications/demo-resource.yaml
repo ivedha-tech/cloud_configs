@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: demo-resource
+  description: demo
+  annotations:
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  type: storage
+  owner: group:default/platfor-admin
+  system: system:default/demo_application001
+  region: us-central1
+  project: prj-dev-platform-next
+  lifecycle: development
