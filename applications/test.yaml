@@ -1,19 +1,14 @@
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: Resource
 metadata:
   name: test
   description: test
   annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/qa-repo-sep-29-f
-    backstage.io/source-vcs: Github
-    google.com/gcp-projectid: ""
+    backstage.io/source-location: https://github.com/ivedha-tech/prj-dev-platform-next
 spec:
-  type: service
+  type: storage
+  region: us-central1
+  project: prj-dev-platform-next
+  owner: group:default/guests
+  system: system:default/Regression-test
   lifecycle: development
-  owner: group:default/platfor-admin
-  system: system:default/reg26sep-ssg
-  dependsOn: []
-  dependencyOf: []
-  annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/qa-repo-sep-29-f
-    backstage.io/source-vcs: github
