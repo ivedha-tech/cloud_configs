@@ -16,7 +16,7 @@ metadata:
     jira.com/project-key: PLATNEX
 spec:
   type: service
-  lifecycle: staging
+  lifecycle: uat
   owner: group:default/platformnex-admin
   system: system:default/platformnex
   providesApis: []
