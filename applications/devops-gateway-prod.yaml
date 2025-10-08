@@ -14,7 +14,7 @@ metadata:
     google.com/cloudbuild-project-slug: prj-platformnex-prod
     google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: ""
-    jira.com/project-key: PEJ
+    jira.com/project-key: PLATNEX
 spec:
   type: service
   lifecycle: production
