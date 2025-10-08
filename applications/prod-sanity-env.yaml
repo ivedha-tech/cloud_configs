@@ -6,14 +6,17 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/sanity-f-PE-8
     backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: staging-sanity-env-staging-trigger
+    google.com/cloudbuild-project-slug: prj-platformnex-prod
+    google.com/cloudbuild-location: us-central1
+    google.com/gcp-projectid: ""
     jira.com/project-key: PEJ
 spec:
   type: service
   lifecycle: production
   owner: group:default/platformnex-admin
-  system: system:default/Platformnex-Regression
   dependsOn: []
   dependencyOf: []
-  annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/sanity-f-PE-8
-    backstage.io/source-vcs: github
+  system: system:default/Platformnex-Regression
+  providesApis: []
+  consumesApis: []
