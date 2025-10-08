@@ -18,4 +18,4 @@ spec:
   dependencyOf: []
   region: us-central1
   project: prj-servicenex-prod
-  lifecycle: servicenex-Prod
+  lifecycle: production
