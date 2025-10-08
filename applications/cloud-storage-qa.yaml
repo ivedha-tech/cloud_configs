@@ -6,6 +6,9 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/cloud_configs
     backstage.io/source-vcs: github
+    google.com/cloudrun-project-slug: ""
+    google.com/cloudrun-location: ""
+    google.com/cloudrun-service-name: ""
     google.com/gcp-projectid: ""
 spec:
   type: storage
@@ -15,4 +18,4 @@ spec:
   dependencyOf: []
   region: us-central1
   project: prj-dev-service-nex
-  lifecycle: servicenex-QA
+  lifecycle: staging
