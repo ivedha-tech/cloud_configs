@@ -5,6 +5,9 @@ metadata:
   description: to store the files/blob
   annotations:
     backstage.io/source-location: url:https://github.com/ivedha-tech/cloud_configs/tree/feature-yaml-prod/applications/
+    google.com/cloudrun-project-slug: ""
+    google.com/cloudrun-location: ""
+    google.com/cloudrun-service-name: ""
     google.com/gcp-projectid: ""
 spec:
   type: storage
@@ -14,4 +17,4 @@ spec:
   dependencyOf: []
   region: us-central1
   project: prj-dev-platform-next
-  lifecycle: servicenex-DIT
+  lifecycle: dit2
