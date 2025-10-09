@@ -2,16 +2,24 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: platformnex-orchestrator-staging
-  description: this is the orchestrator instance for staging environment
+  description: this is the orchestrator instance for qa environment
   annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-orchestrator
+    backstage.io/source-location: https://github.com/ivedha-tech/platform-orchestrator-core
     backstage.io/source-vcs: Github
-    mycompany.com/gcp-dataset-id: ds_billing
-    mycompany.com/gcp-provider: gcp
-    mycompany.com/gcp-table-id: gcp_billing_export_resource_v1_01E9B5_60A8A4_E1FE52
-    google.com/gcp-projectid: prj-dev-platform-next
+    google.com/cloudbuild-trigger-name: platformnex-V2-orchestrator-core-DIT-2
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
+    google.com/gcp-projectid: ""
+    jira.com/project-key: PLATNEX
 spec:
   type: service
   lifecycle: staging
   owner: group:default/platformnex-admin
   system: system:default/platformnex
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platform-orchestrator-core
+    backstage.io/source-vcs: github
