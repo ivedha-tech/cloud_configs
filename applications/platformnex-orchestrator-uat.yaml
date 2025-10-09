@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: platformnex-orchestrator-uat
+  description: this is the orchestrator instance for uat environment
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platform-orchestrator-core
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: platformnex-V2-orchestrator-core-UAT-1
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
+spec:
+  type: service
+  lifecycle: uat
+  owner: group:default/platformnex-admin
+  system: system:default/platformnex
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platform-orchestrator-core
+    backstage.io/source-vcs: github
