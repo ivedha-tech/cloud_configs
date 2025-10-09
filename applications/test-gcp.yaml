@@ -2,11 +2,12 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: test-gcp
-  description: ""
+  description: ''
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/count2-frontend
     backstage.io/source-vcs: Github
     google.com/gcp-projectid: prj-platformnex-prod
+    sonarqube.org/project-key: count2-frontend
 spec:
   type: service
   lifecycle: development
