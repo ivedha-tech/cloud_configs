@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: devops1008
-  description: smpl
+  description: smple
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/test-qa-f-15
     backstage.io/source-vcs: Github
@@ -18,8 +18,11 @@ spec:
   type: website
   lifecycle: development
   owner: group:default/platform-admin
-  dependsOn: []
-  dependencyOf: []
   system: system:default/uat-reg-10-08
   providesApis: []
   consumesApis: []
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/test-qa-f-15
+    backstage.io/source-vcs: github
