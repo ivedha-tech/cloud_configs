@@ -6,6 +6,7 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/cloudops-gateway
     backstage.io/source-vcs: Github
+    sonarqube.org/project-key: cloudops-gateway
     google.com/cloudrun-project-slug: prj-dev-platform-next
     google.com/cloudrun-location: us-central1
     google.com/cloudrun-service-name: platformnex-cloudops-gateway-uat1
@@ -18,11 +19,8 @@ spec:
   type: service
   lifecycle: uat
   owner: group:default/platformnex-admin
+  dependsOn: []
+  dependencyOf: []
   system: system:default/platformnex
   providesApis: []
   consumesApis: []
-  dependsOn: []
-  dependencyOf: []
-  annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/cloudops-gateway
-    backstage.io/source-vcs: github
