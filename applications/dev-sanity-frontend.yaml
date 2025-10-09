@@ -6,14 +6,19 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/sanity-f-PE-8
     backstage.io/source-vcs: Github
-    google.com/gcp-projectid: prj-platformnex-prod
+    google.com/cloudrun-project-slug: ""
+    google.com/cloudrun-location: ""
+    google.com/cloudrun-service-name: ""
+    google.com/gcp-projectid: ""
+    google.com/cloudbuild-trigger-name: staging-sanity-env-staging-trigger
+    google.com/cloudbuild-project-slug: prj-platformnex-prod
+    google.com/cloudbuild-location: us-central1
 spec:
   type: service
   lifecycle: dev_sanity
   owner: group:default/platformnex-admin
-  system: system:default/Platformnex-Regression
   dependsOn: []
   dependencyOf: []
-  annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/sanity-f-PE-8
-    backstage.io/source-vcs: github
+  system: system:default/Platformnex-Regression
+  providesApis: []
+  consumesApis: []
