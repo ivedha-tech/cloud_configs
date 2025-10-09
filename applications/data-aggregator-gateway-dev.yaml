@@ -12,8 +12,9 @@ metadata:
     google.com/cloudbuild-trigger-name: platformnex-data-aggregator-gateway-DIT-2
     google.com/cloudbuild-project-slug: prj-dev-platform-next
     google.com/cloudbuild-location: us-central1
-    google.com/gcp-projectid: ""
+    google.com/gcp-projectid: ''
     jira.com/project-key: PLATNEX
+    sonarqube.org/project-key: platformnex-data-aggregator-gateway
 spec:
   type: service
   lifecycle: development
