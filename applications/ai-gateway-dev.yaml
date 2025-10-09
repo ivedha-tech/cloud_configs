@@ -6,7 +6,6 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/ai-gateway
     backstage.io/source-vcs: Github
-    sonarqube.org/project-key: platformnex
     google.com/cloudrun-project-slug: prj-dev-platform-next
     google.com/cloudrun-location: us-central1
     google.com/cloudrun-service-name: platformnex-V2-ai-gateway-DIT-2
@@ -14,16 +13,15 @@ metadata:
     google.com/cloudbuild-project-slug: prj-dev-platform-next
     google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: prj-dev-platform-next
-    mycompany.com/gcp-projectid: prj-dev-platform-next
-    mycompany.com/gcp-provider: gcp
-    mycompany.com/gcp-dataset-id: ds_billing
-    mycompany.com/gcp-table-id: gcp_billing_export_resource_v1_01E9B5_60A8A4_E1FE52
 spec:
   type: service
   lifecycle: development
   owner: group:default/platformnex-admin
-  dependsOn: []
-  dependencyOf: []
   system: system:default/platformnex
   providesApis: []
   consumesApis: []
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/ai-gateway
+    backstage.io/source-vcs: github
