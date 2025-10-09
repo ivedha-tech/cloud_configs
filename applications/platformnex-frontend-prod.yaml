@@ -6,9 +6,7 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/platformnex-frontend
     backstage.io/source-vcs: Github
-    sonarqube.org/project-key: platformnex-frontend
-    artifact-registry/repository: >-
-      us-central1-docker.pkg.dev/prj-platformnex-prod/platformnex/platformnex-v2-frontend-prod
+    artifact-registry/repository: us-central1-docker.pkg.dev/prj-platformnex-prod/platformnex/platformnex-v2-frontend-prod
     pulumi.com/project-slug: mcmuralishclint/pulumi-cicd/dev
     pulumi.com/orga-slug: mcmuralishclint
     google.com/cloudrun-project-slug: prj-platformnex-prod
@@ -17,18 +15,17 @@ metadata:
     google.com/cloudbuild-trigger-name: int-prom-prod-frontend-1
     google.com/cloudbuild-project-slug: prj-platformnex-prod
     google.com/cloudbuild-location: us-central1
-    google.com/gcp-projectid: prj-platformnex-prod
+    google.com/gcp-projectid: ""
     jira.com/project-key: PEJ
-    mycompany.com/gcp-projectid: prj-platformnex-prod
-    mycompany.com/gcp-provider: gcp
-    mycompany.com/gcp-dataset-id: ds_billing
-    mycompany.com/gcp-table-id: gcp_billing_export_resource_v1_01E9B5_60A8A4_E1FE52
 spec:
   type: website
   lifecycle: production
   owner: group:default/platformnex-admin
-  dependsOn: []
-  dependencyOf: []
   system: system:default/platformnex
   providesApis: []
   consumesApis: []
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-frontend
+    backstage.io/source-vcs: github
