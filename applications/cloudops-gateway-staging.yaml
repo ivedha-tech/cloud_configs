@@ -6,20 +6,21 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/cloudops-gateway
     backstage.io/source-vcs: Github
-    sonarqube.org/project-key: platformnex2
+    sonarqube.org/project-key: cloudops-gateway
     google.com/cloudrun-project-slug: prj-dev-platform-next
     google.com/cloudrun-location: us-central1
     google.com/cloudrun-service-name: platformnex-cloudops-gateway-qa1
     google.com/cloudbuild-trigger-name: platformnex-V2-cloudops-gateway-QA
     google.com/cloudbuild-project-slug: prj-dev-platform-next
     google.com/cloudbuild-location: us-central1
+    google.com/gcp-projectid: ""
     jira.com/project-key: PEJ
-    mycompany.com/gcp-dataset-id: ds_billing
-    mycompany.com/gcp-provider: gcp
-    mycompany.com/gcp-table-id: gcp_billing_export_resource_v1_01E9B5_60A8A4_E1FE52
-    google.com/gcp-projectid: prj-dev-platform-next
 spec:
   type: service
   lifecycle: staging
   owner: group:default/platformnex-admin
+  dependsOn: []
+  dependencyOf: []
   system: system:default/platformnex
+  providesApis: []
+  consumesApis: []
