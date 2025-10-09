@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: platformnex-authorization-prod
-  description: ""
+  description: ''
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/platformnex-authorization
     backstage.io/source-vcs: Github
@@ -12,7 +12,8 @@ metadata:
     google.com/cloudbuild-trigger-name: int-prom-prod-authorization-8
     google.com/cloudbuild-project-slug: prj-platformnex-prod
     google.com/cloudbuild-location: us-central1
-    google.com/gcp-projectid: ""
+    google.com/gcp-projectid: ''
+    sonarqube.org/project-key: platformnex-authorization
 spec:
   type: service
   lifecycle: production
