@@ -2,17 +2,22 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: sampl
-  description: ''
+  description: ""
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/platformnex-demo-test
     backstage.io/source-vcs: Github
-    google.com/gcp-projectid: ''
     sonarqube.org/project-key: platformnex-demo-test
+    google.com/cloudrun-project-slug: ""
+    google.com/cloudrun-location: ""
+    google.com/cloudrun-service-name: ""
+    google.com/gcp-projectid: ""
 spec:
   type: service
   lifecycle: development
   owner: group:default/guests
   system: system:default/sampleappli
+  providesApis: []
+  consumesApis: []
   dependsOn: []
   dependencyOf: []
   annotations:
