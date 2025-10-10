@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: stage-sanity-10
+  description: ""
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/uatoptionsfrontend
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: prj-dev-platform-next
+spec:
+  type: service
+  lifecycle: staging
+  owner: group:default/platform-admin
+  system: system:default/uat-reg-10-08
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/uatoptionsfrontend
+    backstage.io/source-vcs: github
