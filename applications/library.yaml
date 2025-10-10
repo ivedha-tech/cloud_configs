@@ -2,18 +2,17 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: library
-  description: fdsfgsf
+  description: https://github.com/ivedha-tech/cloudforge-fe
   annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/testrepo-qa-f-aug1
+    backstage.io/source-location: https://github.com/ivedha-tech/cloudforge-fe
     backstage.io/source-vcs: Github
-    google.com/gcp-projectid: ""
 spec:
   type: service
   lifecycle: development
   owner: group:default/guests
-  system: system:default/TestA
+  system: system:default/sampleappli
   dependsOn: []
   dependencyOf: []
   annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/testrepo-qa-f-aug1
+    backstage.io/source-location: https://github.com/ivedha-tech/cloudforge-fe
     backstage.io/source-vcs: github
