@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: prod-sanity
+  description: ""
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/uatoptionsfrontend
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+    jira.com/project-key: PEJ
+spec:
+  type: service
+  lifecycle: production
+  owner: group:default/platform-admin
+  system: system:default/uat-reg-10-08
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/uatoptionsfrontend
+    backstage.io/source-vcs: github
