@@ -1,14 +1,10 @@
 apiVersion: backstage.io/v1alpha1
-kind: Resource
+kind: System
 metadata:
   name: c
-  description: c
+  description: fdgdg
   annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/prj-dev-platform-next
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
 spec:
-  type: compute
-  region: us-central1
-  project: prj-dev-platform-next
-  owner: group:default/guests
-  system: system:default/Platformnex
-  lifecycle: development
+  owner: group:default/platfor-admin
