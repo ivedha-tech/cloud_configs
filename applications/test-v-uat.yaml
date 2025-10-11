@@ -12,17 +12,17 @@ metadata:
     google.com/cloudbuild-trigger-name: test-v-dev-development-trigger
     google.com/cloudbuild-project-slug: prj-dev-platform-next
     google.com/cloudbuild-location: us-central1
-    google.com/gcp-projectid: prj-dev-platform-next
-    mycompany.com/gcp-projectid: prj-dev-platform-next
-    mycompany.com/gcp-provider: gcp
-    mycompany.com/gcp-dataset-id: ds_billing
-    mycompany.com/gcp-table-id: gcp_billing_export_resource_v1_01E9B5_60A8A4_E1FE52
+    google.com/gcp-projectid: ""
+    jira.com/project-key: PEJ
 spec:
   type: service
   lifecycle: uat1
   owner: group:default/platfor-admin
-  dependsOn: []
-  dependencyOf: []
   system: system:default/test
   providesApis: []
   consumesApis: []
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/test-repo-cr-30-f
+    backstage.io/source-vcs: github
