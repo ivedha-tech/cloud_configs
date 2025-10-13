@@ -9,7 +9,8 @@ metadata:
     google.com/cloudrun-project-slug: prj-dev-platform-next
     google.com/cloudrun-location: us-central1
     google.com/cloudrun-service-name: platformnex-v2-frontend-dit2
-    google.com/gcp-projectid: ""
+    google.com/gcp-projectid: ''
+    sonarqube.org/project-key: test-qa-f-15
 spec:
   type: service
   lifecycle: development
