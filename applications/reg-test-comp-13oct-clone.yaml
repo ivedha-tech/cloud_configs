@@ -6,11 +6,14 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/test-qa-f-15
     backstage.io/source-vcs: Github
+    sonarqube.org/project-key: platformnex
+    google.com/gcp-projectid: ""
 spec:
   type: service
   lifecycle: production
   owner: group:default/platfor-admin
+  dependsOn: []
+  dependencyOf: []
   system: system:default/reg-test-13-oct
-  annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/test-qa-f-15
-    backstage.io/source-vcs: github
+  providesApis: []
+  consumesApis: []
