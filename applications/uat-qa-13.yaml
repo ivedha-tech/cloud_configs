@@ -12,6 +12,8 @@ spec:
   lifecycle: uat
   owner: group:default/guests
   system: system:default/Regression-test
+  providesApis: []
+  consumesApis: []
   dependsOn: []
   dependencyOf: []
   annotations:
