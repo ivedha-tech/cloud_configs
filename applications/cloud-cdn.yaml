@@ -4,11 +4,11 @@ metadata:
   name: cloud-cdn
   description: cloud-cdn
   annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/prj-platoform-next
+    backstage.io/source-location: https://github.com/ivedha-tech/prj-dev-platformnex
 spec:
   type: storage
   region: us-central1
-  project: prj-platoform-next
+  project: prj-dev-platformnex
   owner: group:default/guests
   system: system:default/Platform-Engineering
   lifecycle: development
