@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: cloud-cdns
+  description: cloud-cdns
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/prj-platoform-next
+spec:
+  type: storage
+  region: us-central1
+  project: prj-platoform-next
+  owner: group:default/guests
+  system: system:default/Platform-Engineering
+  lifecycle: development
