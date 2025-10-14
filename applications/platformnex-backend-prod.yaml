@@ -13,14 +13,17 @@ metadata:
     google.com/cloudbuild-trigger-name: platformnex-V2-frontend-QA
     google.com/cloudbuild-project-slug: prj-dev-platform-next
     google.com/cloudbuild-location: us-central1
-    google.com/gcp-projectid: ""
+    google.com/gcp-projectid: prj-dev-platform-next
     jira.com/project-key: PEJ
 spec:
   type: service
   lifecycle: production
   owner: group:default/platformnex-admin
-  dependsOn: []
-  dependencyOf: []
   system: system:default/Platform-Engineering
   providesApis: []
   consumesApis: []
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-backend
+    backstage.io/source-vcs: github
