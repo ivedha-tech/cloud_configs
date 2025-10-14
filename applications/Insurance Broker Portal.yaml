@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: Insurance Broker Portal
+  description: The Insurance Broker Portal is a comprehensive digital platform
+    designed to empower insurance brokers with the tools and information they
+    need to manage client policies, quotes, and claims efficiently.
+  annotations:
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  owner: group:default/platform-admin
