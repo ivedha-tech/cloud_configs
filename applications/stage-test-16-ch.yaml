@@ -6,14 +6,16 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/repo-test-oct-16-f
     backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: service-repo-test-oct-16-f-trigger
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: prj-dev-platform-next
 spec:
   type: service
   lifecycle: staging
   owner: group:default/guests
-  system: system:default/RM-Test
   dependsOn: []
   dependencyOf: []
-  annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/repo-test-oct-16-f
-    backstage.io/source-vcs: github
+  system: system:default/RM-Test
+  providesApis: []
+  consumesApis: []
