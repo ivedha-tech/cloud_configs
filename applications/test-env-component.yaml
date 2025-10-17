@@ -2,14 +2,14 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: test-env-component
-  description: test-env test-env
+  description: test-env-component
   annotations:
     backstage.io/source-location: https://github.com/cgs-tech/test-repo-2
     backstage.io/source-vcs: Github
     google.com/gcp-projectid: ""
 spec:
   type: service
-  lifecycle: test-env-8
+  lifecycle: Dit 1
   owner: group:default/guests
   system: system:default/TestEnv-APP
   dependsOn: []
