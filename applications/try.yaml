@@ -10,5 +10,5 @@ spec:
   region: us-central1
   project: prj-dev-platform-next
   owner: group:default/guests
-  system: system:default/Platformnex
+  system: system:default/Regression-test
   lifecycle: development
