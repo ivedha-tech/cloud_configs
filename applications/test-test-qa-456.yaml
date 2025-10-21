@@ -9,9 +9,11 @@ metadata:
     google.com/gcp-projectid: ""
 spec:
   type: service
-  lifecycle: uat
+  lifecycle: development
   owner: group:default/guests
   system: system:default/RM-Test
+  providesApis: []
+  consumesApis: []
   dependsOn: []
   dependencyOf: []
   annotations:
