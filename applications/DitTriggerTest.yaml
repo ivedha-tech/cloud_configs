@@ -10,11 +10,11 @@ metadata:
     google.com/cloudrun-project-slug: ""
     google.com/cloudrun-location: ""
     google.com/cloudrun-service-name: ""
-    google.com/gcp-projectid: prj-dev-platform-next
     google.com/cloudbuild-trigger-name: platformnex-authorization-DIT-1
     google.com/cloudbuild-project-slug: prj-dev-platform-next
     google.com/cloudbuild-location: us-central1
-    jira.com/project-key: AM
+    google.com/gcp-projectid: prj-dev-platform-next
+    jira.com/project-key: PEJ
     mycompany.com/gcp-projectid: prj-dev-platform-next
     mycompany.com/gcp-provider: gcp
     mycompany.com/gcp-dataset-id: ds_billing
@@ -23,8 +23,11 @@ spec:
   type: website
   lifecycle: production
   owner: group:default/guests
-  dependsOn: []
-  dependencyOf: []
   system: system:default/DitTriggerTest
   providesApis: []
   consumesApis: []
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/dit-trigger-test
+    backstage.io/source-vcs: github
