@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-pr-123
+  description: ""
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/count2-frontend
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  type: service
+  lifecycle: staging
+  owner: group:default/guests
+  system: system:default/RM-Test
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/count2-frontend
+    backstage.io/source-vcs: github
