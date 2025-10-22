@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: qatestcatalogedit_dev
+  description: ""
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/qatestcatalogedit
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+    jira.com/project-key: PEJ
+spec:
+  type: website
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/amacicd
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/qatestcatalogedit
+    backstage.io/source-vcs: github
