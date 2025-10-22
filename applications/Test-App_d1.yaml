@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Test-App_d1
+  description: ""
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/testing3tierGoBackend
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  type: website
+  lifecycle: staging
+  owner: group:default/guests
+  system: system:default/application999
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/testing3tierGoBackend
+    backstage.io/source-vcs: github
