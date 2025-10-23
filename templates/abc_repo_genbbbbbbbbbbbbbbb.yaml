@@ -18,22 +18,22 @@ spec:
           ui:options:
             allowedHosts: ["github.com"]
             default: github.com
-        - title: "Environment & Application"
-          required: ["environment", "application", "owner"]
-          properties:
-            environment:
-              title: "Environment"
-              type: string
-              description: "Target environment (development, staging, production)"
-            application:
-              title: "Application"
-              type: string
-              description: "Application name or type"
-            owner:
-              title: "Owner"
-              type: string
-              ui:field: OwnerPicker
-              description: "Select the owner for the repository"
+    - title: "Environment & Application"
+      required: ["environment", "application", "owner"]
+      properties:
+        environment:
+          title: "Environment"
+          type: string
+          description: "Target environment (development, staging, production)"
+        application:
+          title: "Application"
+          type: string
+          description: "Application name or type"
+        owner:
+          title: "Owner"
+          type: string
+          ui:field: OwnerPicker
+          description: "Select the owner for the repository"
   steps:
     - id: fetch-template
       name: Fetch Template
