@@ -1,0 +1,41 @@
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: abc_repo_genbvcx
+  title: repogenbvcx
+  description: repository gen templatebvcx
+spec:
+  owner: platform-group
+  type: yaml
+  parameters:
+    - title: "Repository Configuration"
+      required: ["repoUrl"]
+      properties:
+        repoUrl:
+          title: "Repository Location"
+          type: string
+          ui:
+            field: RepoUrlPicker
+            options:
+              allowedHosts: ["github.com"]
+              default: github.com
+  steps:
+    - id: fetch-template
+      name: Fetch Template
+      action: fetch:template
+      input:
+        url: ./template/repos/node
+    - id: publish-github
+      name: Publish to GitHub
+      action: publish:github
+      input:
+        repoUrl: ${{ parameters.repoUrl }}
+    - id: catalog-register
+      name: Register in Catalog
+      action: catalog:register
+      input:
+        repoContentsUrl: ${{ steps.publish-github.output.repoContentsUrl }}
+  output:
+    links:
+      - title: Repository
+        url: ${{ steps.publish-github.output.remoteUrl }}
