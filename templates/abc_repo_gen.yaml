@@ -1,0 +1,40 @@
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: abc_repo_gen
+  title: repogen
+  description: repository gen template
+spec:
+  owner: platform-group
+  type: yaml
+  parameters:
+    - title: "Repository Configuration"
+      required: ["repoUrl"]
+      properties:
+        repoUrl:
+          title: "Repository Location"
+          type: string
+          ui:field: RepoUrlPicker
+          ui:options:
+            allowedHosts: ["github.com"]
+            default: github.com
+  steps:
+    - id: fetch-template
+      name: Fetch Template
+      action: fetch:template
+      input:
+        url: https://github.com/ivedha-tech/platformnex-templates/tree/main/repos/frontend-react-typescript-tailwindcss-none
+    - id: publish-github
+      name: Publish to GitHub
+      action: publish:github
+      input:
+        repoUrl: ${{ parameters.repoUrl }}
+    - id: catalog-register
+      name: Register in Catalog
+      action: catalog:register
+      input:
+        repoContentsUrl: ${{ steps.publish-github.output.repoContentsUrl }}
+  output:
+    links:
+      - title: Repository
+        url: ${{ steps.publish-github.output.remoteUrl }}
