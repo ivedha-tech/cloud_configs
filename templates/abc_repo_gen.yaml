@@ -1,40 +1,72 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: abc_repo_gen
-  title: repogen
-  description: repository gen template
+        name: abc_repo_gen
+        title: repogen
+        description: repository gen template
 spec:
-  owner: platform-group
-  type: yaml
-  parameters:
-    - title: "Repository Configuration"
-      required: ["repoUrl"]
-      properties:
-        repoUrl:
-          title: "Repository Location"
-          type: string
-          ui:field: RepoUrlPicker
-          ui:options:
-            allowedHosts: ["github.com"]
-            default: github.com
-  steps:
-    - id: fetch-template
-      name: Fetch Template
-      action: fetch:template
-      input:
-        url: https://github.com/ivedha-tech/platformnex-templates/tree/main/repos/frontend-react-typescript-tailwindcss-none
-    - id: publish-github
-      name: Publish to GitHub
-      action: publish:github
-      input:
-        repoUrl: ${{ parameters.repoUrl }}
-    - id: catalog-register
-      name: Register in Catalog
-      action: catalog:register
-      input:
-        repoContentsUrl: ${{ steps.publish-github.output.repoContentsUrl }}
-  output:
-    links:
-      - title: Repository
-        url: ${{ steps.publish-github.output.remoteUrl }}
+        owner: platform-group
+        type: yaml
+        parameters:
+                - title: "Repository Configuration"
+                  required: ["repoUrl"]
+                  properties:
+                        repoUrl:
+                                title: "Repository Location"
+                                type: string
+                                ui:field: RepoUrlPicker
+                                ui:options:
+                                        allowedHosts: ["github.com"]
+                                        default: github.com
+                - title: "Environment & Application"
+                  required: ["environment", "application", "owner"]
+                  properties:
+                        environment:
+                                title: "Environment"
+                                type: string
+                                description: "Target environment (development, staging, production)"
+                        application:
+                                title: "Application"
+                                type: string
+                                ui:field: SystemPicker
+                                description: "Application name or type"
+                        owner:
+                                title: "Owner"
+                                type: string
+                                ui:field: OwnerPicker
+                                description: "Select the owner for the repository"
+        steps:
+                - id: fetch-template
+                  name: Fetch Template
+                  action: fetch:template
+                  input:
+                        url: https://github.com/ivedha-tech/platformnex-templates/tree/main/repos/frontend-react-typescript-tailwindcss-none
+                - id: fetch-catalog-tools
+                  name: Fetch Catalog Tools
+                  action: fetch:template
+                  input:
+                        values:
+                                integrationHost: '${{ parameters.repoUrl.split("?")[0] }}'
+                                repo: '${{ parameters.repoUrl.split("repo=")[1] }}'
+                                slug: '${{ parameters.repoUrl.split("owner=")[1].split("&")[0] }}/${{ parameters.repoUrl.split("repo=")[1] }}'
+                                environment: ${{ parameters.environment }}
+                                system_name: ${{ parameters.application }}
+                                owner: ${{ parameters.owner }}
+                                repo_url: 'https://github.com/${{ parameters.repoUrl.split("owner=")[1].split("&")[0] }}/${{ parameters.repoUrl.split("repo=")[1] }}'
+                        targetPath: .
+                        url: https://github.com/ivedha-tech/platformnex-templates/blob/main/default-entities
+                - id: publish-github
+                  name: Publish to GitHub
+                  action: publish:github
+                  input:
+                        repoUrl: ${{ parameters.repoUrl }}
+                - id: catalog-register
+                  name: Register in Catalog
+                  action: catalog:register
+                  input:
+                        repoContentsUrl: ${{ steps['publish-github'].output.repoContentsUrl }}
+                        catalogInfoPath: '/catalog-info.yaml'
+        output:
+                links:
+                        - title: Repository
+                          url: ${{ steps['publish-github'].output.remoteUrl }}
