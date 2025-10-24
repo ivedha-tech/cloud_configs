@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: platformnex_qa_automation
+  description: End-to-end UI test automation for PlatformNEX using Playwright and
+    TypeScript. Generates rich HTML reports via Monocart Reporter.
+  annotations:
+    backstage.io/source-location: https://github.com/QAIvedha/platformnex_qa_automation
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: platformnex-integration-tests
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
+    jira.com/project-key: PLATNEX
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/platformnex-admin
+  system: system:default/platformnex
+  annotations:
+    backstage.io/source-location: https://github.com/QAIvedha/platformnex_qa_automation
+    backstage.io/source-vcs: github
