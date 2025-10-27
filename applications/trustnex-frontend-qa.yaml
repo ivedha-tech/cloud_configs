@@ -6,14 +6,22 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/Trustnex-frontend
     backstage.io/source-vcs: Github
+    google.com/cloudrun-project-slug: ""
+    google.com/cloudrun-location: ""
+    google.com/cloudrun-service-name: ""
     google.com/cloudbuild-trigger-name: Trustnex-Frontend-build-deploy-qa
     google.com/cloudbuild-project-slug: prj-trustnex-nonprod
     google.com/cloudbuild-location: us-central1
+    google.com/gcp-projectid: ""
 spec:
   type: service
-  lifecycle: qa
+  lifecycle: staging
   owner: group:default/trustnex-admin
   system: system:default/trustnex
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/Trustnex-frontend
     backstage.io/source-vcs: github
