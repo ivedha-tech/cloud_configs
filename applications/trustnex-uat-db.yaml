@@ -12,11 +12,13 @@ metadata:
     google.com/cloudbuild-trigger-name: Trustnex-build-deploy-dit-2
     google.com/cloudbuild-project-slug: prj-trustnex-nonprod
     google.com/cloudbuild-location: us-central1
-    google.com/gcp-projectid: prj-platformnex-prod
+    google.com/gcp-projectid: ""
 spec:
   type: cloud_sql
   owner: group:default/trustnex-admin
   system: system:default/trustnex
+  dependsOn: []
+  dependencyOf: []
   region: us-central1
   project: prj-trustnex-nonprod
-  lifecycle: qa
+  lifecycle: uat
