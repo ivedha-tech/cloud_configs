@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: trustnex-backend-qa
+  description: trustnex-backend service qa
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/trustnex-backend
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: Trustnex-Backend-build-deploy-qa
+    google.com/cloudbuild-project-slug: prj-trustnex-nonprod
+    google.com/cloudbuild-location: us-central1
+spec:
+  type: service
+  lifecycle: dit1
+  owner: group:default/trustnex-admin
+  system: system:default/trustnex
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/trustnex-backend
+    backstage.io/source-vcs: github
