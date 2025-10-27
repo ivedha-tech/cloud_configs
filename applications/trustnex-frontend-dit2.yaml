@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: trustnex-frontend-dit2
+  description: trustnex-frontend service dit2
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/Trustnex-frontend
+    backstage.io/source-vcs: Github
+    google.com/cloudrun-project-slug: prj-trustnex-nonprod
+    google.com/cloudrun-location: us-central1
+    google.com/cloudrun-service-name: trustnex-frontend-dit2
+    google.com/cloudbuild-trigger-name: Trustnex-Frontend-build-deploy-dit-2
+    google.com/cloudbuild-project-slug: prj-trustnex-nonprod
+    google.com/cloudbuild-location: us-central1
+spec:
+  type: service
+  lifecycle: dit2
+  owner: group:default/trustnex-admin
+  system: system:default/trustnex
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/Trustnex-frontend
+    backstage.io/source-vcs: github
