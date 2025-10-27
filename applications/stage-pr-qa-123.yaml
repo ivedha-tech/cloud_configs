@@ -6,12 +6,32 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/count2-frontend
     backstage.io/source-vcs: Github
-    google.com/gcp-projectid: ""
+    sonarqube.org/project-key: test
+    datadoghq.com/site: test
+    datadoghq.com/dashboard-url: test
+    datadoghq.com/graph-token: test
+    artifact-registry/repository: test
+    pulumi.com/project-slug: test
+    pulumi.com/orga-slug: test
+    google.com/cloudrun-project-slug: test
+    google.com/cloudrun-location: test
+    google.com/cloudrun-service-name: test
+    google.com/cloudbuild-trigger-name: test
+    google.com/cloudbuild-project-slug: test
+    google.com/cloudbuild-location: test
+    google.com/gcp-projectid: test
+    jira.com/project-key: test
+    mycompany.com/gcp-projectid: test
+    mycompany.com/gcp-provider: gcp
+    mycompany.com/gcp-dataset-id: test
+    mycompany.com/gcp-table-id: test
 spec:
   type: service
   lifecycle: staging
   owner: group:default/guests
   system: system:default/RM-Test
+  providesApis: []
+  consumesApis: []
   dependsOn: []
   dependencyOf: []
   annotations:
