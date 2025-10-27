@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: trustnex-frontend-uat
+  description: trustnex-frontend service uat
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/Trustnex-frontend
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: Trustnex-Frontend-build-deploy-uat
+    google.com/cloudbuild-project-slug: prj-trustnex-nonprod
+    google.com/cloudbuild-location: us-central1
+spec:
+  type: service
+  lifecycle: uat
+  owner: group:default/trustnex-admin
+  system: system:default/trustnex
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/Trustnex-frontend
+    backstage.io/source-vcs: github
