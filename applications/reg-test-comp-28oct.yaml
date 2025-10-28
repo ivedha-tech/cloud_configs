@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: reg-test-comp-28oct
+  description: test comp
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/test-qa-f-15
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+  system: system:default/reg-test-28-oct
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/test-qa-f-15
+    backstage.io/source-vcs: github
