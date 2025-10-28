@@ -10,6 +10,7 @@ metadata:
     google.com/cloudbuild-project-slug: prj-dev-platform-next
     google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: prj-dev-platform-next
+    sonarqube.org/project-key: oct-28-frontend
 spec:
   type: service
   lifecycle: development
