@@ -1,0 +1,56 @@
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: test-gen-template-003
+  title: test-gen-template-003
+  description: desc test-gen-template-003 desc
+spec:
+  owner: test-backstage-001
+  type: yaml
+  parameters:
+    - title: "Repository 2 Configuration"
+      required: ["repoUrl2"]
+      properties:
+        repoUrl2:
+          title: "Repository 2 Location"
+          type: string
+          ui:field: RepoUrlPicker
+          ui:options:
+            allowedHosts: ["github.com"]
+            default: github.com
+          description: "Repository URL for Publish to GitHub"
+  steps:
+    - id: fetch-template-1
+      name: Fetch Template
+      action: fetch:template
+      input:
+        url: https://github.com/ivedha-tech/platformnex-templates/tree/main/repos/frontend-react-typescript-tailwindcss-redux-toolkit
+        targetPath: ./workspace-1
+    - id: fetch-catalog-tools-3
+      name: Fetch Catalog Tools for Catalog Registration 3
+      action: fetch:template
+      input:
+        url: https://github.com/ivedha-tech/platformnex-templates/blob/main/default-entities
+        targetPath: ./workspace-2
+        values:
+          - integrationHost: '${{ parameters.repoUrl2.split("?")[0] }}'
+          - repo: '${{ parameters.repoUrl2.split("repo=")[1] }}'
+          - slug: '${{ parameters.repoUrl2.split("owner=")[1].split("&")[0] }}/${{ parameters.repoUrl2.split("repo=")[1] }}'
+          - owner: test-backstage-001
+          - repo_url: 'https://github.com/${{ parameters.repoUrl2.split("owner=")[1].split("&")[0] }}/${{ parameters.repoUrl2.split("repo=")[1] }}'
+    - id: publish-github-2
+      name: Publish to GitHub
+      action: publish:github
+      input:
+        repoUrl: ${{ parameters.repoUrl2 }}
+        sourcePath: ./workspace-1
+    - id: catalog-register-3
+      name: Register Catalog
+      action: catalog:register
+      input:
+        repoContentsUrl: ${{ steps['publish-github-2'].output.repoContentsUrl }}
+        catalogInfoPath: '/catalog-info.yaml'
+  output:
+    links:
+      - title: Repository 2
+        url: ${{ steps['publish-github-2'].output.remoteUrl }}
