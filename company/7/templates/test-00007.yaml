@@ -1,0 +1,74 @@
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: test-00007
+  title: test-00007
+  description: test-00007
+spec:
+  owner: test-backstage-001
+  type: yaml
+  parameters:
+    - title: "Repository 2 Configuration"
+      required: ["repoUrl2"]
+      properties:
+        repoUrl2:
+          title: "Repository 2 Location"
+          type: string
+          ui:field: RepoUrlPicker
+          ui:options:
+            allowedHosts: ["github.com"]
+            default: github.com
+          description: "Repository URL for Publish to GitHub"
+    - title: "Environment & Ownership"
+      required: ["environment", "owner", "system_name"]
+      properties:
+        environment:
+          title: "Environment"
+          type: string
+          description: "Target lifecycle/environment (e.g., production, staging)"
+        owner:
+          title: "Owner"
+          ui:field: OwnerPicker
+          description: "Catalog owner (group)"
+        system_name:
+          title: "Application"
+          type: string
+          ui:field: EntityPicker
+          description: "Application this component belongs to"
+  steps:
+    - id: fetch-template-1
+      name: Fetch Template
+      action: fetch:template
+      input:
+        url: https://github.com/ivedha-tech/platformnex-templates/tree/main/repos/frontend-react-typescript-tailwindcss-redux-toolkit
+        targetPath: ./workspace-1
+    - id: fetch-catalog-tools-3
+      name: Fetch Catalog Tools for Catalog Registration 3
+      action: fetch:template
+      input:
+        url: https://github.com/ivedha-tech/platformnex-templates/blob/main/default-entities
+        targetPath: ./workspace-1
+        values:
+          integrationHost: '${{ parameters.repoUrl2.split("?")[0] }}'
+          repo: '${{ parameters.repoUrl2.split("repo=")[1] }}'
+          slug: '${{ parameters.repoUrl2.split("owner=")[1].split("&")[0] }}/${{ parameters.repoUrl2.split("repo=")[1] }}'
+          environment: ${{ parameters.environment }}
+          owner: ${{ parameters.owner }}
+          system_name: ${{ parameters.system_name }}
+          repo_url: 'https://github.com/${{ parameters.repoUrl2.split("owner=")[1].split("&")[0] }}/${{ parameters.repoUrl2.split("repo=")[1] }}'
+    - id: publish-github-2
+      name: Publish to GitHub
+      action: publish:github
+      input:
+        repoUrl: ${{ parameters.repoUrl2 }}
+        sourcePath: ./workspace-1
+    - id: catalog-register-3
+      name: Register Catalog
+      action: catalog:register
+      input:
+        repoContentsUrl: ${{ steps['publish-github-2'].output.repoContentsUrl }}
+        catalogInfoPath: '/catalog-info.yaml'
+  output:
+    links:
+      - title: Repository
+        url: ${{ steps['publish-github-2'].output.remoteUrl }}
