@@ -70,5 +70,5 @@ spec:
         catalogInfoPath: '/catalog-info.yaml'
   output:
     links:
-      - title: Repository
+      - title: Repository 2
         url: ${{ steps['publish-github-2'].output.remoteUrl }}
