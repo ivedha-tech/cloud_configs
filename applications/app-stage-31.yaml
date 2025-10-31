@@ -7,11 +7,14 @@ metadata:
     backstage.io/source-location: https://github.com/ivedha-tech/appstackfrontend
     backstage.io/source-vcs: Github
     google.com/gcp-projectid: ""
+    jira.com/project-key: PEJ
 spec:
   type: service
-  lifecycle: staging
+  lifecycle: production
   owner: group:default/guests
   system: system:default/Platformnex-Regression
+  providesApis: []
+  consumesApis: []
   dependsOn: []
   dependencyOf: []
   annotations:
