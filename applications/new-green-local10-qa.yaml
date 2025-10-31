@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: new-green-local10-qa
+  description: frontend
+  annotations:
+    github.com/project-slug: ivedha-tech/new-green-local10
+    github.com/repo-url: https://github.com/ivedha-tech/new-green-local10
+    backstage.io/source-location: https://github.com/ivedha-tech/new-green-local10
+    backstage.io/language: typescript
+    backstage.io/framework: react
+    release-manager/repository-owner: group:default/guests
+    release-manager/repository: new-green-local10
+    release-manager/branching-strategy: TBD
+    release-manager/auth-provider: github
+    repo-url: https://github.com/ivedha-tech/new-green-local10
+    backstage.io/source-vcs: Github
+
+spec:
+  type: service
+  lifecycle: qa
+  owner: group:default/guests
+  system: system:default/dgvds
