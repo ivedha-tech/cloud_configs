@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: component-green-111-qa
+  description: frontend
+  annotations:
+    github.com/project-slug: ivedha-tech/component-green-111
+    github.com/repo-url: https://github.com/ivedha-tech/component-green-111
+    backstage.io/source-location: https://github.com/ivedha-tech/component-green-111
+    backstage.io/language: typescript
+    backstage.io/framework: react
+    release-manager/repository-owner: group:default/guests
+    release-manager/repository: component-green-111
+    release-manager/branching-strategy: TBD
+    release-manager/auth-provider: github
+    repo-url: https://github.com/ivedha-tech/component-green-111
+    backstage.io/source-vcs: Github
+
+spec:
+  type: service
+  lifecycle: qa
+  owner: group:default/guests
+  system: system:default/application999
