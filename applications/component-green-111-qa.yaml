@@ -4,20 +4,21 @@ metadata:
   name: component-green-111-qa
   description: frontend
   annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/component-green-111
+    backstage.io/source-vcs: Github
     github.com/project-slug: ivedha-tech/component-green-111
     github.com/repo-url: https://github.com/ivedha-tech/component-green-111
-    backstage.io/source-location: https://github.com/ivedha-tech/component-green-111
-    backstage.io/language: typescript
-    backstage.io/framework: react
-    release-manager/repository-owner: group:default/guests
-    release-manager/repository: component-green-111
-    release-manager/branching-strategy: TBD
-    release-manager/auth-provider: github
-    repo-url: https://github.com/ivedha-tech/component-green-111
-    backstage.io/source-vcs: Github
-
+    google.com/gcp-projectid: prj-dev-platform-next
+    mycompany.com/gcp-projectid: prj-dev-platform-next
+    mycompany.com/gcp-provider: gcp
+    mycompany.com/gcp-dataset-id: ds_billing
+    mycompany.com/gcp-table-id: gcp_billing_export_resource_v1_01E9B5_60A8A4_E1FE52
 spec:
   type: service
   lifecycle: qa
   owner: group:default/guests
+  dependsOn: []
+  dependencyOf: []
   system: system:default/application999
+  providesApis: []
+  consumesApis: []
