@@ -12,7 +12,7 @@ spec:
   lifecycle: dit1
   owner: group:default/platformnex-admin
   system: system:default/StackPilot
-  definition: ""
+  definition: triggers deployments
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/test-qa-f-15
     backstage.io/source-vcs: github
