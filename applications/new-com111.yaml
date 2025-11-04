@@ -2,11 +2,13 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: new-com111
-  description: ""
+  description: ''
   annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/cloud_configs/blob/feature-yaml-dit2/applications/ffgdfghdf.yaml
+    backstage.io/source-location: >-
+      https://github.com/ivedha-tech/cloud_configs/blob/feature-yaml-dit2/applications/ffgdfghdf.yaml
     backstage.io/source-vcs: Github
-    google.com/gcp-projectid: ""
+    google.com/gcp-projectid: ''
+    sonarqube.org/project-key: ffgdfghdf.yaml
 spec:
   type: website
   lifecycle: development
@@ -15,5 +17,6 @@ spec:
   dependsOn: []
   dependencyOf: []
   annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/cloud_configs/blob/feature-yaml-dit2/applications/ffgdfghdf.yaml
+    backstage.io/source-location: >-
+      https://github.com/ivedha-tech/cloud_configs/blob/feature-yaml-dit2/applications/ffgdfghdf.yaml
     backstage.io/source-vcs: github
