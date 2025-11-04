@@ -1,0 +1,29 @@
+name: SonarQube Analysis
+
+on:
+  push:
+    branches: [main, master, develop]
+  pull_request:
+    branches: [main, master, develop]
+
+jobs:
+  sonarqube:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
+    
+    - name: SonarQube Scan 
+      uses: sonarsource/sonarqube-scan-action@master
+      env:
+        SONAR_TOKEN: squ_462eb89cbd3f506713f40e2cb7bcd8edc8de0980
+        SONAR_HOST_URL: http://136.112.115.11:9000
+    
+    - name: Cache SonarQube packages
+      uses: actions/cache@v4
+      with:
+        path: ~/.sonar/cache
+        key: -sonar
+        restore-keys: -sonar
