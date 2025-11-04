@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Account_Management
+  description: ""
+  annotations:
+    backstage.io/source-location: https://github.com/chamil/Milestones-PM
+    backstage.io/source-vcs: Github
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/platformnex-admin
+  system: system:default/Salesforce
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/chamil/Milestones-PM
+    backstage.io/source-vcs: github
