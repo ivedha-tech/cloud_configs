@@ -7,4 +7,4 @@ metadata:
     backstage.io/source-vcs: Github
     google.com/gcp-projectid: ""
 spec:
-  owner: group:default/platform-admin
+  owner: group:default/platformnex-admin
