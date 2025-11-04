@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: data-aggregator-gateway-prod
+  description: Platformnex Data Aggregator Gateway prod Env
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-data-aggregator-gateway
+    backstage.io/source-vcs: Github
+    google.com/cloudrun-project-slug: prj-platformnex-prod
+    google.com/cloudrun-location: us-central1
+    google.com/cloudrun-service-name: platformnex-data-aggregator-gateway-prod
+    google.com/cloudbuild-trigger-name: int-prom-prod-data-aggregator-12
+    google.com/cloudbuild-project-slug: prj-platformnex-prod
+    google.com/cloudbuild-location: us-central1
+    jira.com/project-key: PLATNEX
+spec:
+  type: service
+  lifecycle: production
+  owner: group:default/platformnex-admin
+  system: system:default/platformnex
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-data-aggregator-gateway
+    backstage.io/source-vcs: github
