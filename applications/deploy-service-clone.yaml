@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: deploy-service-clone
+  description: triggers deployments
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/test-qa-f-15
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: prj-dev-platform-next
+spec:
+  type: openapi
+  lifecycle: dit1
+  owner: group:default/platformnex-admin
+  system: system:default/StackPilot
+  definition: "prj-dev-platform-next "
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/test-qa-f-15
+    backstage.io/source-vcs: github
