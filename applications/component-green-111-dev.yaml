@@ -15,7 +15,7 @@ metadata:
     release-manager/auth-provider: github
     repo-url: https://github.com/ivedha-tech/component-green-111
     backstage.io/source-vcs: Github
-
+    sonarqube.org/project-key: component-green-111
 spec:
   type: service
   lifecycle: development
