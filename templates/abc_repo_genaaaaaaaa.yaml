@@ -17,7 +17,7 @@ spec:
   owner: platform-group
   type: yaml
   parameters:
-    - title: Repository Configurationmmmm
+    - title: Repository Configurationjjjjj
       required:
         - repoUrl
       properties:
@@ -29,7 +29,7 @@ spec:
             allowedHosts:
               - github.com
             default: github.com
-    - title: Environment & Applicationmmmm
+    - title: Environment & Applicationjjjjj
       required:
         - environment
         - application
