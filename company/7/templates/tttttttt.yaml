@@ -1,0 +1,18 @@
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: tttttttt
+  title: tttttttt
+  description: swdfghjkjhgfdsasdfg
+spec:
+  owner: test-backstage-001
+  type: yaml
+  steps:
+    - id: fetch-template-1
+      name: Fetch Template
+      action: fetch:template
+      input:
+        url: https://github.com/ivedha-tech/platformnex-templates/tree/main/repos/frontend-react-typescript-tailwindcss-redux-toolkit
+        targetPath: ./workspace-1
+  output:
+    links: []
