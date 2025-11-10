@@ -17,7 +17,7 @@ spec:
   owner: platform-group
   type: yaml
   parameters:
-    - title: Repository Configurationnnnnnnnnnnnnnnnnnnnn
+    - title: Repository Configurationnnnnnn
       required:
         - repoUrl
       properties:
