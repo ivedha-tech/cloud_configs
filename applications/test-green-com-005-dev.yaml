@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-green-com-005-dev
+  description: frontend
+  annotations:
+    github.com/project-slug: ivedha-tech/test-green-com-005
+    github.com/repo-url: https://github.com/ivedha-tech/test-green-com-005
+    backstage.io/source-location: https://github.com/ivedha-tech/test-green-com-005
+    backstage.io/language: typescript
+    backstage.io/framework: react
+    release-manager/repository-owner: group:default/guests
+    release-manager/repository: test-green-com-005
+    release-manager/branching-strategy: TBD
+    release-manager/auth-provider: github
+    repo-url: https://github.com/ivedha-tech/test-green-com-005
+    backstage.io/source-vcs: Github
+
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/BranchTest
