@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ai-gatway-do-not-test
+  description: https://github.com/ivedha-tech/platformnex-ai-gateway
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-ai-gateway
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/platfor-admin
+  system: system:default/uat-test-app
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-ai-gateway
+    backstage.io/source-vcs: github
