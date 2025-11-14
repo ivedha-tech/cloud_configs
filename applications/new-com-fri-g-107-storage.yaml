@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: new-com-fri-g-107-storage
+  description: Resource new-com-fri-g-107-storage created by IAC
+  annotations:
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: prj-dev-platform-next
+spec:
+  type: storage
+  owner: user:default/nithursika.kalanantharasan
+  system: system:default/ga-test
+  region: us-central1
+  project: prj-dev-platform-next
+  lifecycle: development
