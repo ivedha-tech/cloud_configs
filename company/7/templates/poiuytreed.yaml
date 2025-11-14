@@ -205,7 +205,7 @@ steps:
     name: Setup Prerequisites
     action: greenfield:pre-req
     input:
-      repoUrl: ${{ parameters.component_type == 'Frontend' ? parameters.frontend_service_repository : parameters.backend_service_repository }}
+      repoUrl: ${{ parameters.component_type == 'Frontend' ? parameters.frontend_service_repository or parameters.backend_service_repository }}
       deploymentPlatform: ${{ parameters.deployment | lower }}
       system: ${{ parameters.system }}
       owner: ${{ parameters.owner }}
@@ -215,7 +215,7 @@ steps:
     action: greenfield:write-yaml
     input:
       yamlContent: ${{ parameters.cloudbuild_yaml }}
-      targetPath: ${{ parameters.component_type == 'Frontend' ? './frontend' : './backend' }}
+      targetPath: ${{ parameters.component_type == 'Frontend' ? './frontend' or './backend' }}
       fileName: "cloudbuild.yaml"
 
   - id: greenfield-write-and-onboard-catalog-3
@@ -237,9 +237,9 @@ steps:
     name: Publish to GitHub
     action: publish:github
     input:
-      repoUrl: ${{ parameters.component_type == 'Frontend' ? parameters.frontend_service_repository : parameters.backend_service_repository }}
+      repoUrl: ${{ parameters.component_type == 'Frontend' ? parameters.frontend_service_repository or parameters.backend_service_repository }}
       sourcePath: ${{ parameters.component_type == 'Frontend' ? './frontend' : './backend' }}
-      defaultBranch: ${{ parameters.component_type == 'Frontend' ? parameters.frontend_service_branch : parameters.backend_service_branch }}
+      defaultBranch: ${{ parameters.component_type == 'Frontend' ? parameters.frontend_service_branch or parameters.backend_service_branch }}
       allowedHosts: ["github.com"]
 
   - id: catalog-register-5
