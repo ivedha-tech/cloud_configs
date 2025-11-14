@@ -15,7 +15,7 @@ metadata:
     release-manager/auth-provider: github
     repo-url: https://github.com/ivedha-tech/new-com-greenfield002
     backstage.io/source-vcs: Github
-
+    sonarqube.org/project-key: new-com-greenfield002
 spec:
   type: service
   lifecycle: development
