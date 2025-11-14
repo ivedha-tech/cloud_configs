@@ -238,7 +238,7 @@ steps:
     action: publish:github
     input:
       repoUrl: ${{ parameters.component_type == 'Frontend' ? parameters.frontend_service_repository or parameters.backend_service_repository }}
-      sourcePath: ${{ parameters.component_type == 'Frontend' ? './frontend' : './backend' }}
+      sourcePath: ${{ parameters.component_type == 'Frontend' ? './frontend' or './backend' }}
       defaultBranch: ${{ parameters.component_type == 'Frontend' ? parameters.frontend_service_branch or parameters.backend_service_branch }}
       allowedHosts: ["github.com"]
 
