@@ -1,0 +1,186 @@
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: asdfghjkl
+  title: asdfghjkl
+  description: dfghjkliuytr
+spec:
+  owner: test-backstage-001
+  type: yaml
+parameters:
+  - title: "Basic Information"
+    required: ["component_id", "owner"]
+    properties:
+      component_id:
+        title: "Component ID"
+        type: string
+        ui:
+          field: EntityNamePicker
+        maxLength: 64
+        pattern: "^[a-z0-9]+(-[a-z0-9]+)*$"
+      description:
+        title: "Description"
+        type: string
+      owner:
+        title: "Owner"
+        type: string
+        ui:
+          field: OwnerPicker
+      system:
+        title: "System"
+        type: string
+        ui:
+          field: EntityPicker
+        ui:
+          options:
+            catalogFilter:
+              kind: System
+      component_type:
+        title: "Component Type"
+        type: string
+        enum: ["Frontend", "Backend"]
+        default: "Frontend"
+      environments:
+        title: "Environments"
+        type: array
+        items:
+          type: string
+          enum: ["dev", "qa", "staging", "prod"]
+        ui:
+          widget: checkboxes
+
+  - title: "CICD and Specs"
+    required: []
+    properties:
+      cloudbuild_yaml:
+        title: "Cloud Build YAML"
+        type: string
+        ui:
+          widget: textarea
+      specs_yaml:
+        title: "Specs YAML"
+        type: string
+        ui:
+          widget: textarea
+
+  - title: "Catalog Information"
+    required: []
+    properties:
+      catalog_info_dev_yaml:
+        title: "Catalog Information Dev YAML"
+        type: string
+        ui:
+          widget: textarea
+      catalog_info_qa_yaml:
+        title: "Catalog Information QA YAML"
+        type: string
+        ui:
+          widget: textarea
+      catalog_info_staging_yaml:
+        title: "Catalog Information Staging YAML"
+        type: string
+        ui:
+          widget: textarea
+      catalog_info_prod_yaml:
+        title: "Catalog Information Prod YAML"
+        type: string
+        ui:
+          widget: textarea
+      catalog_repo_url:
+        title: "Catalog Repository URL"
+        type: string
+      catalog_file_dir:
+        title: "Catalog File Directory"
+        type: string
+        default: "applications"
+
+  - title: "Infrastructure Options"
+    required: ["orchestrator_base_url"]
+    properties:
+      iac_dev_json:
+        title: "IaC Dev JSON"
+        type: string
+        ui:
+          widget: textarea
+      iac_qa_json:
+        title: "IaC QA JSON"
+        type: string
+        ui:
+          widget: textarea
+      iac_staging_json:
+        title: "IaC Staging JSON"
+        type: string
+        ui:
+          widget: textarea
+      iac_prod_json:
+        title: "IaC Prod JSON"
+        type: string
+        ui:
+          widget: textarea
+      orchestrator_base_url:
+        title: "Orchestrator Base URL"
+        type: string
+        ui:
+          field: UrlPicker
+        required: true
+steps:
+  - id: fetch-template
+    name: Fetch Template
+    action: fetch:template
+    input:
+      url: Use appropriate template URL or ./template/repos/node
+      targetPath: ./workspace-1 or ./frontend/./backend based on component_type
+
+  - id: greenfield-pre-req-1
+    name: Setup Prerequisites
+    action: greenfield:pre-req
+    input:
+      repoUrl: ${{ parameters.component_type == 'Frontend' ? parameters.frontend_service_repository : parameters.backend_service_repository }}
+      deploymentPlatform: ${{ parameters.deployment | lower }}
+      system: ${{ parameters.system }}
+      owner: ${{ parameters.owner }}
+
+  - id: greenfield-write-yaml-2
+    name: Write YAML File
+    action: greenfield:write-yaml
+    input:
+      yamlContent: ${{ parameters.cloudbuild_yaml }} or ${{ parameters.specs_yaml }}
+      targetPath: ${{ parameters.component_type == 'Frontend' ? './frontend' : './backend' }}
+      fileName: 'cloudbuild.yaml' or 'specs.yaml'
+
+  - id: greenfield-write-and-onboard-catalog-3
+    name: Write and Onboard Catalog
+    action: greenfield:write-and-onboard-catalog
+    input:
+      componentType: ${{ parameters.component_type }}
+      componentId: ${{ parameters.component_id }}
+      environments: ${{ parameters.environments }}
+      catalogRepoTreeUrl: ${{ parameters.catalog_repo_url }}
+      catalogFileDir: ${{ parameters.catalog_file_dir }}
+      catalogFileNamePrefix: ${{ parameters.component_id }}
+      catalog_info_dev_yaml: ${{ parameters.catalog_info_dev_yaml }}
+      catalog_info_qa_yaml: ${{ parameters.catalog_info_qa_yaml }}
+      catalog_info_staging_yaml: ${{ parameters.catalog_info_staging_yaml }}
+      catalog_info_prod_yaml: ${{ parameters.catalog_info_prod_yaml }}
+
+  - id: greenfield-execute-iac-4
+    name: Execute IAC
+    action: greenfield:execute-iac
+    input:
+      orchestratorBaseUrl: ${{ parameters.orchestrator_base_url }}
+      environments: ${{ parameters.environments }}
+      iac_dev_json: ${{ parameters.iac_dev_json }}
+      iac_qa_json: ${{ parameters.iac_qa_json }}
+      iac_staging_json: ${{ parameters.iac_staging_json }}
+      iac_prod_json: ${{ parameters.iac_prod_json }}
+
+  - id: catalog-register-5
+    name: Register Catalog
+    action: catalog:register
+    input:
+      repoContentsUrl: ${{ steps['publish-github'].output.repoContentsUrl }} (reference the publish step)
+      catalogInfoPath: '/catalog-info.yaml' or from write-and-onboard step
+output:
+  links:
+    - title: Placeholder Link
+      url: ${{ steps['placeholder-step'].output.placeholderOutput }}
