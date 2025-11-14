@@ -29,9 +29,8 @@ parameters:
       system:
         title: "System"
         type: string
-        ui:
-          field: EntityPicker
-          options:
+        ui:field: EntityPicker
+        ui:options:
             catalogFilter:
               kind: System
       component_type:
@@ -45,8 +44,7 @@ parameters:
         items:
           type: string
           enum: [dev, qa, staging, prod]
-        ui:
-          widget: checkboxes
+        ui:widget: checkboxes
 
   - title: "Configuration"
     properties:
@@ -116,8 +114,7 @@ parameters:
                 backend_service_repository:
                   title: "Backend Service Repository"
                   type: string
-                  ui:
-                    field: RepoUrlPicker
+                  ui:field: RepoUrlPicker
                 backend_service_branch:
                   title: "Backend Service Branch"
                   type: string
@@ -133,36 +130,30 @@ parameters:
       cloudbuild_yaml:
         title: "CloudBuild YAML"
         type: string
-        ui:
-          widget: textarea
+        ui:widget: textarea
       specs_yaml:
         title: "Specs YAML"
         type: string
-        ui:
-          widget: textarea
+        ui:widget: textarea
 
   - title: "Catalog Information"
     properties:
       catalog_info_dev_yaml:
         title: "Catalog Info Dev YAML"
         type: string
-        ui:
-          widget: textarea
+        ui:widget: textarea
       catalog_info_qa_yaml:
         title: "Catalog Info QA YAML"
         type: string
-        ui:
-          widget: textarea
+        ui:widget: textarea
       catalog_info_staging_yaml:
         title: "Catalog Info Staging YAML"
         type: string
-        ui:
-          widget: textarea
+        ui:widget: textarea
       catalog_info_prod_yaml:
         title: "Catalog Info Prod YAML"
         type: string
-        ui:
-          widget: textarea
+        ui:widget: textarea
       catalog_repo_url:
         title: "Catalog Repository URL"
         type: string
@@ -177,13 +168,11 @@ parameters:
       iac_dev_json:
         title: "IaC Dev JSON"
         type: string
-        ui:
-          widget: textarea
+        ui:widget: textarea
       iac_qa_json:
         title: "IaC QA JSON"
         type: string
-        ui:
-          widget: textarea
+        ui:widget: textarea
       iac_staging_json:
         title: "
 steps:
