@@ -1,0 +1,26 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: new-18-com-006-development
+  description: created by template
+  annotations:
+    github.com/project-slug: ${{ parameters.frontend_service_repository || parameters.backend_service_repository }}
+    github.com/repo-url: ${{ parameters.frontend_service_repository || parameters.backend_service_repository }}
+    backstage.io/source-location: ${{ parameters.frontend_service_repository || parameters.backend_service_repository }}
+    backstage.io/language: ${{ parameters.frontend_language || parameters.backend_language }}
+    backstage.io/framework: ${{ parameters.frontend_framework || parameters.backend_framework }}
+    release-manager/repository-owner: user:default/nithursika.kalanantharasan
+    release-manager/repository: new-18-com-006-development
+    release-manager/branching-strategy: TBD
+    release-manager/auth-provider: github
+    repo-url: ${{ parameters.frontend_service_repository || parameters.backend_service_repository }}
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-location: us-central1
+    google.com/cloudbuild-trigger-name: new-18-com-006-development-development
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/gcp-projectid: prj-dev-platform-next
+spec:
+  type: service
+  lifecycle: development
+  owner: user:default/nithursika.kalanantharasan
+  system: system:default/helloworld
