@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: cgs-test-component
-  description: cgs-test-component-3.1
+  description: cgs-test-component-2.3
   annotations:
     backstage.io/source-location: https://github.com/cgs-tech/test-repo-2
     backstage.io/source-vcs: Github
