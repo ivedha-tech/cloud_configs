@@ -6,7 +6,9 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/over19backend
     backstage.io/source-vcs: Github
-    sonarqube.org/project-key: over19backend
+    google.com/cloudbuild-trigger-name: over19servicebackend
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: prj-dev-platform-next
 spec:
   type: service
