@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: cgs-test-component
-  description: cgs-test-component
+  description: cgs-test-component-1
   annotations:
     backstage.io/source-location: https://github.com/cgs-tech/test-repo-2
     backstage.io/source-vcs: Github
@@ -12,6 +12,8 @@ spec:
   lifecycle: cgs-test-env
   owner: group:default/guests
   system: system:default/TestEnv-APP
+  providesApis: []
+  consumesApis: []
   dependsOn: []
   dependencyOf: []
   annotations:
