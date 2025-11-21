@@ -19,6 +19,7 @@ metadata:
     google.com/cloudbuild-trigger-name: new-19-com-001-development
     google.com/cloudbuild-project-slug: prj-dev-platform-next
     google.com/gcp-projectid: prj-dev-platform-next
+    sonarqube.org/project-key: new-19-com-001
 spec:
   type: service
   lifecycle: development
