@@ -15,6 +15,8 @@ spec:
   lifecycle: test2812
   owner: group:default/guests
   system: system:default/QA-Regression
+  providesApis: []
+  consumesApis: []
   dependsOn: []
   dependencyOf: []
   annotations:
