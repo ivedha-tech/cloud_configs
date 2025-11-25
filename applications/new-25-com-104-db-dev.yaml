@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: new-25-com-104-db-dev
+  description: Resource new-25-com-104-db-dev generated from template
+  annotations:
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: prj-dev-platform-next
+spec:
+  type: database
+  owner: user:default/nithursika.kalanantharasan
+  system: system:default/new-app-fin
+  region: us-central1
+  project: prj-dev-platform-next
+  lifecycle: development
+
