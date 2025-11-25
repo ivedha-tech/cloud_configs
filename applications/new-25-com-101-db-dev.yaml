@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: new-25-com-101-db-dev
+  description: Resource new-25-com-101-db-dev generated from template
+  annotations:
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: prj-dev-platform-next
+spec:
+  type: database
+  owner: group:default/local-test-004
+  system: system:default/ga-test
+  region: us-central1
+  project: prj-dev-platform-next
+  lifecycle: development
+
