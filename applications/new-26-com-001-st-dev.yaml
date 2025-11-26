@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: new-26-com-001-st-dev
+  description: Resource new-26-com-001-st-dev generated from template
+  annotations:
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: prj-dev-platform-next
+spec:
+  type: storage
+  owner: group:default/guests
+  system: system:default/dsa
+  region: us-central1
+  project: prj-dev-platform-next
+  lifecycle: development
+  created_by: ${{ values.created_by }}
+
