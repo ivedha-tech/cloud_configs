@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: platformnex-orchestrator-job-runner-uat
+  description: A Rust-based HTTP service that provides an endpoint to launch Cloud
+    Run jobs by executing the cloud-run-job.sh script.
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-orchestrator-job-runner
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: platformnex-orchestrator-job-runner-UAT-1
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
+spec:
+  type: service
+  lifecycle: uat
+  owner: group:default/platformnex-admin
+  system: system:default/platformnex
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-orchestrator-job-runner
+    backstage.io/source-vcs: github
