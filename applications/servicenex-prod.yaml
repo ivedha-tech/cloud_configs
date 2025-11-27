@@ -17,7 +17,7 @@ metadata:
     jira.com/project-key: PEJ
 spec:
   type: website
-  lifecycle: uat
+  lifecycle: production
   owner: group:default/platformnex-admin
   system: system:default/servicenex
   providesApis: []
