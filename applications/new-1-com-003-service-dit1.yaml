@@ -1,0 +1,27 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: new-1-com-003-service-dit1
+  description: created by template
+  annotations:
+    github.com/project-slug: ivedha-tech/new-1-com-003
+    github.com/repo-url: https://github.com/ivedha-tech/new-1-com-003
+    backstage.io/source-location: https://github.com/ivedha-tech/new-1-com-003
+    backstage.io/language: typescript
+    backstage.io/framework: react
+    release-manager/repository-owner: group:default/local-test-004
+    release-manager/repository: new-1-com-003-service-dit1
+    release-manager/branching-strategy: TBD
+    release-manager/auth-provider: github
+    repo-url: https://github.com/ivedha-tech/new-1-com-003
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-location: us-central1
+    google.com/cloudbuild-trigger-name: new-1-com-003-service-dit1
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/gcp-projectid: prj-dev-platform-next
+spec:
+  type: service
+  lifecycle: dit1
+  owner: group:default/local-test-004
+  system: system:default/ga-test
+  created_by: nithursika.kalanantharasan@ivedha.com
