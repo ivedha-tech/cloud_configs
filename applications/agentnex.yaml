@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: agentnex
+  description: A modern, real-time device management dashboard built with Next.js
+    14, TypeScript, and Tailwind CSS.
+  annotations:
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  owner: group:default/agentnex-team
