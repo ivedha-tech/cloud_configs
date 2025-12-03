@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: cloudnex-DIT-1
+  description: Cloudnex dit-1 env service
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/cloudnex
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: cloudnex-DIT-1
+    google.com/cloudbuild-project-slug: prj-cloudnex-nonprod
+    google.com/cloudbuild-location: us-central1
+    google.com/gcp-projectid: ""
+spec:
+  type: service
+  lifecycle: dit1
+  owner: group:default/cloudnex-team
+  system: system:default/cloudnex
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/cloudnex
+    backstage.io/source-vcs: github
