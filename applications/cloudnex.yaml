@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: cloudnex
+  description: Cloudnex is an open-source security tool designed to assess and
+    enforce security best practices across AWS, Azure, Google Cloud, and
+    Kubernetes.
+  annotations:
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  owner: group:default/cloudnex-team
