@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: cloudnex-QA-clone
+  description: cloudnex-QA env service
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/cloudnex
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: cloudnex-QA
+    google.com/cloudbuild-project-slug: prj-cloudnex-nonprod
+    google.com/cloudbuild-location: us-central1
+spec:
+  type: service
+  lifecycle: qa
+  owner: group:default/cloudnex-team
+  system: system:default/cloudnex
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/cloudnex
+    backstage.io/source-vcs: github
