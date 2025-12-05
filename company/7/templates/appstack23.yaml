@@ -1,0 +1,29 @@
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: appstack23
+  title: appstack23
+  description: appstacktesting
+spec:
+  owner: development-team
+  type: yaml
+  parameters:
+  steps:
+    - id: fetch-template
+      name: Fetch Template
+      action: fetch:template
+      input:
+        url: "https://github.com/ivedha-tech/platformnex-templates/tree/main/repos/backend-go-gin"
+        targetPath: ${{ (parameters.component_type == 'Frontend' and './frontend') or './backend' }}
+    - id: publish-github-1
+      name: Publish to GitHub
+      action: publish:github
+      input:
+        repoUrl: ${{ (parameters.component_type == 'Frontend' and parameters.frontend_service_repository) or parameters.backend_service_repository }}
+        sourcePath: ${{ (parameters.component_type == 'Frontend' and './frontend') or './backend' }}
+        defaultBranch: ${{ (parameters.component_type == 'Frontend' and parameters.frontend_service_branch) or parameters.backend_service_branch }}
+        allowedHosts: ["github.com"]
+  output:
+    links:
+      - title: Repository
+        url: ${{ steps['publish-github-1'].output.remoteUrl }}
