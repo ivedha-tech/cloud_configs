@@ -2,7 +2,7 @@ apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: abc2
-  title: abc23
+  title: abc2
   description: asdfghjdfgh
   tags: []
   namespace: default
