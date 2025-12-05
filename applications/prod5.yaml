@@ -9,9 +9,11 @@ metadata:
     google.com/gcp-projectid: ""
 spec:
   type: service
-  lifecycle: development
+  lifecycle: Production
   owner: group:default/guests
   system: system:default/Platformnex-Regression
+  providesApis: []
+  consumesApis: []
   dependsOn: []
   dependencyOf: []
   annotations:
