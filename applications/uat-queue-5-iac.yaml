@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: uat-queue-5-iac
+  description: Resource uat-queue-5-iac generated from template
+  annotations:
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: prj-dev-platform-next
+spec:
+  type: queue
+  owner: user:default/thushanthini.kulenthiran
+  system: system:default/Platformnex-Regression
+  region: us-central1
+  project: prj-dev-platform-next
+  lifecycle: uat
+
