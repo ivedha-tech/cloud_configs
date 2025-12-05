@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: dbqadec5componenttest
+  description: Resource dbqadec5componenttest generated from template
+  annotations:
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: prj-dev-platform-next
+spec:
+  type: database
+  owner: group:default/guests
+  system: system:default/RM-Test
+  region: us-central1
+  project: prj-dev-platform-next
+  lifecycle: production
+  created_by: thushanthini.kulenthiran@ivedha.com
+
