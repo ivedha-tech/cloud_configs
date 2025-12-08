@@ -4,16 +4,16 @@ metadata:
   name: dec-8-development
   description: created by template
   annotations:
-    github.com/project-slug: ivedha-tech/test-dec-8
-    github.com/repo-url: https://github.com/ivedha-tech/test-dec-8
-    backstage.io/source-location: https://github.com/ivedha-tech/test-dec-8
+    github.com/project-slug: ivedha-tech/test-dec-8-f
+    github.com/repo-url: https://github.com/ivedha-tech/test-dec-8-f
+    backstage.io/source-location: https://github.com/ivedha-tech/test-dec-8-f
     backstage.io/language: typescript
     backstage.io/framework: react
     release-manager/repository-owner: user:default/thushanthini.kulenthiran
     release-manager/repository: dec-8-development
     release-manager/branching-strategy: TBD
     release-manager/auth-provider: github
-    repo-url: https://github.com/ivedha-tech/test-dec-8
+    repo-url: https://github.com/ivedha-tech/test-dec-8-f
     backstage.io/source-vcs: Github
     google.com/cloudbuild-location: us-central1
     google.com/cloudbuild-trigger-name: dec-8-development
