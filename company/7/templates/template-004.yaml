@@ -1,0 +1,203 @@
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-004
+  title: template-004
+  description: test-qa-1234
+spec:
+  owner: management-team
+  type: yaml
+  parameters:
+    - title: "Basic Information"
+      required: ["component_id", "owner", "system", "component_type", "environments"]
+      properties:
+        component_id:
+          title: "Component ID"
+          type: string
+          ui:field: EntityNamePicker
+          maxLength: 64
+          pattern: "^[a-z0-9]+(-[a-z0-9]+)*$"
+        description:
+          title: "Description"
+          type: string
+        owner:
+          title: "Owner"
+          type: string
+          ui:field: OwnerPicker
+        system:
+          title: "System"
+          type: string
+          ui:field: EntityPicker
+          ui:options:
+            catalogFilter:
+              kind: System
+        component_type:
+          title: "Component Type"
+          type: string
+          enum: [Frontend, Backend]
+          default: Frontend
+        deployment:
+          title: "Deployment Platform"
+          type: string
+          description: "Deployment platform (e.g., gcp, aws, azure)"
+        environments:
+          title: "Environments"
+          type: array
+          items:
+            type: string
+            enum: [dev, qa, staging, prod]
+          ui:widget: checkboxes
+    - title: "Configuration"
+      dependencies:
+        component_type:
+          oneOf:
+            - properties:
+                component_type:
+                  const: Frontend
+                frontend_framework:
+                  title: "Frontend Framework"
+                  type: string
+                  enum: [React]
+                  default: React
+                frontend_language:
+                  title: "Frontend Language"
+                  type: string
+                  enum: [Typescript]
+                  default: Typescript
+                frontend_styling:
+                  title: "Frontend Styling"
+                  type: string
+                  enum: [TailwindCSS]
+                  default: TailwindCSS
+                frontend_state:
+                  title: "Frontend State"
+                  type: string
+                  enum: [Redux-Toolkit]
+                  default: Redux-Toolkit
+                frontend_service_repository:
+                  title: "Frontend Service Repository"
+                  type: string
+                  ui:field: RepoUrlPicker
+                  ui:options:
+                    allowedHosts: ["github.com"]
+                frontend_service_branch:
+                  title: "Frontend Service Branch"
+                  type: string
+                  default: main
+              required:
+                - frontend_framework
+                - frontend_language
+                - frontend_service_repository
+                - frontend_service_branch
+            - properties:
+                component_type:
+                  const: Backend
+                backend_language:
+                  title: "Backend Language"
+                  type: string
+                  enum: [Go, Node.js]
+                  default: Go
+                backend_framework:
+                  title: "Backend Framework"
+                  type: string
+                  dependencies:
+                    backend_language:
+                      Go:
+                        enum: ['Gin']
+                        default: Gin
+                      Node.js:
+                        enum: ['Express', 'NestJS']
+                        default: Express
+                  default: Gin
+                backend_service_repository:
+                  title: "Backend Service Repository"
+                  type: string
+                  ui:field: RepoUrlPicker
+                  ui:options:
+                    allowedHosts: ["github.com"]
+                backend_service_branch:
+                  title: "Backend Service Branch"
+                  type: string
+                  default: main
+              required:
+                - backend_language
+                - backend_framework
+                - backend_service_repository
+                - backend_service_branch
+    - title: "Infrastructure Options"
+      required: ["orchestrator_base_url"]
+      properties:
+        iac_dev_json:
+          title: "IAC Dev JSON"
+          type: string
+          ui:widget: textarea
+          description: "Optional IAC JSON for dev"
+        iac_qa_json:
+          title: "IAC QA JSON"
+          type: string
+          ui:widget: textarea
+          description: "Optional IAC JSON for qa"
+        iac_staging_json:
+          title: "IAC Staging JSON"
+          type: string
+          ui:widget: textarea
+          description: "Optional IAC JSON for staging"
+        iac_prod_json:
+          title: "IAC Prod JSON"
+          type: string
+          ui:widget: textarea
+          description: "Optional IAC JSON for prod"
+        orchestrator_base_url:
+          title: "Orchestrator Base URL"
+          type: string
+          description: "Base URL of the orchestrator service"
+          ui:field: UrlPicker
+  steps:
+    - id: fetch-catalog-tools
+      name: Fetch Catalog Tools
+      action: fetch:template
+      input:
+        url: "https://github.com/ivedha-tech/platformnex-templates/blob/main/default-entities"
+        targetPath: ${{ (parameters.component_type == 'Frontend' and './frontend') or './backend' }}
+        values:
+          integrationHost: '${{ ((parameters.component_type == "Frontend" and parameters.frontend_service_repository) or parameters.backend_service_repository).split("?")[0] }}'
+          repo: '${{ ((parameters.component_type == "Frontend" and parameters.frontend_service_repository) or parameters.backend_service_repository).split("repo=")[1] }}'
+          slug: '${{ ((parameters.component_type == "Frontend" and parameters.frontend_service_repository) or parameters.backend_service_repository).split("owner=")[1].split("&")[0] }}/${{ ((parameters.component_type == "Frontend" and parameters.frontend_service_repository) or parameters.backend_service_repository).split("repo=")[1] }}'
+          environment: ${{ parameters.environments[0] || "dev" }}
+          owner: ${{ parameters.owner }}
+          system_name: ${{ parameters.system }}
+          repo_url: 'https://github.com/${{ ((parameters.component_type == "Frontend" and parameters.frontend_service_repository) or parameters.backend_service_repository).split("owner=")[1].split("&")[0] }}/${{ ((parameters.component_type == "Frontend" and parameters.frontend_service_repository) or parameters.backend_service_repository).split("repo=")[1] }}'
+    - id: fetch-template
+      name: Fetch Template
+      action: fetch:template
+      input:
+        url: "https://github.com/ivedha-tech/platformnex-templates/tree/main/repos/frontend-react-typescript-tailwindcss-redux-toolkit"
+        targetPath: ${{ (parameters.component_type == 'Frontend' and './frontend') or './backend' }}
+    - id: publish-github-1
+      name: Publish to GitHub
+      action: publish:github
+      input:
+        repoUrl: ${{ (parameters.component_type == 'Frontend' and parameters.frontend_service_repository) or parameters.backend_service_repository }}
+        sourcePath: ${{ (parameters.component_type == 'Frontend' and './frontend') or './backend' }}
+        defaultBranch: ${{ (parameters.component_type == 'Frontend' and parameters.frontend_service_branch) or parameters.backend_service_branch }}
+        allowedHosts: ["github.com"]
+    - id: catalog-register-2
+      name: Register Catalog
+      action: catalog:register
+      input:
+        repoContentsUrl: ${{ steps['publish-github-1'].output.repoContentsUrl }}
+        catalogInfoPath: '/catalog-info.yaml'
+    - id: greenfield-execute-iac-3
+      name: Execute IAC
+      action: greenfield:execute-iac
+      input:
+        orchestratorBaseUrl: ${{ parameters.orchestrator_base_url }}
+        environments: ${{ parameters.environments }}
+        iac_dev_json: ${{ parameters.iac_dev_json }}
+        iac_qa_json: ${{ parameters.iac_qa_json }}
+        iac_staging_json: ${{ parameters.iac_staging_json }}
+        iac_prod_json: ${{ parameters.iac_prod_json }}
+  output:
+    links:
+      - title: Repository
+        url: ${{ steps['publish-github-1'].output.remoteUrl }}
