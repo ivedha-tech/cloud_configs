@@ -1,0 +1,26 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-dec-8-qa-uat
+  description: created by template
+  annotations:
+    github.com/project-slug: ivedha-tech/test-8-uat-component
+    github.com/repo-url: https://github.com/ivedha-tech/test-8-uat-component
+    backstage.io/source-location: https://github.com/ivedha-tech/test-8-uat-component
+    backstage.io/language: typescript
+    backstage.io/framework: react
+    release-manager/repository-owner: user:default/thushanthini.kulenthiran
+    release-manager/repository: test-dec-8-qa-uat
+    release-manager/branching-strategy: TBD
+    release-manager/auth-provider: github
+    repo-url: https://github.com/ivedha-tech/test-8-uat-component
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-location: us-central1
+    google.com/cloudbuild-trigger-name: test-dec-8-qa-uat
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/gcp-projectid: prj-dev-platform-next
+spec:
+  type: service
+  lifecycle: uat
+  owner: user:default/thushanthini.kulenthiran
+  system: system:default/Platformnex-Regression
