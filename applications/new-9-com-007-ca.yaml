@@ -12,6 +12,6 @@ spec:
   system: system:default/Catalog-test
   region: us-central1
   project: prj-dev-platform-next
-  lifecycle: development
+  lifecycle: dit1
   created_by: nithursika.kalanantharasan@ivedha.com
 
