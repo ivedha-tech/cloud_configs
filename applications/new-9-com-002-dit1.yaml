@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: new-9-com-002-dit1
+  description: Resource new-9-com-002-dit1 generated from template
+  annotations:
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: prj-dev-platform-next
+spec:
+  type: queue
+  owner: group:default/platformnex-team
+  system: system:default/Catalog-test
+  region: us-central1
+  project: prj-dev-platform-next
+  lifecycle: dit1
+  created_by: nithursika.kalanantharasan@ivedha.com
+
