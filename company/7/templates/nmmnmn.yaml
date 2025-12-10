@@ -1,0 +1,234 @@
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: nmmnmn
+  title: nmmnmn
+  description: mkjkjkjkjkjk
+  tags:
+    - recommended
+    - green-field
+    - single-tier
+spec:
+  owner: test-backstage-001
+  type: service
+
+  parameters:
+    - title: Basic Information
+      required:
+        - component_id
+        - owner
+        - system
+        - application_name
+        - component_type
+        - environments
+        - created_by
+      properties:
+        component_id:
+          title: Name
+          type: string
+          description: Unique name of the component
+          ui:field: EntityNamePicker
+          maxLength: 64
+          pattern: ^[a-z0-9]+(-[a-z0-9]+)*$
+        description:
+          title: Description
+          type: string
+          description: Help others understand what this component is for
+        component_type:
+          title: Component Type
+          type: string
+          description: Choose whether this component is Frontend or Backend
+          enum: [Backend]
+          default: Backend
+        owner:
+          title: Owner
+          type: string
+          description: Owner of the component
+          ui:field: OwnerPicker
+        system:
+          title: System
+          type: string
+          description: System this component belongs to
+          ui:field: EntityPicker
+          ui:options:
+            catalogFilter:
+              kind: System
+        application_name:
+          title: Application Name
+          type: string
+          description: Application name for this component
+        created_by:
+          title: Created By
+          type: string
+          description: User or entity that created this component
+        environments:
+          title: Environments
+          type: array
+          description: Add environments and provide their IAC code and workload spec configurations
+          items:
+            type: object
+            required:
+              - environment
+            properties:
+              environment:
+                title: Environment Name
+                type: string
+                description: Environment name (e.g., dev, qa, staging, prod, custom-env)
+                pattern: ^[a-z0-9]+(-[a-z0-9]+)*$
+              iac_code:
+                title: IAC Code (Base64)
+                type: string
+                description: Base64-encoded IAC code (bash script, terraform, etc.) for this environment
+                ui:widget: textarea
+              workload_spec:
+                title: Workload Spec (Base64)
+                type: string
+                description: Base64-encoded workload specification YAML for this environment
+                ui:widget: textarea
+              iac_type:
+                title: IAC Type
+                type: string
+                description: Type of IAC tool (e.g., gcloud, terraform, pulumi, bash)
+                default: gcloud
+              component_name:
+                title: Component Name
+                type: string
+                description: Name of the component for this environment
+              cloudbuild_trigger_name:
+                title: CloudBuild Trigger Name
+                type: string
+                description: Name of the CloudBuild trigger for this environment (will be used as component_name)
+              cloudbuild_project_id:
+                title: CloudBuild Project ID
+                type: string
+                description: GCP Project ID for CloudBuild for this environment (used for project-slug and gcp-projectid)
+              cloudbuild_location:
+                title: CloudBuild Location
+                type: string
+                description: GCP region/location for CloudBuild for this environment (e.g., us-central1, us-east1)
+                default: us-central1
+    - title: Configuration
+      dependencies:
+        component_type:
+          oneOf:
+            - properties:
+                component_type:
+                  const: Backend
+                backend_language:
+                  title: Backend Language
+                  type: string
+                  enum: [Go]
+                  default: Go
+                backend_framework:
+                  title: Backend Framework
+                  type: string
+                  dependencies:
+                    backend_language:
+                      Go:
+                        enum: ['Gin']
+                        default: Gin
+                      Node.js:
+                        enum: ['Express', 'NestJS']
+                        default: Express
+                  default: Gin
+                backend_service_repository:
+                  title: Repository Location
+                  type: string
+                  ui:field: RepoUrlPicker
+                  ui:options:
+                    allowedHosts:
+                      - bitbucket.org
+                      - github.com
+                    default: bitbucket.org
+                backend_service_branch:
+                  title: Service Branch
+                  type: string
+                  ui:field: EntityNamePicker
+                  maxLength: 64
+                  pattern: ^[A-Za-z0-9-]+$
+                  default: main
+              required:
+                - backend_language
+                - backend_framework
+                - backend_service_repository
+                - backend_service_branch
+    - title: Catalog Information
+      properties:
+        catalog_repo_url:
+          title: Catalog Repo Tree URL
+          type: string
+          description: 'e.g., https://github.com/<org>/<repo>/<branch>'
+        catalog_file_dir:
+          title: Catalog File Directory
+          type: string
+          default: applications
+
+
+  steps:
+    # Backend branch
+    - id: fetch-backend
+      name: Fetch Backend Boilerplate
+      if: ${{ parameters.component_type == 'Backend' }}
+      action: fetch:plain
+      input:
+        targetPath: ./backend
+        url: https://github.com/ivedha-tech/platformnex-templates/tree/main/repos/backend-go-gin
+
+    # Write catalog files to catalog repository
+    - id: write-and-onboard
+      name: Write and Onboard Catalog Files
+      if: ${{ parameters.component_type == 'Backend' and parameters.catalog_repo_url }}
+      action: greenfield:write-and-onboard-catalog
+      input:
+        componentType: ${{ parameters.component_type }}
+        componentId: ${{ parameters.component_id }}
+        environments: ${{ parameters.environments | map(attribute='environment') | list }}
+        catalogRepoTreeUrl: ${{ parameters.catalog_repo_url }}
+        catalogFileDir: ${{ parameters.catalog_file_dir }}
+        catalogFileNamePrefix: ${{ parameters.component_id }}
+        templatePath: ./default-entities/catalog-info.yaml
+        description: ${{ parameters.description }}
+        owner: ${{ parameters.owner }}
+        system: ${{ parameters.system }}
+        applicationName: ${{ parameters.application_name }}
+        serviceRepository: ${{ parameters.backend_service_repository }}
+        language: ${{ parameters.backend_language }}
+        framework: ${{ parameters.backend_framework }}
+        repoUrl: ${{ parameters.backend_service_repository }}
+        sourceVcs: Github
+        createdBy: ${{ parameters.created_by }}
+
+    - id: github-publish-backend
+      name: Publish Backend to GitHub
+      if: ${{ parameters.component_type == 'Backend' and parameters.backend_service_repository and parameters.backend_service_repository.includes('github.com') }}
+      action: publish:github
+      timeout: 300000
+      input:
+        allowedHosts: ['github.com']
+        description: ${{ parameters.description }}
+        repoUrl: ${{ parameters.backend_service_repository }}
+        defaultBranch: ${{ parameters.backend_service_branch }}
+        protectDefaultBranch: false
+        repoVisibility: private
+        sourcePath: ./backend
+
+    # Register Backend in Backstage Catalog
+    - id: register-catalog
+      name: Register in Backstage Catalog
+      if: ${{ parameters.component_type == 'Backend' }}
+      action: catalog:register
+      input:
+        repoContentsUrl: ${{ steps['github-publish-backend'].output.repoContentsUrl or steps['bitbucket-publish-backend'].output.repoContentsUrl }}
+        catalogInfoPath: '/catalog-info.yaml'
+
+  output:
+    componentId: ${{ parameters.component_id }}
+    links:
+      - title: Backend Repository
+        url: ${{ steps['github-publish-backend'].output.remoteUrl or steps['bitbucket-publish-backend'].output.remoteUrl or parameters.backend_service_repository }}
+      - title: Open in Catalog
+        icon: catalog
+        entityRef: ${{ steps['register-catalog'].output.entityRef }}
+      - title: Catalog Repository
+        url: ${{ steps['write-and-onboard'].output.repoContentsUrl or parameters.catalog_repo_url }}
+
