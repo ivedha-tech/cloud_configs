@@ -4,50 +4,68 @@ metadata:
   name: sample-014
   title: sample-014
   description: sample-014
+  tags: []
+  namespace: default
+  type: ""
+  annotations:
+    backstage.io/managed-by-location: url:https://raw.githubusercontent.com/ivedha-tech/cloud_configs/feature-yaml-dit1/company/7/templates/sample-014.yaml
+    backstage.io/managed-by-origin-location: url:https://raw.githubusercontent.com/ivedha-tech/cloud_configs/feature-yaml-dit1/company/7/templates/sample-014.yaml
+    backstage.io/view-url: https://raw.githubusercontent.com/ivedha-tech/cloud_configs/feature-yaml-dit1/company/7/templates/sample-014.yaml
 spec:
   owner: test-backstage-001
   type: yaml
   parameters:
-    - title: "Basic Information"
-      required: ["component_id", "owner", "system", "component_type", "environments"]
+    - title: Basic Information
+      required:
+        - component_id
+        - owner
+        - system
+        - component_type
+        - environments
       properties:
         component_id:
-          title: "Component ID"
+          title: Component ID
           type: string
           ui:field: EntityNamePicker
           maxLength: 64
-          pattern: "^[a-z0-9]+(-[a-z0-9]+)*$"
+          pattern: ^[a-z0-9]+(-[a-z0-9]+)*$
         description:
-          title: "Description"
+          title: Description
           type: string
         owner:
-          title: "Owner"
+          title: Owner
           type: string
           ui:field: OwnerPicker
         system:
-          title: "System"
+          title: System
           type: string
           ui:field: EntityPicker
           ui:options:
             catalogFilter:
               kind: System
         component_type:
-          title: "Component Type"
+          title: Component Type
           type: string
-          enum: [Frontend, Backend]
+          enum:
+            - Frontend
+            - Backend
           default: Frontend
         deployment:
-          title: "Deployment Platform"
+          title: Deployment Platform
           type: string
-          description: "Deployment platform (e.g., gcp, aws, azure)"
+          description: Deployment platform (e.g., gcp, aws, azure)
         environments:
-          title: "Environments"
+          title: Environments
           type: array
           items:
             type: string
-            enum: [dev, qa, staging, prod]
+            enum:
+              - dev
+              - qa
+              - staging
+              - prod
           ui:widget: checkboxes
-    - title: "Configuration"
+    - title: Configuration
       dependencies:
         component_type:
           oneOf:
@@ -55,33 +73,38 @@ spec:
                 component_type:
                   const: Frontend
                 frontend_framework:
-                  title: "Frontend Framework"
+                  title: Frontend Framework
                   type: string
-                  enum: [React]
+                  enum:
+                    - React
                   default: React
                 frontend_language:
-                  title: "Frontend Language"
+                  title: Frontend Language
                   type: string
-                  enum: [Typescript]
+                  enum:
+                    - Typescript
                   default: Typescript
                 frontend_styling:
-                  title: "Frontend Styling"
+                  title: Frontend Styling
                   type: string
-                  enum: [TailwindCSS]
+                  enum:
+                    - TailwindCSS
                   default: TailwindCSS
                 frontend_state:
-                  title: "Frontend State"
+                  title: Frontend State
                   type: string
-                  enum: [Redux-Toolkit]
+                  enum:
+                    - Redux-Toolkit
                   default: Redux-Toolkit
                 frontend_service_repository:
-                  title: "Frontend Service Repository"
+                  title: Frontend Service Repository
                   type: string
                   ui:field: RepoUrlPicker
                   ui:options:
-                    allowedHosts: ["github.com"]
+                    allowedHosts:
+                      - github.com
                 frontend_service_branch:
-                  title: "Frontend Service Branch"
+                  title: Frontend Service Branch
                   type: string
                   default: main
               required:
@@ -93,30 +116,36 @@ spec:
                 component_type:
                   const: Backend
                 backend_language:
-                  title: "Backend Language"
+                  title: Backend Language
                   type: string
-                  enum: [Go, Node.js]
+                  enum:
+                    - Go
+                    - Node.js
                   default: Go
                 backend_framework:
-                  title: "Backend Framework"
+                  title: Backend Framework
                   type: string
                   dependencies:
                     backend_language:
                       Go:
-                        enum: ['Gin']
+                        enum:
+                          - Gin
                         default: Gin
                       Node.js:
-                        enum: ['Express', 'NestJS']
+                        enum:
+                          - Express
+                          - NestJS
                         default: Express
                   default: Gin
                 backend_service_repository:
-                  title: "Backend Service Repository"
+                  title: Backend Service Repository
                   type: string
                   ui:field: RepoUrlPicker
                   ui:options:
-                    allowedHosts: ["github.com"]
+                    allowedHosts:
+                      - github.com
                 backend_service_branch:
-                  title: "Backend Service Branch"
+                  title: Backend Service Branch
                   type: string
                   default: main
               required:
@@ -124,89 +153,90 @@ spec:
                 - backend_framework
                 - backend_service_repository
                 - backend_service_branch
-    - title: "CICD and Specs"
+    - title: CICD and Specs
       properties:
         cloudbuild_yaml:
-          title: "CloudBuild YAML"
+          title: CloudBuild YAML
           type: string
           ui:widget: textarea
         specs_yaml:
-          title: "Specs YAML"
+          title: Specs YAML
           type: string
           ui:widget: textarea
-    - title: "Catalog Information"
+    - title: Catalog Information
       properties:
         catalog_info_dev_yaml:
-          title: "Catalog Info Dev YAML"
+          title: Catalog Info Dev YAML
           type: string
           ui:widget: textarea
         catalog_info_qa_yaml:
-          title: "Catalog Info QA YAML"
+          title: Catalog Info QA YAML
           type: string
           ui:widget: textarea
         catalog_info_staging_yaml:
-          title: "Catalog Info Staging YAML"
+          title: Catalog Info Staging YAML
           type: string
           ui:widget: textarea
         catalog_info_prod_yaml:
-          title: "Catalog Info Prod YAML"
+          title: Catalog Info Prod YAML
           type: string
           ui:widget: textarea
         catalog_repo_url:
-          title: "Catalog Repo URL"
+          title: Catalog Repo URL
           type: string
         catalog_file_dir:
-          title: "Catalog File Directory"
+          title: Catalog File Directory
           type: string
           default: applications
-    - title: "Infrastructure Options"
-      required: ["orchestrator_base_url"]
+    - title: Infrastructure Options
+      required:
+        - orchestrator_base_url
       properties:
         iac_dev_json:
-          title: "IAC Dev JSON"
+          title: IAC Dev JSON
           type: string
           ui:widget: textarea
-          description: "Optional IAC JSON for dev"
+          description: Optional IAC JSON for dev
         iac_qa_json:
-          title: "IAC QA JSON"
+          title: IAC QA JSON
           type: string
           ui:widget: textarea
-          description: "Optional IAC JSON for qa"
+          description: Optional IAC JSON for qa
         iac_staging_json:
-          title: "IAC Staging JSON"
+          title: IAC Staging JSON
           type: string
           ui:widget: textarea
-          description: "Optional IAC JSON for staging"
+          description: Optional IAC JSON for staging
         iac_prod_json:
-          title: "IAC Prod JSON"
+          title: IAC Prod JSON
           type: string
           ui:widget: textarea
-          description: "Optional IAC JSON for prod"
+          description: Optional IAC JSON for prod
         orchestrator_base_url:
-          title: "Orchestrator Base URL"
+          title: Orchestrator Base URL
           type: string
-          description: "Base URL of the orchestrator service"
+          description: Base URL of the orchestrator service
           ui:field: UrlPicker
   steps:
     - id: fetch-catalog-tools
       name: Fetch Catalog Tools
       action: fetch:template
       input:
-        url: "https://github.com/ivedha-tech/platformnex-templates/blob/main/default-entities"
+        url: https://github.com/ivedha-tech/platformnex-templates/blob/main/default-entities
         targetPath: ${{ (parameters.component_type == 'Frontend' and './frontend') or './backend' }}
         values:
-          integrationHost: '${{ ((parameters.component_type == "Frontend" and parameters.frontend_service_repository) or parameters.backend_service_repository).split("?")[0] }}'
-          repo: '${{ ((parameters.component_type == "Frontend" and parameters.frontend_service_repository) or parameters.backend_service_repository).split("repo=")[1] }}'
-          slug: '${{ ((parameters.component_type == "Frontend" and parameters.frontend_service_repository) or parameters.backend_service_repository).split("owner=")[1].split("&")[0] }}/${{ ((parameters.component_type == "Frontend" and parameters.frontend_service_repository) or parameters.backend_service_repository).split("repo=")[1] }}'
+          integrationHost: ${{ ((parameters.component_type == "Frontend" and parameters.frontend_service_repository) or parameters.backend_service_repository).split("?")[0] }}
+          repo: ${{ ((parameters.component_type == "Frontend" and parameters.frontend_service_repository) or parameters.backend_service_repository).split("repo=")[1] }}
+          slug: ${{ ((parameters.component_type == "Frontend" and parameters.frontend_service_repository) or parameters.backend_service_repository).split("owner=")[1].split("&")[0] }}/${{ ((parameters.component_type == "Frontend" and parameters.frontend_service_repository) or parameters.backend_service_repository).split("repo=")[1] }}
           environment: ${{ parameters.environments[0] || "dev" }}
           owner: ${{ parameters.owner }}
           system_name: ${{ parameters.system }}
-          repo_url: 'https://github.com/${{ ((parameters.component_type == "Frontend" and parameters.frontend_service_repository) or parameters.backend_service_repository).split("owner=")[1].split("&")[0] }}/${{ ((parameters.component_type == "Frontend" and parameters.frontend_service_repository) or parameters.backend_service_repository).split("repo=")[1] }}'
+          repo_url: https://github.com/${{ ((parameters.component_type == "Frontend" and parameters.frontend_service_repository) or parameters.backend_service_repository).split("owner=")[1].split("&")[0] }}/${{ ((parameters.component_type == "Frontend" and parameters.frontend_service_repository) or parameters.backend_service_repository).split("repo=")[1] }}
     - id: fetch-template
       name: Fetch Template
       action: fetch:template
       input:
-        url: "https://github.com/ivedha-tech/platformnex-templates/tree/main/repos/frontend-react-typescript-tailwindcss-redux-toolkit"
+        url: https://github.com/ivedha-tech/platformnex-templates/tree/main/repos/frontend-react-typescript-tailwindcss-redux-toolkit
         targetPath: ${{ (parameters.component_type == 'Frontend' and './frontend') or './backend' }}
     - id: greenfield-pre-req-1
       name: Setup Prerequisites
@@ -222,7 +252,7 @@ spec:
       input:
         yamlContent: ${{ parameters.cloudbuild_yaml }}
         targetPath: ${{ (parameters.component_type == 'Frontend' and './frontend') or './backend' }}
-        fileName: "cloudbuild.yaml"
+        fileName: cloudbuild.yaml
     - id: greenfield-write-and-onboard-catalog-3
       name: Write and Onboard Catalog
       action: greenfield:write-and-onboard-catalog
@@ -244,7 +274,8 @@ spec:
         repoUrl: ${{ (parameters.component_type == 'Frontend' and parameters.frontend_service_repository) or parameters.backend_service_repository }}
         sourcePath: ${{ (parameters.component_type == 'Frontend' and './frontend') or './backend' }}
         defaultBranch: ${{ (parameters.component_type == 'Frontend' and parameters.frontend_service_branch) or parameters.backend_service_branch }}
-        allowedHosts: ["github.com"]
+        allowedHosts:
+          - github.com
     - id: catalog-register-5
       name: Register Catalog
       action: catalog:register
