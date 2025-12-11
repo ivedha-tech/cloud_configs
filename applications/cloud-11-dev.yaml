@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: cloud-11-dev
+  description: ""
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/qa-f-11
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/qualityassurance-team
+  system: system:default/RM-Test
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/qa-f-11
+    backstage.io/source-vcs: github
