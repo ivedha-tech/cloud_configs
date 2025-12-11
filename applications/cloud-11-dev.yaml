@@ -14,11 +14,8 @@ spec:
   type: service
   lifecycle: development
   owner: group:default/qualityassurance-team
+  dependsOn: []
+  dependencyOf: []
   system: system:default/RM-Test
   providesApis: []
   consumesApis: []
-  dependsOn: []
-  dependencyOf: []
-  annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/qa-f-11
-    backstage.io/source-vcs: github
