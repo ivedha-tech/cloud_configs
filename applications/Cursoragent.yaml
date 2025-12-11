@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Cursoragent
+  description: Cursoragent
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/agentnex-cursoragent
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: agentnex-cursoragent-release
+    google.com/cloudbuild-project-slug: prj-agentnex-nonprod
+    google.com/cloudbuild-location: us-central1
+    google.com/gcp-projectid: prj-dev-platform-next
+spec:
+  type: service
+  lifecycle: dit1
+  owner: group:default/agentnex-team
+  system: system:default/agentnex
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/agentnex-cursoragent
+    backstage.io/source-vcs: github
