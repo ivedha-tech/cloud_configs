@@ -2,9 +2,9 @@ apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
   name: Platformnex-Regression
-  description: ""
+  description: This application is using for testing purpose
   annotations:
     backstage.io/source-vcs: Github
     google.com/gcp-projectid: ""
 spec:
-  owner: group:default/guests
+  owner: group:default/development-team
