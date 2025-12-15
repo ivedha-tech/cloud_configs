@@ -2,10 +2,10 @@ apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
   name: Dev Portal
-  description: "A React-based Internal Developer Portal module for managing
-    Salesforce environments. It allows Platform Engineers to: Register and
+  description: A React-based Internal Developer Portal module for managing
+    Salesforce environments. It allows Platform Engineers to Register and
     connect Salesforce orgs, View and manage all connected environments, Manage
-    credentials and rotate tokens, Define environment hierarchies."
+    credentials and rotate tokens, Define environment hierarchies.
   annotations:
     backstage.io/source-vcs: Github
     google.com/gcp-projectid: ""
