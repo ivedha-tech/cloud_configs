@@ -19,6 +19,7 @@ metadata:
     google.com/cloudbuild-trigger-name: test16qa-service-staging
     google.com/cloudbuild-project-slug: prj-dev-platform-next
     google.com/gcp-projectid: prj-dev-platform-next
+    sonarqube.org/project-key: test16qa
 spec:
   type: service
   lifecycle: staging
