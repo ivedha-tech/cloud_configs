@@ -4,23 +4,24 @@ metadata:
   name: v2-release-development
   description: created by template
   annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/tech-v2-release-f
+    backstage.io/source-vcs: Github
     github.com/project-slug: ivedha-tech/tech-v2-release-f
     github.com/repo-url: https://github.com/ivedha-tech/tech-v2-release-f
-    backstage.io/source-location: https://github.com/ivedha-tech/tech-v2-release-f
-    backstage.io/language: typescript
-    backstage.io/framework: react
-    release-manager/repository-owner: user:default/thushanthini.kulenthiran
-    release-manager/repository: v2-release-development
-    release-manager/branching-strategy: TBD
-    release-manager/auth-provider: github
-    repo-url: https://github.com/ivedha-tech/tech-v2-release-f
-    backstage.io/source-vcs: Github
-    google.com/cloudbuild-location: us-central1
     google.com/cloudbuild-trigger-name: v2-release-development
     google.com/cloudbuild-project-slug: prj-platformnex-prod
-    google.com/gcp-projectid: prj-platformnex-prod
+    google.com/cloudbuild-location: us-central1
+    google.com/gcp-projectid: prj-dev-platform-next
+    mycompany.com/gcp-projectid: prj-dev-platform-next
+    mycompany.com/gcp-provider: gcp
+    mycompany.com/gcp-dataset-id: ds_billing
+    mycompany.com/gcp-table-id: gcp_billing_export_resource_v1_01E9B5_60A8A4_E1FE52
 spec:
   type: service
   lifecycle: development
   owner: user:default/thushanthini.kulenthiran
+  dependsOn: []
+  dependencyOf: []
   system: system:default/Platformnex-Regression
+  providesApis: []
+  consumesApis: []
