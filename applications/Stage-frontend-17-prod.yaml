@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Stage-frontend-17-prod
+  description: ""
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/frontend-dec-15
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: prj-dev-platform-next
+spec:
+  type: service
+  lifecycle: production
+  owner: group:default/qualityassurance-team
+  system: system:default/Platformnex-Regression
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/frontend-dec-15
+    backstage.io/source-vcs: github
