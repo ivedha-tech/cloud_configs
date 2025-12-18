@@ -19,6 +19,7 @@ metadata:
     google.com/cloudbuild-trigger-name: prod-regress-f-staging
     google.com/cloudbuild-project-slug: prj-platformnex-prod
     google.com/gcp-projectid: prj-platformnex-prod
+    sonarqube.org/project-key: prodregress-18-f
 spec:
   type: service
   lifecycle: staging
