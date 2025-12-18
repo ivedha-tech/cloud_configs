@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: cache18stage
+  description: Resource cache18stage generated from template
+  annotations:
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: prj-platformnex-prod
+spec:
+  type: cache
+  owner: user:default/thushanthini.kulenthiran
+  system: system:default/Platformnex-Regression
+  region: us-central1
+  project: prj-platformnex-prod
+  lifecycle: staging
+
