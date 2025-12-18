@@ -6,6 +6,9 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/regressionv2frontend
     backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: nex-stage-staging-trigger
+    google.com/cloudbuild-project-slug: prj-platformnex-prod
+    google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: prj-platformnex-prod
     jira.com/project-key: PEJ
 spec:
