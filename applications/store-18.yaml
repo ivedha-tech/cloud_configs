@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: store-18
+  description: Resource store-18 generated from template
+  annotations:
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: prj-platformnex-prod
+spec:
+  type: storage
+  owner: user:default/thushanthini.kulenthiran
+  system: system:default/Platformnex-Regression
+  region: us-central1
+  project: prj-platformnex-prod
+  lifecycle: staging
+
