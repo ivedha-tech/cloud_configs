@@ -1,0 +1,26 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: dec-18-v1-production
+  description: created by template
+  annotations:
+    github.com/project-slug: ivedha-tech/release-18-f
+    github.com/repo-url: https://github.com/ivedha-tech/release-18-f
+    backstage.io/source-location: https://github.com/ivedha-tech/release-18-f
+    backstage.io/language: typescript
+    backstage.io/framework: react
+    release-manager/repository-owner: user:default/thushanthini.kulenthiran
+    release-manager/repository: dec-18-v1-production
+    release-manager/branching-strategy: TBD
+    release-manager/auth-provider: github
+    repo-url: https://github.com/ivedha-tech/release-18-f
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-location: us-central1
+    google.com/cloudbuild-trigger-name: dec-18-v1-production
+    google.com/cloudbuild-project-slug: prj-platformnex-prod
+    google.com/gcp-projectid: prj-platformnex-prod
+spec:
+  type: service
+  lifecycle: production
+  owner: user:default/thushanthini.kulenthiran
+  system: system:default/Platformnex-Regression
