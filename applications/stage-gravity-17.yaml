@@ -2,11 +2,12 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: stage-gravity-17
-  description: ""
+  description: ''
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/gravityinfofrontend
     backstage.io/source-vcs: Github
     google.com/gcp-projectid: prj-platformnex-prod
+    sonarqube.org/project-key: gravityinfofrontend
 spec:
   type: service
   lifecycle: staging
