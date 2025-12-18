@@ -19,6 +19,7 @@ metadata:
     google.com/cloudbuild-trigger-name: dec-18-v1-staging
     google.com/cloudbuild-project-slug: prj-platformnex-prod
     google.com/gcp-projectid: prj-platformnex-prod
+    sonarqube.org/project-key: release-18-f
 spec:
   type: service
   lifecycle: staging
