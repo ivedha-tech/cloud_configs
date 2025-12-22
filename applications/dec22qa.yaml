@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: dec22qa
+  description: database resource for Platformnex-Regression
+  annotations:
+    backstage.io/source-location: https://github.com/prj-dev-platform-next
+    backstage.io/source-vcs: github
+    google.com/gcp-projectid: ""
+spec:
+  type: database
+  region: us-central1
+  project: prj-dev-platform-next
+  owner: group:default/guests
+  system: system:default/Platformnex-Regression
+  lifecycle: development
