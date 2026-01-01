@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: cgs-uat
-  description: cgs-uat-0
+  description: cgs-uat
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/count2-frontend
     backstage.io/source-vcs: Github
