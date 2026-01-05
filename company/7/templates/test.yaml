@@ -2,8 +2,8 @@ apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: test
-  title: test
-  description: Testing Template creation
+  title: Test
+  description: Test Creation 
 spec:
   owner: test-management-creation
   type: service
