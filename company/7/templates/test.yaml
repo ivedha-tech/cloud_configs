@@ -2,8 +2,8 @@ apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: test
-  title: Test 
-  description: Test Creation
+  title: test
+  description: test creation
 spec:
   owner: test-management-creation
   type: service
@@ -127,8 +127,8 @@ spec:
                 frontend_state:
                   title: State Management
                   type: string
-                  enum: [None]
-                  default: None
+                  enum: [Redux-Toolkit]
+                  default: Redux-Toolkit
                 frontend_service_repository:
                   title: Repository Location
                   type: string
@@ -256,7 +256,7 @@ spec:
       action: fetch:plain
       input:
         targetPath: ./frontend
-        url: ./repos/frontend-react-typescript-material-ui-none
+        url: ./repos/frontend-react-typescript-material-ui-redux-toolkit
 
     - id: fetch-frontend-cloudbuild
       name: Write Frontend cloudbuild.yaml
@@ -267,20 +267,6 @@ spec:
         targetPath: ./frontend
         fileName: ${{ parameters.cloudbuild_filename }}
 
-    - id: github-publish-frontend
-      name: Publish Frontend to GitHub
-      if: ${{ parameters.component_type == 'Frontend' and parameters.frontend_service_repository and parameters.frontend_service_repository.includes('github.com') }}
-      action: publish:github
-      timeout: 300000
-      input:
-        allowedHosts: ['github.com']
-        description: ${{ parameters.description }}
-        repoUrl: ${{ parameters.frontend_service_repository }}
-        defaultBranch: ${{ parameters.frontend_service_branch }}
-        protectDefaultBranch: false
-        repoVisibility: private
-        sourcePath: ./frontend
-
     # Backend branch
     - id: fetch-backend
       name: Fetch Backend Boilerplate
@@ -288,7 +274,7 @@ spec:
       action: fetch:plain
       input:
         targetPath: ./backend
-        url: ./repos/frontend-react-typescript-material-ui-none
+        url: ./repos/frontend-react-typescript-material-ui-redux-toolkit
 
     - id: fetch-backend-cloudbuild
       name: Write Backend cloudbuild.yaml
@@ -298,20 +284,6 @@ spec:
         yamlContent: ${{ parameters.cloudbuild_yaml }}
         targetPath: ./backend
         fileName: ${{ parameters.cloudbuild_filename }}
-
-    - id: github-publish-backend
-      name: Publish Backend to GitHub
-      if: ${{ parameters.component_type == 'Backend' and parameters.backend_service_repository and parameters.backend_service_repository.includes('github.com') }}
-      action: publish:github
-      timeout: 300000
-      input:
-        allowedHosts: ['github.com']
-        description: ${{ parameters.description }}
-        repoUrl: ${{ parameters.backend_service_repository }}
-        defaultBranch: ${{ parameters.backend_service_branch }}
-        protectDefaultBranch: false
-        repoVisibility: private
-        sourcePath: ./backend
 
     # Transform environments array to extract names and build configs
     - id: transform-environments
@@ -391,9 +363,5 @@ spec:
   output:
     componentId: ${{ parameters.component_id }}
     links:
-      - title: Frontend Repository
-        url: ${{ steps['github-publish-frontend'].output.remoteUrl or steps['bitbucket-publish-frontend'].output.remoteUrl or parameters.frontend_service_repository }}
-      - title: Backend Repository
-        url: ${{ steps['github-publish-backend'].output.remoteUrl or steps['bitbucket-publish-backend'].output.remoteUrl or parameters.backend_service_repository }}
       - title: Catalog Repository
         url: ${{ steps['write-and-onboard'].output.repoContentsUrl or parameters.catalog_repo_url }}
