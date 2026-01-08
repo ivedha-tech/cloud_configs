@@ -9,7 +9,7 @@ metadata:
     google.com/cloudbuild-trigger-name: nexa-nonprod
     google.com/cloudbuild-project-slug: prj-nexa-nonprod
     google.com/cloudbuild-location: northamerica-northeast2
-    google.com/gcp-projectid: ""
+    google.com/gcp-projectid: prj-nexa-nonprod
 spec:
   type: service
   lifecycle: internal-prod
