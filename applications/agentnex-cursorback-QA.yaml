@@ -12,9 +12,13 @@ metadata:
     google.com/gcp-projectid: prj-dev-platform-next
 spec:
   type: service
-  lifecycle: qa
+  lifecycle: staging
   owner: group:default/agentnex-team
   system: system:default/agentnex
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/agentnex-cursorback
     backstage.io/source-vcs: github
