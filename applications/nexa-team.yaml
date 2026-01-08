@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: nexa-team
+  description: ""
+  annotations:
+    backstage.io/source-location: https://github.com/SultanMu/nexa22
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  type: managed
+  children: []
+  members: []
+  annotations:
+    backstage.io/source-location: https://github.com/SultanMu/nexa22
+    backstage.io/source-vcs: github
