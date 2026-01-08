@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: security-service-frontend-QA
+  description: ""
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/security-service-frontend
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: security-service-frontend-QA1
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
+spec:
+  type: service
+  lifecycle: staging
+  owner: group:default/platformnex-admin
+  system: system:default/Security-Service
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/security-service-frontend
+    backstage.io/source-vcs: github
