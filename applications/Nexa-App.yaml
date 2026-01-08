@@ -8,13 +8,15 @@ metadata:
     backstage.io/source-vcs: Github
     google.com/cloudbuild-trigger-name: nexa-nonprod
     google.com/cloudbuild-project-slug: prj-nexa-nonprod
-    google.com/cloudbuild-location: us-central1
+    google.com/cloudbuild-location: northamerica-northeast2
     google.com/gcp-projectid: ""
 spec:
   type: service
   lifecycle: internal-prod
   owner: group:default/nexa-team
   system: system:default/Nexa
+  providesApis: []
+  consumesApis: []
   dependsOn: []
   dependencyOf: []
   annotations:
