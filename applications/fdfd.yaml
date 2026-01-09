@@ -6,14 +6,16 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/sfgfdfgdgfd/gfgdfgdf
     backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: platformnex-authorization-DIT-1
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1-a
     google.com/gcp-projectid: ""
 spec:
   type: service
   lifecycle: development
   owner: group:default/platfor-admin
-  system: system:default/greenfield
   dependsOn: []
   dependencyOf: []
-  annotations:
-    backstage.io/source-location: https://github.com/sfgfdfgdgfd/gfgdfgdf
-    backstage.io/source-vcs: github
+  system: system:default/greenfield
+  providesApis: []
+  consumesApis: []
