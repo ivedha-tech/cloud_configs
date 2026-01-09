@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: storage1
+  description: storage1
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/prj-nexa-nonprod
+spec:
+  type: storage
+  region: us-central1
+  project: prj-nexa-nonprod
+  owner: group:default/guests
+  system: system:default/Nexa
+  lifecycle: internal-prod
