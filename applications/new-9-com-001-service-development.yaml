@@ -6,6 +6,7 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/new-9-com-001
     backstage.io/source-vcs: Github
+    sonarqube.org/project-key: platformnex
     github.com/project-slug: ivedha-tech/new-9-com-001
     github.com/repo-url: https://github.com/ivedha-tech/new-9-com-001
     google.com/cloudbuild-trigger-name: new-9-com-001-service-development
@@ -16,11 +17,8 @@ spec:
   type: service
   lifecycle: development
   owner: group:default/platformnex-team
+  dependsOn: []
+  dependencyOf: []
   system: system:default/Catalog-test
   providesApis: []
   consumesApis: []
-  dependsOn: []
-  dependencyOf: []
-  annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/new-9-com-001
-    backstage.io/source-vcs: github
