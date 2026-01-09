@@ -12,11 +12,14 @@ metadata:
     google.com/gcp-projectid: prj-dev-platform-next
     jira.com/project-key: PEJ
 spec:
-  type: website
+  type: library
   lifecycle: staging
   owner: group:default/guests
-  dependsOn: []
-  dependencyOf: []
   system: system:default/RM-Test
   providesApis: []
   consumesApis: []
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/count2-frontend
+    backstage.io/source-vcs: github
