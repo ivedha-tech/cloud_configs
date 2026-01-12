@@ -7,8 +7,8 @@ metadata:
     backstage.io/source-location: https://github.com/ivedha-tech/agentnex-cursorback
     backstage.io/source-vcs: Github
     google.com/cloudbuild-trigger-name: agentnex-cursorback-PROD-1
-    google.com/cloudbuild-project-slug: prj-agentnex-nonprod
-    google.com/cloudbuild-location: prj-agentnex-prod
+    google.com/cloudbuild-project-slug: prj-agentnex-prod
+    google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: prj-dev-platform-next
 spec:
   type: service
