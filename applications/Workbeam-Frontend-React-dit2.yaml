@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Workbeam-Frontend-React-dit2
+  description: Workbeam-Frontend-React dit2 env
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/workbeam-react
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: ORKBEAM-REACT-DIT-2
+    google.com/cloudbuild-project-slug: prj-dev-talent-nex
+    google.com/cloudbuild-location: us-central1
+spec:
+  type: service
+  lifecycle: dit2
+  owner: group:default/talentnex-team
+  system: system:default/Workbeam
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/workbeam-react
+    backstage.io/source-vcs: github
