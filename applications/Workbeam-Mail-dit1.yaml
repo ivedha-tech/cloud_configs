@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Workbeam-Mail-dit1
+  description: Workbeam-Mail dit1 env
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/workbeam-mail
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: WORKBEAM-MAIL-DIT-1
+    google.com/cloudbuild-project-slug: prj-dev-talent-nex
+    google.com/cloudbuild-location: us-central1
+spec:
+  type: service
+  lifecycle: dit1
+  owner: group:default/talentnex-team
+  system: system:default/Workbeam
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/workbeam-mail
+    backstage.io/source-vcs: github
