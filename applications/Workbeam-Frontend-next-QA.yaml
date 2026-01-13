@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Workbeam-Frontend-next-QA
+  description: Workbeam-Frontend-next QA env
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/workbeam-next
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: WORKBEAM-NEXT-QA
+    google.com/cloudbuild-project-slug: prj-dev-talent-nex
+    google.com/cloudbuild-location: us-central1
+spec:
+  type: service
+  lifecycle: staging
+  owner: group:default/talentnex-team
+  system: system:default/Workbeam
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/workbeam-next
+    backstage.io/source-vcs: github
