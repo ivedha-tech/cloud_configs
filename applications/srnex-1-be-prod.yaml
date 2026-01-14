@@ -1,0 +1,27 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: srnex-1-be-prod
+  description: backend component
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/srnex-1-be
+    backstage.io/source-vcs: Github
+    github.com/project-slug: ivedha-tech/srnex-1-be
+    github.com/repo-url: https://github.com/ivedha-tech/srnex-1-be
+    pulumi.com/project-slug: platformnex/srnex-1/dev
+    pulumi.com/orga-slug: platformnex
+    google.com/cloudrun-project-slug: prj-dev-platform-next
+    google.com/cloudrun-location: us-central1
+    google.com/cloudrun-service-name: apigee-service-dit2
+    google.com/cloudbuild-trigger-name: srnex-1-bes-trigger
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
+    google.com/gcp-projectid: prj-dev-platform-next
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/guests
+  system: platformnex
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/srnex-1-be
+    backstage.io/source-vcs: github
