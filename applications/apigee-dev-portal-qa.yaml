@@ -6,16 +6,17 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/apigee-dev-portal
     backstage.io/source-vcs: Github
+    google.com/cloudrun-project-slug: ""
+    google.com/cloudrun-location: ""
+    google.com/cloudrun-service-name: ""
+    google.com/gcp-projectid: prj-dev-platformnext
     jira.com/project-key: APIGEE
 spec:
   type: service
   lifecycle: staging
   owner: group:default/apigee-team
+  dependsOn: []
+  dependencyOf: []
   system: system:default/apigee-dev-portal
   providesApis: []
   consumesApis: []
-  dependsOn: []
-  dependencyOf: []
-  annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/apigee-dev-portal
-    backstage.io/source-vcs: github
