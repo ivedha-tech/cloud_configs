@@ -6,7 +6,7 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/new-9-com-001
     backstage.io/source-vcs: Github
-    sonarqube.org/project-key: platformnex
+    sonarqube.org/project-key: platformnex-frontend
     github.com/project-slug: ivedha-tech/new-9-com-001
     github.com/repo-url: https://github.com/ivedha-tech/new-9-com-001
     google.com/cloudbuild-trigger-name: new-9-com-001-service-development
