@@ -6,11 +6,16 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/prj-dev-platform-next
     backstage.io/source-vcs: github
-    google.com/gcp-projectid: ""
+    google.com/cloudrun-project-slug: ""
+    google.com/cloudrun-location: ""
+    google.com/cloudrun-service-name: ""
+    google.com/gcp-projectid: prj-dev-platform-next
 spec:
   type: database
-  region: us-central1
-  project: prj-dev-platform-next
-  owner: group:default/guests
-  system: system:default/Platformnex-Regression
   lifecycle: development
+  owner: group:default/guests
+  dependsOn: []
+  dependencyOf: []
+  system: system:default/Platformnex-Regression
+  providesApis: []
+  consumesApis: []
