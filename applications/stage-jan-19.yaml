@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: stage-jan-19
+  description: ""
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/repo-jan-19-f
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  type: service
+  lifecycle: staging
+  owner: group:default/development-team
+  system: system:default/Platformnex-Regression
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/repo-jan-19-f
+    backstage.io/source-vcs: github
