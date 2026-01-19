@@ -10,6 +10,9 @@ metadata:
     google.com/cloudrun-project-slug: ""
     google.com/cloudrun-location: ""
     google.com/cloudrun-service-name: ""
+    google.com/cloudbuild-trigger-name: stage-jan-19-staging-trigger
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: prj-dev-platform-next
     jira.com/project-key: PEJ
 spec:
