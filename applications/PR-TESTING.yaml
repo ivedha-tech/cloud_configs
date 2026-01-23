@@ -7,16 +7,17 @@ metadata:
     backstage.io/source-location: https://github.com/ivedha-tech/platformnex-frontend
     backstage.io/source-vcs: Github
     sonarqube.org/project-key: platformnex-frontend
-    google.com/gcp-projectid: prj
+    google.com/gcp-projectid: prj-dev-platform-next
+    mycompany.com/gcp-projectid: prj-dev-platform-next
+    mycompany.com/gcp-provider: gcp
+    mycompany.com/gcp-dataset-id: ds_billing
+    mycompany.com/gcp-table-id: gcp_billing_export_resource_v1_01E9B5_60A8A4_E1FE52
 spec:
   type: service
   lifecycle: development
   owner: group:default/platformnex-team
+  dependsOn: []
+  dependencyOf: []
   system: system:default/Catalog-test
   providesApis: []
   consumesApis: []
-  dependsOn: []
-  dependencyOf: []
-  annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-frontend
-    backstage.io/source-vcs: github
