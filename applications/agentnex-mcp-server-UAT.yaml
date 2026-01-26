@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: agentnex-mcp-server-UAT
+  description: agentnex-mcp-server-UAT env
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/agentnex-mcp-server
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: agentnex-mcp-server-UAT-1
+    google.com/cloudbuild-project-slug: prj-agentnex-nonprod
+    google.com/cloudbuild-location: us-central1
+    google.com/gcp-projectid: prj-dev-platform-next
+spec:
+  type: service
+  lifecycle: uat
+  owner: group:default/agentnex-team
+  system: system:default/agentnex
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/agentnex-mcp-server
+    backstage.io/source-vcs: github
