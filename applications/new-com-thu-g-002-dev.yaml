@@ -4,23 +4,23 @@ metadata:
   name: new-com-thu-g-002-dev
   description: frontend
   annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/new-com-thu-g-002
+    backstage.io/source-vcs: Github
     github.com/project-slug: ivedha-tech/new-com-thu-g-002
     github.com/repo-url: https://github.com/ivedha-tech/new-com-thu-g-002
-    backstage.io/source-location: https://github.com/ivedha-tech/new-com-thu-g-002
-    backstage.io/language: typescript
-    backstage.io/framework: react
-    release-manager/repository-owner: group:default/guests
-    release-manager/repository: new-com-thu-g-002
-    release-manager/branching-strategy: TBD
-    release-manager/auth-provider: github
-    repo-url: https://github.com/ivedha-tech/new-com-thu-g-002
-    backstage.io/source-vcs: Github
-    google.com/cloudbuild-location: us-central1
+    google.com/cloudrun-project-slug: ""
+    google.com/cloudrun-location: ""
+    google.com/cloudrun-service-name: ""
+    google.com/gcp-projectid: prj-dev-platform-next
     google.com/cloudbuild-trigger-name: new-com-thu-g-002-dev
-    google.com/cloudbuild-project-slug:  prj-dev-platform-next
-
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
 spec:
   type: service
   lifecycle: development
   owner: group:default/guests
+  dependsOn: []
+  dependencyOf: []
   system: system:default/dsa
+  providesApis: []
+  consumesApis: []
