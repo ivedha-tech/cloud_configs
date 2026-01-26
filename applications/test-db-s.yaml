@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: test-db-s
-  description: database resource for dsa
+  description: database resource for helloworld
   annotations:
     backstage.io/source-location: https://github.com/prj-dev-platform-next
     backstage.io/source-vcs: github
@@ -12,5 +12,5 @@ spec:
   region: us-central1
   project: prj-dev-platform-next
   owner: group:default/guests
-  system: system:default/dsa
+  system: system:default/helloworld
   lifecycle: development
