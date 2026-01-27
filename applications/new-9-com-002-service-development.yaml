@@ -4,24 +4,23 @@ metadata:
   name: new-9-com-002-service-development
   description: created by template
   annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/new-9-com-002
+    backstage.io/source-vcs: Github
     github.com/project-slug: ivedha-tech/new-9-com-002
     github.com/repo-url: https://github.com/ivedha-tech/new-9-com-002
-    backstage.io/source-location: https://github.com/ivedha-tech/new-9-com-002
-    backstage.io/language: typescript
-    backstage.io/framework: react
-    release-manager/repository-owner: group:default/platformnex-team
-    release-manager/repository: new-9-com-002-service-development
-    release-manager/branching-strategy: TBD
-    release-manager/auth-provider: github
-    repo-url: https://github.com/ivedha-tech/new-9-com-002
-    backstage.io/source-vcs: Github
-    google.com/cloudbuild-location: us-central1
+    google.com/cloudrun-project-slug: prj-dev-platform-next
+    google.com/cloudrun-location: platformnex-v2-frontend-dit2
+    google.com/cloudrun-service-name: gcp_billing_export_resource_v1_01E9B5_60A8A4_E1FE52
     google.com/cloudbuild-trigger-name: new-9-com-002-service-development
     google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: prj-dev-platform-next
 spec:
   type: service
   lifecycle: development
   owner: group:default/platformnex-team
+  dependsOn: []
+  dependencyOf: []
   system: system:default/Catalog-test
-  created_by: nithursika.kalanantharasan@ivedha.com
+  providesApis: []
+  consumesApis: []
