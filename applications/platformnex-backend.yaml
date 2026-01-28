@@ -6,7 +6,6 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/platformnex-backend
     backstage.io/source-vcs: Github
-    sonarqube.org/project-key: backend
     google.com/gcp-projectid: ""
 spec:
   type: service
