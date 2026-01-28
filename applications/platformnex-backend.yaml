@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: platformnex-backend
-  description: platformnex-backend test on bording
+  description: "platformnex-backend "
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/platformnex-backend
     backstage.io/source-vcs: Github
