@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: db-28
+  description: Resource db-28 generated from template
+  annotations:
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: prj-platformnex-prod
+spec:
+  type: database
+  owner: group:default/platformnex-admin
+  system: system:default/Platformnex-Regression
+  region: us-central1
+  project: prj-platformnex-prod
+  lifecycle: staging
+
