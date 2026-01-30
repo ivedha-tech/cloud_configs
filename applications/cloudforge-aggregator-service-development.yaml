@@ -1,0 +1,27 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: cloudforge-aggregator-service-development
+  description: Demo Service
+  annotations:
+    github.com/project-slug: ivedha-tech/cloudforge-aggregator
+    github.com/repo-url: https://github.com/ivedha-tech/cloudforge-aggregator
+    backstage.io/source-location: https://github.com/ivedha-tech/cloudforge-aggregator
+    backstage.io/language: go
+    backstage.io/framework: gin
+    release-manager/repository-owner: group:default/platformnex-admin
+    release-manager/repository: cloudforge-aggregator-service-development
+    release-manager/branching-strategy: TBD
+    release-manager/auth-provider: github
+    repo-url: https://github.com/ivedha-tech/cloudforge-aggregator
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-location: us-central1
+    google.com/cloudbuild-trigger-name: cloudforge-aggregator-service-development
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/gcp-projectid: prj-dev-platform-next
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/platformnex-admin
+  system: system:default/CloudForge
+  created_by: sakun.weerasinghe@ivedha.com
