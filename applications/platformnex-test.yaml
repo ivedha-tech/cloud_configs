@@ -2,9 +2,9 @@ apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
   name: platformnex-test
-  description: ""
+  description: platformnex-test
   annotations:
     backstage.io/source-vcs: Github
     google.com/gcp-projectid: ""
 spec:
-  owner: group:default/platformnex-team
+  owner: group:default/guests
