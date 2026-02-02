@@ -1,13 +1,16 @@
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: Resource
 metadata:
   name: test-3
-  description: CI-CD testing purpose
+  description: Resource test-3 generated from template
   annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/testrepo-qa-f-aug-6
     backstage.io/source-vcs: Github
+    google.com/gcp-projectid: prj-dev-platform-next
 spec:
-  type: service
+  type: storage
+  owner: group:default/development-team
+  system: system:default/Platformnex-Regression
+  region: us-central1
+  project: prj-dev-platform-next
   lifecycle: development
-  owner: group:default/guests
-  system: system:default/Platformnex
+
