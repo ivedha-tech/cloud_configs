@@ -2,34 +2,22 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: platformnex-frontend
-  description: PlatformNex Frontend Service
+  description: ""
   annotations:
-    backstage.io/source-location: url:https://github.com/ivedha-tech/platformnex-frontend
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-frontend
     backstage.io/source-vcs: Github
-    sonarqube.org/project-key: platformnex
-    github.com/project-slug: ivedha-tech/platformnex-frontend
-    github.com/repo-url: https://github.com/ivedha-tech/platformnex-frontend
-    pulumi.com/project-slug: mcmuralishclint/pulumi-cicd/dev
-    pulumi.com/orga-slug: mcmuralishclint
-    google.com/cloudrun-project-slug: prj-dev-platform-next
-    google.com/cloudrun-location: us-central1
-    google.com/cloudrun-service-name: platformnex-frontend
-    google.com/cloudbuild-trigger-name: platformnex-frontend
+    sonarqube.org/project-key: platformnex-frontend
+    google.com/cloudbuild-trigger-name: dit-trigger-test-trigger-a69c3439c6fb4ee
     google.com/cloudbuild-project-slug: prj-dev-platform-next
     google.com/cloudbuild-location: us-central1
-    google.com/gcp-projectid: prj-dev-platform-next
-    jira.com/project-key: PEJ
-    mycompany.com/gcp-dataset-id: ds_billing
-    mycompany.com/gcp-provider: gcp
-    mycompany.com/gcp-table-id: gcp_billing_export_resource_v1_01E9B5_60A8A4_E1FE52
+    google.com/gcp-projectid: ""
 spec:
   type: website
   lifecycle: development
   owner: group:default/guests
-  system: platformnex
-  providesApis:
-    - platformnex-backend
-  consumesApis: []
-  dependsOn:
-    - resource:default/platformnex-dev-DB
+  system: system:default/platformnex
+  dependsOn: []
   dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-frontend
+    backstage.io/source-vcs: github
