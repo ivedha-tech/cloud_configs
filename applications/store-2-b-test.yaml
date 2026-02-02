@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: store-2-b-test
+  description: Resource store-2-b-test generated from template
+  annotations:
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: prj-dev-platform-next
+spec:
+  type: storage
+  owner: group:default/development-team
+  system: system:default/Platformnex-Regression
+  region: us-central1
+  project: prj-dev-platform-next
+  lifecycle: development
+
