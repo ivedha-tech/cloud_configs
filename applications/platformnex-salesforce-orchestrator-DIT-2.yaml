@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: platformnex-salesforce-orchestrator-DIT-2
+  description: platformnex-salesforce-orchestrator-DIT-2 env service
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-salesforce-orchestrator
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: platformnex-salesforce-orchestrator-DIT-2
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
+spec:
+  type: service
+  lifecycle: dit2
+  owner: group:default/platformnex-salesforce-team
+  system: system:default/platformnex-salesforce
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-salesforce-orchestrator
+    backstage.io/source-vcs: github
