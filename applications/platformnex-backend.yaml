@@ -13,9 +13,9 @@ metadata:
     google.com/gcp-projectid: ""
 spec:
   type: service
-  lifecycle: development
+  lifecycle: dit1
   owner: group:default/guests
-  system: system:default/platformnex
+  system: system:default/platformnex-test
   dependsOn: []
   dependencyOf: []
   annotations:
