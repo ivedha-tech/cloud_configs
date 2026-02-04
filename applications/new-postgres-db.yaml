@@ -8,8 +8,8 @@ metadata:
     google.com/gcp-projectid: prj-dev-platform-next
 spec:
   type: cloudsql
-  owner: group:default/guests
-  system: system:default/BranchTest
+  owner: guests
+  system: system:default/platformnex
   region: us-central1
   project: prj-dev-platform-next
   lifecycle: development
