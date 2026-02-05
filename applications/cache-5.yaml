@@ -8,7 +8,7 @@ metadata:
     google.com/gcp-projectid: prj-dev-platform-next
 spec:
   type: cache
-  owner: user:default/thushanthini.kulenthiran
+  owner: group:default/development-team
   system: system:default/Platformnex-Regression
   region: us-central1
   project: prj-dev-platform-next
