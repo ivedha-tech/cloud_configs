@@ -2,8 +2,8 @@ apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: test-temp-1
-  title: Test-Temp-1
-  description: Testing purposes
+  title: test-temp-1
+  description: testing purposes
   tags:
     - recommended
     - green-field
@@ -46,9 +46,8 @@ spec:
         component_type:
           title: "Component Type"
           type: string
-          description: "Choose whether this component is Frontend or Backend"
-          enum: [Frontend, Backend]
-          default: Frontend
+          description: "Component type (Frontend)"
+          const: Frontend
         created_by:
           title: "Created By"
           type: string
@@ -132,7 +131,7 @@ spec:
                   ui:field: RepoUrlPicker
                   ui:options:
                     allowedHosts: ["bitbucket.org", "github.com"]
-                    default: bitbucket.org
+                    default: github.com
                 frontend_service_branch:
                   title: "Service Branch"
                   type: string
@@ -145,45 +144,6 @@ spec:
                 - frontend_language
                 - frontend_service_repository
                 - frontend_service_branch
-            - properties:
-                component_type:
-                  const: Backend
-                backend_language:
-                  title: "Backend Language"
-                  type: string
-                  enum: [Go, Node.js]
-                  default: Go
-                backend_framework:
-                  title: "Backend Framework"
-                  type: string
-                  dependencies:
-                    backend_language:
-                      Go:
-                        enum: ['Gin']
-                        default: Gin
-                      Node.js:
-                        enum: ['Express', 'NestJS']
-                        default: Express
-                  default: Gin
-                backend_service_repository:
-                  title: "Repository Location"
-                  type: string
-                  ui:field: RepoUrlPicker
-                  ui:options:
-                    allowedHosts: ["bitbucket.org", "github.com"]
-                    default: bitbucket.org
-                backend_service_branch:
-                  title: "Service Branch"
-                  type: string
-                  ui:field: EntityNamePicker
-                  maxLength: 64
-                  pattern: "^[A-Za-z0-9-]+$"
-                  default: main
-              required:
-                - backend_language
-                - backend_framework
-                - backend_service_repository
-                - backend_service_branch
     - title: "CICD"
       properties:
         cloudbuild_yaml:
@@ -248,7 +208,7 @@ spec:
       action: fetch:plain
       input:
         targetPath: ./frontend
-        url: ./repos/frontend-${{ parameters.frontend_framework | lower }}-${{ parameters.frontend_language | lower }}-${{ parameters.frontend_styling | lower }}-${{ parameters.frontend_state | lower }}
+        url: https://github.com/ivedha-tech/platformnex-templates/tree/main/repos/frontend-${{ parameters.frontend_framework | lower }}-${{ parameters.frontend_language | lower }}-${{ parameters.frontend_styling | lower }}-${{ parameters.frontend_state | lower }}
 
     - id: fetch-frontend-cloudbuild
       name: Write Frontend cloudbuild.yaml
@@ -289,53 +249,6 @@ spec:
         repoVisibility: private
         sourcePath: ./frontend
 
-    - id: fetch-backend
-      name: Fetch Backend Boilerplate
-      if: ${{ parameters.component_type == 'Backend' }}
-      action: fetch:plain
-      input:
-        targetPath: ./backend
-        url: ./repos/backend-${{ parameters.backend_language | lower }}-${{ parameters.backend_framework | lower }}
-
-    - id: fetch-backend-cloudbuild
-      name: Write Backend cloudbuild.yaml
-      if: ${{ parameters.component_type == 'Backend' }}
-      action: greenfield:write-yaml
-      input:
-        yamlContent: ${{ parameters.cloudbuild_yaml }}
-        targetPath: ./backend
-        fileName: ${{ parameters.cloudbuild_filename }}
-
-    - id: github-publish-backend
-      name: Publish Backend to GitHub
-      if: ${{ parameters.component_type == 'Backend' and parameters.backend_service_repository and parameters.backend_service_repository.includes('github.com') }}
-      action: publish:github
-      timeout: 300000
-      input:
-        allowedHosts: ['github.com']
-        description: ${{ parameters.description }}
-        repoUrl: ${{ parameters.backend_service_repository }}
-        defaultBranch: ${{ parameters.backend_service_branch }}
-        protectDefaultBranch: false
-        repoVisibility: private
-        sourcePath: ./backend
-
-    - id: bitbucket-publish-backend
-      name: Publish Backend to Bitbucket
-      if: ${{ parameters.component_type == 'Backend' and parameters.backend_service_repository and parameters.backend_service_repository.includes('bitbucket.org') }}
-      action: publish:bitbucket-cloud
-      input:
-        allowedHosts: ['bitbucket.org']
-        description: ${{ parameters.description }}
-        repoUrl: ${{ parameters.backend_service_repository }}
-        defaultBranch: ${{ parameters.backend_service_branch }}
-        protectDefaultBranch: false
-        timeout: 3000000
-        enableLFS: true
-        force: true
-        repoVisibility: private
-        sourcePath: ./backend
-
     - id: transform-environments
       name: Transform Environments Data
       action: greenfield:transform-environments
@@ -347,8 +260,8 @@ spec:
       if: ${{ parameters.catalog_repo_url and steps['transform-environments'].output.environmentNames and steps['transform-environments'].output.environmentNames.length > 0 }}
       action: fetch:plain
       input:
-        url: ./default-entities
-        targetPath: .
+        url: https://github.com/ivedha-tech/platformnex-templates/tree/main/default-entities
+        targetPath: ./default-entities
 
     - id: write-and-onboard
       name: Write and Onboard Catalog Files
@@ -412,8 +325,6 @@ spec:
     links:
       - title: Frontend Repository
         url: ${{ steps['github-publish-frontend'].output.remoteUrl or steps['bitbucket-publish-frontend'].output.remoteUrl or parameters.frontend_service_repository }}
-      - title: Backend Repository
-        url: ${{ steps['github-publish-backend'].output.remoteUrl or steps['bitbucket-publish-backend'].output.remoteUrl or parameters.backend_service_repository }}
       - title: Catalog Repository
         url: ${{ steps['write-and-onboard'].output.repoContentsUrl or parameters.catalog_repo_url }}
       - title: Resources Catalog
