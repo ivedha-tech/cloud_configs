@@ -3,7 +3,7 @@ kind: Template
 metadata:
   name: test-temp-1
   title: test-temp-1
-  description: testing purpose
+  description: testing purposes
   tags:
     - recommended
     - green-field
