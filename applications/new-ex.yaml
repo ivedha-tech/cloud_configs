@@ -1,17 +1,16 @@
 apiVersion: backstage.io/v1alpha1
-kind: Resource
+kind: Component
 metadata:
   name: new-ex
-  description: New Database resource to be created
+  description: cache resource for Catalog-test
   annotations:
-    backstage.io/source-vcs: Github
-    google.com/gcp-projectid: prj-dev-platform-next
+    backstage.io/source-location: https://github.com/prj-dev-platform-next
+    backstage.io/source-vcs: github
+    google.com/gcp-projectid: ""
 spec:
-  type: database
-  owner: group:default/platformnex-team
-  system: system:default/Catalog-test-dec-2025
+  type: cache
   region: us-central1
   project: prj-dev-platform-next
+  owner: group:default/guests
+  system: system:default/Catalog-test
   lifecycle: development
-  created_by: nithursika.kalanantharasan@ivedha.com
-
