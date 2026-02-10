@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: gitops-config
+  description: ""
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/gitops-configs
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  type: service
+  lifecycle: dit1
+  owner: group:default/platformnex-salesforce-team
+  system: system:default/platformnex-salesforce
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/gitops-configs
+    backstage.io/source-vcs: github
