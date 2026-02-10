@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: projects/prj-dev-platform-next/locations/us-central1/instances/cache-6
+  description: Existing cache resource mapped from Map Existing step
+  annotations:
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: prj-dev-platform-next
+spec:
+  type: cache
+  owner: group:default/platformnex-team
+  system: system:default/Catalog-test
+  region: us-central1
+  project: prj-dev-platform-next
+  lifecycle: development
+  created_by: nithursika.kalanantharasan@ivedha.com
+
