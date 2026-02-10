@@ -1,0 +1,27 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: testTemp3
+  description: test
+  annotations:
+    github.com/project-slug: ivedha-tech/testTempFaheem3
+    github.com/repo-url: https://github.com/ivedha-tech/testTempFaheem3
+    backstage.io/source-location: https://github.com/ivedha-tech/testTempFaheem3
+    backstage.io/language: typescript
+    backstage.io/framework: react
+    release-manager/repository-owner: group:default/test-group
+    release-manager/repository: testTemp3
+    release-manager/branching-strategy: TBD
+    release-manager/auth-provider: github
+    repo-url: https://github.com/ivedha-tech/testTempFaheem3
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-location: us-central1
+    google.com/cloudbuild-trigger-name: testTemp3
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/gcp-projectid: prj-dev-platform-next
+spec:
+  type: service
+  lifecycle: dit2
+  owner: group:default/test-group
+  system: system:default/feature-test-11-nov
+  created_by: faheem
