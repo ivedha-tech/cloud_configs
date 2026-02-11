@@ -2,20 +2,18 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: platformnex-backend-2
-  description: "some info "
+  description: "some info about app "
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/platformnex-backend
     backstage.io/source-vcs: Github
-    google.com/cloudrun-project-slug: ""
-    google.com/cloudrun-location: ""
-    google.com/cloudrun-service-name: ""
-    google.com/gcp-projectid: prj-dev-platform-next
+    google.com/gcp-projectid: ""
 spec:
   type: service
-  lifecycle: dit2
+  lifecycle: development
   owner: group:default/platformnex-team
+  system: system:default/test-pe-ankur-new
   dependsOn: []
   dependencyOf: []
-  system: system:default/test-pe-ankur-new
-  providesApis: []
-  consumesApis: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-backend
+    backstage.io/source-vcs: github
