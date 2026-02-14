@@ -1,0 +1,23 @@
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: onboard-template
+  title: Onboard template
+  description: onboard template
+  tags:
+    - recommended
+    - green-field
+    - single-tier
+spec:
+  owner: development-team
+  type: service
+  parameters:
+  steps:
+    - id: fetch-template
+      name: Fetch Template
+      action: fetch:template
+      input:
+        url: "https://github.com/ivedha-tech/platformnex-templates/tree/main/repos/frontend-react-typescript-material-ui-none"
+        targetPath: ${{ (parameters.component_type == 'Frontend' and './frontend') or './backend' }}
+  output:
+    links: []
