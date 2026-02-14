@@ -12,5 +12,5 @@ spec:
   system: system:default/Platformnex-Regression
   region: us-central1
   project: prj-dev-platform-next
-  lifecycle: staging
+  lifecycle: production
 
