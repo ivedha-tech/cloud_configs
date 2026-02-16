@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: security-service-external-connector-PROD
+  description: security service external connector for prod env instance
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/security-service-external-connector
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: security-service-external-connector-PROD
+    google.com/cloudbuild-project-slug: prj-prd-service-nex
+    google.com/cloudbuild-location: us-central1
+    google.com/gcp-projectid: ""
+spec:
+  type: service
+  lifecycle: production
+  owner: group:default/platformnex-admin
+  system: system:default/Security-Service
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/security-service-external-connector
+    backstage.io/source-vcs: github
