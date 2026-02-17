@@ -1,0 +1,26 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: prod-test-17-service-uat
+  description: created by template
+  annotations:
+    github.com/project-slug: ivedha-tech/prod-test-17
+    github.com/repo-url: https://github.com/ivedha-tech/prod-test-17
+    backstage.io/source-location: https://github.com/ivedha-tech/prod-test-17
+    backstage.io/language: typescript
+    backstage.io/framework: react
+    release-manager/repository-owner: group:default/platformnex-admin
+    release-manager/repository: prod-test-17-service-uat
+    release-manager/branching-strategy: TBD
+    release-manager/auth-provider: github
+    repo-url: https://github.com/ivedha-tech/prod-test-17
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-location: us-central1
+    google.com/cloudbuild-trigger-name: prod-test-17-service-uat
+    google.com/cloudbuild-project-slug: prj-platformnex-prod
+    google.com/gcp-projectid: prj-platformnex-prod
+spec:
+  type: service
+  lifecycle: uat
+  owner: group:default/platformnex-admin
+  system: system:default/Platformnex-Regression
