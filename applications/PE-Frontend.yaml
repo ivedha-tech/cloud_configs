@@ -7,15 +7,17 @@ metadata:
     backstage.io/source-location: https://github.com/ivedha-tech/platformnex-frontend
     backstage.io/source-vcs: Github
     sonarqube.org/project-key: PEJ
+    google.com/cloudbuild-trigger-name: platformnex-frontend
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: ""
     jira.com/project-key: PLATNEX
 spec:
   type: service
   lifecycle: development_new
   owner: group:default/platformnex-team
-  system: system:default/test-pe-ankur
   dependsOn: []
   dependencyOf: []
-  annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-frontend
-    backstage.io/source-vcs: github
+  system: system:default/test-pe-ankur
+  providesApis: []
+  consumesApis: []
