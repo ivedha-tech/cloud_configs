@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: platformnex-backend-2
-  description: "some info about app "
+  description: "some info about app info "
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/platformnex-backend
     backstage.io/source-vcs: Github
@@ -12,6 +12,8 @@ spec:
   lifecycle: development
   owner: group:default/platformnex-team
   system: system:default/test-pe-ankur-new
+  providesApis: []
+  consumesApis: []
   dependsOn: []
   dependencyOf: []
   annotations:
