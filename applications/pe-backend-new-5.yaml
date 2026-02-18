@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: pe-backend-new-5
+  description: "some info about pe backend "
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-backend
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  type: service
+  lifecycle: development_new
+  owner: group:default/platformnex-team
+  system: system:default/test-pe-ankur
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-backend
+    backstage.io/source-vcs: github
