@@ -17,7 +17,7 @@ metadata:
     mycompany.com/gcp-table-id: gcp_billing_export_resource_v1_01E9B5_60A8A4_E1FE52
 spec:
   type: service
-  lifecycle: development
+  lifecycle: dit1
   owner: group:default/guests
   system: system:default/platformnex-test
   providesApis: []
