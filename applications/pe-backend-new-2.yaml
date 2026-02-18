@@ -12,5 +12,5 @@ spec:
   lifecycle: development_new
   owner: group:default/platformnex-team
   system: system:default/test-pe-ankur
-  depends: []
+  dependsOn: []
   dependencyOf: []
