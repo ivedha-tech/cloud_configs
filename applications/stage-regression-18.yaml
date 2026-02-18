@@ -6,14 +6,14 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/qa-regression-feb-f-18
     backstage.io/source-vcs: Github
+    sonarqube.org/project-key: " qa-regression-feb-f-18"
     google.com/gcp-projectid: prj-dev-platform-next
 spec:
   type: service
   lifecycle: staging
   owner: group:default/development-team
-  system: system:default/Platformnex-Regression
   dependsOn: []
   dependencyOf: []
-  annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/qa-regression-feb-f-18
-    backstage.io/source-vcs: github
+  system: system:default/Platformnex-Regression
+  providesApis: []
+  consumesApis: []
