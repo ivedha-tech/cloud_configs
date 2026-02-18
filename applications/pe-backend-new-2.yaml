@@ -12,8 +12,5 @@ spec:
   lifecycle: development_new
   owner: group:default/platformnex-team
   system: system:default/test-pe-ankur
-  dependsOn: []
+  depends: []
   dependencyOf: []
-  annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-backend
-    backstage.io/source-vcs: github
