@@ -1,9 +1,9 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: test-temp-f001
-  title: test-temp-f001
-  description: Testing Purposes
+  name: test-temp-f0015
+  title: test-temp-f0015
+  description: testing purposes
   tags:
     - recommended
     - green-field
