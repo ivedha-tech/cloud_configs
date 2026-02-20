@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: new-cache-pro
+  description: Resource new-cache-pro generated from template
+  annotations:
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: prj-dev-platform-next
+spec:
+  type: cache
+  owner: group:default/guests
+  system: system:default/DitTriggerTest
+  region: us-central1
+  project: prj-dev-platform-next
+  lifecycle: sample
+  created_by: nithursika.kalanantharasan@ivedha.com
+
