@@ -1,0 +1,27 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: fahtemphotfix001
+  description: Testing Purposes
+  annotations:
+    github.com/project-slug: ivedha-tech/testHotfixTemplate001
+    github.com/repo-url: https://github.com/ivedha-tech/testHotfixTemplate001
+    backstage.io/source-location: https://github.com/ivedha-tech/testHotfixTemplate001
+    backstage.io/language: typescript
+    backstage.io/framework: react
+    release-manager/repository-owner: group:default/guests
+    release-manager/repository: fahtemphotfix001
+    release-manager/branching-strategy: TBD
+    release-manager/auth-provider: github
+    repo-url: https://github.com/ivedha-tech/testHotfixTemplate001
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-location: us-central1
+    google.com/cloudbuild-trigger-name: fahtemphotfix001tr
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/gcp-projectid: prj-dev-platform-next
+spec:
+  type: service
+  lifecycle: dit2
+  owner: group:default/guests
+  system: system:default/Dev-Test
+  created_by: Faheem
