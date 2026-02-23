@@ -2,15 +2,15 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: stage-regression-18
-  description: ''
+  description: ""
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/qa-regression-feb-f-18
     backstage.io/source-vcs: Github
+    sonarqube.org/project-key: " qa-regression-feb-f-18"
     google.com/cloudbuild-trigger-name: stage-regression-18-staging-trigger
     google.com/cloudbuild-project-slug: prj-dev-platform-next
     google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: prj-dev-platform-next
-    sonarqube.org/project-key: qa-regression-feb-f-18
 spec:
   type: service
   lifecycle: staging
