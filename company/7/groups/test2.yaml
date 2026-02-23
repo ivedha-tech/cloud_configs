@@ -9,7 +9,7 @@ metadata:
   name: test2
   description: test db
   annotations:
-    platform.company/id: '7'
+    platform.company/id: '1'
     platform.source: platformnex-management
     platform.created-by: group-management-service
   tags:
