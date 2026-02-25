@@ -12,9 +12,13 @@ metadata:
     google.com/gcp-projectid: prj-scalenex-nonprod
 spec:
   type: service
-  lifecycle: dit1
+  lifecycle: dit2
   owner: group:default/scalenex-admin
   system: system:default/scalenex
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/scalenex-db-data-bridge
     backstage.io/source-vcs: github
