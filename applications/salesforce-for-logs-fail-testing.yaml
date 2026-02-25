@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: salesforce-for-logs-fail-testing
+  description: ""
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-salesforce-backend
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: " platformnex-salesforce-backend-DIT-1"
+    google.com/cloudbuild-project-slug: " prj-dev-platform-next"
+    google.com/cloudbuild-location: us-central1
+    google.com/gcp-projectid: ""
+spec:
+  type: service
+  lifecycle: dit1
+  owner: group:default/platformnex-team
+  system: system:default/Catalog-test
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-salesforce-backend
+    backstage.io/source-vcs: github
