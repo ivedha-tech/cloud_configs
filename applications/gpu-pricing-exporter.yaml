@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: gpu-pricing-exporter
+  description: ""
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/scalenex-provider-gpu-price
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: build-gpu-pricing-exporter
+    google.com/cloudbuild-project-slug: prj-scalenex-nonprod
+    google.com/cloudbuild-location: us-central1
+    google.com/gcp-projectid: prj-scalenex-nonprod
+spec:
+  type: service
+  lifecycle: dit1
+  owner: group:default/scalenex-admin
+  system: system:default/scalenex
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/scalenex-provider-gpu-price
+    backstage.io/source-vcs: github
