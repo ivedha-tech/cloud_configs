@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: queue-26-u
+  description: Resource queue-26-u generated from template
+  annotations:
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: prj-dev-platform-next
+spec:
+  type: queue
+  owner: group:default/platform-admin
+  system: system:default/Platformnex-Regression
+  region: us-central1
+  project: prj-dev-platform-next
+  lifecycle: development
+  created_by: thushanthini.kulenthiran@ivedha.com
+
