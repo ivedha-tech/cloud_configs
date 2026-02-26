@@ -1,0 +1,27 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: tech-regression-f-22-service-testjan
+  description: frontend component
+  annotations:
+    github.com/project-slug: ivedha-tech/tech-regression-f-22
+    github.com/repo-url: https://github.com/ivedha-tech/tech-regression-f-22
+    backstage.io/source-location: https://github.com/ivedha-tech/tech-regression-f-22
+    backstage.io/language: typescript
+    backstage.io/framework: react
+    release-manager/repository-owner: group:default/development-team
+    release-manager/repository: tech-regression-f-22-service-testjan
+    release-manager/branching-strategy: TBD
+    release-manager/auth-provider: github
+    repo-url: https://github.com/ivedha-tech/tech-regression-f-22
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-location: us-central1
+    google.com/cloudbuild-trigger-name: tech-regression-f-22-service-testjan
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/gcp-projectid: prj-dev-platform-next
+spec:
+  type: service
+  lifecycle: testjan
+  owner: group:default/development-team
+  system: system:default/Platformnex-Regression
+  created_by: thushanthini.kulenthiran@ivedha.com
