@@ -6,15 +6,17 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/regression-26-f
     backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: stage-regression-26-staging-trigger
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: prj-dev-platform-next
     jira.com/project-key: PEJ
 spec:
   type: service
   lifecycle: production
   owner: group:default/platform-admin
-  system: system:default/Platformnex-Regression
   dependsOn: []
   dependencyOf: []
-  annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/regression-26-f
-    backstage.io/source-vcs: github
+  system: system:default/Platformnex-Regression
+  providesApis: []
+  consumesApis: []
