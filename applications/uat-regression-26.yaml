@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: uat-regression-26
+  description: ""
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/regression-26-f
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  type: service
+  lifecycle: uat
+  owner: group:default/platform-admin
+  system: system:default/Platformnex-Regression
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/regression-26-f
+    backstage.io/source-vcs: github
