@@ -1,0 +1,27 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-hotfix-temp00432
+  description: hotfix-temp004
+  annotations:
+    github.com/project-slug: ivedha-tech/test-hotfix-temp00432repo
+    github.com/repo-url: https://github.com/ivedha-tech/test-hotfix-temp00432repo
+    backstage.io/source-location: https://github.com/ivedha-tech/test-hotfix-temp00432repo
+    backstage.io/language: typescript
+    backstage.io/framework: react
+    release-manager/repository-owner: group:default/platformnex-admin
+    release-manager/repository: test-hotfix-temp00432
+    release-manager/branching-strategy: TBD
+    release-manager/auth-provider: github
+    repo-url: https://github.com/ivedha-tech/test-hotfix-temp00432repo
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-location: us-central1
+    google.com/cloudbuild-trigger-name: test-hotfix-temp00432tr
+    google.com/cloudbuild-project-slug: prj-dev-platform-next  
+    google.com/gcp-projectid: prj-dev-platform-next  
+spec:
+  type: service
+  lifecycle: dit1
+  owner: group:default/platformnex-admin
+  system: system:default/platformnex
+  created_by: subas
