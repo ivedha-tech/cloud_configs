@@ -1,0 +1,27 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: regression-26-b-service-uat
+  description: backend component
+  annotations:
+    github.com/project-slug: ivedha-tech/regression-26-b
+    github.com/repo-url: https://github.com/ivedha-tech/regression-26-b
+    backstage.io/source-location: https://github.com/ivedha-tech/regression-26-b
+    backstage.io/language: go
+    backstage.io/framework: gin
+    release-manager/repository-owner: group:default/platform-admin
+    release-manager/repository: regression-26-b-service-uat
+    release-manager/branching-strategy: TBD
+    release-manager/auth-provider: github
+    repo-url: https://github.com/ivedha-tech/regression-26-b
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-location: us-central1
+    google.com/cloudbuild-trigger-name: regression-26-b-service-uat
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/gcp-projectid: prj-dev-platform-next
+spec:
+  type: service
+  lifecycle: uat
+  owner: group:default/platform-admin
+  system: system:default/Platformnex-Regression
+  created_by: thushanthini.kulenthiran@ivedha.com
