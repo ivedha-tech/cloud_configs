@@ -1,0 +1,27 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: asdsaw
+  description: Testing Purposes
+  annotations:
+    github.com/project-slug: ivedha-tech/testUatFaheem5
+    github.com/repo-url: https://github.com/ivedha-tech/testUatFaheem5
+    backstage.io/source-location: https://github.com/ivedha-tech/testUatFaheem5
+    backstage.io/language: typescript
+    backstage.io/framework: react
+    release-manager/repository-owner: group:default/platformnex-admin
+    release-manager/repository: asdsaw
+    release-manager/branching-strategy: TBD
+    release-manager/auth-provider: github
+    repo-url: https://github.com/ivedha-tech/testUatFaheem5
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-location: us-central1
+    google.com/cloudbuild-trigger-name: testuatfaheem5
+    google.com/cloudbuild-project-slug: testuatfaheem5tr
+    google.com/gcp-projectid: testuatfaheem5tr
+spec:
+  type: service
+  lifecycle: dit1
+  owner: group:default/platformnex-admin
+  system: system:default/platformnex
+  created_by: Faheem
