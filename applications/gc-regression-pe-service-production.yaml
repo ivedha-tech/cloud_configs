@@ -1,0 +1,27 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: gc-regression-pe-service-production
+  description: created by template
+  annotations:
+    github.com/project-slug: ivedha-tech/gc-regression-pe
+    github.com/repo-url: https://github.com/ivedha-tech/gc-regression-pe
+    backstage.io/source-location: https://github.com/ivedha-tech/gc-regression-pe
+    backstage.io/language: typescript
+    backstage.io/framework: react
+    release-manager/repository-owner: group:default/platformnex-admin
+    release-manager/repository: gc-regression-pe-service-production
+    release-manager/branching-strategy: TBD
+    release-manager/auth-provider: github
+    repo-url: https://github.com/ivedha-tech/gc-regression-pe
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-location: us-central1
+    google.com/cloudbuild-trigger-name: gc-regression-pe-service-production
+    google.com/cloudbuild-project-slug: prj-platformnex-prod
+    google.com/gcp-projectid: prj-platformnex-prod
+spec:
+  type: service
+  lifecycle: production
+  owner: group:default/platformnex-admin
+  system: system:default/Platformnex-Regression
+  created_by: thushanthini.kulenthiran@ivedha.com
