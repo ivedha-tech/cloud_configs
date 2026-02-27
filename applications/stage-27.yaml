@@ -4,16 +4,18 @@ metadata:
   name: stage-27
   description: ""
   annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/repo-prod-f-17
+    backstage.io/source-location: https://github.com/ivedha-tech/tech-prod-27-f
     backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: stage-27-staging-trigger
+    google.com/cloudbuild-project-slug: prj-platformnex-prod
+    google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: ""
 spec:
   type: service
   lifecycle: staging
   owner: group:default/platformnex-admin
-  system: system:default/Platformnex-Regression
   dependsOn: []
   dependencyOf: []
-  annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/repo-prod-f-17
-    backstage.io/source-vcs: github
+  system: system:default/Platformnex-Regression
+  providesApis: []
+  consumesApis: []
