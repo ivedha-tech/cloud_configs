@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: sroragefeb23-fb7ee19
+  description: Existing storage resource mapped from Map Existing step
+  annotations:
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: prj-dev-platform-next
+spec:
+  type: storage
+  owner: group:default/platform-admin
+  system: system:default/Platformnex-Regression
+  region: US-CENTRAL1
+  project: prj-dev-platform-next
+  lifecycle: development
+  created_by: thushanthini.kulenthiran@ivedha.com
+
