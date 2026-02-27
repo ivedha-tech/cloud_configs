@@ -1,0 +1,27 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: gc-regression-service-dit1
+  description: created by template
+  annotations:
+    github.com/project-slug: ivedha-tech/gc-regression
+    github.com/repo-url: https://github.com/ivedha-tech/gc-regression
+    backstage.io/source-location: https://github.com/ivedha-tech/gc-regression
+    backstage.io/language: go
+    backstage.io/framework: gin
+    release-manager/repository-owner: group:default/platformnex-admin
+    release-manager/repository: gc-regression-service-dit1
+    release-manager/branching-strategy: TBD
+    release-manager/auth-provider: github
+    repo-url: https://github.com/ivedha-tech/gc-regression
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-location: us-central1
+    google.com/cloudbuild-trigger-name: gc-regression-service-dit1
+    google.com/cloudbuild-project-slug: prj-platformnex-prod
+    google.com/gcp-projectid: prj-platformnex-prod
+spec:
+  type: service
+  lifecycle: dit1
+  owner: group:default/platformnex-admin
+  system: system:default/Platformnex-Regression
+  created_by: nithursika.kalanantharasan@ivedha.com
