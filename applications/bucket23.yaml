@@ -6,11 +6,16 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/prj-platoform-next
     backstage.io/source-vcs: github
+    google.com/cloudbuild-trigger-name: stage-march-3-f-staging-trigger
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: ""
 spec:
   type: storage
-  region: us-central1
-  project: prj-platoform-next
-  owner: group:default/guests
-  system: system:default/Catalog-test
   lifecycle: development
+  owner: group:default/guests
+  dependsOn: []
+  dependencyOf: []
+  system: system:default/Catalog-test
+  providesApis: []
+  consumesApis: []
