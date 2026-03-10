@@ -1,0 +1,27 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: regression2731
+  description: testing
+  annotations:
+    github.com/project-slug: ivedha-tech/regressionmarch231
+    github.com/repo-url: https://github.com/ivedha-tech/regressionmarch231
+    backstage.io/source-location: https://github.com/ivedha-tech/regressionmarch231
+    backstage.io/language: typescript
+    backstage.io/framework: react
+    release-manager/repository-owner: group:default/platform-admin
+    release-manager/repository: regression2731
+    release-manager/branching-strategy: TBD
+    release-manager/auth-provider: github
+    repo-url: https://github.com/ivedha-tech/regressionmarch231
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-location: us-central1
+    google.com/cloudbuild-trigger-name: regression2731tr
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/gcp-projectid: prj-dev-platform-next
+spec:
+  type: service
+  lifecycle: regressionmarch231env
+  owner: group:default/platform-admin
+  system: system:default/Platformnex-Regression
+  created_by: subas
