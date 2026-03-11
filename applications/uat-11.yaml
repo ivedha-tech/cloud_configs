@@ -7,6 +7,9 @@ metadata:
     backstage.io/source-location: https://github.com/ivedha-tech/prod-regression-m-11-f
     backstage.io/source-vcs: Github
     sonarqube.org/project-key: prod-regression-m-11-f
+    google.com/cloudbuild-trigger-name: uat-11-uat-trigger
+    google.com/cloudbuild-project-slug: prj-platformnex-prod
+    google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: ""
 spec:
   type: service
