@@ -1,0 +1,27 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: patha-prod-regreesion-development
+  description: Backend
+  annotations:
+    github.com/project-slug: ivedha-tech/prod-regression-m-11-f
+    github.com/repo-url: https://github.com/ivedha-tech/prod-regression-m-11-f
+    backstage.io/source-location: https://github.com/ivedha-tech/prod-regression-m-11-f
+    backstage.io/language: typescript
+    backstage.io/framework: gin
+    release-manager/repository-owner: group:default/platformnex-admin
+    release-manager/repository: patha-prod-regreesion-development
+    release-manager/branching-strategy: TBD
+    release-manager/auth-provider: github
+    repo-url: https://github.com/ivedha-tech/prod-regression-m-11-f
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-location: us-central1
+    google.com/cloudbuild-trigger-name: patha-prod-regreesion-development
+    google.com/cloudbuild-project-slug: prj-platformnex-prod
+    google.com/gcp-projectid: prj-platformnex-prod
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/platformnex-admin
+  system: system:default/Platformnex-Regression
+  created_by: thushanthini.kulenthiran@ivedha.com
