@@ -6,6 +6,7 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/dev-regression-f-m-10
     backstage.io/source-vcs: Github
+    sonarqube.org/project-key: dev-regression-f-m-10
     google.com/cloudbuild-trigger-name: uat-10-uat-trigger
     google.com/cloudbuild-project-slug: prj-dev-platform-next
     google.com/cloudbuild-location: us-central1
