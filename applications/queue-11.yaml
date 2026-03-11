@@ -8,9 +8,10 @@ metadata:
     google.com/gcp-projectid: prj-dev-platform-next
 spec:
   type: queue
-  owner: user:default/thushanthini.kulenthiran
+  owner: group:default/platform-admin
   system: system:default/Platformnex-Regression
   region: us-central1
   project: prj-dev-platform-next
-  lifecycle: uat
+  lifecycle: staging
+  created_by: thushanthini.kulenthiran@ivedha.com
 
