@@ -2,18 +2,18 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: regression273test
-  description: testiing
+  description: Test tagline
   annotations:
-    github.com/project-slug: ivedha-tech/regressionfrb27test231
-    github.com/repo-url: https://github.com/ivedha-tech/regressionfrb27test231
-    backstage.io/source-location: https://github.com/ivedha-tech/regressionfrb27test231
+    github.com/project-slug: ivedha-tech/repo23re
+    github.com/repo-url: https://github.com/ivedha-tech/repo23re
+    backstage.io/source-location: https://github.com/ivedha-tech/repo23re
     backstage.io/language: typescript
     backstage.io/framework: react
     release-manager/repository-owner: group:default/platformnex-admin
     release-manager/repository: regression273test
     release-manager/branching-strategy: TBD
     release-manager/auth-provider: github
-    repo-url: https://github.com/ivedha-tech/regressionfrb27test231
+    repo-url: https://github.com/ivedha-tech/repo23re
     backstage.io/source-vcs: Github
     google.com/cloudbuild-location: us-central1
     google.com/cloudbuild-trigger-name: regression273testtr
