@@ -2,19 +2,21 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: stage-11
-  description: ''
+  description: ""
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/prod-regression-m-11-f
     backstage.io/source-vcs: Github
-    google.com/gcp-projectid: ''
     sonarqube.org/project-key: prod-regression-m-11-f
+    google.com/cloudbuild-trigger-name: stage-11-staging-trigger
+    google.com/cloudbuild-project-slug: prj-platformnex-prod
+    google.com/cloudbuild-location: us-central1
+    google.com/gcp-projectid: ""
 spec:
   type: service
   lifecycle: staging
   owner: group:default/platformnex-admin
-  system: system:default/Platformnex-Regression
   dependsOn: []
   dependencyOf: []
-  annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/prod-regression-m-11-f
-    backstage.io/source-vcs: github
+  system: system:default/Platformnex-Regression
+  providesApis: []
+  consumesApis: []
