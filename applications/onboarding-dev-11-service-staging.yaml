@@ -1,0 +1,27 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: onboarding-dev-11-service-staging
+  description: created by template
+  annotations:
+    github.com/project-slug: ivedha-tech/onboarding-dev-11
+    github.com/repo-url: https://github.com/ivedha-tech/onboarding-dev-11
+    backstage.io/source-location: https://github.com/ivedha-tech/onboarding-dev-11
+    backstage.io/language: typescript
+    backstage.io/framework: react
+    release-manager/repository-owner: group:default/platformnex-admin
+    release-manager/repository: onboarding-dev-11-service-staging
+    release-manager/branching-strategy: TBD
+    release-manager/auth-provider: github
+    repo-url: https://github.com/ivedha-tech/onboarding-dev-11
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-location: us-central1
+    google.com/cloudbuild-trigger-name: onboarding-dev-11-service-staging
+    google.com/cloudbuild-project-slug: prj-platformnex-prod
+    google.com/gcp-projectid: prj-platformnex-prod
+spec:
+  type: service
+  lifecycle: staging
+  owner: group:default/platformnex-admin
+  system: system:default/Platformnex-Regression
+  created_by: thushanthini.kulenthiran@ivedha.com
