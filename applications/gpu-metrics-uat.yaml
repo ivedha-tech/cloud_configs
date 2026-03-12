@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: gpu-metrics-uat
+  description: ""
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/scalenex-db-data-bridge
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: build-gpu-metrics-exporter-uat
+    google.com/cloudbuild-project-slug: prj-scalenex-nonprod
+    google.com/cloudbuild-location: us-central1
+    google.com/gcp-projectid: ""
+spec:
+  type: service
+  lifecycle: qa
+  owner: group:default/scalenex-admin
+  system: system:default/scalenex
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/scalenex-db-data-bridge
+    backstage.io/source-vcs: github
