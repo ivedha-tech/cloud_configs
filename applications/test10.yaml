@@ -1,10 +1,16 @@
 apiVersion: backstage.io/v1alpha1
-kind: System
+kind: Component
 metadata:
   name: test10
-  description: sdvfbsdfg
+  description: storage resource for Platformnex-Regression
   annotations:
-    backstage.io/source-vcs: Github
+    backstage.io/source-location: https://github.com/prj-dev-platform-next
+    backstage.io/source-vcs: github
     google.com/gcp-projectid: ""
 spec:
+  type: storage
+  region: us-central1
+  project: prj-dev-platform-next
   owner: group:default/guests
+  system: system:default/Platformnex-Regression
+  lifecycle: development
