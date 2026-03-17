@@ -19,6 +19,7 @@ metadata:
     google.com/cloudbuild-trigger-name: jwt-greenfiled-service-development
     google.com/cloudbuild-project-slug: prj-dev-platform-next
     google.com/gcp-projectid: prj-dev-platform-next
+    sonarqube.org/project-key: jwt-greenfiled
 spec:
   type: service
   lifecycle: development
