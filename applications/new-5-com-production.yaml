@@ -6,7 +6,7 @@ metadata:
   annotations:
     github.com/project-slug: ivedha-tech/new-5-com
     github.com/repo-url: https://github.com/ivedha-tech/new-5-com
-    backstage.io/source-location: https://github.com/ivedha-tech/new-5-com
+    backstage.io/source-location: https://github.com/ivedha-tech/new-5-ttt
     backstage.io/language: typescript
     backstage.io/framework: react
     release-manager/repository-owner: user:default/nithursika.kalanantharasan
