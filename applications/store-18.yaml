@@ -9,8 +9,9 @@ metadata:
 spec:
   type: storage
   owner: group:default/development-team
-  system: system:default/Platformnex-Regression
+  system: system:default/Regression-17
   region: us-central1
   project: prj-dev-platform-next
   lifecycle: development
+  created_by: thushanthini.kulenthiran@ivedha.com
 
