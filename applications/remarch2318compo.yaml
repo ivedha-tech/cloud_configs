@@ -1,0 +1,27 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: remarch2318compo
+  description: remarch2318
+  annotations:
+    github.com/project-slug: ivedha-tech/remarch2318repo
+    github.com/repo-url: https://github.com/ivedha-tech/remarch2318repo
+    backstage.io/source-location: https://github.com/ivedha-tech/remarch2318repo
+    backstage.io/language: typescript
+    backstage.io/framework: react
+    release-manager/repository-owner: group:default/development-team
+    release-manager/repository: remarch2318compo
+    release-manager/branching-strategy: TBD
+    release-manager/auth-provider: github
+    repo-url: https://github.com/ivedha-tech/remarch2318repo
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-location: us-central1
+    google.com/cloudbuild-trigger-name: remarch2318tr
+    google.com/cloudbuild-project-slug: prj-dev-platform-next  
+    google.com/gcp-projectid: prj-dev-platform-next  
+spec:
+  type: service
+  lifecycle: dit1
+  owner: group:default/development-team
+  system: system:default/Platformnex-Regression
+  created_by: subas
