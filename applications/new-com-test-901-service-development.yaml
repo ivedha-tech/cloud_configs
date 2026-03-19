@@ -2,13 +2,13 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: new-com-test-901-service-development
-  description: created by template
+  description: storage resource for Catalog-test
   annotations:
     github.com/project-slug: ivedha-tech/new-com-test-901
     github.com/repo-url: https://github.com/ivedha-tech/new-com-test-901
     backstage.io/source-location: https://github.com/ivedha-tech/new-com-test-901
-    backstage.io/language: typescript
-    backstage.io/framework: react
+    backstage.io/language: go
+    backstage.io/framework: gin
     release-manager/repository-owner: group:default/platformnex-team
     release-manager/repository: new-com-test-901-service-development
     release-manager/branching-strategy: TBD
