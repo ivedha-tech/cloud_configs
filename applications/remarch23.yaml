@@ -2,26 +2,26 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: remarch23
-  description: Test tagline
+  description: remarch18
   annotations:
-    github.com/project-slug: ivedha-tech/re23marchrepo
-    github.com/repo-url: https://github.com/ivedha-tech/re23marchrepo
-    backstage.io/source-location: https://github.com/ivedha-tech/re23marchrepo
+    github.com/project-slug: ivedha-tech/remarch19repo
+    github.com/repo-url: https://github.com/ivedha-tech/remarch19repo
+    backstage.io/source-location: https://github.com/ivedha-tech/remarch19repo
     backstage.io/language: typescript
     backstage.io/framework: react
-    release-manager/repository-owner: group:default/platformnex-admin
+    release-manager/repository-owner: group:default/development-team
     release-manager/repository: remarch23
     release-manager/branching-strategy: TBD
     release-manager/auth-provider: github
-    repo-url: https://github.com/ivedha-tech/re23marchrepo
+    repo-url: https://github.com/ivedha-tech/remarch19repo
     backstage.io/source-vcs: Github
     google.com/cloudbuild-location: us-central1
-    google.com/cloudbuild-trigger-name: remarch23tr
-    google.com/cloudbuild-project-slug: prj-dev-platform-next 
-    google.com/gcp-projectid: prj-dev-platform-next 
+    google.com/cloudbuild-trigger-name: remarch23trigger
+    google.com/cloudbuild-project-slug: prj-dev-platform-next  
+    google.com/gcp-projectid: prj-dev-platform-next  
 spec:
   type: service
   lifecycle: dit1
-  owner: group:default/platformnex-admin
+  owner: group:default/development-team
   system: system:default/Platformnex-Regression
   created_by: subas
