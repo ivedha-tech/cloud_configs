@@ -4,24 +4,27 @@ metadata:
   name: test-final-101-service-dit1
   description: created by template
   annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/test-final-101
+    backstage.io/source-vcs: Github
     github.com/project-slug: ivedha-tech/test-final-101
     github.com/repo-url: https://github.com/ivedha-tech/test-final-101
-    backstage.io/source-location: https://github.com/ivedha-tech/test-final-101
-    backstage.io/language: typescript
-    backstage.io/framework: react
-    release-manager/repository-owner: group:default/guests
-    release-manager/repository: test-final-101-service-dit1
-    release-manager/branching-strategy: TBD
-    release-manager/auth-provider: github
-    repo-url: https://github.com/ivedha-tech/test-final-101
-    backstage.io/source-vcs: Github
-    google.com/cloudbuild-location: us-central1
     google.com/cloudbuild-trigger-name: test-final-101-service-dit1
     google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: prj-dev-platform-next
+    mycompany.com/gcp-projectid: prj-dev-platform-next
+    mycompany.com/gcp-provider: gcp
+    mycompany.com/gcp-dataset-id: ds_billing
+    mycompany.com/gcp-table-id: billing_summary_daily
 spec:
   type: service
   lifecycle: dit1
   owner: group:default/guests
   system: system:default/helloworld
-  created_by: niman.ransindu@ivedha.com
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/test-final-101
+    backstage.io/source-vcs: github
