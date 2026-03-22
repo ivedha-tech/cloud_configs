@@ -7,12 +7,14 @@ metadata:
     backstage.io/source-location: https://github.com/ivedha-tech/platformnex-frontend
     backstage.io/source-vcs: Github
     google.com/gcp-projectid: ""
-    jira.com/project-key: PEJ
+    jira.com/project-key: PLATNEX
 spec:
   type: service
   lifecycle: development
   owner: group:default/platformnex-team
   system: system:default/Test-Dev
+  providesApis: []
+  consumesApis: []
   dependsOn: []
   dependencyOf: []
   annotations:
