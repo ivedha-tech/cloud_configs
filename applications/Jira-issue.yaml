@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Jira-issue
+  description: ""
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/count2-frontend
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+    jira.com/project-key: PLATNEX
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/platformnex-team
+  system: system:default/platformnex-test
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/count2-frontend
+    backstage.io/source-vcs: github
