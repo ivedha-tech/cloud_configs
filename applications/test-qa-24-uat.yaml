@@ -1,0 +1,27 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-qa-24-uat
+  description: Backend
+  annotations:
+    github.com/project-slug: ivedha-tech/tech-regression-m-17-b
+    github.com/repo-url: https://github.com/ivedha-tech/tech-regression-m-17-b
+    backstage.io/source-location: https://github.com/ivedha-tech/tech-regression-m-17-b
+    backstage.io/language: go
+    backstage.io/framework: gin
+    release-manager/repository-owner: group:default/development-team
+    release-manager/repository: test-qa-24-uat
+    release-manager/branching-strategy: TBD
+    release-manager/auth-provider: github
+    repo-url: https://github.com/ivedha-tech/tech-regression-m-17-b
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-location: us-central1
+    google.com/cloudbuild-trigger-name: tech-regression-m-17-b-service-uat-trigger
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/gcp-projectid: prj-dev-platform-next
+spec:
+  type: service
+  lifecycle: uat
+  owner: group:default/development-team
+  system: system:default/Regression-17
+  created_by: thushanthini.kulenthiran@ivedha.com
