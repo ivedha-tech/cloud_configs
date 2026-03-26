@@ -1,0 +1,27 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: prod-b-production
+  description: Backend
+  annotations:
+    github.com/project-slug: ivedha-tech/repo-prod-b-26
+    github.com/repo-url: https://github.com/ivedha-tech/repo-prod-b-26
+    backstage.io/source-location: https://github.com/ivedha-tech/repo-prod-b-26
+    backstage.io/language: go
+    backstage.io/framework: gin
+    release-manager/repository-owner: group:default/platformnex-admin
+    release-manager/repository: prod-b-production
+    release-manager/branching-strategy: TBD
+    release-manager/auth-provider: github
+    repo-url: https://github.com/ivedha-tech/repo-prod-b-26
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-location: us-central1
+    google.com/cloudbuild-trigger-name: prod-b-production
+    google.com/cloudbuild-project-slug: prj-platformnex-prod
+    google.com/gcp-projectid: prj-platformnex-prod
+spec:
+  type: service
+  lifecycle: production
+  owner: group:default/platformnex-admin
+  system: system:default/Platformnex-Regression
+  created_by: thushanthini.kulenthiran@ivedha.com
