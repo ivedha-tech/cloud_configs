@@ -7,6 +7,9 @@ metadata:
     backstage.io/source-location: https://github.com/ivedha-tech/repo-prod-f-26
     backstage.io/source-vcs: Github
     sonarqube.org/project-key: repo-prod-f-26
+    google.com/cloudbuild-trigger-name: prod-11-production-trigger
+    google.com/cloudbuild-project-slug: prj-platformnex-prod
+    google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: ""
 spec:
   type: service
