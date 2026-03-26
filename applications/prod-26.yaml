@@ -9,11 +9,15 @@ metadata:
     google.com/cloudrun-project-slug: ""
     google.com/cloudrun-location: ""
     google.com/cloudrun-service-name: ""
-    google.com/gcp-projectid: prj-dev-platform-next
     google.com/cloudbuild-trigger-name: prod-11-production-trigger
     google.com/cloudbuild-project-slug: prj-platformnex-prod
     google.com/cloudbuild-location: us-central1
+    google.com/gcp-projectid: prj-platformnex-prod
     jira.com/project-key: PEJ
+    mycompany.com/gcp-projectid: prj-platformnex-prod
+    mycompany.com/gcp-provider: gcp
+    mycompany.com/gcp-dataset-id: ds_billing
+    mycompany.com/gcp-table-id: gcp_billing_export_resource_v1_01E9B5_60A8A4_E1FE52
 spec:
   type: service
   lifecycle: production
