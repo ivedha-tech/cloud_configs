@@ -9,7 +9,7 @@ metadata:
     google.com/gcp-projectid: ""
 spec:
   type: service
-  lifecycle: development
+  lifecycle: staging
   owner: group:default/development-team
   system: system:default/Regression-17
   dependsOn: []
