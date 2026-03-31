@@ -13,6 +13,7 @@ metadata:
     google.com/cloudbuild-trigger-name: SERVICENEX-OPSYGEN-PROD
     google.com/cloudbuild-project-slug: prj-servicenex-prod
     google.com/cloudbuild-location: us-central1
+    google.com/gcp-projectid: ""
 spec:
   type: service
   lifecycle: production
