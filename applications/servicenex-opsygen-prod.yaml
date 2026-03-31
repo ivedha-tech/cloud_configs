@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: servicenex-opsygen-prod
-  description: ""
+  description: This is the opsygen production
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/servicenex
     backstage.io/source-vcs: Github
@@ -15,10 +15,12 @@ metadata:
     google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: ""
 spec:
-  type: website
+  type: service
   lifecycle: production
   owner: group:default/servicenex-admin
   system: system:default/servicenex
+  providesApis: []
+  consumesApis: []
   dependsOn: []
   dependencyOf: []
   annotations:
