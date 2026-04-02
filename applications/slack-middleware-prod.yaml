@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: slack-middleware-prod
-  description: this is the slack-middleware-prod of servicenex app
+  description: this is the slack middleware prod component of servicenex
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/slack-middleware
     backstage.io/source-vcs: Github
