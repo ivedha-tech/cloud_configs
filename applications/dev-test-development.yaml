@@ -4,16 +4,16 @@ metadata:
   name: dev-test-development
   description: created by template
   annotations:
-    github.com/project-slug: ivedha-tech/react-fe-05
-    github.com/repo-url: https://github.com/ivedha-tech/react-fe-05
-    backstage.io/source-location: https://github.com/ivedha-tech/react-fe-05
-    backstage.io/language: typescript
-    backstage.io/framework: react
+    github.com/project-slug: ivedha-tech/go-be-10
+    github.com/repo-url: https://github.com/ivedha-tech/go-be-10
+    backstage.io/source-location: https://github.com/ivedha-tech/go-be-10
+    backstage.io/language: go
+    backstage.io/framework: gin
     release-manager/repository-owner: group:default/guests
     release-manager/repository: dev-test-development
     release-manager/branching-strategy: TBD
     release-manager/auth-provider: github
-    repo-url: https://github.com/ivedha-tech/react-fe-05
+    repo-url: https://github.com/ivedha-tech/go-be-10
     backstage.io/source-vcs: Github
     google.com/cloudbuild-location: us-central1
     google.com/cloudbuild-trigger-name: dev-test-development
