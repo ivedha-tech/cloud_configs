@@ -4,24 +4,24 @@ metadata:
   name: new-com-test-rbac-service-development
   description: created by template
   annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/new-com-test-rbac
+    backstage.io/source-vcs: Github
     github.com/project-slug: ivedha-tech/new-com-test-rbac
     github.com/repo-url: https://github.com/ivedha-tech/new-com-test-rbac
-    backstage.io/source-location: https://github.com/ivedha-tech/new-com-test-rbac
-    backstage.io/language: typescript
-    backstage.io/framework: react
-    release-manager/repository-owner: group:default/guests
-    release-manager/repository: new-com-test-rbac-service-development
-    release-manager/branching-strategy: TBD
-    release-manager/auth-provider: github
-    repo-url: https://github.com/ivedha-tech/new-com-test-rbac
-    backstage.io/source-vcs: Github
-    google.com/cloudbuild-location: us-central1
     google.com/cloudbuild-trigger-name: new-com-test-rbac-service-development
     google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: prj-dev-platform-next
+    mycompany.com/gcp-projectid: prj-dev-platform-next
+    mycompany.com/gcp-provider: gcp
+    mycompany.com/gcp-dataset-id: ds_billing
+    mycompany.com/gcp-table-id: billing_summary_daily
 spec:
   type: service
   lifecycle: development
   owner: group:default/guests
+  dependsOn: []
+  dependencyOf: []
   system: system:default/application999
-  created_by: nithursika.kalanantharasan@ivedha.com
+  providesApis: []
+  consumesApis: []
