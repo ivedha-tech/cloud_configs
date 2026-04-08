@@ -6,14 +6,16 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/qa-march-3-f
     backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: regression-a-development
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: ""
 spec:
   type: service
   lifecycle: uat
   owner: group:default/development-team
-  system: system:default/Regression-8
   dependsOn: []
   dependencyOf: []
-  annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/qa-march-3-f
-    backstage.io/source-vcs: github
+  system: system:default/Regression-8
+  providesApis: []
+  consumesApis: []
