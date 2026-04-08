@@ -1,0 +1,31 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: cloudforge-be-service-Ert
+  description: cloudforge-be-prod component
+  annotations:
+    github.com/project-slug: ivedha-tech/cloudforge-be
+    github.com/repo-url: https://github.com/ivedha-tech/cloudforge-be
+    backstage.io/source-location: https://github.com/ivedha-tech/cloudforge-be
+    backstage.io/language: go
+    backstage.io/framework: gin
+    release-manager/repository-owner: group:default/guests
+    release-manager/repository: cloudforge-be-service-Ert
+    release-manager/branching-strategy: TBD
+    release-manager/auth-provider: github
+    repo-url: https://github.com/ivedha-tech/cloudforge-be
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-location: us-central1
+    google.com/cloudbuild-trigger-name: cloudforge-be-service-Ert
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/gcp-projectid: prj-dev-platform-next
+    google.com/cloudrun-project-slug: prj-dev-platform-next
+    google.com/cloudrun-location: us-central1
+    google.com/cloudrun-service-name: cloudforge-be-service-Ert
+
+spec:
+  type: service
+  lifecycle: Ert
+  owner: group:default/guests
+  system: system:default/CloudForge
+  created_by: nithursika.kalanantharasan@ivedha.com
