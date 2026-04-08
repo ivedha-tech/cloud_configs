@@ -2,61 +2,75 @@ apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: regressionmarch8
-  title: regressionmarch8
-  description: testing march 
+  title: regressionmarch823
+  description: testing march
   tags:
     - recommended
     - green-field
     - single-tier
+  namespace: default
+  type: ""
+  annotations:
+    backstage.io/managed-by-location: url:https://raw.githubusercontent.com/ivedha-tech/cloud_configs/feature-yaml-qa1/company/1/templates/regressionmarch8.yaml
+    backstage.io/managed-by-origin-location: url:https://raw.githubusercontent.com/ivedha-tech/cloud_configs/feature-yaml-qa1/company/1/templates/regressionmarch8.yaml
+    backstage.io/view-url: https://raw.githubusercontent.com/ivedha-tech/cloud_configs/feature-yaml-qa1/company/1/templates/regressionmarch8.yaml
 spec:
   owner: development-team
   type: service
   parameters:
-    - title: "Basic Information"
-      required: ["component_id", "owner", "system", "application_name", "component_type", "environments", "created_by"]
+    - title: Basic Information
+      required:
+        - component_id
+        - owner
+        - system
+        - application_name
+        - component_type
+        - environments
+        - created_by
       properties:
         component_id:
-          title: "Name"
+          title: Name
           type: string
-          description: "Unique name of the component"
+          description: Unique name of the component
           ui:field: EntityNamePicker
           maxLength: 64
-          pattern: "^[a-z0-9]+(-[a-z0-9]+)*$"
+          pattern: ^[a-z0-9]+(-[a-z0-9]+)*$
         description:
-          title: "Description"
+          title: Description
           type: string
-          description: "Help others understand what this component is for"
+          description: Help others understand what this component is for
         owner:
-          title: "Owner"
+          title: Owner
           type: string
-          description: "Owner of the component"
+          description: Owner of the component
           ui:field: OwnerPicker
         system:
-          title: "System"
+          title: System
           type: string
-          description: "System this component belongs to"
+          description: System this component belongs to
           ui:field: EntityPicker
           ui:options:
             catalogFilter:
               kind: System
         application_name:
-          title: "Application Name"
+          title: Application Name
           type: string
-          description: "Application name for this component"
+          description: Application name for this component
         component_type:
-          title: "Component Type"
+          title: Component Type
           type: string
-          description: "Component type"
-          enum: [Frontend]
+          description: Component type
+          enum:
+            - Frontend
           default: Frontend
         created_by:
-          title: "Created By"
+          title: Created By
           type: string
-          description: "User or entity that created this component"
+          description: User or entity that created this component
         environments:
-          title: "Environments"
+          title: Environments
           type: array
-          description: "Add environments and provide their IAC code and workload spec configurations"
+          description: Add environments and provide their IAC code and workload spec configurations
           items:
             type: object
             required:
@@ -70,76 +84,76 @@ spec:
               - cloudbuild_location
             properties:
               environment:
-                title: "Environment Name"
+                title: Environment Name
                 type: string
-                description: "Environment name (e.g., dev, qa, staging, prod, custom-env)"
-                pattern: "^[A-Za-z0-9]+(-[A-Za-z0-9]+)*$"
+                description: Environment name (e.g., dev, qa, staging, prod, custom-env)
+                pattern: ^[A-Za-z0-9]+(-[A-Za-z0-9]+)*$
               iac_code:
-                title: "IAC Code (Base64)"
+                title: IAC Code (Base64)
                 type: string
-                description: "Base64-encoded IAC code (bash script, terraform, etc.) for this environment"
+                description: Base64-encoded IAC code (bash script, terraform, etc.) for this environment
                 ui:widget: textarea
               workload_spec:
-                title: "Workload Spec (Base64)"
+                title: Workload Spec (Base64)
                 type: string
-                description: "Base64-encoded workload specification YAML for this environment"
+                description: Base64-encoded workload specification YAML for this environment
                 ui:widget: textarea
               iac_type:
-                title: "IAC Type"
+                title: IAC Type
                 type: string
-                description: "Type of IAC tool (e.g., gcloud, terraform, pulumi, bash)"
+                description: Type of IAC tool (e.g., gcloud, terraform, pulumi, bash)
                 default: pulumi
               component_name:
-                title: "Component Name"
+                title: Component Name
                 type: string
-                description: "Name of the component for this environment"
+                description: Name of the component for this environment
               cloudbuild_trigger_name:
-                title: "CloudBuild Trigger Name"
+                title: CloudBuild Trigger Name
                 type: string
-                description: "Name of the CloudBuild trigger for this environment (will be used as component_name)"
+                description: Name of the CloudBuild trigger for this environment (will be used as component_name)
               cloudbuild_project_id:
-                title: "CloudBuild Project ID"
+                title: CloudBuild Project ID
                 type: string
-                description: "GCP Project ID for CloudBuild for this environment (used for project-slug and gcp-projectid)"
+                description: GCP Project ID for CloudBuild for this environment (used for project-slug and gcp-projectid)
               cloudbuild_location:
-                title: "CloudBuild Location"
+                title: CloudBuild Location
                 type: string
-                description: "GCP region/location for CloudBuild for this environment (e.g., us-central1, us-east1)"
+                description: GCP region/location for CloudBuild for this environment (e.g., us-central1, us-east1)
                 default: us-central1
               cloudrun_project_slug:
-                title: "CloudRun Project Slug (Optional)"
+                title: CloudRun Project Slug (Optional)
                 type: string
-                description: "GCP project slug to use for CloudRun annotations for this environment (if not provided, CloudRun annotations will be omitted)"
+                description: GCP project slug to use for CloudRun annotations for this environment (if not provided, CloudRun annotations will be omitted)
               cloudrun_location:
-                title: "CloudRun Location (Optional)"
+                title: CloudRun Location (Optional)
                 type: string
-                description: "GCP region/location for CloudRun annotations for this environment (if not provided, CloudRun annotations will be omitted)"
+                description: GCP region/location for CloudRun annotations for this environment (if not provided, CloudRun annotations will be omitted)
               cloudrun_service_name:
-                title: "CloudRun Service Name (Optional)"
+                title: CloudRun Service Name (Optional)
                 type: string
-                description: "CloudRun service name for annotations for this environment (if not provided, CloudRun annotations will be omitted)"
+                description: CloudRun service name for annotations for this environment (if not provided, CloudRun annotations will be omitted)
               gcp_provider:
-                title: "FinOps GCP Provider (Optional)"
+                title: FinOps GCP Provider (Optional)
                 type: string
-                description: "Provider name for FinOps/billing annotations (e.g., gcp)"
+                description: Provider name for FinOps/billing annotations (e.g., gcp)
               gcp_dataset_id:
-                title: "FinOps GCP Dataset ID (Optional)"
+                title: FinOps GCP Dataset ID (Optional)
                 type: string
-                description: "Dataset id for billing export annotations (e.g., ds_billing)"
+                description: Dataset id for billing export annotations (e.g., ds_billing)
               gcp_table_id:
-                title: "FinOps GCP Table ID (Optional)"
+                title: FinOps GCP Table ID (Optional)
                 type: string
-                description: "Table id for billing export annotations"
+                description: Table id for billing export annotations
               gcp_projectid:
-                title: "FinOps GCP Project ID (Optional)"
+                title: FinOps GCP Project ID (Optional)
                 type: string
-                description: "Project id for FinOps/billing annotations (e.g., prj-dev-platform-next)"
-    - title: "Policy Input"
+                description: Project id for FinOps/billing annotations (e.g., prj-dev-platform-next)
+    - title: Policy Input
       required:
         - policy_input
       properties:
         policy_input:
-          title: "Policy Input"
+          title: Policy Input
           type: object
           required:
             - user_email
@@ -148,25 +162,25 @@ spec:
           properties:
             user_role:
               type: string
-              title: "User role"
+              title: User role
             user_teams:
               type: array
-              title: "User teams"
+              title: User teams
               items:
                 type: string
             user_email:
               type: string
-              title: "User email"
+              title: User email
             permission:
               type: string
-              title: "Permission string"
+              title: Permission string
             environment:
               type: string
-              title: "Environment name"
+              title: Environment name
             resource_type:
               type: string
-              title: "Resource type"
-    - title: "Configuration"
+              title: Resource type
+    - title: Configuration
       dependencies:
         component_type:
           oneOf:
@@ -174,67 +188,73 @@ spec:
                 component_type:
                   const: Frontend
                 frontend_framework:
-                  title: "Frontend Framework"
+                  title: Frontend Framework
                   type: string
-                  enum: [React]
+                  enum:
+                    - React
                   default: React
                 frontend_language:
-                  title: "Frontend Language"
+                  title: Frontend Language
                   type: string
-                  enum: [Typescript]
+                  enum:
+                    - Typescript
                   default: Typescript
                 frontend_styling:
-                  title: "Styling Solution"
+                  title: Styling Solution
                   type: string
-                  enum: [Material-UI]
+                  enum:
+                    - Material-UI
                   default: Material-UI
                 frontend_state:
-                  title: "State Management"
+                  title: State Management
                   type: string
-                  enum: [None]
+                  enum:
+                    - None
                   default: None
                 frontend_service_repository:
-                  title: "Repository Location"
+                  title: Repository Location
                   type: string
                   ui:field: RepoUrlPicker
                   ui:options:
-                    allowedHosts: ["github.com", "bitbucket.org"]
+                    allowedHosts:
+                      - github.com
+                      - bitbucket.org
                     default: github.com
                 frontend_service_branch:
-                  title: "Service Branch"
+                  title: Service Branch
                   type: string
                   ui:field: EntityNamePicker
                   ui:options:
                     showRequiredIndicator: false
                   maxLength: 64
-                  pattern: "^[A-Za-z0-9-]+$"
+                  pattern: ^[A-Za-z0-9-]+$
                   default: main
               required:
                 - frontend_framework
                 - frontend_language
                 - frontend_service_repository
                 - frontend_service_branch
-    - title: "CICD"
+    - title: CICD
       required:
         - cloudbuild_yaml
         - cloudbuild_filename
       properties:
         cloudbuild_yaml:
-          title: "Cloudbuild YAML Content"
+          title: Cloudbuild YAML Content
           type: string
           ui:widget: textarea
-          description: "Paste your cloudbuild.yaml content here"
+          description: Paste your cloudbuild.yaml content here
         cloudbuild_filename:
-          title: "Cloudbuild Filename"
+          title: Cloudbuild Filename
           type: string
-          description: "Name of the cloudbuild file (e.g., cloudbuild.yaml, cloudbuild.yml)"
+          description: Name of the cloudbuild file (e.g., cloudbuild.yaml, cloudbuild.yml)
           default: cloudbuild.yaml
-    - title: "Dependencies"
+    - title: Dependencies
       properties:
         dependencies:
-          title: "Dependency Resources"
+          title: Dependency Resources
           type: array
-          description: "Add dependency resources that will be onboarded after successful IAC execution"
+          description: Add dependency resources that will be onboarded after successful IAC execution
           items:
             type: object
             required:
@@ -245,36 +265,36 @@ spec:
               - region
             properties:
               resourceName:
-                title: "Resource Name"
+                title: Resource Name
                 type: string
-                description: "Name of the dependency resource"
+                description: Name of the dependency resource
               environment:
-                title: "Environment"
+                title: Environment
                 type: string
-                description: "Environment this resource belongs to (must match an environment name)"
+                description: Environment this resource belongs to (must match an environment name)
               project:
-                title: "Project"
+                title: Project
                 type: string
-                description: "GCP Project ID for this resource"
+                description: GCP Project ID for this resource
               resourceType:
-                title: "Resource Type"
+                title: Resource Type
                 type: string
-                description: "Type of resource (e.g., storage, cloudrun, compute)"
+                description: Type of resource (e.g., storage, cloudrun, compute)
               region:
-                title: "Region"
+                title: Region
                 type: string
-                description: "GCP region for this resource (e.g., us-central1)"
-    - title: "Catalog Information"
+                description: GCP region for this resource (e.g., us-central1)
+    - title: Catalog Information
       required:
         - catalog_repo_url
         - catalog_file_dir
       properties:
         catalog_repo_url:
-          title: "Catalog Repo Tree URL"
+          title: Catalog Repo Tree URL
           type: string
-          description: "e.g., https://github.com/<org>/<repo>/<tree>/<branch>"
+          description: e.g., https://github.com/<org>/<repo>/<tree>/<branch>
         catalog_file_dir:
-          title: "Catalog File Directory"
+          title: Catalog File Directory
           type: string
           default: applications
   steps:
@@ -285,7 +305,6 @@ spec:
       input:
         targetPath: ./frontend
         url: https://github.com/ivedha-tech/platformnex-templates/tree/main/repos/frontend-${{ parameters.frontend_framework | lower }}-${{ parameters.frontend_language | lower }}-${{ parameters.frontend_styling | lower }}-${{ parameters.frontend_state | lower }}
-
     - id: fetch-frontend-cloudbuild
       name: Write Frontend cloudbuild.yaml
       if: ${{ parameters.component_type == 'Frontend' }}
@@ -294,27 +313,27 @@ spec:
         yamlContent: ${{ parameters.cloudbuild_yaml }}
         targetPath: ./frontend
         fileName: ${{ parameters.cloudbuild_filename }}
-
     - id: github-publish-frontend
       name: Publish Frontend to GitHub
       if: ${{ parameters.component_type == 'Frontend' and parameters.frontend_service_repository and parameters.frontend_service_repository.includes('github.com') }}
       action: publish:github
       timeout: 300000
       input:
-        allowedHosts: ['github.com']
+        allowedHosts:
+          - github.com
         description: ${{ parameters.description }}
         repoUrl: ${{ parameters.frontend_service_repository }}
         defaultBranch: ${{ parameters.frontend_service_branch }}
         protectDefaultBranch: false
         repoVisibility: private
         sourcePath: ./frontend
-
     - id: bitbucket-publish-frontend
       name: Publish Frontend to Bitbucket
       if: ${{ parameters.component_type == 'Frontend' and parameters.frontend_service_repository and parameters.frontend_service_repository.includes('bitbucket.org') }}
       action: publish:bitbucket-cloud
       input:
-        allowedHosts: ['bitbucket.org']
+        allowedHosts:
+          - bitbucket.org
         description: ${{ parameters.description }}
         repoUrl: ${{ parameters.frontend_service_repository }}
         defaultBranch: ${{ parameters.frontend_service_branch }}
@@ -324,13 +343,11 @@ spec:
         force: true
         repoVisibility: private
         sourcePath: ./frontend
-
     - id: transform-environments
       name: Transform Environments Data
       action: greenfield:transform-environments
       input:
         environments: ${{ parameters.environments }}
-
     - id: fetch-catalog-template
       name: Fetch Catalog Info Template
       if: ${{ parameters.catalog_repo_url and steps['transform-environments'].output.environmentNames and steps['transform-environments'].output.environmentNames.length > 0 }}
@@ -338,7 +355,6 @@ spec:
       input:
         url: https://github.com/ivedha-tech/platformnex-templates/tree/main/default-entities
         targetPath: ./default-entities
-
     - id: write-and-onboard
       name: Write and Onboard Catalog Files
       if: ${{ parameters.catalog_repo_url and steps['transform-environments'].output.environmentNames and steps['transform-environments'].output.environmentNames.length > 0 }}
@@ -363,7 +379,6 @@ spec:
         cloudbuildConfigsJson: ${{ steps['transform-environments'].output.cloudbuildConfigsJson }}
         componentNamesJson: ${{ steps['transform-environments'].output.componentNamesJson }}
         createdBy: ${{ parameters.created_by }}
-
     - id: execute-iac
       name: Execute IAC via Orchestrator
       action: greenfield:execute-iac
@@ -374,7 +389,6 @@ spec:
         componentId: ${{ parameters.component_id }}
         policy_input: ${{ parameters.policy_input }}
         authorizationHeader: ${{ secrets.authorizationHeader }}
-
     - id: fetch-resource-template
       name: Fetch Resource Info Template
       if: ${{ parameters.catalog_repo_url and (parameters.dependencies | default([]) | length > 0) and (steps['execute-iac'].output.results | default([]) | length > 0) }}
@@ -382,7 +396,6 @@ spec:
       input:
         url: https://github.com/ivedha-tech/platformnex-templates/tree/main/default-entities
         targetPath: ./default-entities
-
     - id: onboard-dependencies
       name: Onboard Dependency Resources
       if: ${{ parameters.catalog_repo_url and (parameters.dependencies | default([]) | length > 0) and (steps['execute-iac'].output.results | default([]) | length > 0) }}
@@ -395,7 +408,7 @@ spec:
         catalogRepoTreeUrl: ${{ parameters.catalog_repo_url }}
         catalogFileDir: ${{ parameters.catalog_file_dir }}
         templatePath: ./default-entities/resource-info.yaml
-        commitMessage: 'Onboard resources from IAC execution'
+        commitMessage: Onboard resources from IAC execution
         sourceVcs: Github
         createdBy: ${{ parameters.created_by }}
   output:
