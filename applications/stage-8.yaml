@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: stage-8
+  description: ""
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/regression-m-qa-17
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  type: service
+  lifecycle: staging
+  owner: group:default/development-team
+  system: system:default/Regression-8
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/regression-m-qa-17
+    backstage.io/source-vcs: github
