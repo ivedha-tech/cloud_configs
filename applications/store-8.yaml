@@ -2,15 +2,15 @@ apiVersion: backstage.io/v1alpha1
 kind: Resource
 metadata:
   name: store-8
-  description: Resource store-8 generated from template
+  description: storage resource for Regression-8
   annotations:
-    backstage.io/source-vcs: Github
-    google.com/gcp-projectid: prj-dev-platform-next
+    backstage.io/source-location: https://github.com/prj-dev-platform-next
+    backstage.io/source-vcs: github
+    google.com/gcp-projectid: ""
 spec:
   type: storage
-  owner: group:default/development-team
-  system: system:default/Platformnex-Regression
   region: us-central1
   project: prj-dev-platform-next
-  lifecycle: development
-
+  owner: group:default/guests
+  system: system:default/Regression-8
+  lifecycle: staging
