@@ -15,9 +15,11 @@ metadata:
     google.com/gcp-projectid: ""
 spec:
   type: service
-  lifecycle: production
+  lifecycle: slack-middleware-production
   owner: group:default/servicenex-admin
   system: system:default/servicenex
+  providesApis: []
+  consumesApis: []
   dependsOn: []
   dependencyOf: []
   annotations:
