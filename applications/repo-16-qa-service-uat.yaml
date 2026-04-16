@@ -1,0 +1,30 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: repo-16-qa-service-uat
+  description: created by template
+  annotations:
+    github.com/project-slug: ivedha-tech/repo-16-qa
+    github.com/repo-url: https://github.com/ivedha-tech/repo-16-qa
+    backstage.io/source-location: https://github.com/ivedha-tech/repo-16-qa
+    backstage.io/language: typescript
+    backstage.io/framework: react
+    release-manager/repository-owner: group:default/development-team
+    release-manager/repository: repo-16-qa-service-uat
+    release-manager/branching-strategy: TBD
+    release-manager/auth-provider: github
+    repo-url: https://github.com/ivedha-tech/repo-16-qa
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-location: us-central1
+    google.com/cloudbuild-trigger-name: repo-16-qa-service-uat
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/gcp-projectid: prj-dev-platform-next
+    google.com/cloudrun-project-slug: values.cloudbuild_project_slug || "
+    google.com/cloudrun-location: values.cloudbuild_location || "us-central1
+
+spec:
+  type: service
+  lifecycle: uat
+  owner: group:default/development-team
+  system: system:default/Regression-8
+  created_by: thushanthini.kulenthiran@ivedha.com
