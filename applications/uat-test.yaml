@@ -1,8 +1,8 @@
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: Resource
 metadata:
   name: uat-test
-  description: storage resource for UAT-test
+  description: storage resource for Catalog-test
   annotations:
     backstage.io/source-location: https://github.com/prj-dev-platform-next
     backstage.io/source-vcs: github
@@ -12,5 +12,5 @@ spec:
   region: us-central1
   project: prj-dev-platform-next
   owner: group:default/guests
-  system: system:default/UAT-test
-  lifecycle: production
+  system: system:default/Catalog-test
+  lifecycle: development
