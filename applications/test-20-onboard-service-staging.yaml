@@ -1,0 +1,30 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-20-onboard-service-staging
+  description: created by template
+  annotations:
+    github.com/project-slug: ivedha-tech/test-20-onboard
+    github.com/repo-url: https://github.com/ivedha-tech/test-20-onboard
+    backstage.io/source-location: https://github.com/ivedha-tech/test-20-onboard
+    backstage.io/language: typescript
+    backstage.io/framework: react
+    release-manager/repository-owner: group:default/development-team
+    release-manager/repository: test-20-onboard-service-staging
+    release-manager/branching-strategy: TBD
+    release-manager/auth-provider: github
+    repo-url: https://github.com/ivedha-tech/test-20-onboard
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-location: us-central1
+    google.com/cloudbuild-trigger-name: test-20-onboard-service-staging
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/gcp-projectid: prj-dev-platform-next
+    google.com/cloudrun-project-slug: values.cloudbuild_project_slug || "
+    google.com/cloudrun-location: values.cloudbuild_location || "us-central1
+
+spec:
+  type: service
+  lifecycle: staging
+  owner: group:default/development-team
+  system: system:default/Regression-8
+  created_by: thushanthini.kulenthiran@ivedha.com
