@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: db-20
+  description: Resource db-20 generated from template
+  annotations:
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: prj-dev-platform-next
+spec:
+  type: database
+  owner: group:default/development-team
+  system: system:default/Regression-8
+  region: us-central1
+  project: prj-dev-platform-next
+  lifecycle: staging
+  created_by: thushanthini.kulenthiran@ivedha.com
+
