@@ -9,6 +9,9 @@ metadata:
     sonarqube.org/project-key: " regression-26-f"
     github.com/project-slug: ivedha-tech/test-21-qa-f
     github.com/repo-url: https://github.com/ivedha-tech/test-21-qa-f
+    google.com/cloudrun-project-slug: prj-dev-platform-next
+    google.com/cloudrun-location: ds_billing
+    google.com/cloudrun-service-name: gcp_billing_export_resource_v1_01E9B5_60A8A4_E1FE52
     google.com/cloudbuild-trigger-name: stage-rr-staging-trigger
     google.com/cloudbuild-project-slug: prj-dev-platform-next
     google.com/cloudbuild-location: us-central1
