@@ -1,0 +1,27 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-21-qa-f-service-staging
+  description: Backend
+  annotations:
+    github.com/project-slug: ivedha-tech/test-21-qa-f
+    github.com/repo-url: https://github.com/ivedha-tech/test-21-qa-f
+    backstage.io/source-location: https://github.com/ivedha-tech/test-21-qa-f
+    backstage.io/language: go
+    backstage.io/framework: gin
+    release-manager/repository-owner: group:default/platform-admin
+    release-manager/repository: test-21-qa-f-service-staging
+    release-manager/branching-strategy: TBD
+    release-manager/auth-provider: github
+    repo-url: https://github.com/ivedha-tech/test-21-qa-f
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-location: us-central1
+    google.com/cloudbuild-trigger-name: test-21-qa-f-service-staging
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/gcp-projectid: prj-dev-platform-next
+spec:
+  type: service
+  lifecycle: staging
+  owner: group:default/platform-admin
+  system: system:default/PE-regression-22
+  created_by: thushanthini.kulenthiran@ivedha.com
