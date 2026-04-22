@@ -2,11 +2,12 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: stage-rr
-  description: ""
+  description: ''
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/test-21-qa-f
     backstage.io/source-vcs: Github
-    google.com/gcp-projectid: ""
+    google.com/gcp-projectid: ''
+    sonarqube.org/project-key: test-21-qa-f
 spec:
   type: service
   lifecycle: staging
