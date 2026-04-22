@@ -1,16 +1,17 @@
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: Resource
 metadata:
   name: db-22
-  description: database resource for Platformnex-Regression-24
+  description: Resource db-22 generated from template
   annotations:
-    backstage.io/source-location: https://github.com/prj-dev-platform-next
-    backstage.io/source-vcs: github
-    google.com/gcp-projectid: ""
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: prj-dev-platform-next
 spec:
   type: database
+  owner: group:default/platform-admin
+  system: system:default/PE-regression-22
   region: us-central1
   project: prj-dev-platform-next
-  owner: group:default/guests
-  system: system:default/Platformnex-Regression-24
-  lifecycle: development
+  lifecycle: uat
+  created_by: thushanthini.kulenthiran@ivedha.com
+
