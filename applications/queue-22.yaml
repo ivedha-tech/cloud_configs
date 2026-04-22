@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: queue-22
+  description: Resource queue-22 generated from template
+  annotations:
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: prj-dev-platform-next
+spec:
+  type: queue
+  owner: group:default/platform-admin
+  system: system:default/PE-regression-22
+  region: us-central1
+  project: prj-dev-platform-next
+  lifecycle: staging
+  created_by: thushanthini.kulenthiran@ivedha.com
+
