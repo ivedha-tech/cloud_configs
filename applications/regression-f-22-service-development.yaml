@@ -6,6 +6,7 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/regression-f-22
     backstage.io/source-vcs: Github
+    sonarqube.org/project-key: regression-f-22
     github.com/project-slug: ivedha-tech/regression-f-22
     github.com/repo-url: https://github.com/ivedha-tech/regression-f-22
     google.com/cloudbuild-trigger-name: regression-f-22-service-development
