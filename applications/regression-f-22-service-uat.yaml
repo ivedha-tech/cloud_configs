@@ -1,0 +1,35 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: regression-f-22-service-uat
+  description: promoted by template
+  annotations:
+    github.com/project-slug: ivedha-tech/regression-f-22
+    github.com/repo-url: https://github.com/ivedha-tech/regression-f-22
+    backstage.io/source-location: https://github.com/ivedha-tech/regression-f-22
+    backstage.io/language: go
+    backstage.io/framework: gin
+    release-manager/repository-owner: group:default/platformnex-admin
+    release-manager/repository: regression-f-22-service-uat
+    release-manager/branching-strategy: TBD
+    release-manager/auth-provider: github
+    repo-url: https://github.com/ivedha-tech/regression-f-22
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-location: us-central1
+    google.com/cloudbuild-trigger-name: regression-f-22-service-uat
+    google.com/cloudbuild-project-slug: prj-platformnex-prod
+    google.com/gcp-projectid: prj-platformnex-prod
+    google.com/cloudrun-project-slug: prj-platformnex-prod
+    google.com/cloudrun-location: us-central1
+    google.com/cloudrun-service-name: regression-f-22-service-uat
+    mycompany.com/gcp-provider: gcp
+    mycompany.com/gcp-dataset-id: ds_billing
+    mycompany.com/gcp-table-id: gcp_billing_export_resource_v1_01E9B5_60A8A4_E1FE52
+    mycompany.com/gcp-projectid: prj-platformnex-prod
+
+spec:
+  type: service
+  lifecycle: uat
+  owner: group:default/platformnex-admin
+  system: system:default/Platformnex-Regression
+  created_by: thushanthini.kulenthiran@ivedha.com
