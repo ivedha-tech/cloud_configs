@@ -12,7 +12,8 @@ metadata:
     google.com/cloudbuild-trigger-name: Trustnex-Frontend-build-deploy-dit-1
     google.com/cloudbuild-project-slug: prj-trustnex-nonprod
     google.com/cloudbuild-location: us-central1
-    google.com/gcp-projectid: ""
+    google.com/gcp-projectid: ''
+    sonarqube.org/project-key: Trustnex-frontend
 spec:
   type: service
   lifecycle: dit1
