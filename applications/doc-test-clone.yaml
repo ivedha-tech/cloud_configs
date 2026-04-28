@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: doc-test-clone
+  description: ""
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/test-documentations
+    backstage.io/source-vcs: Github
+    sonarqube.org/project-key: test-documentations
+    google.com/cloudbuild-trigger-name: dit-trigger-test-trigger-a69c3439c6fb4ee
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
+    google.com/gcp-projectid: prj-dev-platform-next
+spec:
+  type: service
+  lifecycle: staging
+  owner: group:default/platformnex-team
+  system: system:default/platformnex-test
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/test-documentations
+    backstage.io/source-vcs: github
