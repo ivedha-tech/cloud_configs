@@ -10,6 +10,7 @@ metadata:
     google.com/cloudbuild-project-slug: prj-agentnex-nonprod
     google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: prj-dev-platform-next
+    sonarqube.org/project-key: agentnex-cursorback
 spec:
   type: service
   lifecycle: dit1
