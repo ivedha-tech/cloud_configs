@@ -6,11 +6,16 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/prj-dev-platform-next
     backstage.io/source-vcs: github
+    google.com/cloudrun-project-slug: prj-dev-platform-test
+    google.com/cloudrun-location: us
+    google.com/cloudrun-service-name: prj
     google.com/gcp-projectid: ""
 spec:
   type: storage
-  region: us-central1
-  project: prj-dev-platform-next
-  owner: group:default/guests
-  system: system:default/helloworld
   lifecycle: dit1
+  owner: group:default/guests
+  dependsOn: []
+  dependencyOf: []
+  system: system:default/helloworld
+  providesApis: []
+  consumesApis: []
