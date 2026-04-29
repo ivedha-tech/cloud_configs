@@ -4,27 +4,28 @@ metadata:
   name: dev-test-service-development
   description: created by template
   annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/dev-test
+    backstage.io/source-vcs: Github
+    sonarqube.org/project-key: dev-test
     github.com/project-slug: ivedha-tech/dev-test
     github.com/repo-url: https://github.com/ivedha-tech/dev-test
-    backstage.io/source-location: https://github.com/ivedha-tech/dev-test
-    backstage.io/language: typescript
-    backstage.io/framework: react
-    release-manager/repository-owner: group:default/development-team
-    release-manager/repository: dev-test-service-development
-    release-manager/branching-strategy: TBD
-    release-manager/auth-provider: github
-    repo-url: https://github.com/ivedha-tech/dev-test
-    backstage.io/source-vcs: Github
-    google.com/cloudbuild-location: us-central1
-    google.com/cloudbuild-trigger-name: dev-test-service-development
-    google.com/cloudbuild-project-slug: prj-dev-platform-next
-    google.com/gcp-projectid: prj-dev-platform-next
     google.com/cloudrun-project-slug: values.cloudbuild_project_slug || "
     google.com/cloudrun-location: values.cloudbuild_location || "us-central1
-    sonarqube.org/project-key: dev-test
+    google.com/cloudrun-service-name: ""
+    google.com/cloudbuild-trigger-name: dev-test-service-development
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-location: us-central1
+    google.com/gcp-projectid: prj-dev-platform-next
+    mycompany.com/gcp-projectid: prj-dev-platform-next
+    mycompany.com/gcp-provider: gcp
+    mycompany.com/gcp-dataset-id: ds_billing
+    mycompany.com/gcp-table-id: billing_summary_daily
 spec:
   type: service
   lifecycle: development
   owner: group:default/development-team
+  dependsOn: []
+  dependencyOf: []
   system: system:default/Regression-28
-  created_by: thushanthini.kulenthiran@ivedha.com
+  providesApis: []
+  consumesApis: []
