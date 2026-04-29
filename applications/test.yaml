@@ -2,15 +2,18 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: test
-  description: database resource for Regression-17
+  description: ""
   annotations:
-    backstage.io/source-location: https://github.com/prj-dev-platform-next
-    backstage.io/source-vcs: github
+    backstage.io/source-location: https://github.com/ivedha-tech/dev-28
+    backstage.io/source-vcs: Github
     google.com/gcp-projectid: ""
 spec:
-  type: database
-  region: us-central1
-  project: prj-dev-platform-next
-  owner: group:default/guests
-  system: system:default/Regression-17
-  lifecycle: development
+  type: service
+  lifecycle: staging
+  owner: group:default/development-team
+  system: system:default/Regression-28
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/dev-28
+    backstage.io/source-vcs: github
