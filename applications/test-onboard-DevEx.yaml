@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-onboard-DevEx
+  description: ""
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/count2-frontend/pulls
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/platformnex-team
+  system: system:default/Catalog-test
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/count2-frontend/pulls
+    backstage.io/source-vcs: github
