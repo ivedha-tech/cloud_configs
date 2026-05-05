@@ -10,8 +10,8 @@ metadata:
 spec:
   type: service
   lifecycle: development
-  owner: group:default/platformnex-team
-  system: system:default/Catalog-test
+  owner: group:default/guests
+  system: system:default/Dev-Test
   dependsOn: []
   dependencyOf: []
   annotations:
