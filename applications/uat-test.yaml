@@ -1,16 +1,19 @@
 apiVersion: backstage.io/v1alpha1
-kind: Resource
+kind: Component
 metadata:
   name: uat-test
-  description: storage resource for Platformnex-Regression
+  description: ""
   annotations:
-    backstage.io/source-location: https://github.com/prj-dev-platform-next
-    backstage.io/source-vcs: github
+    backstage.io/source-location: https://github.com/ivedha-tech/dev-test
+    backstage.io/source-vcs: Github
     google.com/gcp-projectid: ""
 spec:
-  type: storage
-  region: us-central1
-  project: prj-dev-platform-next
-  owner: group:default/guests
-  system: system:default/Platformnex-Regression
-  lifecycle: production
+  type: service
+  lifecycle: uat
+  owner: group:default/development-team
+  system: system:default/Regression-28
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/dev-test
+    backstage.io/source-vcs: github
