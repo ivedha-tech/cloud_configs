@@ -1,0 +1,27 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: regression-qa-gcon-1-service-development
+  description: created by template
+  annotations:
+    github.com/project-slug: test-platformnex/regression-qa-gcon-1
+    github.com/repo-url: https://github.com/test-platformnex/regression-qa-gcon-1
+    backstage.io/source-location: https://github.com/test-platformnex/regression-qa-gcon-1
+    backstage.io/language: typescript
+    backstage.io/framework: react
+    release-manager/repository-owner: group:default/platformnex-admin
+    release-manager/repository: regression-qa-gcon-1-service-development
+    release-manager/branching-strategy: TBD
+    release-manager/auth-provider: github
+    repo-url: https://github.com/test-platformnex/regression-qa-gcon-1
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-location: us-central1
+    google.com/cloudbuild-trigger-name: regression-qa-gcon-1-service-development
+    google.com/cloudbuild-project-slug: prj-platformnex-prod
+    google.com/gcp-projectid: prj-platformnex-prod
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/platformnex-admin
+  system: system:default/Platformnex-Regression
+  created_by: thushanthini.kulenthiran@ivedha.com
