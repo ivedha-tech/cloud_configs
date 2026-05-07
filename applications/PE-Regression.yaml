@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
   name: PE-Regression
-  description: ""
+  description: Playwright automation onboarding validation
   annotations:
     backstage.io/source-vcs: Github
     google.com/gcp-projectid: ""
