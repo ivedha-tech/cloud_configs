@@ -6,14 +6,19 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/test-123
     backstage.io/source-vcs: Github
+    google.com/cloudrun-project-slug: prj-platformnex-prod
+    google.com/cloudrun-location: us-central1
+    google.com/cloudrun-service-name: regression-cicd-test-development
+    google.com/cloudbuild-trigger-name: regression-cicd-test-development-trigger
+    google.com/cloudbuild-project-slug: prj-platformnex-prod
+    google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: prj-platformnex-prod
 spec:
   type: service
   lifecycle: development
   owner: group:default/platformnex-admin
-  system: system:default/Platformnex-Regression
   dependsOn: []
   dependencyOf: []
-  annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/test-123
-    backstage.io/source-vcs: github
+  system: system:default/Platformnex-Regression
+  providesApis: []
+  consumesApis: []
