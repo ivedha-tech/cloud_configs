@@ -6,14 +6,14 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/test-platformnex/regression-qa-gcon-1
     backstage.io/source-vcs: Github
+    sonarqube.org/project-key: regression-qa-gcon-1
     google.com/gcp-projectid: ""
 spec:
   type: service
   lifecycle: staging
   owner: group:default/platformnex-admin
-  system: system:default/Platformnex-Regression
   dependsOn: []
   dependencyOf: []
-  annotations:
-    backstage.io/source-location: https://github.com/test-platformnex/regression-qa-gcon-1
-    backstage.io/source-vcs: github
+  system: system:default/Platformnex-Regression
+  providesApis: []
+  consumesApis: []
