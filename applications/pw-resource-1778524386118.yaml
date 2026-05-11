@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: pw-resource-1778524386118
+  description: Playwright automation onboarding validation
+  annotations:
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  type: storage
+  owner: group:default/development-team
+  system: system:default/PE-Regression
+  region: us-central1
+  project: prj-dev-platform-provisioning
+  lifecycle: development
