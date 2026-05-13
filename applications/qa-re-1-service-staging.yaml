@@ -1,0 +1,31 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: qa-re-1-service-staging
+  description: created by template
+  annotations:
+    github.com/project-slug: test-platformnex/qa-re-1
+    github.com/repo-url: https://github.com/test-platformnex/qa-re-1
+    backstage.io/source-location: https://github.com/test-platformnex/qa-re-1
+    backstage.io/language: go
+    backstage.io/framework: gin
+    release-manager/repository-owner: group:default/development-team
+    release-manager/repository: qa-re-1-service-staging
+    release-manager/branching-strategy: TBD
+    release-manager/auth-provider: github
+    repo-url: https://github.com/test-platformnex/qa-re-1
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-location: us-central1
+    google.com/cloudbuild-trigger-name: qa-re-1-service-staging
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/gcp-projectid: prj-dev-platform-next
+    google.com/cloudrun-project-slug: prj-dev-platform-next
+    google.com/cloudrun-location: us-central1
+    google.com/cloudrun-service-name: qa-re-1-service-staging
+
+spec:
+  type: service
+  lifecycle: staging
+  owner: group:default/development-team
+  system: system:default/regression-test-13
+  created_by: thushanthini.kulenthiran@ivedha.com
