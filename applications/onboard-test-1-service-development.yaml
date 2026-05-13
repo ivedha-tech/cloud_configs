@@ -10,12 +10,13 @@ metadata:
     github.com/repo-url: https://github.com/test-platformnex/onboard-test-1
     google.com/cloudrun-project-slug: values.cloudbuild_project_slug || "
     google.com/cloudrun-location: values.cloudbuild_location || "us-central1
-    google.com/cloudrun-service-name: ""
+    google.com/cloudrun-service-name: ''
     google.com/cloudbuild-trigger-name: onboard-test-1-service-development
     google.com/cloudbuild-project-slug: prj-dev-platform-next
     google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: prj-dev-platform-next
     jira.com/project-key: PEJ
+    sonarqube.org/project-key: onboard-test-1
 spec:
   type: service
   lifecycle: development
