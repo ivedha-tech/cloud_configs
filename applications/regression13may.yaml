@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Resource
 metadata:
   name: regression13may
-  description: database resource for regression-test-13
+  description: database resource for Regression-8
   annotations:
     backstage.io/source-location: https://github.com/prj-dev-platform-next
     backstage.io/source-vcs: github
@@ -12,5 +12,5 @@ spec:
   region: us-central1
   project: prj-dev-platform-next
   owner: group:default/guests
-  system: system:default/regression-test-13
+  system: system:default/Regression-8
   lifecycle: development
