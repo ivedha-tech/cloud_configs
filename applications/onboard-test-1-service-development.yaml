@@ -21,7 +21,7 @@ metadata:
     google.com/gcp-projectid: prj-dev-platform-next
     google.com/cloudrun-project-slug: values.cloudbuild_project_slug || "
     google.com/cloudrun-location: values.cloudbuild_location || "us-central1
-
+    sonarqube.org/project-key: onboard-test-1
 spec:
   type: service
   lifecycle: development
