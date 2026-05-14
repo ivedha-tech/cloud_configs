@@ -20,13 +20,16 @@ metadata:
     mycompany.com/gcp-projectid: prj-platoform-next
     mycompany.com/gcp-provider: gcp
     mycompany.com/gcp-dataset-id: ds_billing
-    mycompany.com/gcp-table-id: gcp_billing_export_resource_v1_01E9B5_60A8A4_E1FE52
+    mycompany.com/gcp-table-id: billing_summary_daily
 spec:
   type: website
   lifecycle: development
   owner: group:default/platformnex-admin
-  dependsOn: []
-  dependencyOf: []
   system: system:default/platformnex
   providesApis: []
   consumesApis: []
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-frontend
+    backstage.io/source-vcs: github
