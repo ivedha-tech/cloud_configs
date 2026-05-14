@@ -6,15 +6,19 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/platformnex-devops-gateway
     backstage.io/source-vcs: Github
+    sonarqube.org/project-key: platformnex-devops-gateway
     google.com/cloudrun-project-slug: prj-platformnex-prod
     google.com/cloudrun-location: us-central1
     google.com/cloudrun-service-name: platformnex-devops-gateway-prod
     google.com/cloudbuild-trigger-name: int-prom-prod-devops-2
     google.com/cloudbuild-project-slug: prj-platformnex-prod
     google.com/cloudbuild-location: us-central1
-    google.com/gcp-projectid: ''
+    google.com/gcp-projectid: prj-platformnex-prod
     jira.com/project-key: PLATNEX
-    sonarqube.org/project-key: platformnex-devops-gateway
+    mycompany.com/gcp-projectid: prj-platformnex-prod
+    mycompany.com/gcp-provider: gcp
+    mycompany.com/gcp-dataset-id: ds_billing
+    mycompany.com/gcp-table-id: billing_summary_daily
 spec:
   type: service
   lifecycle: production
