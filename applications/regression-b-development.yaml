@@ -4,27 +4,27 @@ metadata:
   name: regression-b-development
   description: created by template
   annotations:
+    backstage.io/source-location: https://github.com/test-platformnex/regression-b
+    backstage.io/source-vcs: Github
     github.com/project-slug: test-platformnex/regression-b
     github.com/repo-url: https://github.com/test-platformnex/regression-b
-    backstage.io/source-location: https://github.com/test-platformnex/regression-b
-    backstage.io/language: go
-    backstage.io/framework: gin
-    release-manager/repository-owner: group:default/platformnex-admin
-    release-manager/repository: regression-b-development
-    release-manager/branching-strategy: TBD
-    release-manager/auth-provider: github
-    repo-url: https://github.com/test-platformnex/regression-b
-    backstage.io/source-vcs: Github
-    google.com/cloudbuild-location: us-central1
-    google.com/cloudbuild-trigger-name: regression-b-development
-    google.com/cloudbuild-project-slug: prj-platformnex-prod
-    google.com/gcp-projectid: prj-platformnex-prod
     google.com/cloudrun-project-slug: values.cloudbuild_project_slug || "
     google.com/cloudrun-location: values.cloudbuild_location || "us-central1
-
+    google.com/cloudrun-service-name: ""
+    google.com/cloudbuild-trigger-name: regression-b-development
+    google.com/cloudbuild-project-slug: prj-platformnex-prod
+    google.com/cloudbuild-location: us-central1
+    google.com/gcp-projectid: prj-dev-platform-next
+    mycompany.com/gcp-projectid: prj-dev-platform-next
+    mycompany.com/gcp-provider: gcp
+    mycompany.com/gcp-dataset-id: ds_billing
+    mycompany.com/gcp-table-id: billing_summary_daily
 spec:
   type: service
   lifecycle: development
   owner: group:default/platformnex-admin
+  dependsOn: []
+  dependencyOf: []
   system: system:default/Platformnex-Regression
-  created_by: thushanthini.kulenthiran@ivedha.com
+  providesApis: []
+  consumesApis: []
