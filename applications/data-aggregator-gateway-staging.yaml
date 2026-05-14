@@ -12,8 +12,12 @@ metadata:
     google.com/cloudbuild-trigger-name: platformnex-data-aggregator-gateway-QA
     google.com/cloudbuild-project-slug: prj-dev-platform-next
     google.com/cloudbuild-location: us-central1
-    google.com/gcp-projectid: ""
+    google.com/gcp-projectid: prj-dev-platform-next
     jira.com/project-key: PLATNEX
+    mycompany.com/gcp-projectid: prj-dev-platform-next
+    mycompany.com/gcp-provider: gcp
+    mycompany.com/gcp-dataset-id: ds_billing
+    mycompany.com/gcp-table-id: billing_summary_daily
 spec:
   type: service
   lifecycle: staging
