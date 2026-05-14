@@ -13,13 +13,21 @@ metadata:
     google.com/cloudbuild-trigger-name: platformnex-V2-devops-gateway-QA
     google.com/cloudbuild-project-slug: prj-dev-platform-next
     google.com/cloudbuild-location: us-central1
-    jira.com/project-key: PEJ
-    mycompany.com/gcp-dataset-id: ds_billing
-    mycompany.com/gcp-provider: gcp
-    mycompany.com/gcp-table-id: gcp_billing_export_resource_v1_01E9B5_60A8A4_E1FE52
     google.com/gcp-projectid: prj-dev-platform-next
+    jira.com/project-key: PEJ
+    mycompany.com/gcp-projectid: prj-dev-platform-next
+    mycompany.com/gcp-provider: gcp
+    mycompany.com/gcp-dataset-id: ds_billing
+    mycompany.com/gcp-table-id: billing_summary_daily
 spec:
   type: service
   lifecycle: staging
   owner: group:default/platformnex-admin
   system: system:default/platformnex
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-devops-gateway
+    backstage.io/source-vcs: github
