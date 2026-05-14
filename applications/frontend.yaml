@@ -6,13 +6,10 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/count2-frontend
     backstage.io/source-vcs: Github
-    google.com/cloudrun-project-slug: prj-dev-platform-next
-    google.com/cloudrun-location: us-central1
-    google.com/cloudrun-service-name: frontend-dit1
-    google.com/cloudbuild-trigger-name: test
-    google.com/cloudbuild-project-slug: prj-dev-platform-next
-    google.com/cloudbuild-location: us-central1
-    google.com/gcp-projectid: ""
+    google.com/cloudrun-project-slug: ""
+    google.com/cloudrun-location: ""
+    google.com/cloudrun-service-name: ""
+    google.com/gcp-projectid: prj-dev-platform-next
 spec:
   type: service
   lifecycle: platformnex-test__dit1
