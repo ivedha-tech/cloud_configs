@@ -14,8 +14,8 @@ metadata:
     google.com/cloudbuild-trigger-name: regression-f-development
     google.com/cloudbuild-project-slug: prj-platformnex-prod
     google.com/cloudbuild-location: us-central1
-    google.com/gcp-projectid: prj-platformnex-prod
-    mycompany.com/gcp-projectid: prj-platformnex-prod
+    google.com/gcp-projectid: prj-dev-platform-next
+    mycompany.com/gcp-projectid: prj-dev-platform-next
     mycompany.com/gcp-provider: gcp
     mycompany.com/gcp-dataset-id: ds_billing
     mycompany.com/gcp-table-id: billing_summary_daily
