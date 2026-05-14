@@ -12,6 +12,8 @@ spec:
   lifecycle: branchtest__develop
   owner: group:default/guests
   system: system:default/BranchTest
+  providesApis: []
+  consumesApis: []
   dependsOn: []
   dependencyOf: []
   annotations:
