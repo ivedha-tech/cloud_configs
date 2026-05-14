@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: platformnex-salesforce
+  description: "this is a prod application - for dora metrics testing i onbord it
+    to dit2 , will remove after testing "
+  annotations:
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  owner: group:default/platfor-admin
