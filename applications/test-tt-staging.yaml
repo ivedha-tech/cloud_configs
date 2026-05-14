@@ -1,0 +1,35 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-tt-staging
+  description: Backend
+  annotations:
+    github.com/project-slug: test-platformnex/test-tt-f
+    github.com/repo-url: https://github.com/test-platformnex/test-tt-f
+    backstage.io/source-location: https://github.com/test-platformnex/test-tt-f
+    backstage.io/language: typescript
+    backstage.io/framework: gin
+    release-manager/repository-owner: group:default/development-team
+    release-manager/repository: test-tt-staging
+    release-manager/branching-strategy: TBD
+    release-manager/auth-provider: github
+    repo-url: https://github.com/test-platformnex/test-tt-f
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-location: us-central1
+    google.com/cloudbuild-trigger-name: test-tt-staging
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/gcp-projectid: prj-dev-platform-next
+    google.com/cloudrun-project-slug: prj-dev-platform-next
+    google.com/cloudrun-location: us-central1
+    google.com/cloudrun-service-name: test-tt-staging
+    mycompany.com/gcp-provider: gcp
+    mycompany.com/gcp-dataset-id: ds_billing
+    mycompany.com/gcp-table-id: billing_summary_daily
+    mycompany.com/gcp-projectid: prj-dev-platform-next
+
+spec:
+  type: service
+  lifecycle: staging
+  owner: group:default/development-team
+  system: system:default/regression-test-13
+  created_by: thushanthini.kulenthiran@ivedha.com
