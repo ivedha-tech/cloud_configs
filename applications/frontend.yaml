@@ -2,18 +2,18 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: frontend
-  description: dfd
+  description: ""
   annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-frontend
+    backstage.io/source-location: https://github.com/ivedha-tech/count2-frontend
     backstage.io/source-vcs: Github
     google.com/gcp-projectid: ""
 spec:
   type: service
-  lifecycle: development
+  lifecycle: platformnex-test__dit1
   owner: group:default/guests
-  system: system:default/application999
+  system: system:default/platformnex-test
   dependsOn: []
   dependencyOf: []
   annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-frontend
+    backstage.io/source-location: https://github.com/ivedha-tech/count2-frontend
     backstage.io/source-vcs: github
