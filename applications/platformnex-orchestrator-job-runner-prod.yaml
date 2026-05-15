@@ -10,11 +10,17 @@ metadata:
     google.com/cloudbuild-trigger-name: platformnex-orchestrator-job-runner-PROD
     google.com/cloudbuild-project-slug: prj-platformnex-prod
     google.com/cloudbuild-location: us-central1
+    google.com/gcp-projectid: prj-platformnex-prod
+    mycompany.com/gcp-projectid: prj-platformnex-prod
+    mycompany.com/gcp-provider: gcp
+    mycompany.com/gcp-dataset-id: ds_billing
+    mycompany.com/gcp-table-id: billing_summary_daily
 spec:
   type: service
   lifecycle: production
   owner: group:default/platformnex-admin
+  dependsOn: []
+  dependencyOf: []
   system: system:default/platformnex
-  annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-orchestrator-job-runner
-    backstage.io/source-vcs: github
+  providesApis: []
+  consumesApis: []
