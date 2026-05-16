@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: PR-TESTING
-  description: ""
+  description: test
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/platformnex-frontend
     backstage.io/source-vcs: Github
