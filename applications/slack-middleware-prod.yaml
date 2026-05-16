@@ -15,7 +15,7 @@ metadata:
     google.com/gcp-projectid: prj-servicenex-prod
 spec:
   type: service
-  lifecycle: production
+  lifecycle: servicenex__production
   owner: group:default/platformnex-team
   system: system:default/servicenex
   dependsOn: []
