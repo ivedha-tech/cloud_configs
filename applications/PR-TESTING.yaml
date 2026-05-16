@@ -17,11 +17,9 @@ metadata:
     mycompany.com/gcp-table-id: billing_summary_daily
 spec:
   type: service
-  lifecycle: development
+  lifecycle: catalog-test__development
   owner: group:default/platformnex-team
   system: system:default/Catalog-test
-  providesApis: []
-  consumesApis: []
   dependsOn: []
   dependencyOf: []
   annotations:
