@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: platformnex-devops-gateway-prod
-  description: ""
+  description: test
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/platformnex-devops-gateway
     backstage.io/source-vcs: Github
@@ -10,14 +10,11 @@ metadata:
     google.com/cloudbuild-project-slug: prj-dev-platform-next
     google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: prj-dev-platform-next
-    jira.com/project-key: PEJ
 spec:
   type: service
-  lifecycle: production
+  lifecycle: platformnex-test__production
   owner: group:default/platformnex-team
   system: system:default/platformnex-test
-  providesApis: []
-  consumesApis: []
   dependsOn: []
   dependencyOf: []
   annotations:
