@@ -5,13 +5,11 @@ metadata:
   description: Existing storage resource mapped from Map Existing step
   annotations:
     backstage.io/source-vcs: Github
-    google.com/gcp-projectid: prj-dev-platform-next
+    google.com/gcp-projectid: ""
 spec:
   type: storage
   owner: group:default/platformnex-team
   system: system:default/Catalog-test
-  region: US-CENTRAL1
+  region: us-central1
   project: prj-dev-platform-next
-  lifecycle: development
-  created_by: sanuka.dayarathne@ivedha.com
-
+  lifecycle: catalog-test__development
