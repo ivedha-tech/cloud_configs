@@ -2,27 +2,26 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: dev-frontend-6-service-development
-  description: created by template
+  description: ""
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/dev-frontend-6
     backstage.io/source-vcs: Github
     sonarqube.org/project-key: platformnex-frontend
-    github.com/project-slug: ivedha-tech/dev-frontend-6
-    github.com/repo-url: https://github.com/ivedha-tech/dev-frontend-6
     google.com/cloudbuild-trigger-name: dev-frontend-6-service-development
     google.com/cloudbuild-project-slug: prj-dev-platform-next
     google.com/cloudbuild-location: us-central1
-    google.com/gcp-projectid: prj-platoform-next
-    mycompany.com/gcp-projectid: prj-platoform-next
+    google.com/gcp-projectid: prj-dev-platform-next
+    mycompany.com/gcp-projectid: prj-dev-platform-next
     mycompany.com/gcp-provider: gcp
     mycompany.com/gcp-dataset-id: ds_billing
-    mycompany.com/gcp-table-id: gcp_billing_export_resource_v1_01E9B5_60A8A4_E1FE52
+    mycompany.com/gcp-table-id: billing_summary_daily
 spec:
   type: service
-  lifecycle: development
+  lifecycle: catalog-test__development
   owner: group:default/platformnex-team
+  system: system:default/Catalog-test
   dependsOn: []
   dependencyOf: []
-  system: system:default/Catalog-test
-  providesApis: []
-  consumesApis: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/dev-frontend-6
+    backstage.io/source-vcs: github
