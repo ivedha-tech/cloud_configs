@@ -5,13 +5,11 @@ metadata:
   description: New Storage resource to be created
   annotations:
     backstage.io/source-vcs: Github
-    google.com/gcp-projectid: prj-dev-platform-next
+    google.com/gcp-projectid: ""
 spec:
   type: storage
   owner: group:default/platformnex-team
   system: system:default/Catalog-test-dec-2025
   region: us-central1
   project: prj-dev-platform-next
-  lifecycle: development
-  created_by: nithursika.kalanantharasan@ivedha.com
-
+  lifecycle: catalog-test-dec-2025__development
