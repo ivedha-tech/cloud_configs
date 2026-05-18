@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: dev-frontend-6-service-development
-  description: ""
+  description: test
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/dev-frontend-6
     backstage.io/source-vcs: Github
@@ -20,6 +20,8 @@ spec:
   lifecycle: catalog-test__development
   owner: group:default/platformnex-team
   system: system:default/Catalog-test
+  providesApis: []
+  consumesApis: []
   dependsOn: []
   dependencyOf: []
   annotations:
