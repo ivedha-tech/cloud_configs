@@ -19,7 +19,7 @@ metadata:
     mycompany.com/gcp-table-id: billing_summary_daily
 spec:
   type: service
-  lifecycle: regression-test-13__uat
+  lifecycle: regression-test-13__staging
   owner: group:default/development-team
   system: system:default/regression-test-13
   providesApis: []
