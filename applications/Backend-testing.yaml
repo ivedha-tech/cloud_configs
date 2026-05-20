@@ -22,6 +22,8 @@ spec:
   lifecycle: regression-test-13__uat
   owner: group:default/development-team
   system: system:default/regression-test-13
+  providesApis: []
+  consumesApis: []
   dependsOn: []
   dependencyOf: []
   annotations:
