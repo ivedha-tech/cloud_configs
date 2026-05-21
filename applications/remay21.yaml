@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: remay21
+  description: storage resource for regression-test-13
+  annotations:
+    backstage.io/source-location: https://github.com/prj-dev-platform-next
+    backstage.io/source-vcs: github
+    google.com/gcp-projectid: ""
+spec:
+  type: storage
+  region: us-central1
+  project: prj-dev-platform-next
+  owner: group:default/guests
+  system: system:default/regression-test-13
+  lifecycle: development
