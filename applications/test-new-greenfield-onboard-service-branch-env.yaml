@@ -21,7 +21,7 @@ metadata:
     google.com/gcp-projectid: prj-dev-platform-next
 spec:
   type: service
-  lifecycle: branch-env
+  lifecycle: branchtest__branch-env
   owner: group:default/guests
   system: system:default/BranchTest
   created_by: ama.perera@ivedha.com
