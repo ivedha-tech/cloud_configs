@@ -6,14 +6,16 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/test-platformnex/k8-test
     backstage.io/source-vcs: Github
-    google.com/gcp-projectid: ""
+    google.com/cloudrun-project-slug: ""
+    google.com/cloudrun-location: ""
+    google.com/cloudrun-service-name: ""
+    google.com/gcp-projectid: prj-dev-platform-next
 spec:
   type: service
   lifecycle: pe-regression-22__development
   owner: group:default/platform-admin
-  system: system:default/PE-regression-22
   dependsOn: []
   dependencyOf: []
-  annotations:
-    backstage.io/source-location: https://github.com/test-platformnex/k8-test
-    backstage.io/source-vcs: github
+  system: system:default/PE-regression-22
+  providesApis: []
+  consumesApis: []
