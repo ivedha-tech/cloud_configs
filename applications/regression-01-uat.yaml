@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: regression-01-uat
+  description: ""
+  annotations:
+    backstage.io/source-location: https://github.com/test-platformnex/k8-test
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  type: service
+  lifecycle: pe-regression-22__development
+  owner: group:default/platform-admin
+  system: system:default/PE-regression-22
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/test-platformnex/k8-test
+    backstage.io/source-vcs: github
