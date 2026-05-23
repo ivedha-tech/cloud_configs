@@ -4,7 +4,7 @@ metadata:
   name: testingFrontend
   description: ""
   annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/repo-uat-f-24
+    backstage.io/source-location: https://github.com/test-platformnex/test-new-greenfield-onboard
     backstage.io/source-vcs: Github
     google.com/gcp-projectid: ""
     jira.com/project-key: PEJ
@@ -16,5 +16,5 @@ spec:
   dependsOn: []
   dependencyOf: []
   annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/repo-uat-f-24
+    backstage.io/source-location: https://github.com/test-platformnex/test-new-greenfield-onboard
     backstage.io/source-vcs: github
