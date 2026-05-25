@@ -1,8 +1,8 @@
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: Resource
 metadata:
   name: store-25
-  description: storage resource for Platformnex-Regression-24
+  description: storage resource for Regression-23
   annotations:
     backstage.io/source-location: https://github.com/prj-dev-platform-next
     backstage.io/source-vcs: github
@@ -12,5 +12,5 @@ spec:
   region: us-central1
   project: prj-dev-platform-next
   owner: group:default/guests
-  system: system:default/Platformnex-Regression-24
-  lifecycle: staging
+  system: system:default/Regression-23
+  lifecycle: uat
