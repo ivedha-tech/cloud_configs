@@ -13,4 +13,4 @@ spec:
   project: prj-dev-platform-next
   owner: group:default/guests
   system: system:default/BranchTest
-  lifecycle: develop
+  lifecycle: branchtest__develop
