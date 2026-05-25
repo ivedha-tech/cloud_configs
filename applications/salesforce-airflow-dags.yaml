@@ -2,10 +2,11 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: salesforce-airflow-dags
-  description: Internal Airflow DAGs of Forcenex catalog
+  description: Internal airflow DAGs of forcenex
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/internal-airflow-dags.git
     backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
 spec:
   type: service
   lifecycle: development
