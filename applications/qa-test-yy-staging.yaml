@@ -1,0 +1,31 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: qa-test-yy-staging
+  description: Backend
+  annotations:
+    github.com/project-slug: test-platformnex/qa-re-1
+    github.com/repo-url: https://github.com/test-platformnex/qa-re-1
+    backstage.io/source-location: https://github.com/test-platformnex/qa-re-1
+    backstage.io/language: typescript
+    backstage.io/framework: gin
+    release-manager/repository-owner: group:default/platformnex-admin
+    release-manager/repository: qa-test-yy-staging
+    release-manager/branching-strategy: TBD
+    release-manager/auth-provider: github
+    repo-url: https://github.com/test-platformnex/qa-re-1
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-location: us-central1
+    google.com/cloudbuild-trigger-name: qa-test-yy-staging
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/gcp-projectid: prj-dev-platform-next
+    google.com/cloudrun-project-slug: prj-dev-platform-next
+    google.com/cloudrun-location: us-central1
+    google.com/cloudrun-service-name: qa-test-yy-staging
+
+spec:
+  type: service
+  lifecycle: staging
+  owner: group:default/platformnex-admin
+  system: system:default/Regression-23
+  created_by: thushanthini.kulenthiran@ivedha.com
