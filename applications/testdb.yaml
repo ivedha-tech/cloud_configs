@@ -2,13 +2,15 @@ apiVersion: backstage.io/v1alpha1
 kind: Resource
 metadata:
   name: testdb
-  description: testdb
+  description: database resource for platformnex-test
   annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/prj-dev-platform-next
+    backstage.io/source-location: https://github.com/prj-dev-platform-next
+    backstage.io/source-vcs: github
+    google.com/gcp-projectid: ""
 spec:
-  type: storage
+  type: database
   region: us-central1
   project: prj-dev-platform-next
   owner: group:default/guests
-  system: system:default/platformnex
-  lifecycle: development
+  system: system:default/platformnex-test
+  lifecycle: platformnex-test__development
