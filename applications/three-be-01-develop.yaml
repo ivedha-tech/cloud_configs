@@ -1,0 +1,30 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: three-be-01-develop
+  description: created by template
+  annotations:
+    github.com/project-slug: test-platformnex/three-be-01
+    github.com/repo-url: https://github.com/test-platformnex/three-be-01
+    backstage.io/source-location: https://github.com/test-platformnex/three-be-01
+    backstage.io/language: go
+    backstage.io/framework: gin
+    release-manager/repository-owner: group:default/guests
+    release-manager/repository: three-be-01-develop
+    release-manager/branching-strategy: TBD
+    release-manager/auth-provider: github
+    repo-url: https://github.com/test-platformnex/three-be-01
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-location: us-central1
+    google.com/cloudbuild-trigger-name: three-be-01-develop
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/gcp-projectid: prj-dev-platform-next
+    google.com/cloudrun-project-slug: values.cloudbuild_project_slug || "
+    google.com/cloudrun-location: values.cloudbuild_location || "us-central1
+
+spec:
+  type: service
+  lifecycle: branchtest__develop
+  owner: group:default/guests
+  system: system:default/BranchTest
+  created_by: sasiru.wijendra@ivedha.com
