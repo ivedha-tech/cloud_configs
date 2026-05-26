@@ -26,7 +26,7 @@ metadata:
     mycompany.com/gcp-dataset-id: ds_billing
     mycompany.com/gcp-table-id: billing_summary_daily
     mycompany.com/gcp-projectid: prj-platformnex-prod
-
+    sonarqube.org/project-key: prod-ui-f
 spec:
   type: service
   lifecycle: development
