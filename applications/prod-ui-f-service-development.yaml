@@ -4,24 +4,24 @@ metadata:
   name: prod-ui-f-service-development
   description: created by template
   annotations:
+    backstage.io/source-location: https://github.com/test-platformnex/prod-ui-f
+    backstage.io/source-vcs: Github
     github.com/project-slug: test-platformnex/prod-ui-f
     github.com/repo-url: https://github.com/test-platformnex/prod-ui-f
-    backstage.io/source-location: https://github.com/test-platformnex/prod-ui-f
-    backstage.io/language: typescript
-    backstage.io/framework: react
-    release-manager/repository-owner: group:default/platformnex-admin
-    release-manager/repository: prod-ui-f-service-development
-    release-manager/branching-strategy: TBD
-    release-manager/auth-provider: github
-    repo-url: https://github.com/test-platformnex/prod-ui-f
-    backstage.io/source-vcs: Github
-    google.com/cloudbuild-location: us-central1
     google.com/cloudbuild-trigger-name: prod-ui-f-service-development
     google.com/cloudbuild-project-slug: prj-platformnex-prod
-    google.com/gcp-projectid: prj-platformnex-prod
+    google.com/cloudbuild-location: us-central1
+    google.com/gcp-projectid: prj-dev-platform-next
+    mycompany.com/gcp-projectid: prj-dev-platform-next
+    mycompany.com/gcp-provider: gcp
+    mycompany.com/gcp-dataset-id: ds_billing
+    mycompany.com/gcp-table-id: billing_summary_daily
 spec:
   type: service
   lifecycle: development
   owner: group:default/platformnex-admin
+  dependsOn: []
+  dependencyOf: []
   system: system:default/Platformnex-Regression
-  created_by: thushanthini.kulenthiran@ivedha.com
+  providesApis: []
+  consumesApis: []
