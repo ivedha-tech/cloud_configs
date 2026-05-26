@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: k8-test-2
-  description: ""
+  description: dev
   annotations:
     backstage.io/source-location: https://github.com/test-platformnex/k8-test-2
     backstage.io/source-vcs: Github
@@ -19,6 +19,8 @@ spec:
   lifecycle: staging
   owner: group:default/platformnex-admin
   system: system:default/Platformnex-Regression
+  providesApis: []
+  consumesApis: []
   dependsOn: []
   dependencyOf: []
   annotations:
