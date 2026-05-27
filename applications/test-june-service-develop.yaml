@@ -1,0 +1,30 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-june-service-develop
+  description: test
+  annotations:
+    github.com/project-slug: test-platformnex/test-june
+    github.com/repo-url: https://github.com/test-platformnex/test-june
+    backstage.io/source-location: https://github.com/test-platformnex/test-june
+    backstage.io/language: go
+    backstage.io/framework: gin
+    release-manager/repository-owner: group:default/guests
+    release-manager/repository: test-june-service-develop
+    release-manager/branching-strategy: TBD
+    release-manager/auth-provider: github
+    repo-url: https://github.com/test-platformnex/test-june
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-location: us-central1
+    google.com/cloudbuild-trigger-name: test-june-service-develop
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/gcp-projectid: prj-dev-platform-next
+    google.com/cloudrun-project-slug: values.cloudbuild_project_slug || "
+    google.com/cloudrun-location: values.cloudbuild_location || "us-central1
+
+spec:
+  type: service
+  lifecycle: branchtest__develop
+  owner: group:default/guests
+  system: system:default/BranchTest
+  created_by: ama.perera@ivedha.com
