@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: prtest-vim
+  description: ""
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/prtest-vim
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  type: service
+  lifecycle: app-vd__testvim
+  owner: group:default/guests
+  system: system:default/app-vd
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/prtest-vim
+    backstage.io/source-vcs: github
