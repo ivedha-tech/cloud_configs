@@ -6,8 +6,8 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/platformnex-frontend
     backstage.io/source-vcs: Github
-    google.com/cloudbuild-trigger-name: platformnex-V2-frontend-DIT-2
-    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-trigger-name: prod-1-production-trigger
+    google.com/cloudbuild-project-slug: prj-dev-platform-provisioning
     google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: ""
 spec:
@@ -15,6 +15,8 @@ spec:
   lifecycle: platformnex__production
   owner: group:default/guests
   system: system:default/platformnex
+  providesApis: []
+  consumesApis: []
   dependsOn: []
   dependencyOf: []
   annotations:
