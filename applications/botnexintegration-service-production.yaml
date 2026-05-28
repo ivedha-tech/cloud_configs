@@ -1,0 +1,30 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: botnexintegration-service-production
+  description: created by template
+  annotations:
+    github.com/project-slug: test-platformnex/botnexintegration
+    github.com/repo-url: https://github.com/test-platformnex/botnexintegration
+    backstage.io/source-location: https://github.com/test-platformnex/botnexintegration
+    backstage.io/language: typescript
+    backstage.io/framework: react
+    release-manager/repository-owner: guests
+    release-manager/repository: botnexintegration-service-production
+    release-manager/branching-strategy: TBD
+    release-manager/auth-provider: github
+    repo-url: https://github.com/test-platformnex/botnexintegration
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-location: us-central1
+    google.com/cloudbuild-trigger-name: botnexintegration-service-production
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/gcp-projectid: prj-dev-platform-next
+    google.com/cloudrun-project-slug: values.cloudbuild_project_slug || "
+    google.com/cloudrun-location: values.cloudbuild_location || "us-central1
+
+spec:
+  type: service
+  lifecycle: production
+  owner: guests
+  system: system:default/platformnex
+  created_by: vanaiyan.kirupagaran@ivedha.com
