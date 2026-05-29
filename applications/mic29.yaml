@@ -6,10 +6,11 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/test-platformnex/qa-re-1/pull/17
     backstage.io/source-vcs: Github
-    google.com/cloudrun-project-slug: prj-dev-platform-next
-    google.com/cloudrun-location: ds_billing
-    google.com/cloudrun-service-name: gcp_billing_export_resource_v1_01E9B5_60A8A4_E1FE52
-    google.com/gcp-projectid: ""
+    google.com/gcp-projectid: prj-dev-platform-next
+    mycompany.com/gcp-projectid: prj-dev-platform-next
+    mycompany.com/gcp-provider: gcp
+    mycompany.com/gcp-dataset-id: ds_billing
+    mycompany.com/gcp-table-id: billing_summary_daily
 spec:
   type: service
   lifecycle: regression-test-13__development
