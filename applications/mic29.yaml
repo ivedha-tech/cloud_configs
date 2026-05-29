@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: mic29
+  description: ""
+  annotations:
+    backstage.io/source-location: https://github.com/test-platformnex/qa-re-1/pull/17
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  type: service
+  lifecycle: regression-test-13__development
+  owner: group:default/development-team
+  system: system:default/regression-test-13
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/test-platformnex/qa-re-1/pull/17
+    backstage.io/source-vcs: github
