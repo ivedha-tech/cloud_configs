@@ -1,0 +1,38 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: k8-test-23-service-staging
+  description: created by template
+  annotations:
+    github.com/project-slug: test-platformnex/k8-test-23
+    github.com/repo-url: https://github.com/test-platformnex/k8-test-23
+    backstage.io/source-location: https://github.com/test-platformnex/k8-test-23
+    backstage.io/language: typescript
+    backstage.io/framework: react
+    release-manager/repository-owner: group:default/guests
+    release-manager/repository: k8-test-23-service-staging
+    release-manager/branching-strategy: TBD
+    release-manager/auth-provider: github
+    repo-url: https://github.com/test-platformnex/k8-test-23
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-location: us-central1
+    google.com/cloudbuild-trigger-name: k8-test-23-service-staging
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/gcp-projectid: prj-dev-platform-next
+    google.com/cloudrun-project-slug: values.cloudbuild_project_slug || "
+    google.com/cloudrun-location: values.cloudbuild_location || "us-central1
+    platformnex.io/deployment-destination: kubernetes
+    argocd.platformnex.io/instance: 8a97a7b1-6b14-467b-bb9d-9dae1024670e
+    argocd.platformnex.io/project: platformnex-gitops-test
+    argocd.platformnex.io/namespace: argocd-test
+    argocd.platformnex.io/destination-namespace: k8-test-23-service-staging
+    argocd.platformnex.io/application-name: k8-test-23-service-staging
+    gitops.platformnex.io/repo-url: https://github.com/ivedha-tech/platformnex-gitops-test.git
+    gitops.platformnex.io/branch: main
+    gitops.platformnex.io/environment-path: apps/k8-test-23/overlays/staging
+spec:
+  type: service
+  lifecycle: dev-test__staging
+  owner: group:default/guests
+  system: system:default/Dev-Test
+  created_by: sasiru.wijendra@ivedha.com
