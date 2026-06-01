@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: c-j-1
+  description: New Cache resource to be created
+  annotations:
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: prj-dev-platform-next
+spec:
+  type: cache
+  owner: group:default/development-team
+  system: system:default/Regression-1
+  region: us-central1
+  project: prj-dev-platform-next
+  lifecycle: regression-1__development
+  created_by: thushanthini.kulenthiran@ivedha.com
+
