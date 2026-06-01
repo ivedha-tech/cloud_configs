@@ -1,0 +1,30 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: qa-test-1-develop
+  description: Backend
+  annotations:
+    github.com/project-slug: test-platformnex/qa-test-1
+    github.com/repo-url: https://github.com/test-platformnex/qa-test-1
+    backstage.io/source-location: https://github.com/test-platformnex/qa-test-1
+    backstage.io/language: typescript
+    backstage.io/framework: gin
+    release-manager/repository-owner: group:default/guests
+    release-manager/repository: qa-test-1-develop
+    release-manager/branching-strategy: TBD
+    release-manager/auth-provider: github
+    repo-url: https://github.com/test-platformnex/qa-test-1
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-location: us-central1
+    google.com/cloudbuild-trigger-name: qa-test-1
+    google.com/cloudbuild-project-slug: 
+    google.com/gcp-projectid: 
+    google.com/cloudrun-project-slug: values.cloudbuild_project_slug || "
+    google.com/cloudrun-location: values.cloudbuild_location || "us-central1
+    argocd.platformnex.io/application-name: qa-test-1-develop
+spec:
+  type: service
+  lifecycle: branchtest__develop
+  owner: group:default/guests
+  system: system:default/BranchTest
+  created_by: sasiru.wijendra@ivedha.com
