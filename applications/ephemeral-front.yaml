@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ephemeral-front
+  description: ""
+  annotations:
+    backstage.io/source-location: https://github.com/test-platformnex/test-ephemeral.git
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  type: service
+  lifecycle: test-ephemeral-app__development
+  owner: group:default/platformnex-team
+  system: system:default/test-ephemeral-app
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/test-platformnex/test-ephemeral.git
+    backstage.io/source-vcs: github
