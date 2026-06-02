@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
   name: test-ephemeral-app
-  description: test-ephemeral-app tasks
+  description: test-ephemeral-app
   annotations:
     backstage.io/source-vcs: Github
     google.com/gcp-projectid: ""
