@@ -20,6 +20,8 @@ spec:
   lifecycle: catalog-test__development
   owner: group:default/platformnex-team
   system: system:default/Catalog-test
+  providesApis: []
+  consumesApis: []
   dependsOn: []
   dependencyOf: []
   annotations:
