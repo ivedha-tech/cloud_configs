@@ -9,6 +9,7 @@ metadata:
     google.com/cloudrun-project-slug: prj-dev-talent-nex
     google.com/cloudrun-location: us-central1
     google.com/cloudrun-service-name: talentnex-backend-dit2
+    google.com/gcp-projectid: prj-dev-talent-nex
     google.com/cloudbuild-trigger-name: TALENTNEX-BACKEND-DIT-2
     google.com/cloudbuild-project-slug: prj-dev-talent-nex
     google.com/cloudbuild-location: us-central1
@@ -16,7 +17,8 @@ spec:
   type: service
   lifecycle: dit2
   owner: group:default/talentnex-team
+  dependsOn: []
+  dependencyOf: []
   system: system:default/talentnex
-  annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/cauldron-backend
-    backstage.io/source-vcs: github
+  providesApis: []
+  consumesApis: []
