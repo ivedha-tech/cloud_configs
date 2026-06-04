@@ -2,16 +2,17 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: mic29
-  description: ''
+  description: ""
   annotations:
     backstage.io/source-location: https://github.com/test-platformnex/qa-re-1/pull/17
     backstage.io/source-vcs: Github
+    sonarqube.org/project-key: "17"
     google.com/gcp-projectid: prj-dev-platform-next
+    jira.com/project-key: PEJ
     mycompany.com/gcp-projectid: prj-dev-platform-next
     mycompany.com/gcp-provider: gcp
     mycompany.com/gcp-dataset-id: ds_billing
     mycompany.com/gcp-table-id: billing_summary_daily
-    sonarqube.org/project-key: '17'
 spec:
   type: service
   lifecycle: regression-test-13__development
