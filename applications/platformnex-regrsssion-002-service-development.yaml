@@ -19,6 +19,7 @@ metadata:
     google.com/cloudbuild-trigger-name: platformnex-regrsssion-002-service-development
     google.com/cloudbuild-project-slug: prj-platformnex-prod
     google.com/gcp-projectid: prj-platformnex-prod
+    sonarqube.org/project-key: platformnex-regrsssion-002
 spec:
   type: service
   lifecycle: development
