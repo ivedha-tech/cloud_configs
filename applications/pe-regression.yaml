@@ -6,9 +6,12 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/test-platformnex/qa-re-1
     backstage.io/source-vcs: Github
-    google.com/cloudrun-project-slug: prj-dev-platform-next
-    google.com/cloudrun-location: ds_billing
-    google.com/cloudrun-service-name: gcp_billing_export_resource_v1_01E9B5_60A8A4_E1FE52
+    google.com/cloudrun-project-slug: prj-platformnex-prod
+    google.com/cloudrun-location: us-central1
+    google.com/cloudrun-service-name: pe-regression-development
+    google.com/cloudbuild-trigger-name: pe-regression-development-trigger
+    google.com/cloudbuild-project-slug: prj-platformnex-prod
+    google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: prj-platformnex-prod
     mycompany.com/gcp-projectid: prj-platformnex-prod
     mycompany.com/gcp-provider: gcp
