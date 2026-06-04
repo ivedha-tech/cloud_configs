@@ -7,6 +7,12 @@ metadata:
     backstage.io/source-location: https://github.com/test-platformnex/qa-re-1/pull/17
     backstage.io/source-vcs: Github
     sonarqube.org/project-key: "17"
+    google.com/cloudrun-project-slug: prj-dev-platform-provisioning
+    google.com/cloudrun-location: us-central1
+    google.com/cloudrun-service-name: mic29-development
+    google.com/cloudbuild-trigger-name: mic29-development-trigger
+    google.com/cloudbuild-project-slug: prj-dev-platform-provisioning
+    google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: prj-dev-platform-next
     jira.com/project-key: PEJ
     mycompany.com/gcp-projectid: prj-dev-platform-next
