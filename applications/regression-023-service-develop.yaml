@@ -3,6 +3,7 @@ kind: Component
 metadata:
   name: regression-023-service-develop
   description: created by template
+  annotations:
     github.com/project-slug: test-platformnex/regression-023
     github.com/repo-url: https://github.com/test-platformnex/regression-023
     backstage.io/source-location: https://github.com/test-platformnex/regression-023
