@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: regression-test-app
+  description: ""
+  annotations:
+    backstage.io/source-vcs: Github
+spec:
+  owner: group:default/guests
