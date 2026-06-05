@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: dit1-discovery-pilot-01
+  description: Discovery pilot component - delete after validation
+  annotations:
+    backstage.io/source-location: url:https://github.com/ivedha-tech/discovery-pilot-placeholder
+    backstage.io/source-vcs: Github
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/guests
+  system: system:default/Test-Applications
