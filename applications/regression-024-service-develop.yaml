@@ -1,0 +1,27 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: regression-024-service-develop
+  description: created by template
+  annotations:
+    github.com/project-slug: test-platformnex/regression-024
+    github.com/repo-url: https://github.com/test-platformnex/regression-024
+    backstage.io/source-location: https://github.com/test-platformnex/regression-024
+    backstage.io/language: typescript
+    backstage.io/framework: react
+    release-manager/repository-owner: group:default/guests
+    release-manager/repository: regression-024-service-develop
+    release-manager/branching-strategy: TBD
+    release-manager/auth-provider: github
+    repo-url: https://github.com/test-platformnex/regression-024
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-location: us-central1
+    google.com/cloudbuild-trigger-name: regression-024-service-develop
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/gcp-projectid: prj-dev-platform-next
+spec:
+  type: service
+  lifecycle: branchtest__develop
+  owner: group:default/guests
+  system: system:default/BranchTest
+  created_by: sasiru.wijendra@ivedha.com
