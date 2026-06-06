@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: queue-test-5
+  description: queue resource for BranchTest
+  annotations:
+    backstage.io/source-location: https://github.com/prj-dev-platform-next
+    backstage.io/source-vcs: github
+    google.com/gcp-projectid: ""
+spec:
+  type: queue
+  region: us-central1
+  project: prj-dev-platform-next
+  owner: group:default/guests
+  system: system:default/BranchTest
+  lifecycle: branchtest__sample-ephemeral-env
