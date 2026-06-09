@@ -9,9 +9,11 @@ metadata:
     google.com/gcp-projectid: ""
 spec:
   type: service
-  lifecycle: qa
+  lifecycle: staging
   owner: group:default/scalenex-admin
   system: system:default/scalenex
+  providesApis: []
+  consumesApis: []
   dependsOn: []
   dependencyOf: []
   annotations:
