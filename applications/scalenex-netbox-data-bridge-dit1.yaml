@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: scalenex-netbox-data-bridge-dit1
+  description: ""
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/scalenex-netbox-data-bridge
+    backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
+spec:
+  type: service
+  lifecycle: dit1
+  owner: group:default/scalenex-admin
+  system: system:default/scalenex
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/scalenex-netbox-data-bridge
+    backstage.io/source-vcs: github
