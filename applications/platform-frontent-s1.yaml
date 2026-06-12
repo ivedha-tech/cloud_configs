@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: platform-frontent-s1
+  description: storage resource for platformnex
+  annotations:
+    backstage.io/source-location: https://github.com/prj-platformnex-prod
+    backstage.io/source-vcs: github
+    google.com/gcp-projectid: ""
+spec:
+  type: storage
+  region: us-central1
+  project: prj-platformnex-prod
+  owner: group:default/guests
+  system: system:default/platformnex
+  lifecycle: production
