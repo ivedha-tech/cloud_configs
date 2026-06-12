@@ -1,0 +1,27 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: greenfield-test-service-dit1
+  description: created by template
+  annotations:
+    github.com/project-slug: ivedha-tech/greenfield-test
+    github.com/repo-url: https://github.com/ivedha-tech/greenfield-test
+    backstage.io/source-location: https://github.com/ivedha-tech/greenfield-test
+    backstage.io/language: typescript
+    backstage.io/framework: react
+    release-manager/repository-owner: group:default/platformnex-admin
+    release-manager/repository: greenfield-test-service-dit1
+    release-manager/branching-strategy: TBD
+    release-manager/auth-provider: github
+    repo-url: https://github.com/ivedha-tech/greenfield-test
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-location: us-central1
+    google.com/cloudbuild-trigger-name: greenfield-test-service-dit1
+    google.com/cloudbuild-project-slug: prj-platformnex-prod
+    google.com/gcp-projectid: prj-platformnex-prod
+spec:
+  type: service
+  lifecycle: dit1
+  owner: group:default/platformnex-admin
+  system: system:default/platformnex
+  created_by: github_platformnex@ivedha.com
