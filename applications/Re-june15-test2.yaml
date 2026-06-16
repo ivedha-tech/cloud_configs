@@ -10,6 +10,10 @@ metadata:
     google.com/cloudrun-location: ""
     google.com/cloudrun-service-name: ""
     google.com/gcp-projectid: prj-dev-platform-provisioning
+    mycompany.com/gcp-projectid: prj-dev-platform-provisioning
+    mycompany.com/gcp-provider: gcp
+    mycompany.com/gcp-dataset-id: ds_billing
+    mycompany.com/gcp-table-id: billing_summary_daily
 spec:
   type: service
   lifecycle: regression-test__development
