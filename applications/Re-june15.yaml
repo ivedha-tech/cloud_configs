@@ -9,19 +9,16 @@ metadata:
     google.com/cloudrun-project-slug: prj-dev-platform-next
     google.com/cloudrun-location: us-central1
     google.com/cloudrun-service-name: platformnex-v2-backend-qa1
+    google.com/gcp-projectid: prj-dev-platform-next
     google.com/cloudbuild-trigger-name: platformnex-V2-backend-DIT
     google.com/cloudbuild-project-slug: prj-dev-platform-next
     google.com/cloudbuild-location: us-central1
-    google.com/gcp-projectid: ""
 spec:
   type: service
   lifecycle: regression-test__production
   owner: group:default/development-team
+  dependsOn: []
+  dependencyOf: []
   system: system:default/Regression-test
   providesApis: []
   consumesApis: []
-  dependsOn: []
-  dependencyOf: []
-  annotations:
-    backstage.io/source-location: https://github.com/test-platformnex/qa-re-1
-    backstage.io/source-vcs: github
