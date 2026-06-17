@@ -16,9 +16,11 @@ metadata:
     google.com/gcp-projectid: prj-dev-platform-next
 spec:
   type: service
-  lifecycle: development
+  lifecycle: marketplace__development
   owner: group:default/platformnex-admin
   system: system:default/Marketplace
+  dependsOn: []
+  dependencyOf: []
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/platformnex-frontend
     backstage.io/source-vcs: github
