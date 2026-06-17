@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: storgejune17
+  description: storage resource for Platformnex-Regression
+  annotations:
+    backstage.io/source-location: https://github.com/prj-dev-platform-provisioning
+    backstage.io/source-vcs: github
+    google.com/gcp-projectid: ""
+spec:
+  type: storage
+  region: us-central1
+  project: prj-dev-platform-provisioning
+  owner: group:default/guests
+  system: system:default/Platformnex-Regression
+  lifecycle: platformnex-regression__staging
