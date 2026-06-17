@@ -16,9 +16,11 @@ metadata:
     google.com/gcp-projectid: prj-dev-platform-next
 spec:
   type: service
-  lifecycle: uat
+  lifecycle: platform-engineering__uat
   owner: group:default/platformnex-admin
   system: system:default/Platform-Engineering
+  dependsOn: []
+  dependencyOf: []
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/platformnex-frontend
     backstage.io/source-vcs: github
