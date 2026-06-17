@@ -7,9 +7,9 @@ metadata:
     backstage.io/source-vcs: Github
     google.com/gcp-projectid: ""
 spec:
-  type: cloud_sql
+  type: storage
   owner: group:default/platformnex-admin
   system: system:default/Marketplace
   region: us-central1
   project: prj-dev-platform-next
-  lifecycle: development
+  lifecycle: marketplace__development
