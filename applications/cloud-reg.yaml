@@ -5,13 +5,11 @@ metadata:
   description: Resource cloud-reg generated from template
   annotations:
     backstage.io/source-vcs: Github
-    google.com/gcp-projectid: prj-dev-platform-next
+    google.com/gcp-projectid: ""
 spec:
   type: storage
   owner: group:default/platformnex-admin
   system: system:default/CloudForge
   region: us-central1
   project: prj-dev-platform-next
-  lifecycle: development
-  created_by: sakun.weerasinghe@ivedha.com
-
+  lifecycle: cloudforge__development
