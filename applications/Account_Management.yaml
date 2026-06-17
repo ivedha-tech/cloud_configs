@@ -6,9 +6,10 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/chamil/Milestones-PM
     backstage.io/source-vcs: Github
+    google.com/gcp-projectid: ""
 spec:
   type: service
-  lifecycle: development
+  lifecycle: salesforce__development
   owner: group:default/platformnex-admin
   system: system:default/Salesforce
   dependsOn: []
