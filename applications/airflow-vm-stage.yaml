@@ -13,7 +13,7 @@ metadata:
     google.com/gcp-projectid: prj-dev-platform-next
 spec:
   type: service
-  lifecycle: development
+  lifecycle: airflow-platformnex__development
   owner: group:default/platform-admin
   system: system:default/Airflow-PlatformNEX
   dependsOn: []
