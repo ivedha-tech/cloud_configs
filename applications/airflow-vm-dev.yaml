@@ -8,13 +8,12 @@ metadata:
     backstage.io/source-vcs: Github
     sonarqube.org/project-key: platformnex
     google.com/cloudbuild-trigger-name: Platformnex-Airflow-Deploy
-    google.com/cloudbuild-project-slug: " prj-prd-cnb-workload"
+    google.com/cloudbuild-project-slug: prj-prd-cnb-workload
     google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: prj-dev-platform-next
-    jira.com/project-key: PEJ
 spec:
   type: service
-  lifecycle: development
+  lifecycle: airflow-platformnex__development
   owner: group:default/platform-admin
   system: system:default/Airflow-PlatformNEX
   dependsOn: []
