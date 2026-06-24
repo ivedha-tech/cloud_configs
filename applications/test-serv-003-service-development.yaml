@@ -1,0 +1,38 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-serv-003-service-development
+  description: created by template
+  annotations:
+    github.com/project-slug: test-platformnex/test-serv-003
+    github.com/repo-url: https://github.com/test-platformnex/test-serv-003
+    backstage.io/source-location: https://github.com/test-platformnex/test-serv-003
+    backstage.io/language: typescript
+    backstage.io/framework: react
+    release-manager/repository-owner: group:default/development-team
+    release-manager/repository: test-serv-003-service-development
+    release-manager/branching-strategy: TBD
+    release-manager/auth-provider: github
+    repo-url: https://github.com/test-platformnex/test-serv-003
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-location: us-central1
+    google.com/cloudbuild-trigger-name: test-serv-003-service-development
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/gcp-projectid: prj-dev-platform-next
+    google.com/cloudrun-project-slug: values.cloudbuild_project_slug || "
+    google.com/cloudrun-location: values.cloudbuild_location || "us-central1
+    platformnex.io/deployment-destination: 
+    argocd.platformnex.io/instance: 
+    argocd.platformnex.io/project: 
+    argocd.platformnex.io/namespace: 
+    argocd.platformnex.io/destination-namespace: 
+    argocd.platformnex.io/application-name: 
+    gitops.platformnex.io/repo-url: 
+    gitops.platformnex.io/branch: 
+    gitops.platformnex.io/environment-path: 
+spec:
+  type: service
+  lifecycle: regression-test__development
+  owner: group:default/development-team
+  system: system:default/Regression-test
+  created_by: sasiru.wijendra@ivedha.com
