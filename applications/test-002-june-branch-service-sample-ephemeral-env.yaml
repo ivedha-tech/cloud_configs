@@ -1,0 +1,28 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-002-june-branch-service-sample-ephemeral-env
+  description: created by template
+  annotations:
+    github.com/project-slug: test-platformnex/test-002-june-branch
+    github.com/repo-url: https://github.com/test-platformnex/test-002-june-branch
+    backstage.io/source-location: https://github.com/test-platformnex/test-002-june-branch
+    backstage.io/language: typescript
+    backstage.io/framework: react
+    release-manager/repository-owner: group:default/guests
+    release-manager/repository: test-002-june-branch-service-sample-ephemeral-env
+    release-manager/branching-strategy: TBD
+    release-manager/auth-provider: github
+    repo-url: https://github.com/test-platformnex/test-002-june-branch
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-location: us-central1
+    google.com/cloudbuild-trigger-name: test-002-june-branch-service-sample-ephemeral-env
+    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/gcp-projectid: prj-dev-platform-next
+    platformnex.io/deployment-destination: serverless
+spec:
+  type: service
+  lifecycle: branchtest__sample-ephemeral-env
+  owner: group:default/guests
+  system: system:default/BranchTest
+  created_by: aathif.azeez@ivedha.com
