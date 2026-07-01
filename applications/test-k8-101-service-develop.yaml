@@ -18,6 +18,14 @@ metadata:
     google.com/cloudbuild-location: us-central1
     google.com/cloudbuild-trigger-name: test-k8-101-service
     platformnex.io/deployment-destination: kubernetes
+    argocd.platformnex.io/instance: 8a97a7b1-6b14-467b-bb9d-9dae1024670e
+    argocd.platformnex.io/project: platformnex-gitops-test
+    argocd.platformnex.io/namespace: argocd-test
+    argocd.platformnex.io/destination-namespace: test-k8-101-service-develop
+    argocd.platformnex.io/application-name: test-k8-101-service-develop
+    gitops.platformnex.io/repo-url: https://github.com/ivedha-tech/platformnex-gitops-test.git
+    gitops.platformnex.io/branch: main
+    gitops.platformnex.io/environment-path: apps/test-k8-101-service/overlays/develop
 spec:
   type: service
   lifecycle: branchtest__develop
