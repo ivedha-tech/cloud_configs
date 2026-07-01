@@ -1,0 +1,26 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-k8-101-service-develop
+  description: Backend
+  annotations:
+    github.com/project-slug: test-platformnex/test-k8-101
+    github.com/repo-url: https://github.com/test-platformnex/test-k8-101
+    backstage.io/source-location: https://github.com/test-platformnex/test-k8-101
+    backstage.io/language: typescript
+    backstage.io/framework: gin
+    release-manager/repository-owner: group:default/guests
+    release-manager/repository: test-k8-101-service-develop
+    release-manager/branching-strategy: TBD
+    release-manager/auth-provider: github
+    repo-url: https://github.com/test-platformnex/test-k8-101
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-location: us-central1
+    google.com/cloudbuild-trigger-name: test-k8-101-service
+    platformnex.io/deployment-destination: kubernetes
+spec:
+  type: service
+  lifecycle: branchtest__develop
+  owner: group:default/guests
+  system: system:default/BranchTest
+  created_by: sasiru.wijendra@ivedha.com
