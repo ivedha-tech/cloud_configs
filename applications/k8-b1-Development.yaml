@@ -1,0 +1,27 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: k8-b1-Development
+  description: Backend
+  annotations:
+    github.com/project-slug: test-platformnex/k8s-b1
+    github.com/repo-url: https://github.com/test-platformnex/k8s-b1
+    backstage.io/source-location: https://github.com/test-platformnex/k8s-b1
+    backstage.io/language: typescript
+    backstage.io/framework: gin
+    release-manager/repository-owner: group:default/platformnex-team
+    release-manager/repository: k8-b1-Development
+    release-manager/branching-strategy: TBD
+    release-manager/auth-provider: github
+    repo-url: https://github.com/test-platformnex/k8s-b1
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-location: us-central1
+    google.com/cloudbuild-trigger-name: k8-b1
+    platformnex.io/deployment-destination: kubernetes
+    argocd.platformnex.io/application-name: k8-b1-Development
+spec:
+  type: service
+  lifecycle: platformnex-test__development
+  owner: group:default/platformnex-team
+  system: system:default/platformnex-test
+  created_by: aathif.azeez@ivedha.com
