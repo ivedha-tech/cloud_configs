@@ -6,6 +6,7 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/test-platformnex/qa-re-1
     backstage.io/source-vcs: Github
+    sonarqube.org/project-key: pej
     google.com/cloudrun-project-slug: prj-dev-platform-next
     google.com/cloudrun-location: us-central1
     google.com/cloudrun-service-name: test-tt-staging
@@ -21,11 +22,8 @@ spec:
   type: service
   lifecycle: regression-test__development
   owner: group:default/development-team
+  dependsOn: []
+  dependencyOf: []
   system: system:default/Regression-test
   providesApis: []
   consumesApis: []
-  dependsOn: []
-  dependencyOf: []
-  annotations:
-    backstage.io/source-location: https://github.com/test-platformnex/qa-re-1
-    backstage.io/source-vcs: github
