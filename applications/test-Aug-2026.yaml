@@ -11,10 +11,10 @@ metadata:
     google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: prj-dev-platform-next
 spec:
-  type: service
-  lifecycle: branchtest__develop
+  type: website
+  lifecycle: dev-test__development
   owner: group:default/guests
-  system: system:default/BranchTest
+  system: system:default/Dev-Test
   dependsOn: []
   dependencyOf: []
   annotations:
