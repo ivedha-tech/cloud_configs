@@ -4,32 +4,24 @@ metadata:
   name: test-k8-101-service-develop
   description: Backend
   annotations:
+    backstage.io/source-location: https://github.com/test-platformnex/test-k8-101
+    backstage.io/source-vcs: Github
     github.com/project-slug: test-platformnex/test-k8-101
     github.com/repo-url: https://github.com/test-platformnex/test-k8-101
-    backstage.io/source-location: https://github.com/test-platformnex/test-k8-101
-    backstage.io/language: typescript
-    backstage.io/framework: gin
-    release-manager/repository-owner: group:default/guests
-    release-manager/repository: test-k8-101-service-develop
-    release-manager/branching-strategy: TBD
-    release-manager/auth-provider: github
-    repo-url: https://github.com/test-platformnex/test-k8-101
-    backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: test-k8-101-service
     google.com/cloudbuild-project-slug: prj-dev-platform-next
     google.com/cloudbuild-location: us-central1
-    google.com/cloudbuild-trigger-name: test-k8-101-service
-    platformnex.io/deployment-destination: kubernetes
-    argocd.platformnex.io/instance: 8a97a7b1-6b14-467b-bb9d-9dae1024670e
-    argocd.platformnex.io/project: platformnex-gitops-test
-    argocd.platformnex.io/namespace: argocd-test
-    argocd.platformnex.io/destination-namespace: test-k8-101-service-develop
-    argocd.platformnex.io/application-name: test-k8-101-service-develop
-    gitops.platformnex.io/repo-url: https://github.com/ivedha-tech/platformnex-gitops-test.git
-    gitops.platformnex.io/branch: main
-    gitops.platformnex.io/environment-path: apps/test-k8-101-service/overlays/develop
+    google.com/gcp-projectid: prj-dev-platform-next
+    mycompany.com/gcp-projectid: prj-dev-platform-next
+    mycompany.com/gcp-provider: gcp
+    mycompany.com/gcp-dataset-id: ds_billing
+    mycompany.com/gcp-table-id: billing_summary_daily
 spec:
   type: service
   lifecycle: branchtest__develop
   owner: group:default/guests
+  dependsOn: []
+  dependencyOf: []
   system: system:default/BranchTest
-  created_by: sasiru.wijendra@ivedha.com
+  providesApis: []
+  consumesApis: []
