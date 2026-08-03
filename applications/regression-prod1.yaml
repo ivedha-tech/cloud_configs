@@ -6,14 +6,13 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/test-platformnex/qa-re-1
     backstage.io/source-vcs: Github
-    google.com/cloudrun-project-slug: ""
-    google.com/cloudrun-location: ""
-    google.com/cloudrun-service-name: ""
-    google.com/gcp-projectid: prj-dev-platform-next
-    mycompany.com/gcp-projectid: prj-dev-platform-next
-    mycompany.com/gcp-provider: gcp
-    mycompany.com/gcp-dataset-id: ds_billing
-    mycompany.com/gcp-table-id: billing_summary_daily
+    google.com/cloudrun-project-slug: prj-dev-platform-provisioning
+    google.com/cloudrun-location: us-central1
+    google.com/cloudrun-service-name: regression-prod1-development
+    google.com/cloudbuild-trigger-name: qa-re-1-feature-push
+    google.com/cloudbuild-project-slug: prj-dev-platform-provisioning
+    google.com/cloudbuild-location: us-central1
+    google.com/gcp-projectid: prj-dev-platform-provisioning
 spec:
   type: service
   lifecycle: platformnex-regression__development
