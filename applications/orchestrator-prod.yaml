@@ -1,15 +1,22 @@
 apiVersion: backstage.io/v1alpha1
-kind: Resource
+kind: Component
 metadata:
   name: orchestrator-prod
-  description: This the orchestrator prod DB
+  description: ""
   annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/cloud_configs
-    backstage.io/source-vcs: github
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-salesforce-orchestrator
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: cb-forcenex-orchestrator-prod-prod
+    google.com/cloudbuild-project-slug: ivedha-mgmt-env-prod
+    google.com/cloudbuild-location: us-central1
+    google.com/gcp-projectid: ""
 spec:
-  type: cloud_sql
-  owner: group:default/platformnex-admin
-  system: system:default/platformnex
-  region: us-central1
-  project: "prj-platformnex-prod  "
+  type: service
   lifecycle: production
+  owner: group:default/platformnex-salesforce-team
+  system: system:default/platformnex-salesforce
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-salesforce-orchestrator
+    backstage.io/source-vcs: github
