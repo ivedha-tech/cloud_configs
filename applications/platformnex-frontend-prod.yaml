@@ -10,11 +10,8 @@ metadata:
     artifact-registry/repository: us-central1-docker.pkg.dev/prj-platformnex-prod/platformnex/platformnex-v2-frontend-prod
     pulumi.com/project-slug: mcmuralishclint/pulumi-cicd/dev
     pulumi.com/orga-slug: mcmuralishclint
-    google.com/cloudrun-project-slug: prj-platformnex-prod
-    google.com/cloudrun-location: us-central1
-    google.com/cloudrun-service-name: platformnex-v2-frontend-prod
-    google.com/cloudbuild-trigger-name: int-prom-prod-frontend-1
-    google.com/cloudbuild-project-slug: prj-platformnex-prod
+    google.com/cloudbuild-trigger-name: cb-platformnex-frontend-prod-prod
+    google.com/cloudbuild-project-slug: ivedha-mgmt-env-prod
     google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: prj-platformnex-prod
     jira.com/project-key: PEJ
