@@ -6,14 +6,19 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/security-service-backend
     backstage.io/source-vcs: Github
-    google.com/cloudbuild-trigger-name: security-service-backend-DIT2
-    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-trigger-name: cb-security-service-backend-dit2-nonprod
+    google.com/cloudbuild-project-slug: ivedha-mgmt-env-nonprod
     google.com/cloudbuild-location: us-central1
+    google.com/gcp-projectid: ""
 spec:
   type: service
   lifecycle: dit2
   owner: group:default/platformnex-admin
   system: system:default/Security-Service
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/security-service-backend
     backstage.io/source-vcs: github
