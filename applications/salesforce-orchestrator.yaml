@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: salesforce-orchestrator
+  description: ""
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-salesforce-orchestrator
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: cb-forcenex-orchestrator-prod-prod
+    google.com/cloudbuild-project-slug: ivedha-mgmt-env-prod
+    google.com/cloudbuild-location: us-central1
+    google.com/gcp-projectid: ""
+spec:
+  type: service
+  lifecycle: production
+  owner: group:default/platformnex-salesforce-team
+  system: system:default/platformnex-salesforce
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-salesforce-orchestrator
+    backstage.io/source-vcs: github
