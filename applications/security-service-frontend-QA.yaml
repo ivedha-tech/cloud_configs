@@ -12,7 +12,7 @@ metadata:
     google.com/gcp-projectid: ""
 spec:
   type: service
-  lifecycle: staging
+  lifecycle: qa
   owner: group:default/platformnex-admin
   system: system:default/Security-Service
   providesApis: []
