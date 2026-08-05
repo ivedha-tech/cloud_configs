@@ -7,7 +7,7 @@ metadata:
     backstage.io/source-location: https://github.com/ivedha-tech/platform-orchestrator-core
     backstage.io/source-vcs: Github
     google.com/cloudbuild-trigger-name: cb-platformnex-orchestrator-core-qa-nonprod
-    google.com/cloudbuild-project-slug: " ivedha-mgmt-env-nonprod"
+    google.com/cloudbuild-project-slug: ivedha-mgmt-env-nonprod
     google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: prj-dev-platform-next
     jira.com/project-key: PLATNEX
