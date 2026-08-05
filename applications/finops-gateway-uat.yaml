@@ -6,11 +6,8 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/platformnex-finops-gateway
     backstage.io/source-vcs: Github
-    google.com/cloudrun-project-slug: prj-dev-platform-next
-    google.com/cloudrun-location: us-central1
-    google.com/cloudrun-service-name: platformnex-finops-gateway-uat1
-    google.com/cloudbuild-trigger-name: platformnex-V2-finops-gateway-UAT-1
-    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-trigger-name: cb-platformnex-finops-gateway-uat-nonprod
+    google.com/cloudbuild-project-slug: ivedha-mgmt-env-nonprod
     google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: prj-dev-platform-next
     jira.com/project-key: PLATNEX
@@ -19,6 +16,10 @@ spec:
   lifecycle: uat
   owner: group:default/platformnex-admin
   system: system:default/platformnex
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/platformnex-finops-gateway
     backstage.io/source-vcs: github
