@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: sre-gateway-uat
+  description: ""
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-gateway
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: cb-platformnex-sre-gateway-uat-nonprod
+    google.com/cloudbuild-project-slug: ivedha-mgmt-env-nonprod
+    google.com/cloudbuild-location: us-central1
+    google.com/gcp-projectid: ""
+spec:
+  type: service
+  lifecycle: uat
+  owner: group:default/platformnex-admin
+  system: system:default/platformnex
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-gateway
+    backstage.io/source-vcs: github
