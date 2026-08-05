@@ -6,8 +6,8 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/security-service-frontend
     backstage.io/source-vcs: Github
-    google.com/cloudbuild-trigger-name: security-service-frontend-PROD
-    google.com/cloudbuild-project-slug: prj-prd-service-nex
+    google.com/cloudbuild-trigger-name: cb-security-service-frontend-prod-prod
+    google.com/cloudbuild-project-slug: ivedha-mgmt-env-prod
     google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: ""
 spec:
@@ -15,6 +15,8 @@ spec:
   lifecycle: production
   owner: group:default/platformnex-admin
   system: system:default/Security-Service
+  providesApis: []
+  consumesApis: []
   dependsOn: []
   dependencyOf: []
   annotations:
