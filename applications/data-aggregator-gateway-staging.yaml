@@ -4,7 +4,7 @@ metadata:
   name: data-aggregator-gateway-staging
   description: Platformnex Data Aggregator Gateway
   annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-data-aggregator-gateway
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-gateway
     backstage.io/source-vcs: Github
     google.com/cloudbuild-trigger-name: cb-platformnex-data-aggregator-gateway-qa-nonprod
     google.com/cloudbuild-project-slug: " ivedha-mgmt-env-nonprod"
@@ -25,5 +25,5 @@ spec:
   dependsOn: []
   dependencyOf: []
   annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-data-aggregator-gateway
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-gateway
     backstage.io/source-vcs: github
