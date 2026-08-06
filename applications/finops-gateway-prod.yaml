@@ -4,7 +4,7 @@ metadata:
   name: finops-gateway-prod
   description: finops gateway instance
   annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-finops-gateway
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-gateway
     backstage.io/source-vcs: Github
     sonarqube.org/project-key: platformnex-finops-gateway
     google.com/cloudbuild-trigger-name: cb-platformnex-finops-gateway-prod-prod
@@ -22,5 +22,5 @@ spec:
   dependsOn: []
   dependencyOf: []
   annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-finops-gateway
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-gateway
     backstage.io/source-vcs: github
