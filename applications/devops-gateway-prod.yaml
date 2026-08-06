@@ -4,7 +4,7 @@ metadata:
   name: devops-gateway-prod
   description: devops gateway instance prod environment
   annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-devops-gateway
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-gateway
     backstage.io/source-vcs: Github
     sonarqube.org/project-key: platformnex-devops-gateway
     google.com/cloudrun-project-slug: prj-platformnex-prod
@@ -29,5 +29,5 @@ spec:
   dependsOn: []
   dependencyOf: []
   annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-devops-gateway
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-gateway
     backstage.io/source-vcs: github
