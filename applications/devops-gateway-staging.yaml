@@ -4,7 +4,7 @@ metadata:
   name: devops-gateway-staging
   description: devops gateway instance staging environment
   annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-devops-gateway
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-gateway
     backstage.io/source-vcs: Github
     sonarqube.org/project-key: platformnex2
     google.com/cloudbuild-trigger-name: cb-platformnex-devops-gateway-qa-nonprod
@@ -26,5 +26,5 @@ spec:
   dependsOn: []
   dependencyOf: []
   annotations:
-    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-devops-gateway
+    backstage.io/source-location: https://github.com/ivedha-tech/platformnex-gateway
     backstage.io/source-vcs: github
