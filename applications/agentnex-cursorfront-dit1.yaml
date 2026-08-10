@@ -6,11 +6,11 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/agentnex-cursorfront
     backstage.io/source-vcs: Github
-    google.com/cloudbuild-trigger-name: agentnex-cursorfront-DIT-1
-    google.com/cloudbuild-project-slug: prj-agentnex-nonprod
+    sonarqube.org/project-key: agentnex-cursorfront
+    google.com/cloudbuild-trigger-name: cb-agentnex-cursorfront-dit1-nonprod
+    google.com/cloudbuild-project-slug: ivedha-mgmt-env-nonprod
     google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: prj-dev-platform-next
-    sonarqube.org/project-key: agentnex-cursorfront
 spec:
   type: service
   lifecycle: dit1
