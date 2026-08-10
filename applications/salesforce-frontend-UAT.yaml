@@ -6,14 +6,19 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/platformnex-salesforce-frontend
     backstage.io/source-vcs: Github
-    google.com/cloudbuild-trigger-name: platformnex-salesforce-frontend-UAT-1
-    google.com/cloudbuild-project-slug: prj-dev-platform-next
+    google.com/cloudbuild-trigger-name: cb-forcenex-frontend-uat-nonprod
+    google.com/cloudbuild-project-slug: ivedha-mgmt-env-nonprod
     google.com/cloudbuild-location: us-central1
+    google.com/gcp-projectid: ""
 spec:
   type: service
   lifecycle: uat
   owner: group:default/platformnex-salesforce-team
   system: system:default/platformnex-salesforce
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/platformnex-salesforce-frontend
     backstage.io/source-vcs: github
