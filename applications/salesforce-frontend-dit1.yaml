@@ -6,7 +6,7 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/platformnex-salesforce-frontend
     backstage.io/source-vcs: Github
-    google.com/cloudbuild-trigger-name: platformnex-salesforce-frontend-DIT-1
+    google.com/cloudbuild-trigger-name: cb-forcenex-frontend-dit1-nonprod
     google.com/cloudbuild-project-slug: ivedha-mgmt-env-nonprod
     google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: prj-dev-platform-next
