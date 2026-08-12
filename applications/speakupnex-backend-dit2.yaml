@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: speakupnex-backend-dit2
+  description: SpeakUpNex Rust API gateway (Axum). Reporter intake, staff triage
+    APIs, Postgres, Salesforce CaseStore, GCS blob storage, malware scan
+    (ClamAV). OpenAPI on port 8787; migrations on pod start.
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/speakupnex
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: cb-speakupnex-backend-dit2-nonprod
+    google.com/cloudbuild-project-slug: ivedha-mgmt-env-nonprod
+    google.com/cloudbuild-location: us-central1
+spec:
+  type: service
+  lifecycle: dit2
+  owner: group:default/platformnex-salesforce-team
+  system: system:default/speakupnex
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/speakupnex
+    backstage.io/source-vcs: github
