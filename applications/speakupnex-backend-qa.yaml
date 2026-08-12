@@ -17,8 +17,12 @@ spec:
   lifecycle: qa
   owner: group:default/platformnex-salesforce-team
   system: system:default/speakupnex
+  providesApis: []
+  consumesApis: []
   dependsOn: []
-  dependencyOf: []
+  dependencyOf:
+    - component:default/speakupnex-reporter-qa
+    - component:default/speakupnex-staff-qa
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/speakupnex
     backstage.io/source-vcs: github
