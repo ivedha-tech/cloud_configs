@@ -11,11 +11,18 @@ metadata:
     google.com/cloudbuild-trigger-name: cb-speakupnex-backend-uat-nonprod
     google.com/cloudbuild-project-slug: ivedha-mgmt-env-nonprod
     google.com/cloudbuild-location: us-central1
+    google.com/gcp-projectid: ""
 spec:
   type: service
   lifecycle: uat
   owner: group:default/platformnex-salesforce-team
   system: system:default/speakupnex
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf:
+    - component:default/speakupnex-reporter-uat
+    - component:default/speakupnex-staff-uat
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/speakupnex
     backstage.io/source-vcs: github
