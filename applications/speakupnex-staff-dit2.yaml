@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: speakupnex-staff-dit2
+  description: SpeakUpNex staff triage console (React 19). Investigator queue,
+    case detail, risk/disposition, analytics. Nginx SPA on port 8080;
+    same-origin /api/ proxy to backend (staff auth/CSRF).
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/speakupnex
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: cb-speakupnex-staff-dit2-nonprod
+    google.com/cloudbuild-project-slug: ivedha-mgmt-env-nonprod
+    google.com/cloudbuild-location: us-central1
+spec:
+  type: website
+  lifecycle: dit2
+  owner: group:default/platformnex-salesforce-team
+  system: system:default/speakupnex
+  dependsOn:
+    - component:default/speakupnex-backend-dit2
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/speakupnex
+    backstage.io/source-vcs: github
