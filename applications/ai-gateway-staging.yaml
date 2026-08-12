@@ -14,6 +14,7 @@ metadata:
     mycompany.com/gcp-provider: gcp
     mycompany.com/gcp-dataset-id: ds_billing
     mycompany.com/gcp-table-id: billing_summary_daily
+    sonarqube.org/project-key: platformnex-ai-gateway
 spec:
   type: service
   lifecycle: qa
