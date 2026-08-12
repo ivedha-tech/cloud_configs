@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: speakupnex-reporter-dit2
+  description: SpeakUpNex public reporter web app (React 19). Anonymous
+    fraud/waste hotline intake chatbot
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/speakupnex
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: cb-speakupnex-reporter-dit2-nonprod
+    google.com/cloudbuild-project-slug: ivedha-mgmt-env-nonprod
+    google.com/cloudbuild-location: us-central1
+spec:
+  type: website
+  lifecycle: dit2
+  owner: group:default/platformnex-salesforce-team
+  system: system:default/speakupnex
+  dependsOn:
+    - component:default/speakupnex-backend-dit2
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/speakupnex
+    backstage.io/source-vcs: github
