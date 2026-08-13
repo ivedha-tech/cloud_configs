@@ -12,10 +12,13 @@ metadata:
     google.com/gcp-projectid: prj-dev-platform-next
 spec:
   type: service
-  lifecycle: development
+  lifecycle: dit2
   owner: group:default/platformnex-salesforce-team
-  dependsOn: []
-  dependencyOf: []
   system: system:default/platformnex-salesforce
   providesApis: []
   consumesApis: []
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/internal-airflow-dags.git
+    backstage.io/source-vcs: github
