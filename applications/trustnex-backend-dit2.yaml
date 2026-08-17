@@ -6,14 +6,11 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/trustnex-backend
     backstage.io/source-vcs: Github
-    google.com/cloudrun-project-slug: prj-trustnex-nonprod
-    google.com/cloudrun-location: us-central1
-    google.com/cloudrun-service-name: trustnex-backend-dit2
-    google.com/cloudbuild-trigger-name: Trustnex-Backend-build-deploy-dit-2
-    google.com/cloudbuild-project-slug: prj-trustnex-nonprod
-    google.com/cloudbuild-location: us-central1
-    google.com/gcp-projectid: ''
     sonarqube.org/project-key: trustnex-backend
+    google.com/cloudbuild-trigger-name: cb-trustnex-backend-dit2-nonprod
+    google.com/cloudbuild-project-slug: ivedha-mgmt-env-nonprod
+    google.com/cloudbuild-location: us-central1
+    google.com/gcp-projectid: ""
 spec:
   type: service
   lifecycle: dit2
