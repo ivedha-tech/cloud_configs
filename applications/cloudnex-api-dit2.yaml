@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: cloudnex-api-dit2
+  description: ""
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/cloudnex
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: cb-cloudnex-api-dit2-nonprod
+    google.com/cloudbuild-project-slug: ivedha-mgmt-env-nonprod
+    google.com/cloudbuild-location: us-central1
+    google.com/gcp-projectid: ""
+spec:
+  type: service
+  lifecycle: dit2
+  owner: group:default/cloudnex-team
+  system: system:default/cloudnex
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/cloudnex
+    backstage.io/source-vcs: github
