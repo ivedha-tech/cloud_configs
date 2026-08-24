@@ -6,11 +6,8 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/cauldron-frontend
     backstage.io/source-vcs: Github
-    google.com/cloudrun-project-slug: prj-dev-talent-nex
-    google.com/cloudrun-location: us-central1
-    google.com/cloudrun-service-name: talentnex-frontend-dit2
-    google.com/cloudbuild-trigger-name: TALENTNEX-FRONTEND-DIT-2
-    google.com/cloudbuild-project-slug: prj-dev-talent-nex
+    google.com/cloudbuild-trigger-name: cb-cauldron-frontend-dit2-nonprod
+    google.com/cloudbuild-project-slug: ivedha-mgmt-env-nonprod
     google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: ""
 spec:
