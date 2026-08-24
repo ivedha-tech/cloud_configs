@@ -7,7 +7,7 @@ metadata:
     backstage.io/source-location: https://github.com/ivedha-tech/talentnex-libreoffice
     backstage.io/source-vcs: Github
     google.com/cloudbuild-trigger-name: cb-cauldron-libreoffice-prod-prod
-    google.com/cloudbuild-project-slug: ivedha-mgmt-env-nonprod
+    google.com/cloudbuild-project-slug: ivedha-mgmt-env-prod
     google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: ""
 spec:
@@ -15,6 +15,8 @@ spec:
   lifecycle: production
   owner: group:default/talentnex-team
   system: system:default/talentnex
+  providesApis: []
+  consumesApis: []
   dependsOn: []
   dependencyOf: []
   annotations:
