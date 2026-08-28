@@ -6,8 +6,8 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/workbeam-backend
     backstage.io/source-vcs: Github
-    google.com/cloudbuild-trigger-name: WORKBEAM-BACKEND-DIT-1
-    google.com/cloudbuild-project-slug: prj-dev-talent-nex
+    google.com/cloudbuild-trigger-name: cb-workbeam-api-dit1-nonprod
+    google.com/cloudbuild-project-slug: ivedha-mgmt-env-nonprod
     google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: ""
 spec:
@@ -15,6 +15,8 @@ spec:
   lifecycle: dit1
   owner: group:default/talentnex-team
   system: system:default/Workbeam
+  providesApis: []
+  consumesApis: []
   dependsOn: []
   dependencyOf: []
   annotations:
