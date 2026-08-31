@@ -6,8 +6,8 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/scalenex-db-data-bridge
     backstage.io/source-vcs: Github
-    google.com/cloudbuild-trigger-name: build-gpu-metrics-exporter
-    google.com/cloudbuild-project-slug: prj-scalenex-nonprod
+    google.com/cloudbuild-trigger-name: cb-scalenex-img-gpu-metrics-exporter-nonprod
+    google.com/cloudbuild-project-slug: ivedha-mgmt-env-nonprod
     google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: prj-scalenex-nonprod
 spec:
