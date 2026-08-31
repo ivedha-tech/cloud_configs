@@ -6,12 +6,17 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/scalenex-netbox-data-bridge
     backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: cb-scalenex-img-netbox-data-bridge-nonprod
+    google.com/cloudbuild-project-slug: ivedha-mgmt-env-nonprod
+    google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: ""
 spec:
   type: service
   lifecycle: dit2
   owner: group:default/scalenex-admin
   system: system:default/scalenex
+  providesApis: []
+  consumesApis: []
   dependsOn: []
   dependencyOf: []
   annotations:
