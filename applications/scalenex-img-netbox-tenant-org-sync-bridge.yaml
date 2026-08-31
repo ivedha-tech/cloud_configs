@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: scalenex-img-netbox-tenant-org-sync-bridge
+  description: ""
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/scalenex-netbox-tenant-org-sync-bridge
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: cb-scalenex-img-netbox-tenant-org-sync-bridge-nonprod
+    google.com/cloudbuild-project-slug: ivedha-mgmt-env-nonprod
+    google.com/cloudbuild-location: us-central1
+    google.com/gcp-projectid: ""
+spec:
+  type: service
+  lifecycle: dit2
+  owner: group:default/scalenex-admin
+  system: system:default/scalenex
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/scalenex-netbox-tenant-org-sync-bridge
+    backstage.io/source-vcs: github
