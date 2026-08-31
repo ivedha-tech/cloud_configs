@@ -7,20 +7,20 @@ metadata:
     backstage.io/source-location: https://github.com/ivedha-tech/scalenex-ui
     backstage.io/source-vcs: Github
     sonarqube.org/project-key: scalenex-ui
-    google.com/cloudrun-project-slug: prj-scalenex-nonprod
-    google.com/cloudrun-location: us-central1
-    google.com/cloudrun-service-name: scalenex-app-uat
-    google.com/gcp-projectid: prj-scalenex-nonprod
-    google.com/cloudbuild-trigger-name: scalenex-app-build-deploy-uat
-    google.com/cloudbuild-project-slug: prj-scalenex-nonprod
+    google.com/cloudbuild-trigger-name: cb-scalenex-app-uat-nonprod
+    google.com/cloudbuild-project-slug: ivedha-mgmt-env-nonprod
     google.com/cloudbuild-location: us-central1
+    google.com/gcp-projectid: prj-scalenex-nonprod
     jira.com/project-key: SCAL
 spec:
   type: website
   lifecycle: uat
   owner: group:default/scalenex-admin
-  dependsOn: []
-  dependencyOf: []
   system: system:default/scalenex
   providesApis: []
   consumesApis: []
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/scalenex-ui
+    backstage.io/source-vcs: github
