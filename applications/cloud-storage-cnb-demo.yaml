@@ -15,4 +15,4 @@ spec:
   dependencyOf: []
   region: us-central1
   project: prj-dev-platform-next
-  lifecycle: uat
+  lifecycle: servicenex-uat
