@@ -12,9 +12,11 @@ metadata:
     google.com/gcp-projectid: ""
 spec:
   type: service
-  lifecycle: uat
+  lifecycle: servicenex-uat
   owner: group:default/servicenex-admin
   system: system:default/servicenex
+  providesApis: []
+  consumesApis: []
   dependsOn: []
   dependencyOf: []
   annotations:
