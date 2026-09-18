@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: omni_channel_adapter
+  description: Servicenex-Omni channel adapter
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/nexa-omni-channel-adapter
+    backstage.io/source-vcs: Github
+spec:
+  type: service
+  lifecycle: dit2
+  owner: group:default/servicenex-admin
+  system: system:default/servicenex
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/nexa-omni-channel-adapter
+    backstage.io/source-vcs: github
