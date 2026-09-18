@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: omni-channel-adapter-qa
+  description: Servicenex Omni Channel Adapter QA
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/nexa-omni-channel-adapter
+    backstage.io/source-vcs: Github
+spec:
+  type: service
+  lifecycle: staging
+  owner: group:default/servicenex-admin
+  system: system:default/servicenex
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/nexa-omni-channel-adapter
+    backstage.io/source-vcs: github
