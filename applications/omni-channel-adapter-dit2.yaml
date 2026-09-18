@@ -6,12 +6,20 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/nexa-omni-channel-adapter
     backstage.io/source-vcs: Github
+    google.com/cloudrun-project-slug: prj-dev-service-nex
+    google.com/cloudrun-location: us-central1
+    google.com/cloudrun-service-name: servicenex-nexa-adapter-dit2
+    google.com/cloudbuild-trigger-name: SERVICENEX-NEXA-OMNI-CH-ADAPT-DIT2
+    google.com/cloudbuild-project-slug: prj-dev-service-nex
+    google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: ""
 spec:
   type: service
   lifecycle: dit2
   owner: group:default/servicenex-admin
   system: system:default/servicenex
+  providesApis: []
+  consumesApis: []
   dependsOn: []
   dependencyOf: []
   annotations:
