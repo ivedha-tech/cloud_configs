@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: omni-channel-adapter-prod
+  description: Servicenex Omni Channel Adapter PROD
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/nexa-omni-channel-adapter
+    backstage.io/source-vcs: Github
+    google.com/cloudrun-project-slug: prj-servicenex-prod
+    google.com/cloudrun-location: us-central1
+    google.com/cloudrun-service-name: servicenex-nexa-adapter-prod
+    google.com/cloudbuild-trigger-name: SERVICENEX-NEXA-OMNI-CH-ADAPT-PROD
+    google.com/cloudbuild-project-slug: prj-servicenex-prod
+    google.com/cloudbuild-location: us-central1
+spec:
+  type: service
+  lifecycle: production
+  owner: group:default/servicenex-admin
+  system: system:default/servicenex
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/nexa-omni-channel-adapter
+    backstage.io/source-vcs: github
