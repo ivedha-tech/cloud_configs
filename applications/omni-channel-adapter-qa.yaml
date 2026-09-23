@@ -2,24 +2,19 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: omni-channel-adapter-qa
-  description: Servicenex Omni Channel Adapter QA
+  description: ""
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/nexa-omni-channel-adapter
     backstage.io/source-vcs: Github
-    google.com/cloudrun-project-slug: prj-dev-service-nex
-    google.com/cloudrun-location: us-central1
-    google.com/cloudrun-service-name: servicenex-nexa-adapter-qa
-    google.com/cloudbuild-trigger-name: SERVICENEX-NEXA-OMNI-CH-ADAPT-QA
-    google.com/cloudbuild-project-slug: prj-dev-service-nex
+    google.com/cloudbuild-trigger-name: cb-servicenex-nexa-adapter-qa-nonprod
+    google.com/cloudbuild-project-slug: ivedha-mgmt-env-nonprod
     google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: ""
 spec:
   type: service
-  lifecycle: staging
+  lifecycle: qa
   owner: group:default/servicenex-admin
   system: system:default/servicenex
-  providesApis: []
-  consumesApis: []
   dependsOn: []
   dependencyOf: []
   annotations:
