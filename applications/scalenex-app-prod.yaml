@@ -11,10 +11,12 @@ metadata:
     google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: ""
 spec:
-  type: service
+  type: website
   lifecycle: production
   owner: group:default/scalenex-admin
   system: system:default/scalenex
+  providesApis: []
+  consumesApis: []
   dependsOn: []
   dependencyOf: []
   annotations:
