@@ -12,7 +12,7 @@ metadata:
     google.com/gcp-projectid: ""
 spec:
   type: service
-  lifecycle: production
+  lifecycle: scalenex_production
   owner: group:default/scalenex-admin
   system: system:default/scalenex
   providesApis: []
