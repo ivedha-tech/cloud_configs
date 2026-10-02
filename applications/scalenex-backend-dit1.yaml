@@ -16,10 +16,13 @@ metadata:
     jira.com/project-key: SCAL
 spec:
   type: service
-  lifecycle: dit1
+  lifecycle: rem
   owner: group:default/scalenex-admin
-  dependsOn: []
-  dependencyOf: []
   system: system:default/scalenex
   providesApis: []
   consumesApis: []
+  dependsOn: []
+  dependencyOf: []
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/scalenex-service
+    backstage.io/source-vcs: github
