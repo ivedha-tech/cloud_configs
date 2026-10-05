@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: scalenex-img-prometheus-sync-prod
+  description: ""
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/scalenex-schedulers
+    backstage.io/source-vcs: Github
+    google.com/cloudbuild-trigger-name: cb-scalenex-img-prometheus-sync-prod-prod
+    google.com/cloudbuild-project-slug: ivedha-mgmt-env-prod
+    google.com/cloudbuild-location: us-central1
+spec:
+  type: service
+  lifecycle: scalenex_production
+  owner: group:default/scalenex-admin
+  system: system:default/scalenex
+  annotations:
+    backstage.io/source-location: https://github.com/ivedha-tech/scalenex-schedulers
+    backstage.io/source-vcs: github
