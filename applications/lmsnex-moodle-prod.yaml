@@ -12,9 +12,11 @@ metadata:
     google.com/gcp-projectid: ""
 spec:
   type: service
-  lifecycle: production
+  lifecycle: lmsnex_production
   owner: group:default/lmsnex-team
   system: system:default/lmsnex
+  providesApis: []
+  consumesApis: []
   dependsOn: []
   dependencyOf: []
   annotations:
