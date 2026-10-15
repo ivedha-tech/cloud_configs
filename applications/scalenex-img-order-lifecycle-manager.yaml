@@ -6,7 +6,7 @@ metadata:
   annotations:
     backstage.io/source-location: https://github.com/ivedha-tech/scalenex-order-lifecycle-manager
     backstage.io/source-vcs: Github
-    google.com/cloudbuild-trigger-name: cb-scalenex-img-order-lifecycle-manager-nonprod
+    google.com/cloudbuild-trigger-name: cb-scalenex-img-order-lifecycle-manager-dit2-nonprod
     google.com/cloudbuild-project-slug: ivedha-mgmt-env-nonprod
     google.com/cloudbuild-location: us-central1
     google.com/gcp-projectid: ""
@@ -15,6 +15,8 @@ spec:
   lifecycle: dit2
   owner: group:default/scalenex-admin
   system: system:default/scalenex
+  providesApis: []
+  consumesApis: []
   dependsOn: []
   dependencyOf: []
   annotations:
